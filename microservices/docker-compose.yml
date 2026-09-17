@@ -360,6 +360,42 @@ services:
       interval: 10s
       timeout: 5s
       retries: 10
+
+  e2e-tests:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./e2e-tests:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    environment:
+
+      BASE_URL:
+        http://api-gateway:8080
+
+    depends_on:
+
+      api-gateway:
+        condition: service_started
+
+      user-service:
+        condition: service_started
+
+      market-service:
+        condition: service_started
+
+      trade-service:
+        condition: service_started
+
+    profiles:
+      - test
 volumes:
 
   finance_ms_user_data:
