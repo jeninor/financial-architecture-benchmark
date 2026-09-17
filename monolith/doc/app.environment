@@ -1,0 +1,2 @@
+TZ: UTC
+JAVA_TOOL_OPTIONS: -Duser.timezone=UTC

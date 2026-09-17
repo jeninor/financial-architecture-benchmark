@@ -95,4 +95,24 @@ public class UserService {
 
         return userRepository.save(user);
     }
+
+    @Transactional
+    public User credit(
+        UUID userId,
+        BigDecimal amount
+    ) {
+
+        User user =
+            getById(userId);
+
+
+        user.setCash(
+            user
+                .getCash()
+                .add(amount)
+        );
+
+
+        return userRepository.save(user);
+    }
 }

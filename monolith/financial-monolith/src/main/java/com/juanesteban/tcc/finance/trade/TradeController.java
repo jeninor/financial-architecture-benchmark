@@ -31,4 +31,16 @@ public class TradeController {
 
         return tradeService.buy(request);
     }
+
+
+    @PostMapping("/sell")
+    @ResponseStatus(HttpStatus.CREATED)
+    public TradeResponse sell(
+        @Valid
+        @RequestBody
+        SellRequest request
+    ) {
+
+        return tradeService.sell(request);
+    }
 }
