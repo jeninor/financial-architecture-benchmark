@@ -1,0 +1,142 @@
+services:
+
+  user-postgres:
+    image: postgres:16-alpine
+    container_name: finance-ms-user-postgres
+
+    environment:
+      POSTGRES_DB: user_db
+      POSTGRES_USER: finance
+      POSTGRES_PASSWORD: finance
+      TZ: UTC
+      PGTZ: UTC
+
+    volumes:
+      - finance_ms_user_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U finance -d user_db"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+  discovery-server:
+    image: maven:3.9.9-eclipse-temurin-21
+    container_name: finance-ms-discovery
+
+    working_dir: /workspace
+
+    volumes:
+      - ./discovery-server:/workspace
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+      - "8761:8761"
+
+    environment:
+      TZ: UTC
+      JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+
+    command:
+      - mvn
+      - spring-boot:run
+
+
+  user-service:
+
+    image: maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-user-service
+
+    working_dir:
+      /workspace
+
+    volumes:
+      - ./user-service:/workspace
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+      - "8081:8081"
+
+    environment:
+
+      TZ: UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      SPRING_DATASOURCE_URL:
+        jdbc:postgresql://user-postgres:5432/user_db
+
+      SPRING_DATASOURCE_USERNAME:
+        finance
+
+      SPRING_DATASOURCE_PASSWORD:
+        finance
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+
+    depends_on:
+
+      user-postgres:
+        condition: service_healthy
+
+      discovery-server:
+        condition: service_started
+
+    command:
+      - mvn
+      - spring-boot:run
+  market-service:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-market-service
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./market-service:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+
+      - "8082:8082"
+
+    environment:
+
+      TZ: UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+
+    depends_on:
+
+      discovery-server:
+        condition: service_started
+
+    command:
+
+      - mvn
+
+      - spring-boot:run
+volumes:
+
+  finance_ms_user_data:
+
+  finance_ms_maven_cache:
