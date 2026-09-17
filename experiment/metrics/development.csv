@@ -1,0 +1,4 @@
+architecture,component,task,error_category,error_description,cause,correction_count,status
+microservices,market-service,initial setup,configuration/build,Missing pom.xml; Maven executed without project,pom.xml was not created in mounted service directory,1,resolved
+microservices,api-gateway,initial setup,configuration/build,Unable to find a suitable main class,ApiGatewayApplication.java was missing or not available in the expected source path,1,resolved
+microservices,user-service,RabbitMQ integration,dependency/configuration,Spring AMQP classes not found,spring-boot-starter-amqp dependency was missing from pom.xml,1,resolved
