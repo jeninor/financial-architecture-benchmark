@@ -1,0 +1,5 @@
+status=historical
+architecture=monolith
+role=code_generation
+scope=quote,buy,sell,portfolio,history
+modified_after_execution=false
