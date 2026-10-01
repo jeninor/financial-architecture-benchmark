@@ -109,19 +109,3 @@ Ao final da geração, produza um resumo estruturado (JSON ou markdown) com:
 - decisões de design tomadas que não estavam explicitamente especificadas aqui.
 
 Salve esse resumo em `metrics/agente1_<arquitetura>_log.md`.
-
-## Decisões de design replicadas do monólito (obrigatório manter equivalência)
-
-Estas decisões já foram tomadas na versão monolítica e DEVEM ser replicadas aqui:
-
-1. Os endpoints de compra/venda (em trade-service) recebem o corpo como JSON
-   {"username","symbol","quantity"}, não como query params.
-2. Uma quantity não inteira (ex. 1.5) deve retornar HTTP 400, não truncar.
-3. Adicione GET /{username} em user-service para consultar saldo.
-4. O portfolio (em trade-service) deve incluir também stocksValue e totalValue,
-   não só as posições.
-5. As operações de compra/venda devem bloquear (lock) a linha do usuário durante
-   a execução para evitar condições de corrida com saldo negativo. Como aqui o
-   saldo vive em user-service (outro serviço), implemente isso como um lock a
-   nível de linha na tabela de usuários dentro de user-service, invocado via o
-   endpoint que trade-service chama por OpenFeign.

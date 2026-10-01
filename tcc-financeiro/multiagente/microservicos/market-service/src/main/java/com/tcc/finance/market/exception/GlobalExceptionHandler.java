@@ -12,17 +12,12 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(NotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handleNotFound(NotFoundException ex) {
-        return error(HttpStatus.NOT_FOUND, ex.getMessage());
-    }
-
-    private ResponseEntity<Map<String, Object>> error(HttpStatus status, String message) {
-        Map<String, Object> body = new LinkedHashMap<>();
-        body.put("timestamp", Instant.now().toString());
-        body.put("status", status.value());
-        body.put("error", status.getReasonPhrase());
-        body.put("message", message);
-        return ResponseEntity.status(status).body(body);
+    @ExceptionHandler(SymbolNotFoundException.class)
+    public ResponseEntity<Map<String, Object>> handleNotFound(SymbolNotFoundException ex) {
+        Map<String, Object> payload = new LinkedHashMap<>();
+        payload.put("timestamp", Instant.now().toString());
+        payload.put("status", HttpStatus.NOT_FOUND.value());
+        payload.put("message", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(payload);
     }
 }
