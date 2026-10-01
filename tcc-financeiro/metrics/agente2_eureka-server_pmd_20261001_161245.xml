@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-01T19:13:45.659">
+<file name="/app/src/main/java/com/tcc/finance/EurekaServerApplication.java">
+<violation beginline="9" endline="9" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.tcc.finance" class="EurekaServerApplication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static. Consider adding a private no-args constructor to prevent instantiation.
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

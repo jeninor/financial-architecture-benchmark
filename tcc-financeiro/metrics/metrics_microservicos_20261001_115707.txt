@@ -1,0 +1,171 @@
+--- LIZARD ---
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+       3      1     12      1       3 NotFoundException::NotFoundException@4-6@/proj/user-service/src/main/java/com/tcc/finance/user/exception/NotFoundException.java
+       3      1     12      1       3 ConflictException::ConflictException@4-6@/proj/user-service/src/main/java/com/tcc/finance/user/exception/ConflictException.java
+       3      1     21      1       3 GlobalExceptionHandler::handleNotFound@20-22@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       3      1     21      1       3 GlobalExceptionHandler::handleBadRequest@25-27@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       3      1     21      1       3 GlobalExceptionHandler::handleConflict@30-32@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       3      1     17      1       3 GlobalExceptionHandler::handleIntegrity@35-37@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       6      1     63      1       6 GlobalExceptionHandler::handleValidation@40-45@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       3      1     17      1       3 GlobalExceptionHandler::handleUnreadable@48-50@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       8      1     90      2       8 GlobalExceptionHandler::error@52-59@/proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+       3      1     12      1       3 BadRequestException::BadRequestException@4-6@/proj/user-service/src/main/java/com/tcc/finance/user/exception/BadRequestException.java
+       3      1     13      1       3 UserService::UserService@20-22@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+      10      4     71      1      10 UserService::create@25-34@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+       4      1     29      1       4 UserService::get@37-40@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+      10      2     67      2      10 UserService::debit@47-56@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+       6      1     33      2       6 UserService::credit@59-64@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+       5      3     30      1       5 UserService::validateAmount@66-70@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+       4      1     29      1       4 UserService::lockUser@72-75@/proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+       3      1     20      1       3 UserServiceApplication::main@15-17@/proj/user-service/src/main/java/com/tcc/finance/user/UserServiceApplication.java
+       3      1      8      0       3 HealthController::health@22-24@/proj/user-service/src/main/java/com/tcc/finance/user/UserServiceApplication.java
+       3      1     25      0       3 FinanceScenariosTest::uniqueUser@30-32@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       5      1     36      1       5 FinanceScenariosTest::createUser@34-38@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       5      1     48      3       5 FinanceScenariosTest::balance@40-44@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       7      1     56      0       7 FinanceScenariosTest::T03_criacaoUsuarioSaldoInicial@47-53@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       5      1     46      0       5 FinanceScenariosTest::T04_usernameDuplicado@56-60@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       6      1     92      0       6 FinanceScenariosTest::T12_usuarioInexistente@63-68@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+      12      1    121      0      12 FinanceScenariosTest::debitoECreditoAtualizamSaldo@71-82@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       8      1     95      0       8 FinanceScenariosTest::debitoSemSaldoSuficiente@85-92@/proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+       3      1     13      1       3 TradeController::TradeController@21-23@/proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+       3      1     33      1       3 TradeController::buy@26-28@/proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+       3      1     33      1       3 TradeController::sell@31-33@/proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+       3      1     17      1       3 TradeController::portfolio@36-38@/proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+       3      1     17      1       3 TradeController::history@41-43@/proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+       3      1     12      1       3 NotFoundException::NotFoundException@4-6@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/NotFoundException.java
+       3      1     12      1       3 ConflictException::ConflictException@4-6@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/ConflictException.java
+       3      1     21      1       3 GlobalExceptionHandler::handleNotFound@21-23@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     21      1       3 GlobalExceptionHandler::handleBadRequest@26-28@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     21      1       3 GlobalExceptionHandler::handleConflict@31-33@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     17      1       3 GlobalExceptionHandler::handleIntegrity@36-38@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       6      1     63      1       6 GlobalExceptionHandler::handleValidation@41-46@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     17      1       3 GlobalExceptionHandler::handleUnreadable@49-51@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     23      1       3 GlobalExceptionHandler::handleRemote@54-56@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       8      1     90      2       8 GlobalExceptionHandler::error@58-65@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+       3      1     12      1       3 BadRequestException::BadRequestException@4-6@/proj/trade-service/src/main/java/com/tcc/finance/trade/exception/BadRequestException.java
+       3      1     13      1       3 FeignErrorDecoder::FeignErrorDecoder@25-27@/proj/trade-service/src/main/java/com/tcc/finance/trade/client/FeignErrorDecoder.java
+       8      4     75      2       8 FeignErrorDecoder::decode@30-37@/proj/trade-service/src/main/java/com/tcc/finance/trade/client/FeignErrorDecoder.java
+      12      6     97      2      12 FeignErrorDecoder::message@39-50@/proj/trade-service/src/main/java/com/tcc/finance/trade/client/FeignErrorDecoder.java
+       3      1     13      1       3 TradeEventPublisher::TradeEventPublisher@23-25@/proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/TradeEventPublisher.java
+       8      2     51      1       8 TradeEventPublisher::onTradeCompleted@28-35@/proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/TradeEventPublisher.java
+       3      1     16      0       3 RabbitConfig::tradeExchange@19-21@/proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/RabbitConfig.java
+       3      1     28      2       3 RabbitConfig::tradeAuditBinding@24-26@/proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/RabbitConfig.java
+       3      1     11      0       3 RabbitConfig::jsonMessageConverter@29-31@/proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/RabbitConfig.java
+      11      1     49      5      11 TradeService::TradeService@45-55@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+      16      1    168      3      20 TradeService::buy@58-77@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+      24      4    221      3      28 TradeService::sell@80-107@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+      15      1    158      1      15 TradeService::portfolio@110-124@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+       7      1     75      1       7 TradeService::history@127-133@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+       5      3     26      1       5 TradeService::validateQuantity@135-139@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+       6      1    119      3       7 TradeService::complete@141-147@/proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+       3      1     20      1       3 TradeServiceApplication::main@17-19@/proj/trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java
+       3      1     14      0       3 TradeServiceApplication::tradeAuditQueue@22-24@/proj/trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java
+       3      1      8      0       3 HealthController::health@29-31@/proj/trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java
+       2      1      5      0       2 InMemoryRemoteServices::InMemoryRemoteServices@23-24@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+      15      3    114      0      15 InMemoryRemoteServices::marketClient@26-40@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       3      1     32      1       3 FakeUserClient::create@47-49@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       7      2     37      1       7 FakeUserClient::getUser@52-58@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       7      2     67      2       7 FakeUserClient::debit@61-67@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       4      1     39      2       4 FakeUserClient::credit@70-73@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       5      1     47      2       5 FakeUserClient::update@75-79@/proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+       6      1     70      2       6 FeignErrorDecoderTest::response@21-26@/proj/trade-service/src/test/java/com/tcc/finance/trade/FeignErrorDecoderTest.java
+       5      1     42      0       5 FeignErrorDecoderTest::traduz404ParaNotFound@29-33@/proj/trade-service/src/test/java/com/tcc/finance/trade/FeignErrorDecoderTest.java
+       5      1     42      0       5 FeignErrorDecoderTest::traduz400ParaBadRequest@36-40@/proj/trade-service/src/test/java/com/tcc/finance/trade/FeignErrorDecoderTest.java
+       6      1     97      0       7 FinanceScenariosTest::wireRemoteServices@58-64@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       5      1     37      0       5 FinanceScenariosTest::createUser@66-70@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       3      1     19      1       3 FinanceScenariosTest::saldo@72-74@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       6      1     55      4       6 FinanceScenariosTest::trade@76-81@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+      12      3    135      0      12 FinanceScenariosTest::T05_compraValida@84-95@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       6      1     55      0       6 FinanceScenariosTest::T06_compraSemSaldoSuficiente@98-103@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       8      1     77      0       8 FinanceScenariosTest::T07_quantidadeZero@106-113@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+      18      1    224      0      18 FinanceScenariosTest::T08_calculoPortfolio@116-133@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+      10      1    109      0      10 FinanceScenariosTest::T09_vendaValida@136-145@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       7      1     77      0       7 FinanceScenariosTest::T10_vendaAcimaDaQuantidade@148-154@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+      18      1    233      0      18 FinanceScenariosTest::T11_historicoOperacoes@157-174@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       7      1    119      0       7 FinanceScenariosTest::T12_usuarioInexistente@177-183@/proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+       3      1     13      1       3 QuoteController::QuoteController@14-16@/proj/market-service/src/main/java/com/tcc/finance/market/web/QuoteController.java
+       3      1     28      1       3 QuoteController::quote@19-21@/proj/market-service/src/main/java/com/tcc/finance/market/web/QuoteController.java
+       3      1     12      1       3 NotFoundException::NotFoundException@4-6@/proj/market-service/src/main/java/com/tcc/finance/market/exception/NotFoundException.java
+       3      1     21      1       3 GlobalExceptionHandler::handleNotFound@16-18@/proj/market-service/src/main/java/com/tcc/finance/market/exception/GlobalExceptionHandler.java
+       8      1     90      2       8 GlobalExceptionHandler::error@20-27@/proj/market-service/src/main/java/com/tcc/finance/market/exception/GlobalExceptionHandler.java
+       3      2     27      1       3 QuoteService::normalize@24-26@/proj/market-service/src/main/java/com/tcc/finance/market/service/QuoteService.java
+       7      2     40      1       7 QuoteService::getPrice@28-34@/proj/market-service/src/main/java/com/tcc/finance/market/service/QuoteService.java
+       3      1     20      1       3 MarketServiceApplication::main@13-15@/proj/market-service/src/main/java/com/tcc/finance/market/MarketServiceApplication.java
+       3      1      8      0       3 HealthController::health@20-22@/proj/market-service/src/main/java/com/tcc/finance/market/MarketServiceApplication.java
+       6      1     54      0       6 FinanceScenariosTest::T01_cotacaoValida@25-30@/proj/market-service/src/test/java/com/tcc/finance/market/FinanceScenariosTest.java
+       4      1     28      0       4 FinanceScenariosTest::T02_simboloInvalido@33-36@/proj/market-service/src/test/java/com/tcc/finance/market/FinanceScenariosTest.java
+       3      1     20      1       3 EurekaServerApplication::main@10-12@/proj/eureka-server/src/main/java/com/tcc/finance/EurekaServerApplication.java
+       3      1     20      1       3 ApiGatewayApplication::main@8-10@/proj/api-gateway/src/main/java/com/tcc/finance/ApiGatewayApplication.java
+51 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+      3       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/web/dto/CreateUserRequest.java
+      4       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/web/dto/UserResponse.java
+      4       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/web/dto/BalanceOperationRequest.java
+     42       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/web/UserController.java
+      6       3.0     1.0       12.0         1     /proj/user-service/src/main/java/com/tcc/finance/user/exception/NotFoundException.java
+      6       3.0     1.0       12.0         1     /proj/user-service/src/main/java/com/tcc/finance/user/exception/ConflictException.java
+     50       4.1     1.0       35.7         7     /proj/user-service/src/main/java/com/tcc/finance/user/exception/GlobalExceptionHandler.java
+      6       3.0     1.0       12.0         1     /proj/user-service/src/main/java/com/tcc/finance/user/exception/BadRequestException.java
+     15       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/repository/UserAccountRepository.java
+     60       6.0     1.9       38.9         7     /proj/user-service/src/main/java/com/tcc/finance/user/service/UserService.java
+     40       0.0     0.0        0.0         0     /proj/user-service/src/main/java/com/tcc/finance/user/domain/UserAccount.java
+     22       3.0     1.0       14.0         2     /proj/user-service/src/main/java/com/tcc/finance/user/UserServiceApplication.java
+     75       6.4     1.0       64.9         8     /proj/user-service/src/test/java/com/tcc/finance/user/FinanceScenariosTest.java
+      7       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/dto/HistoryEntry.java
+      4       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/dto/PositionView.java
+      6       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/dto/PortfolioResponse.java
+      3       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/dto/TradeRequest.java
+      8       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/dto/TradeResponse.java
+     35       3.0     1.0       22.6         5     /proj/trade-service/src/main/java/com/tcc/finance/trade/web/TradeController.java
+      6       3.0     1.0       12.0         1     /proj/trade-service/src/main/java/com/tcc/finance/trade/exception/NotFoundException.java
+      6       3.0     1.0       12.0         1     /proj/trade-service/src/main/java/com/tcc/finance/trade/exception/ConflictException.java
+     55       4.0     1.0       34.1         8     /proj/trade-service/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java
+      6       3.0     1.0       12.0         1     /proj/trade-service/src/main/java/com/tcc/finance/trade/exception/BadRequestException.java
+      7       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/repository/TradeTransactionRepository.java
+     16       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/repository/PositionRepository.java
+      4       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/dto/QuoteDto.java
+      4       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/dto/UserDto.java
+      4       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/dto/BalanceOperationRequest.java
+     40       7.7     3.7       61.7         3     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/FeignErrorDecoder.java
+     17       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/UserClient.java
+     10       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/client/MarketClient.java
+     25       5.5     1.5       32.0         2     /proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/TradeEventPublisher.java
+      8       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/TradeCompletedEvent.java
+     26       3.0     1.0       18.3         3     /proj/trade-service/src/main/java/com/tcc/finance/trade/messaging/RabbitConfig.java
+    119      12.0     1.7      116.6         7     /proj/trade-service/src/main/java/com/tcc/finance/trade/service/TradeService.java
+     64       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/domain/TradeTransaction.java
+     46       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/domain/Position.java
+      5       0.0     0.0        0.0         0     /proj/trade-service/src/main/java/com/tcc/finance/trade/domain/TransactionType.java
+     28       3.0     1.0       14.0         3     /proj/trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java
+     65       6.1     1.6       48.7         7     /proj/trade-service/src/test/java/com/tcc/finance/trade/InMemoryRemoteServices.java
+     33       5.3     1.0       51.3         3     /proj/trade-service/src/test/java/com/tcc/finance/trade/FeignErrorDecoderTest.java
+    157       8.8     1.2      103.1        12     /proj/trade-service/src/test/java/com/tcc/finance/trade/FinanceScenariosTest.java
+      4       0.0     0.0        0.0         0     /proj/market-service/src/main/java/com/tcc/finance/market/web/dto/QuoteResponse.java
+     17       3.0     1.0       20.5         2     /proj/market-service/src/main/java/com/tcc/finance/market/web/QuoteController.java
+      6       3.0     1.0       12.0         1     /proj/market-service/src/main/java/com/tcc/finance/market/exception/NotFoundException.java
+     23       5.5     1.0       55.5         2     /proj/market-service/src/main/java/com/tcc/finance/market/exception/GlobalExceptionHandler.java
+     25       5.0     2.0       33.5         2     /proj/market-service/src/main/java/com/tcc/finance/market/service/QuoteService.java
+     20       3.0     1.0       14.0         2     /proj/market-service/src/main/java/com/tcc/finance/market/MarketServiceApplication.java
+     27       5.0     1.0       41.0         2     /proj/market-service/src/test/java/com/tcc/finance/market/FinanceScenariosTest.java
+     11       3.0     1.0       20.0         1     /proj/eureka-server/src/main/java/com/tcc/finance/EurekaServerApplication.java
+      9       3.0     1.0       20.0         1     /proj/api-gateway/src/main/java/com/tcc/finance/ApiGatewayApplication.java
+
+===============================================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+      1289       5.7     1.3       50.0       96            0      0.00    0.00
+--- CLOC ---
+github.com/AlDanial/cloc v 2.04  T=0.47 s (107.8 files/s, 3445.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                            51            285             56           1289
+-------------------------------------------------------------------------------
+SUM:                            51            285             56           1289
+-------------------------------------------------------------------------------

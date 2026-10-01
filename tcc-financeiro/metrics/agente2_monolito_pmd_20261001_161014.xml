@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-01T19:10:31.932">
+<file name="/app/src/main/java/com/tcc/finance/FinanceMonolitoApplication.java">
+<violation beginline="9" endline="9" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.tcc.finance" class="FinanceMonolitoApplication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static. Consider adding a private no-args constructor to prevent instantiation.
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/domain/TradeTransaction.java">
+<violation beginline="20" endline="20" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.domain" class="TradeTransaction" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TradeTransaction' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=7, WMC=9)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/GlobalExceptionHandler.java">
+<violation beginline="53" endline="53" begincolumn="29" endcolumn="57" rule="UseConcurrentHashMap" ruleset="Multithreading" package="com.tcc.finance.exception" class="GlobalExceptionHandler" method="error" variable="body" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/service/TradeService.java">
+<violation beginline="51" endline="51" begincolumn="55" endcolumn="70" rule="LawOfDemeter" ruleset="Design" package="com.tcc.finance.service" class="TradeService" method="buy" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSaldo` on foreign value `user` (degree 1)
+</violation>
+<violation beginline="107" endline="107" begincolumn="30" endcolumn="45" rule="LawOfDemeter" ruleset="Design" package="com.tcc.finance.service" class="TradeService" method="portfolio" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSaldo` on foreign value `user` (degree 1)
+</violation>
+<violation beginline="136" endline="136" begincolumn="46" endcolumn="58" rule="LawOfDemeter" ruleset="Design" package="com.tcc.finance.service" class="TradeService" method="toResponse" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getUser` on foreign value `tx` (degree 1)
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

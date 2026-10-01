@@ -1,0 +1,14 @@
+{
+  "pom.xml": {
+    "mtime": 1790802188.0,
+    "seen": 1790817908.4392176,
+    "ast_hash": "20022191c6464b828128c37b410d7ee0",
+    "semantic_hash": "20022191c6464b828128c37b410d7ee0"
+  },
+  "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java": {
+    "mtime": 1790802191.0,
+    "seen": 1790817908.4392238,
+    "ast_hash": "1296e06303eb85d4b218851210fabaa1",
+    "semantic_hash": "1296e06303eb85d4b218851210fabaa1"
+  }
+}

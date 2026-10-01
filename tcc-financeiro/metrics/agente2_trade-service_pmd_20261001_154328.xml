@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-01T18:46:04.445">
+<file name="/app/src/main/java/com/tcc/finance/trade/client/MarketClient.java">
+<violation beginline="9" endline="9" begincolumn="8" endcolumn="17" rule="ImplicitFunctionalInterface" ruleset="Best Practices" package="com.tcc.finance.trade.client" class="MarketClient" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_bestpractices.html#implicitfunctionalinterface" priority="2">
+Annotate this interface with @FunctionalInterface or with @SuppressWarnings("PMD.ImplicitFunctionalInterface") to clarify your intent.
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/domain/TradeTransaction.java">
+<violation beginline="18" endline="18" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.trade.domain" class="TradeTransaction" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TradeTransaction' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=7, WMC=9)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/exception/BadRequestException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.trade.exception" class="BadRequestException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/exception/ConflictException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.trade.exception" class="ConflictException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/exception/GlobalExceptionHandler.java">
+<violation beginline="59" endline="59" begincolumn="29" endcolumn="57" rule="UseConcurrentHashMap" ruleset="Multithreading" package="com.tcc.finance.trade.exception" class="GlobalExceptionHandler" method="error" variable="body" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/exception/NotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.trade.exception" class="NotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/trade/messaging/TradeEventPublisher.java">
+<violation beginline="33" endline="33" begincolumn="13" endcolumn="119" rule="GuardLogStatement" ruleset="Best Practices" package="com.tcc.finance.trade.messaging" class="TradeEventPublisher" method="onTradeCompleted" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

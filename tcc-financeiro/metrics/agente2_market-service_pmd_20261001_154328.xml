@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-01T18:45:29.545">
+<file name="/app/src/main/java/com/tcc/finance/market/MarketServiceApplication.java">
+<violation beginline="11" endline="11" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.tcc.finance.market" class="MarketServiceApplication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static. Consider adding a private no-args constructor to prevent instantiation.
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/market/exception/GlobalExceptionHandler.java">
+<violation beginline="21" endline="21" begincolumn="29" endcolumn="57" rule="UseConcurrentHashMap" ruleset="Multithreading" package="com.tcc.finance.market.exception" class="GlobalExceptionHandler" method="error" variable="body" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/market/exception/NotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.market.exception" class="NotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

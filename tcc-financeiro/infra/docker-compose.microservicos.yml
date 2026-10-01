@@ -1,0 +1,144 @@
+services:
+  postgres-user:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: userdb
+      POSTGRES_USER: user_svc
+      POSTGRES_PASSWORD: user_svc
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user_svc -d userdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    mem_limit: 384m
+    mem_reservation: 192m
+
+  postgres-market:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: marketdb
+      POSTGRES_USER: market_svc
+      POSTGRES_PASSWORD: market_svc
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U market_svc -d marketdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    mem_limit: 384m
+    mem_reservation: 192m
+
+  postgres-trade:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: tradedb
+      POSTGRES_USER: trade_svc
+      POSTGRES_PASSWORD: trade_svc
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trade_svc -d tradedb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    mem_limit: 384m
+    mem_reservation: 192m
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    mem_reservation: 256m
+
+  eureka-server:
+    build:
+      context: ../multiagente/microservicos/eureka-server
+    ports:
+      - "8761:8761"
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'echo > /dev/tcp/localhost/8761' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    mem_limit: 640m
+    mem_reservation: 320m
+
+  api-gateway:
+    build:
+      context: ../multiagente/microservicos/api-gateway
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+    ports:
+      - "8090:8080"
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    mem_limit: 640m
+    mem_reservation: 320m
+
+  user-service:
+    build:
+      context: ../multiagente/microservicos/user-service
+    depends_on:
+      postgres-user:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-user:5432/userdb
+      SPRING_DATASOURCE_USERNAME: user_svc
+      SPRING_DATASOURCE_PASSWORD: user_svc
+      SPRING_RABBITMQ_HOST: rabbitmq
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    ports:
+      - "8081:8081"
+    mem_limit: 640m
+    mem_reservation: 320m
+
+  market-service:
+    build:
+      context: ../multiagente/microservicos/market-service
+    depends_on:
+      postgres-market:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-market:5432/marketdb
+      SPRING_DATASOURCE_USERNAME: market_svc
+      SPRING_DATASOURCE_PASSWORD: market_svc
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    ports:
+      - "8082:8082"
+    mem_limit: 640m
+    mem_reservation: 320m
+
+  trade-service:
+    build:
+      context: ../multiagente/microservicos/trade-service
+    depends_on:
+      postgres-trade:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-trade:5432/tradedb
+      SPRING_DATASOURCE_USERNAME: trade_svc
+      SPRING_DATASOURCE_PASSWORD: trade_svc
+      SPRING_RABBITMQ_HOST: rabbitmq
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    ports:
+      - "8083:8083"
+    mem_limit: 640m
+    mem_reservation: 320m

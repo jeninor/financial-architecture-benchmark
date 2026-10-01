@@ -1,0 +1,185 @@
+{
+  "communities": {
+    "0": [
+      "api_gateway_src_main_java_com_tcc_finance_apigatewayapplication",
+      "api_gateway_src_main_java_com_tcc_finance_apigatewayapplication_apigatewayapplication",
+      "api_gateway_src_main_java_com_tcc_finance_apigatewayapplication_apigatewayapplication_main",
+      "eureka_server_src_main_java_com_tcc_finance_eurekaserverapplication",
+      "eureka_server_src_main_java_com_tcc_finance_eurekaserverapplication_eurekaserverapplication",
+      "eureka_server_src_main_java_com_tcc_finance_eurekaserverapplication_eurekaserverapplication_main",
+      "org_springframework_boot_autoconfigure_springbootapplication",
+      "org_springframework_cloud_netflix_eureka_server_enableeurekaserver",
+      "springapplication"
+    ],
+    "1": [
+      "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_healthcontroller",
+      "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_healthcontroller_health",
+      "org_springframework_web_bind_annotation_getmapping",
+      "org_springframework_web_bind_annotation_restcontroller",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_healthcontroller",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_healthcontroller_health",
+      "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_healthcontroller",
+      "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_healthcontroller_health"
+    ],
+    "2": [
+      "org_springframework_context_annotation_bean",
+      "queue",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_tradeserviceapplication",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_tradeserviceapplication_main",
+      "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_tradeserviceapplication_tradeauditqueue"
+    ],
+    "3": [
+      "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication",
+      "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_marketserviceapplication",
+      "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_marketserviceapplication_main",
+      "org_springframework_cloud_client_discovery_enablediscoveryclient"
+    ],
+    "4": [
+      "org_springframework_cloud_openfeign_enablefeignclients",
+      "user_service_src_main_java_com_tcc_finance_user_userserviceapplication",
+      "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_userserviceapplication",
+      "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_userserviceapplication_main"
+    ],
+    "5": [
+      "pkg_com_tcc_api_gateway"
+    ],
+    "6": [
+      "pkg_com_tcc_eureka_server"
+    ],
+    "7": [
+      "pkg_com_tcc_market_service"
+    ],
+    "8": [
+      "pkg_com_tcc_trade_service"
+    ],
+    "9": [
+      "pkg_com_tcc_user_service"
+    ]
+  },
+  "cohesion": {
+    "0": 0.3333333333333333,
+    "1": 0.32142857142857145,
+    "2": 0.4,
+    "3": 0.6666666666666666,
+    "4": 0.6666666666666666,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_tradeserviceapplication",
+      "label": "TradeServiceApplication",
+      "degree": 7
+    },
+    {
+      "id": "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_userserviceapplication",
+      "label": "UserServiceApplication",
+      "degree": 6
+    },
+    {
+      "id": "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_marketserviceapplication",
+      "label": "MarketServiceApplication",
+      "degree": 5
+    },
+    {
+      "id": "eureka_server_src_main_java_com_tcc_finance_eurekaserverapplication_eurekaserverapplication",
+      "label": "EurekaServerApplication",
+      "degree": 4
+    },
+    {
+      "id": "api_gateway_src_main_java_com_tcc_finance_apigatewayapplication_apigatewayapplication",
+      "label": "ApiGatewayApplication",
+      "degree": 3
+    },
+    {
+      "id": "market_service_src_main_java_com_tcc_finance_market_marketserviceapplication_healthcontroller",
+      "label": "HealthController",
+      "degree": 3
+    },
+    {
+      "id": "trade_service_src_main_java_com_tcc_finance_trade_tradeserviceapplication_healthcontroller",
+      "label": "HealthController",
+      "degree": 3
+    },
+    {
+      "id": "user_service_src_main_java_com_tcc_finance_user_userserviceapplication_healthcontroller",
+      "label": "HealthController",
+      "degree": 3
+    },
+    {
+      "id": "pkg_com_tcc_api_gateway",
+      "label": "com.tcc:api-gateway",
+      "degree": 0
+    },
+    {
+      "id": "pkg_com_tcc_eureka_server",
+      "label": "com.tcc:eureka-server",
+      "degree": 0
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MarketServiceApplication",
+      "target": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "source_files": [
+        "market-service/src/main/java/com/tcc/finance/market/MarketServiceApplication.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 3 \u2192 community 0"
+    },
+    {
+      "source": "TradeServiceApplication",
+      "target": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "source_files": [
+        "trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 2 \u2192 community 0"
+    },
+    {
+      "source": "TradeServiceApplication",
+      "target": "org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+      "source_files": [
+        "trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 2 \u2192 community 3"
+    },
+    {
+      "source": "TradeServiceApplication",
+      "target": "org.springframework.cloud.openfeign.EnableFeignClients",
+      "source_files": [
+        "trade-service/src/main/java/com/tcc/finance/trade/TradeServiceApplication.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 2 \u2192 community 4"
+    },
+    {
+      "source": "UserServiceApplication",
+      "target": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "source_files": [
+        "user-service/src/main/java/com/tcc/finance/user/UserServiceApplication.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 4 \u2192 community 0"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

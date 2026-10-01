@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "graphify": {
+      "command": "docker",
+      "args": [
+        "run", "--rm", "-i",
+        "-v", "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/tcc-financeiro/multiagente/microservicos:/project",
+        "graphify-mcp:local"
+      ]
+    }
+  }
+}

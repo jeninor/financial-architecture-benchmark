@@ -1,0 +1,39 @@
+services:
+  postgres-mono:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: finance
+      POSTGRES_USER: finance
+      POSTGRES_PASSWORD: finance
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_mono_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U finance -d finance"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    mem_reservation: 256m
+
+  app-monolito:
+    build:
+      context: ../multiagente/monolito
+      dockerfile: Dockerfile
+    depends_on:
+      postgres-mono:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-mono:5432/finance
+      SPRING_DATASOURCE_USERNAME: finance
+      SPRING_DATASOURCE_PASSWORD: finance
+      # limita heap de la JVM para que no infle la memoria del contenedor
+      JAVA_TOOL_OPTIONS: "-Xmx384m -Xms128m"
+    ports:
+      - "8080:8080"
+    mem_limit: 768m
+    mem_reservation: 384m
+
+volumes:
+  pg_mono_data:

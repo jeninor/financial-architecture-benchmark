@@ -1,0 +1,258 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "label": "FinanceMonolitoApplication",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "financemonolitoapplication",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "label": "HealthController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "healthcontroller",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication_main",
+      "label": ".main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L12"
+          }
+        ]
+      },
+      "norm_label": ".main()",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller_health",
+      "label": ".health()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": ".health()",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L18"
+    },
+    {
+      "id": "org_springframework_boot_autoconfigure_springbootapplication",
+      "label": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "org.springframework.boot.autoconfigure.springbootapplication",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "label": "FinanceMonolitoApplication.java",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "financemonolitoapplication.java",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_getmapping",
+      "label": "org.springframework.web.bind.annotation.GetMapping",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.getmapping",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_restcontroller",
+      "label": "org.springframework.web.bind.annotation.RestController",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.restcontroller",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "pkg_com_tcc_finance_monolito",
+      "label": "com.tcc:finance-monolito",
+      "_origin": "ast",
+      "community": 2,
+      "ecosystem": "maven",
+      "file_type": "code",
+      "norm_label": "com.tcc:finance-monolito",
+      "source_file": "pom.xml",
+      "source_location": "L1",
+      "type": "package",
+      "version": "0.1.0-VALIDACAO"
+    },
+    {
+      "id": "springapplication",
+      "label": "springapplication",
+      "_origin": "semantic",
+      "community": 0,
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "springapplication",
+      "source_file": "",
+      "type": "external"
+    }
+  ],
+  "links": [
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "target": "org_springframework_web_bind_annotation_restcontroller",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller_health",
+      "target": "org_springframework_web_bind_annotation_getmapping",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "target": "org_springframework_web_bind_annotation_getmapping",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "target": "org_springframework_web_bind_annotation_restcontroller",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "target": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "target": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "target": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication_main",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "target": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller_health",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/com/tcc/finance/FinanceMonolitoApplication.java",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

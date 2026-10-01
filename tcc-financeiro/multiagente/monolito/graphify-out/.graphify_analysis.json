@@ -1,0 +1,47 @@
+{
+  "communities": {
+    "0": [
+      "org_springframework_boot_autoconfigure_springbootapplication",
+      "springapplication",
+      "src_main_java_com_tcc_finance_financemonolitoapplication",
+      "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication_main"
+    ],
+    "1": [
+      "org_springframework_web_bind_annotation_getmapping",
+      "org_springframework_web_bind_annotation_restcontroller",
+      "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller_health"
+    ],
+    "2": [
+      "pkg_com_tcc_finance_monolito"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5,
+    "1": 0.5,
+    "2": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_financemonolitoapplication",
+      "label": "FinanceMonolitoApplication",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_tcc_finance_financemonolitoapplication_healthcontroller",
+      "label": "HealthController",
+      "degree": 3
+    },
+    {
+      "id": "pkg_com_tcc_finance_monolito",
+      "label": "com.tcc:finance-monolito",
+      "degree": 0
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
