@@ -1,18 +1,18 @@
 package com.tcc.finance.service;
 
-import com.tcc.finance.dto.PortfolioResponse;
-import com.tcc.finance.dto.PosicaoResponse;
-import com.tcc.finance.dto.TradeResponse;
-import com.tcc.finance.dto.TransacaoResponse;
-import com.tcc.finance.exception.InsufficientFundsException;
-import com.tcc.finance.exception.InsufficientSharesException;
-import com.tcc.finance.exception.InvalidQuantityException;
-import com.tcc.finance.model.Posicao;
-import com.tcc.finance.model.Transacao;
-import com.tcc.finance.model.TipoTransacao;
-import com.tcc.finance.model.Usuario;
-import com.tcc.finance.repository.PosicaoRepository;
-import com.tcc.finance.repository.TransacaoRepository;
+import com.tcc.finance.domain.Position;
+import com.tcc.finance.domain.TradeTransaction;
+import com.tcc.finance.domain.TransactionType;
+import com.tcc.finance.domain.UserAccount;
+import com.tcc.finance.exception.BadRequestException;
+import com.tcc.finance.exception.NotFoundException;
+import com.tcc.finance.repository.PositionRepository;
+import com.tcc.finance.repository.TradeTransactionRepository;
+import com.tcc.finance.repository.UserAccountRepository;
+import com.tcc.finance.web.dto.HistoryEntry;
+import com.tcc.finance.web.dto.PortfolioResponse;
+import com.tcc.finance.web.dto.PositionView;
+import com.tcc.finance.web.dto.TradeResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,93 +23,113 @@ import java.util.List;
 @Service
 public class TradeService {
 
-    private final UsuarioService usuarioService;
-    private final MarketDataService marketDataService;
-    private final PosicaoRepository posicaoRepository;
-    private final TransacaoRepository transacaoRepository;
+    private final UserAccountRepository userRepository;
+    private final PositionRepository positionRepository;
+    private final TradeTransactionRepository transactionRepository;
+    private final QuoteService quoteService;
 
-    public TradeService(UsuarioService usuarioService,
-                         MarketDataService marketDataService,
-                         PosicaoRepository posicaoRepository,
-                         TransacaoRepository transacaoRepository) {
-        this.usuarioService = usuarioService;
-        this.marketDataService = marketDataService;
-        this.posicaoRepository = posicaoRepository;
-        this.transacaoRepository = transacaoRepository;
+    public TradeService(UserAccountRepository userRepository,
+                        PositionRepository positionRepository,
+                        TradeTransactionRepository transactionRepository,
+                        QuoteService quoteService) {
+        this.userRepository = userRepository;
+        this.positionRepository = positionRepository;
+        this.transactionRepository = transactionRepository;
+        this.quoteService = quoteService;
     }
 
     @Transactional
-    public TradeResponse buy(String username, String symbol, long quantity) {
-        if (quantity <= 0) {
-            throw new InvalidQuantityException(quantity);
+    public TradeResponse buy(String username, String symbol, Integer quantity) {
+        int qty = requirePositive(quantity);
+        UserAccount user = lockUser(username);
+        String normalized = quoteService.normalize(symbol);
+        BigDecimal price = quoteService.getPrice(normalized);
+        BigDecimal total = price.multiply(BigDecimal.valueOf(qty));
+
+        if (total.compareTo(user.getSaldo()) > 0) {
+            throw new BadRequestException("Saldo insuficiente: necessario " + total + ", disponivel " + user.getSaldo());
         }
-        Usuario usuario = usuarioService.buscar(username);
-        BigDecimal preco = marketDataService.getPrice(symbol);
-        BigDecimal total = preco.multiply(BigDecimal.valueOf(quantity));
 
-        if (total.compareTo(usuario.getSaldo()) > 0) {
-            throw new InsufficientFundsException();
-        }
+        user.debit(total);
+        Position position = positionRepository.findByUserAndSymbol(user, normalized)
+                .orElseGet(() -> new Position(user, normalized));
+        position.add(qty);
+        positionRepository.save(position);
 
-        usuario.setSaldo(usuario.getSaldo().subtract(total));
-
-        String symbolUpper = symbol.toUpperCase();
-        Posicao posicao = posicaoRepository.findByUsuarioAndSymbol(usuario, symbolUpper)
-                .orElseGet(() -> new Posicao(usuario, symbolUpper, 0));
-        posicao.setQuantity(posicao.getQuantity() + quantity);
-        posicaoRepository.save(posicao);
-
-        Transacao transacao = new Transacao(usuario, symbolUpper, quantity, preco, TipoTransacao.COMPRA, Instant.now());
-        transacaoRepository.save(transacao);
-
-        return new TradeResponse(usuario.getUsername(), symbolUpper, quantity, preco, usuario.getSaldo());
+        return record(user, TransactionType.BUY, normalized, qty, price, total);
     }
 
     @Transactional
-    public TradeResponse sell(String username, String symbol, long quantity) {
-        if (quantity <= 0) {
-            throw new InvalidQuantityException(quantity);
+    public TradeResponse sell(String username, String symbol, Integer quantity) {
+        int qty = requirePositive(quantity);
+        UserAccount user = lockUser(username);
+        String normalized = quoteService.normalize(symbol);
+        BigDecimal price = quoteService.getPrice(normalized);
+
+        Position position = positionRepository.findByUserAndSymbol(user, normalized)
+                .orElseThrow(() -> new BadRequestException("Usuario nao possui acoes de " + normalized));
+        if (position.getQuantity() < qty) {
+            throw new BadRequestException("Quantidade insuficiente: possui " + position.getQuantity()
+                    + ", tentou vender " + qty);
         }
-        Usuario usuario = usuarioService.buscar(username);
-        BigDecimal preco = marketDataService.getPrice(symbol);
-        String symbolUpper = symbol.toUpperCase();
 
-        Posicao posicao = posicaoRepository.findByUsuarioAndSymbol(usuario, symbolUpper)
-                .orElseThrow(InsufficientSharesException::new);
-        if (posicao.getQuantity() < quantity) {
-            throw new InsufficientSharesException();
-        }
+        BigDecimal total = price.multiply(BigDecimal.valueOf(qty));
+        user.credit(total);
+        position.remove(qty);
+        positionRepository.save(position);
 
-        BigDecimal total = preco.multiply(BigDecimal.valueOf(quantity));
-        usuario.setSaldo(usuario.getSaldo().add(total));
-        posicao.setQuantity(posicao.getQuantity() - quantity);
-        posicaoRepository.save(posicao);
-
-        Transacao transacao = new Transacao(usuario, symbolUpper, quantity, preco, TipoTransacao.VENDA, Instant.now());
-        transacaoRepository.save(transacao);
-
-        return new TradeResponse(usuario.getUsername(), symbolUpper, quantity, preco, usuario.getSaldo());
+        return record(user, TransactionType.SELL, normalized, qty, price, total);
     }
 
     @Transactional(readOnly = true)
     public PortfolioResponse portfolio(String username) {
-        Usuario usuario = usuarioService.buscar(username);
-        List<PosicaoResponse> posicoes = posicaoRepository.findByUsuario(usuario).stream()
+        UserAccount user = findUser(username);
+        List<PositionView> positions = positionRepository.findByUserOrderBySymbolAsc(user).stream()
                 .filter(p -> p.getQuantity() > 0)
                 .map(p -> {
-                    BigDecimal precoAtual = marketDataService.getPrice(p.getSymbol());
-                    BigDecimal valorTotal = precoAtual.multiply(BigDecimal.valueOf(p.getQuantity()));
-                    return new PosicaoResponse(p.getSymbol(), p.getQuantity(), precoAtual, valorTotal);
+                    BigDecimal currentPrice = quoteService.getPrice(p.getSymbol());
+                    return new PositionView(p.getSymbol(), p.getQuantity(), currentPrice,
+                            currentPrice.multiply(BigDecimal.valueOf(p.getQuantity())));
                 })
                 .toList();
-        return new PortfolioResponse(usuario.getUsername(), usuario.getSaldo(), posicoes);
+        BigDecimal stocksValue = positions.stream()
+                .map(PositionView::totalValue)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        return new PortfolioResponse(user.getUsername(), positions, user.getSaldo(), stocksValue,
+                user.getSaldo().add(stocksValue));
     }
 
     @Transactional(readOnly = true)
-    public List<TransacaoResponse> historico(String username) {
-        Usuario usuario = usuarioService.buscar(username);
-        return transacaoRepository.findByUsuarioOrderByTimestampAsc(usuario).stream()
-                .map(t -> new TransacaoResponse(t.getSymbol(), t.getTipo().name(), t.getQuantity(), t.getPreco(), t.getTimestamp()))
+    public List<HistoryEntry> history(String username) {
+        UserAccount user = findUser(username);
+        return transactionRepository.findByUserOrderByTimestampAscIdAsc(user).stream()
+                .map(t -> new HistoryEntry(t.getId(), t.getType(), t.getSymbol(), t.getQuantity(),
+                        t.getPrice(), t.getTimestamp()))
                 .toList();
+    }
+
+    private TradeResponse record(UserAccount user, TransactionType type, String symbol, int qty,
+                                 BigDecimal price, BigDecimal total) {
+        TradeTransaction tx = transactionRepository.save(
+                new TradeTransaction(user, type, symbol, qty, price, Instant.now()));
+        return new TradeResponse(tx.getId(), user.getUsername(), type, symbol, qty, price, total,
+                user.getSaldo(), tx.getTimestamp());
+    }
+
+    private static int requirePositive(Integer quantity) {
+        if (quantity == null || quantity <= 0) {
+            throw new BadRequestException("quantity deve ser um inteiro positivo");
+        }
+        return quantity;
+    }
+
+    private UserAccount lockUser(String username) {
+        return userRepository.findByUsernameForUpdate(username)
+                .orElseThrow(() -> new NotFoundException("Usuario nao encontrado: " + username));
+    }
+
+    private UserAccount findUser(String username) {
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new NotFoundException("Usuario nao encontrado: " + username));
     }
 }

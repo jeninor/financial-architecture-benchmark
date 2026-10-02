@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.17.0" timestamp="2026-10-01T21:40:55.241">
+<file name="/app/src/main/java/com/tcc/finance/FinanceMonolitoApplication.java">
+<violation beginline="9" endline="9" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.tcc.finance" class="FinanceMonolitoApplication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static. Consider adding a private no-args constructor to prevent instantiation.
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/controller/MarketController.java">
+<violation beginline="22" endline="22" begincolumn="52" endcolumn="72" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.tcc.finance.controller" class="MarketController" method="quote" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/domain/TradeTransaction.java">
+<violation beginline="20" endline="20" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.domain" class="TradeTransaction" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TradeTransaction' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=7, WMC=9)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/PortfolioResponse.java">
+<violation beginline="7" endline="7" begincolumn="20" endcolumn="28" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PortfolioResponse" variable="username" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'username' may be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PortfolioResponse" variable="saldo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'saldo' may be declared final
+</violation>
+<violation beginline="9" endline="9" begincolumn="35" endcolumn="43" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PortfolioResponse" variable="posicoes" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'posicoes' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/PosicaoResponse.java">
+<violation beginline="5" endline="5" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.dto" class="PosicaoResponse" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'PosicaoResponse' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=4, WMC=5)
+</violation>
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PosicaoResponse" variable="symbol" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'symbol' may be declared final
+</violation>
+<violation beginline="7" endline="7" begincolumn="18" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PosicaoResponse" variable="quantity" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'quantity' may be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="24" endcolumn="34" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PosicaoResponse" variable="precoAtual" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'precoAtual' may be declared final
+</violation>
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="34" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="PosicaoResponse" variable="valorTotal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'valorTotal' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/QuoteResponse.java">
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="QuoteResponse" variable="symbol" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'symbol' may be declared final
+</violation>
+<violation beginline="7" endline="7" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="QuoteResponse" variable="price" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'price' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/TradeRequest.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.dto" class="TradeRequest" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TradeRequest' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=6, WMC=8)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/TradeResponse.java">
+<violation beginline="5" endline="5" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TradeResponse' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=5, WMC=6)
+</violation>
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="28" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" variable="username" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'username' may be declared final
+</violation>
+<violation beginline="7" endline="7" begincolumn="20" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" variable="symbol" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'symbol' may be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="18" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" variable="quantity" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'quantity' may be declared final
+</violation>
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" variable="preco" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'preco' may be declared final
+</violation>
+<violation beginline="10" endline="10" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TradeResponse" variable="saldo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'saldo' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/TransacaoResponse.java">
+<violation beginline="6" endline="6" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'TransacaoResponse' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=5, WMC=6)
+</violation>
+<violation beginline="7" endline="7" begincolumn="20" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" variable="symbol" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'symbol' may be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="24" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" variable="tipo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'tipo' may be declared final
+</violation>
+<violation beginline="9" endline="9" begincolumn="18" endcolumn="26" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" variable="quantity" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'quantity' may be declared final
+</violation>
+<violation beginline="10" endline="10" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" variable="preco" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'preco' may be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="21" endcolumn="30" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="TransacaoResponse" variable="timestamp" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'timestamp' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/dto/UsuarioResponse.java">
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="28" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="UsuarioResponse" variable="username" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'username' may be declared final
+</violation>
+<violation beginline="7" endline="7" begincolumn="24" endcolumn="29" rule="ImmutableField" ruleset="Design" package="com.tcc.finance.dto" class="UsuarioResponse" variable="saldo" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'saldo' may be declared final
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/DuplicateUsernameException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="DuplicateUsernameException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/GlobalExceptionHandler.java">
+<violation beginline="36" endline="36" begincolumn="29" endcolumn="60" rule="UseConcurrentHashMap" ruleset="Multithreading" package="com.tcc.finance.exception" class="GlobalExceptionHandler" method="body" variable="payload" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/InsufficientFundsException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="InsufficientFundsException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/InsufficientSharesException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="InsufficientSharesException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/InvalidQuantityException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="InvalidQuantityException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/SymbolNotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="SymbolNotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/exception/UserNotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.tcc.finance.exception" class="UserNotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/model/Posicao.java">
+<violation beginline="16" endline="16" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.model" class="Posicao" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'Posicao' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=5, WMC=7)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/model/Transacao.java">
+<violation beginline="20" endline="20" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.model" class="Transacao" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'Transacao' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=7, WMC=9)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/model/Usuario.java">
+<violation beginline="15" endline="15" begincolumn="8" endcolumn="13" rule="DataClass" ruleset="Design" package="com.tcc.finance.model" class="Usuario" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'Usuario' is suspected to be a Data Class (WOC=0.000%, NOPA=1, NOAM=4, WMC=6)
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/service/MarketDataService.java">
+<violation beginline="36" endline="36" begincolumn="40" endcolumn="60" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.tcc.finance.service" class="MarketDataService" method="normalize" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<file name="/app/src/main/java/com/tcc/finance/service/TradeService.java">
+<violation beginline="54" endline="54" begincolumn="26" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="com.tcc.finance.service" class="TradeService" method="buy" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSaldo` on foreign value `usuario` (degree 1)
+</violation>
+<violation beginline="56" endline="56" begincolumn="30" endcolumn="50" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.tcc.finance.service" class="TradeService" method="buy" variable="symbolUpper" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="75" endline="75" begincolumn="30" endcolumn="50" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.tcc.finance.service" class="TradeService" method="sell" variable="symbolUpper" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="84" endline="84" begincolumn="26" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="com.tcc.finance.service" class="TradeService" method="sell" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.17.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSaldo` on foreign value `usuario` (degree 1)
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

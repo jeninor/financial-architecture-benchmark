@@ -1,24 +1,22 @@
 package com.tcc.finance.trade.service;
 
-import com.tcc.finance.trade.client.MarketServiceClient;
-import com.tcc.finance.trade.client.UserServiceClient;
-import com.tcc.finance.trade.dto.AmountRequest;
-import com.tcc.finance.trade.dto.PortfolioResponse;
-import com.tcc.finance.trade.dto.PosicaoResponse;
-import com.tcc.finance.trade.dto.QuoteDTO;
-import com.tcc.finance.trade.dto.TradeResponse;
-import com.tcc.finance.trade.dto.TransacaoResponse;
-import com.tcc.finance.trade.dto.UserDTO;
-import com.tcc.finance.trade.event.TradeAuditPublisher;
-import com.tcc.finance.trade.event.TradeCompletedEvent;
-import com.tcc.finance.trade.exception.InsufficientFundsException;
-import com.tcc.finance.trade.exception.InsufficientSharesException;
-import com.tcc.finance.trade.exception.InvalidQuantityException;
-import com.tcc.finance.trade.model.Posicao;
-import com.tcc.finance.trade.model.Transacao;
-import com.tcc.finance.trade.model.TipoTransacao;
-import com.tcc.finance.trade.repository.PosicaoRepository;
-import com.tcc.finance.trade.repository.TransacaoRepository;
+import com.tcc.finance.trade.client.MarketClient;
+import com.tcc.finance.trade.client.UserClient;
+import com.tcc.finance.trade.client.dto.BalanceOperationRequest;
+import com.tcc.finance.trade.client.dto.QuoteDto;
+import com.tcc.finance.trade.client.dto.UserDto;
+import com.tcc.finance.trade.domain.Position;
+import com.tcc.finance.trade.domain.TradeTransaction;
+import com.tcc.finance.trade.domain.TransactionType;
+import com.tcc.finance.trade.exception.BadRequestException;
+import com.tcc.finance.trade.messaging.TradeCompletedEvent;
+import com.tcc.finance.trade.repository.PositionRepository;
+import com.tcc.finance.trade.repository.TradeTransactionRepository;
+import com.tcc.finance.trade.web.dto.HistoryEntry;
+import com.tcc.finance.trade.web.dto.PortfolioResponse;
+import com.tcc.finance.trade.web.dto.PositionView;
+import com.tcc.finance.trade.web.dto.TradeResponse;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,124 +25,111 @@ import java.time.Instant;
 import java.util.List;
 
 /**
- * Orquestra compra/venda/portfolio/historico no trade-service, consultando
- * user-service e market-service via OpenFeign.
- *
- * <p><b>Trade-off assumido (fora do escopo do experimento, conforme
- * AGENTE1_ESPECIFICACAO.md):</b> a operacao de trade NAO e uma transacao
- * distribuida. O saldo e debitado/creditado no user-service e a
- * posicao/transacao e persistida localmente no trade-service em passos
- * separados, sem Saga nem 2PC. Se o passo remoto (debito/credito no
- * user-service) tiver sucesso mas a escrita local falhar (ou vice-versa),
- * os dados dos dois servicos podem ficar temporariamente inconsistentes.
- * Isso e tratado como consistencia eventual aceita como limitacao
- * documentada do desenho de microsservicos, nao como um bug a corrigir
- * neste agente.</p>
+ * Compra/venda/portfolio/historico. Saldo vive no user-service e cotacoes no
+ * market-service (OpenFeign). Sem Saga/2PC: o debito/credito remoto acontece antes
+ * da escrita local, e o evento trade.completed so e publicado apos o commit local
+ * (ver TradeEventPublisher).
  */
 @Service
 public class TradeService {
 
-    private final UserServiceClient userServiceClient;
-    private final MarketServiceClient marketServiceClient;
-    private final PosicaoRepository posicaoRepository;
-    private final TransacaoRepository transacaoRepository;
-    private final TradeAuditPublisher tradeAuditPublisher;
+    private final UserClient userClient;
+    private final MarketClient marketClient;
+    private final PositionRepository positionRepository;
+    private final TradeTransactionRepository transactionRepository;
+    private final ApplicationEventPublisher eventPublisher;
 
-    public TradeService(UserServiceClient userServiceClient,
-                         MarketServiceClient marketServiceClient,
-                         PosicaoRepository posicaoRepository,
-                         TransacaoRepository transacaoRepository,
-                         TradeAuditPublisher tradeAuditPublisher) {
-        this.userServiceClient = userServiceClient;
-        this.marketServiceClient = marketServiceClient;
-        this.posicaoRepository = posicaoRepository;
-        this.transacaoRepository = transacaoRepository;
-        this.tradeAuditPublisher = tradeAuditPublisher;
+    public TradeService(UserClient userClient,
+                        MarketClient marketClient,
+                        PositionRepository positionRepository,
+                        TradeTransactionRepository transactionRepository,
+                        ApplicationEventPublisher eventPublisher) {
+        this.userClient = userClient;
+        this.marketClient = marketClient;
+        this.positionRepository = positionRepository;
+        this.transactionRepository = transactionRepository;
+        this.eventPublisher = eventPublisher;
     }
 
     @Transactional
-    public TradeResponse buy(String username, String symbol, long quantity) {
-        if (quantity <= 0) {
-            throw new InvalidQuantityException(quantity);
-        }
+    public TradeResponse buy(String username, String symbol, Integer quantity) {
+        int qty = requirePositive(quantity);
+        userClient.getUser(username);
+        QuoteDto quote = marketClient.quote(symbol);
+        BigDecimal total = quote.price().multiply(BigDecimal.valueOf(qty));
 
-        UserDTO usuario = userServiceClient.getUser(username);
-        QuoteDTO quote = marketServiceClient.getQuote(symbol);
-        String symbolUpper = quote.getSymbol() != null ? quote.getSymbol() : symbol.toUpperCase();
-        BigDecimal total = quote.getPrice().multiply(BigDecimal.valueOf(quantity));
+        // O user-service valida o saldo (400 se insuficiente) sob lock pessimista.
+        UserDto updated = userClient.debit(username, new BalanceOperationRequest(total));
 
-        if (total.compareTo(usuario.getSaldo()) > 0) {
-            throw new InsufficientFundsException();
-        }
+        Position position = positionRepository.findByUsernameAndSymbolForUpdate(username, quote.symbol())
+                .orElseGet(() -> new Position(username, quote.symbol()));
+        position.add(qty);
+        positionRepository.save(position);
 
-        UserDTO atualizado = userServiceClient.debit(username, new AmountRequest(total));
-
-        Posicao posicao = posicaoRepository.findByUsernameAndSymbol(username, symbolUpper)
-                .orElseGet(() -> new Posicao(username, symbolUpper, 0));
-        posicao.setQuantity(posicao.getQuantity() + quantity);
-        posicaoRepository.save(posicao);
-
-        Instant agora = Instant.now();
-        transacaoRepository.save(new Transacao(username, symbolUpper, quantity, quote.getPrice(), TipoTransacao.COMPRA, agora));
-
-        tradeAuditPublisher.publicar(new TradeCompletedEvent(username, symbolUpper, TipoTransacao.COMPRA.name(), quantity, quote.getPrice(), agora));
-
-        return new TradeResponse(username, symbolUpper, quantity, quote.getPrice(), atualizado.getSaldo());
+        return record(updated, TransactionType.BUY, quote, qty, total);
     }
 
     @Transactional
-    public TradeResponse sell(String username, String symbol, long quantity) {
-        if (quantity <= 0) {
-            throw new InvalidQuantityException(quantity);
+    public TradeResponse sell(String username, String symbol, Integer quantity) {
+        int qty = requirePositive(quantity);
+        userClient.getUser(username);
+        QuoteDto quote = marketClient.quote(symbol);
+
+        Position position = positionRepository.findByUsernameAndSymbolForUpdate(username, quote.symbol())
+                .orElseThrow(() -> new BadRequestException("Usuario nao possui acoes de " + quote.symbol()));
+        if (position.getQuantity() < qty) {
+            throw new BadRequestException("Quantidade insuficiente: possui " + position.getQuantity()
+                    + ", tentou vender " + qty);
         }
 
-        userServiceClient.getUser(username);
+        BigDecimal total = quote.price().multiply(BigDecimal.valueOf(qty));
+        UserDto updated = userClient.credit(username, new BalanceOperationRequest(total));
+        position.remove(qty);
+        positionRepository.save(position);
 
-        String symbolUpper = symbol.toUpperCase();
-        Posicao posicao = posicaoRepository.findByUsernameAndSymbol(username, symbolUpper)
-                .orElseThrow(InsufficientSharesException::new);
-        if (posicao.getQuantity() < quantity) {
-            throw new InsufficientSharesException();
-        }
-
-        QuoteDTO quote = marketServiceClient.getQuote(symbol);
-        BigDecimal total = quote.getPrice().multiply(BigDecimal.valueOf(quantity));
-
-        UserDTO atualizado = userServiceClient.credit(username, new AmountRequest(total));
-
-        posicao.setQuantity(posicao.getQuantity() - quantity);
-        posicaoRepository.save(posicao);
-
-        Instant agora = Instant.now();
-        transacaoRepository.save(new Transacao(username, symbolUpper, quantity, quote.getPrice(), TipoTransacao.VENDA, agora));
-
-        tradeAuditPublisher.publicar(new TradeCompletedEvent(username, symbolUpper, TipoTransacao.VENDA.name(), quantity, quote.getPrice(), agora));
-
-        return new TradeResponse(username, symbolUpper, quantity, quote.getPrice(), atualizado.getSaldo());
+        return record(updated, TransactionType.SELL, quote, qty, total);
     }
 
     @Transactional(readOnly = true)
     public PortfolioResponse portfolio(String username) {
-        UserDTO usuario = userServiceClient.getUser(username);
-
-        List<PosicaoResponse> posicoes = posicaoRepository.findByUsername(username).stream()
+        UserDto user = userClient.getUser(username);
+        List<PositionView> positions = positionRepository.findByUsernameOrderBySymbolAsc(username).stream()
                 .filter(p -> p.getQuantity() > 0)
                 .map(p -> {
-                    QuoteDTO quote = marketServiceClient.getQuote(p.getSymbol());
-                    BigDecimal valorTotal = quote.getPrice().multiply(BigDecimal.valueOf(p.getQuantity()));
-                    return new PosicaoResponse(p.getSymbol(), p.getQuantity(), quote.getPrice(), valorTotal);
+                    BigDecimal currentPrice = marketClient.quote(p.getSymbol()).price();
+                    return new PositionView(p.getSymbol(), p.getQuantity(), currentPrice,
+                            currentPrice.multiply(BigDecimal.valueOf(p.getQuantity())));
                 })
                 .toList();
-
-        return new PortfolioResponse(username, usuario.getSaldo(), posicoes);
+        BigDecimal stocksValue = positions.stream()
+                .map(PositionView::totalValue)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        return new PortfolioResponse(user.username(), positions, user.saldo(), stocksValue,
+                user.saldo().add(stocksValue));
     }
 
     @Transactional(readOnly = true)
-    public List<TransacaoResponse> historico(String username) {
-        userServiceClient.getUser(username);
-
-        return transacaoRepository.findByUsernameOrderByTimestampAsc(username).stream()
-                .map(t -> new TransacaoResponse(t.getSymbol(), t.getTipo().name(), t.getQuantity(), t.getPreco(), t.getTimestamp()))
+    public List<HistoryEntry> history(String username) {
+        userClient.getUser(username);
+        return transactionRepository.findByUsernameOrderByTimestampAscIdAsc(username).stream()
+                .map(t -> new HistoryEntry(t.getId(), t.getType(), t.getSymbol(), t.getQuantity(),
+                        t.getPrice(), t.getTimestamp()))
                 .toList();
+    }
+
+    private TradeResponse record(UserDto user, TransactionType type, QuoteDto quote, int qty, BigDecimal total) {
+        TradeTransaction tx = transactionRepository.save(
+                new TradeTransaction(user.username(), type, quote.symbol(), qty, quote.price(), Instant.now()));
+        eventPublisher.publishEvent(new TradeCompletedEvent(tx.getId(), user.username(), type, quote.symbol(),
+                qty, quote.price(), total, user.saldo(), tx.getTimestamp()));
+        return new TradeResponse(tx.getId(), user.username(), type, quote.symbol(), qty, quote.price(), total,
+                user.saldo(), tx.getTimestamp());
+    }
+
+    private static int requirePositive(Integer quantity) {
+        if (quantity == null || quantity <= 0) {
+            throw new BadRequestException("quantity deve ser um inteiro positivo");
+        }
+        return quantity;
     }
 }

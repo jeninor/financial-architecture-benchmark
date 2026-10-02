@@ -1,0 +1,1694 @@
+{
+  "inputs": {
+    "monolito": "trivy_monolito_20261001_192804.json",
+    "microservicos": "trivy_microservicos_20261001_192804.json",
+    "same_timestamp": true,
+    "trivy_version": "0.75.0",
+    "created_at": {
+      "monolito": "2026-10-01T22:29:29.342433398Z",
+      "microservicos": "2026-10-01T22:30:25.512235643Z"
+    }
+  },
+  "monolito_runs": {
+    "trivy_monolito_20261001_120623.json": {
+      "CRITICAL": 7,
+      "HIGH": 31,
+      "MEDIUM": 32,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "trivy_monolito_20261001_124850.json": {
+      "CRITICAL": 7,
+      "HIGH": 31,
+      "MEDIUM": 32,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "trivy_monolito_20261001_132208.json": {
+      "CRITICAL": 7,
+      "HIGH": 31,
+      "MEDIUM": 32,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "trivy_monolito_20261001_192804.json": {
+      "CRITICAL": 7,
+      "HIGH": 33,
+      "MEDIUM": 32,
+      "LOW": 14,
+      "UNKNOWN": 0
+    }
+  },
+  "targets": {
+    "monolito": [
+      "pom.xml"
+    ],
+    "microservicos": {
+      "api-gateway/pom.xml": 107,
+      "eureka-server/pom.xml": 95,
+      "market-service/pom.xml": 99,
+      "trade-service/pom.xml": 111,
+      "user-service/pom.xml": 111
+    }
+  },
+  "raw_by_severity": {
+    "monolito": {
+      "CRITICAL": 7,
+      "HIGH": 33,
+      "MEDIUM": 32,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "microservicos": {
+      "CRITICAL": 40,
+      "HIGH": 202,
+      "MEDIUM": 207,
+      "LOW": 74,
+      "UNKNOWN": 0
+    }
+  },
+  "distinct_by_severity": {
+    "monolito": {
+      "CRITICAL": 7,
+      "HIGH": 33,
+      "MEDIUM": 31,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "microservicos": {
+      "CRITICAL": 11,
+      "HIGH": 66,
+      "MEDIUM": 67,
+      "LOW": 18,
+      "UNKNOWN": 0
+    }
+  },
+  "distinct_total": {
+    "monolito": 85,
+    "microservicos": 162
+  },
+  "shared": {
+    "count": 85,
+    "by_severity": {
+      "CRITICAL": 7,
+      "HIGH": 33,
+      "MEDIUM": 31,
+      "LOW": 14,
+      "UNKNOWN": 0
+    },
+    "top_pkgs": [
+      [
+        "org.apache.tomcat.embed:tomcat-embed-core",
+        33
+      ],
+      [
+        "org.springframework:spring-webmvc",
+        13
+      ],
+      [
+        "com.fasterxml.jackson.core:jackson-databind",
+        11
+      ],
+      [
+        "ch.qos.logback:logback-core",
+        6
+      ],
+      [
+        "com.fasterxml.jackson.core:jackson-core",
+        4
+      ],
+      [
+        "org.springframework.data:spring-data-commons",
+        3
+      ],
+      [
+        "org.springframework:spring-expression",
+        3
+      ],
+      [
+        "org.postgresql:postgresql",
+        3
+      ],
+      [
+        "org.springframework.boot:spring-boot",
+        2
+      ],
+      [
+        "org.springframework:spring-web",
+        2
+      ]
+    ],
+    "sample": [
+      {
+        "id": "CVE-2025-24813",
+        "severity": "CRITICAL",
+        "pkgs": [
+          "org.apache.tomcat.embed:tomcat-embed-core"
+        ],
+        "installed_mono": [
+          "10.1.30"
+        ],
+        "installed_micro": [
+          "10.1.30"
+        ],
+        "title": "tomcat: Potential RCE and/or information disclosure and/or information corruption with partial PUT"
+      },
+      {
+        "id": "CVE-2026-41293",
+        "severity": "CRITICAL",
+        "pkgs": [
+          "org.apache.tomcat.embed:tomcat-embed-core"
+        ],
+        "installed_mono": [
+          "10.1.30"
+        ],
+        "installed_micro": [
+          "10.1.30"
+        ],
+        "title": "tomcat-coyote: Apache Tomcat: HTTP/2 request headers not validated"
+      },
+      {
+        "id": "CVE-2026-43512",
+        "severity": "CRITICAL",
+        "pkgs": [
+          "org.apache.tomcat.embed:tomcat-embed-core"
+        ],
+        "installed_mono": [
+          "10.1.30"
+        ],
+        "installed_micro": [
+          "10.1.30"
+        ],
+        "title": "tomcat-coyote: Apache Tomcat: Authentication bypass via digest authentication"
+      },
+      {
+        "id": "CVE-2026-43515",
+        "severity": "CRITICAL",
+        "pkgs": [
+          "org.apache.tomcat.embed:tomcat-embed-core"
+        ],
+        "installed_mono": [
+          "10.1.30"
+        ],
+        "installed_micro": [
+          "10.1.30"
+        ],
+        "title": "tomcat-coyote: tomcat: Improper Authorization allows security bypass"
+      },
+      {
+        "id": "CVE-2026-65182",
+        "severity": "CRITICAL",
+        "pkgs": [
+          "org.apache.tomcat.embed:tomcat-embed-core"
+        ],
+        "installed_mono": [
+          "10.1.30"
+        ],
+        "installed_micro": [
+          "10.1.30"
+        ],
+        "title": "tomcat: Apache Tomcat: Security constraint bypass due to improper access control"
+      }
+    ]
+  },
+  "exclusive_micro": {
+    "count": 77,
+    "by_severity": {
+      "CRITICAL": 4,
+      "HIGH": 33,
+      "MEDIUM": 36,
+      "LOW": 4,
+      "UNKNOWN": 0
+    },
+    "groups": [
+      {
+        "pkg": "io.netty:netty-codec-http",
+        "distinct_cves": 18,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 6,
+          "MEDIUM": 11,
+          "LOW": 1,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-codec-http2",
+        "distinct_cves": 8,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 4,
+          "MEDIUM": 4,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "com.rabbitmq:amqp-client",
+        "distinct_cves": 7,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 4,
+          "MEDIUM": 2,
+          "LOW": 1,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "5.21.0"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.boot:spring-boot-starter-amqp"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-handler",
+        "distinct_cves": 6,
+        "by_severity": {
+          "CRITICAL": 1,
+          "HIGH": 4,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "org.bouncycastle:bcprov-jdk18on",
+        "distinct_cves": 4,
+        "by_severity": {
+          "CRITICAL": 2,
+          "HIGH": 1,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.78"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+          "org.springframework.cloud:spring-cloud-starter-openfeign"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-codec",
+        "distinct_cves": 3,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 2,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-resolver-dns",
+        "distinct_cves": 3,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 2,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "org.springframework:spring-webflux",
+        "distinct_cves": 3,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 3,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "6.1.13"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-codec-dns",
+        "distinct_cves": 2,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-common",
+        "distinct_cves": 2,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 2,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "org.springframework.amqp:spring-amqp",
+        "distinct_cves": 2,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 2,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "3.1.7"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.boot:spring-boot-starter-amqp"
+        ]
+      },
+      {
+        "pkg": "org.springframework.cloud:spring-cloud-gateway-server",
+        "distinct_cves": 2,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 2,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.5"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "com.fasterxml.woodstox:woodstox-core",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "6.2.1"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
+        ]
+      },
+      {
+        "pkg": "com.thoughtworks.xstream:xstream",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.4.20"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "commons-configuration:commons-configuration",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 1,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.10"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "commons-fileupload:commons-fileupload",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.5"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-openfeign"
+        ]
+      },
+      {
+        "pkg": "commons-io:commons-io",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "2.11.0"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-openfeign"
+        ]
+      },
+      {
+        "pkg": "commons-lang:commons-lang",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "2.6"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "io.micrometer:micrometer-core",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.13.4"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "eureka-server"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-handler-proxy",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 1,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.netty:netty-transport-native-epoll",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.1.113.Final"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "io.projectreactor.netty:reactor-netty-http",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "1.1.22"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway"
+        ]
+      },
+      {
+        "pkg": "org.apache.httpcomponents.client5:httpclient5",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "5.3.1"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.apache.httpcomponents.core5:httpcore5",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "5.2.5"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.apache.httpcomponents.core5:httpcore5-h2",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "5.2.5"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.apache.httpcomponents:httpclient",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "4.5.3"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.freemarker:freemarker",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 1,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "2.3.33"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "eureka-server"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.springframework.boot:spring-boot-starter-actuator",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "3.3.4"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "eureka-server"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+        ]
+      },
+      {
+        "pkg": "org.springframework.retry:spring-retry",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 1,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "2.0.9"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.boot:spring-boot-starter-amqp"
+        ]
+      },
+      {
+        "pkg": "org.springframework.security:spring-security-crypto",
+        "distinct_cves": 1,
+        "by_severity": {
+          "CRITICAL": 0,
+          "HIGH": 1,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "UNKNOWN": 0
+        },
+        "installed": [
+          "6.3.3"
+        ],
+        "present_in_other_arch": [],
+        "modules": [
+          "api-gateway",
+          "eureka-server",
+          "market-service",
+          "trade-service",
+          "user-service"
+        ],
+        "direct_origins": [
+          "org.springframework.cloud:spring-cloud-starter-gateway",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+          "org.springframework.cloud:spring-cloud-starter-openfeign"
+        ]
+      }
+    ]
+  },
+  "exclusive_mono": {
+    "count": 0,
+    "by_severity": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "UNKNOWN": 0
+    },
+    "groups": []
+  },
+  "actionable_exclusive_micro": [
+    {
+      "pkg": "com.rabbitmq:amqp-client",
+      "installed": "5.21.0",
+      "target_version": "5.34.0",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-63337",
+        "CVE-2026-69219",
+        "CVE-2026-69220",
+        "CVE-2026-75516"
+      ],
+      "fixed_fields": [
+        "5.33.0",
+        "5.33.1",
+        "5.34.0"
+      ],
+      "modules": [
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-amqp"
+      ]
+    },
+    {
+      "pkg": "com.thoughtworks.xstream:xstream",
+      "installed": "1.4.20",
+      "target_version": "1.4.21",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2024-47072"
+      ],
+      "fixed_fields": [
+        "1.4.21"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "commons-fileupload:commons-fileupload",
+      "installed": "1.5",
+      "target_version": "1.6.0",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-48976"
+      ],
+      "fixed_fields": [
+        "1.6.0"
+      ],
+      "modules": [
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "commons-io:commons-io",
+      "installed": "2.11.0",
+      "target_version": "2.14.0",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2024-47554"
+      ],
+      "fixed_fields": [
+        "2.14.0"
+      ],
+      "modules": [
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "io.micrometer:micrometer-core",
+      "installed": "1.13.4",
+      "target_version": "1.15.12",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-40984"
+      ],
+      "fixed_fields": [
+        "1.16.6, 1.15.12"
+      ],
+      "modules": [
+        "eureka-server"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-codec",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.136.Final",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-42583",
+        "CVE-2026-59901"
+      ],
+      "fixed_fields": [
+        "4.1.133.Final",
+        "4.1.136.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-codec-dns",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.133.Final",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-42579"
+      ],
+      "fixed_fields": [
+        "4.2.13.Final, 4.1.133.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-codec-http",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.136.Final",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-33870",
+        "CVE-2026-42584",
+        "CVE-2026-42587",
+        "CVE-2026-55831",
+        "CVE-2026-55833",
+        "CVE-2026-56745"
+      ],
+      "fixed_fields": [
+        "4.1.132.Final, 4.2.10.Final",
+        "4.2.13.Final, 4.1.133.Final",
+        "4.2.16.Final, 4.1.136.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-codec-http2",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.136.Final",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-55163",
+        "CVE-2026-33871",
+        "CVE-2026-42587",
+        "CVE-2026-56819"
+      ],
+      "fixed_fields": [
+        "4.1.132.Final, 4.2.11.Final",
+        "4.2.13.Final, 4.1.133.Final",
+        "4.2.16.Final, 4.1.136.Final",
+        "4.2.4.Final, 4.1.124.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-handler",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.137.Final",
+      "jump": "patch",
+      "severities": [
+        "CRITICAL",
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-24970",
+        "CVE-2026-44249",
+        "CVE-2026-45416",
+        "CVE-2026-50010",
+        "CVE-2026-75595"
+      ],
+      "fixed_fields": [
+        "4.1.118.Final",
+        "4.2.15.Final, 4.1.135.Final",
+        "4.2.17.Final, 4.1.137.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "io.netty:netty-resolver-dns",
+      "installed": "4.1.113.Final",
+      "target_version": "4.1.135.Final",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-45674",
+        "CVE-2026-47691"
+      ],
+      "fixed_fields": [
+        "4.2.15.Final, 4.1.135.Final"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "org.apache.httpcomponents.core5:httpcore5",
+      "installed": "5.2.5",
+      "target_version": "5.4.3",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-54399"
+      ],
+      "fixed_fields": [
+        "5.4.3, 5.5-beta2"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.apache.httpcomponents.core5:httpcore5-h2",
+      "installed": "5.2.5",
+      "target_version": "5.4.3",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-54428"
+      ],
+      "fixed_fields": [
+        "5.4.3, 5.5-beta2"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.bouncycastle:bcprov-jdk18on",
+      "installed": "1.78",
+      "target_version": "1.85",
+      "jump": "minor",
+      "severities": [
+        "CRITICAL",
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-14813",
+        "CVE-2026-13506",
+        "CVE-2026-8763"
+      ],
+      "fixed_fields": [
+        "1.80.2, 1.81.1, 1.84",
+        "1.85"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "org.freemarker:freemarker",
+      "installed": "2.3.33",
+      "target_version": "2.3.35",
+      "jump": "patch",
+      "severities": [
+        "CRITICAL"
+      ],
+      "cves": [
+        "CVE-2026-84939"
+      ],
+      "fixed_fields": [
+        "2.3.35"
+      ],
+      "modules": [
+        "eureka-server"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.springframework.boot:spring-boot-starter-actuator",
+      "installed": "3.3.4",
+      "target_version": "3.5.12",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-22733"
+      ],
+      "fixed_fields": [
+        "4.0.4, 3.5.12"
+      ],
+      "modules": [
+        "eureka-server"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.springframework.cloud:spring-cloud-gateway-server",
+      "installed": "4.1.5",
+      "target_version": "4.2.6",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-41235",
+        "CVE-2025-41253"
+      ],
+      "fixed_fields": [
+        "4.2.3, 4.1.8, 3.1.10",
+        "4.3.2, 4.2.6"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "org.springframework.security:spring-security-crypto",
+      "installed": "6.3.3",
+      "target_version": "6.3.8",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-22228"
+      ],
+      "fixed_fields": [
+        "6.3.8, 6.4.4, 6.2.10, 6.1.14, 6.0.16, 5.8.18, 5.7.16"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    }
+  ],
+  "actionable_shared": [
+    {
+      "pkg": "com.fasterxml.jackson.core:jackson-core",
+      "installed": "2.17.2",
+      "target_version": "2.18.11",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-89407",
+        "CVE-2026-89425",
+        "GHSA-r7wm-3cxj-wff9"
+      ],
+      "fixed_fields": [
+        "2.18.11, 2.21.7, 2.22.3",
+        "2.18.8, 2.21.4",
+        "2.21.7, 2.22.3, 2.18.11"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "com.fasterxml.jackson.core:jackson-databind",
+      "installed": "2.17.2",
+      "target_version": "2.18.11",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-54512",
+        "CVE-2026-54513",
+        "CVE-2026-68497",
+        "CVE-2026-91776",
+        "CVE-2026-91777"
+      ],
+      "fixed_fields": [
+        "2.18.10, 2.21.6, 2.22.2",
+        "2.18.11, 2.21.7, 2.22.3",
+        "2.18.8, 2.21.4, 3.1.4",
+        "2.18.8, 3.1.4, 2.21.4",
+        "2.21.7, 2.18.11, 2.22.3"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.apache.tomcat.embed:tomcat-embed-core",
+      "installed": "10.1.30",
+      "target_version": "10.1.58",
+      "jump": "patch",
+      "severities": [
+        "CRITICAL",
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2024-50379",
+        "CVE-2024-56337",
+        "CVE-2025-24813",
+        "CVE-2025-48988",
+        "CVE-2025-48989",
+        "CVE-2025-52520",
+        "CVE-2025-53506",
+        "CVE-2025-55752",
+        "CVE-2026-24734",
+        "CVE-2026-24880",
+        "CVE-2026-34483",
+        "CVE-2026-34487",
+        "CVE-2026-41284",
+        "CVE-2026-41293",
+        "CVE-2026-42498",
+        "CVE-2026-43512",
+        "CVE-2026-43513",
+        "CVE-2026-43515",
+        "CVE-2026-65182",
+        "CVE-2026-65905",
+        "CVE-2026-68525"
+      ],
+      "fixed_fields": [
+        "11.0.10, 10.1.44, 9.0.108",
+        "11.0.11, 10.1.45, 9.0.109",
+        "11.0.18, 10.1.52, 9.0.115",
+        "11.0.2, 10.1.34, 9.0.98",
+        "11.0.25, 10.1.58, 9.0.121",
+        "11.0.3, 10.1.35, 9.0.99",
+        "11.0.8, 10.1.42, 9.0.106",
+        "11.0.9, 10.1.43, 9.0.107",
+        "9.0.107, 10.1.43, 11.0.9",
+        "9.0.116, 10.1.52, 11.0.20",
+        "9.0.116, 10.1.54, 11.0.21",
+        "9.0.117, 10.1.54, 11.0.21",
+        "9.0.118, 10.1.55, 11.0.22"
+      ],
+      "modules": [
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    },
+    {
+      "pkg": "org.postgresql:postgresql",
+      "installed": "42.7.4",
+      "target_version": "42.7.12",
+      "jump": "patch",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-49146",
+        "CVE-2026-42198",
+        "CVE-2026-54291"
+      ],
+      "fixed_fields": [
+        "42.7.11",
+        "42.7.12",
+        "42.7.7"
+      ],
+      "modules": [
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.postgresql:postgresql"
+      ]
+    },
+    {
+      "pkg": "org.springframework.boot:spring-boot",
+      "installed": "3.3.4",
+      "target_version": "3.5.14",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-22235",
+        "CVE-2026-40973"
+      ],
+      "fixed_fields": [
+        "3.3.11, 3.4.5",
+        "4.0.6, 3.5.14"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-amqp",
+        "org.springframework.boot:spring-boot-starter-data-jpa",
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "org.springframework.data:spring-data-commons",
+      "installed": "3.3.4",
+      "target_version": "3.5.12",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-41716"
+      ],
+      "fixed_fields": [
+        "4.0.6, 3.5.12"
+      ],
+      "modules": [
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-data-jpa"
+      ]
+    },
+    {
+      "pkg": "org.springframework:spring-core",
+      "installed": "6.1.13",
+      "target_version": "6.2.11",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2025-41249"
+      ],
+      "fixed_fields": [
+        "6.2.11"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-amqp",
+        "org.springframework.boot:spring-boot-starter-data-jpa",
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "org.springframework:spring-expression",
+      "installed": "6.1.13",
+      "target_version": "6.2.19",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2026-41850"
+      ],
+      "fixed_fields": [
+        "7.0.8, 6.2.19"
+      ],
+      "modules": [
+        "api-gateway",
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-amqp",
+        "org.springframework.boot:spring-boot-starter-data-jpa",
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-gateway",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+        "org.springframework.cloud:spring-cloud-starter-openfeign"
+      ]
+    },
+    {
+      "pkg": "org.springframework:spring-webflux",
+      "installed": "6.1.13",
+      "target_version": "6.2.19",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2024-38819",
+        "CVE-2026-41842"
+      ],
+      "fixed_fields": [
+        "6.1.14",
+        "7.0.8, 6.2.19"
+      ],
+      "modules": [
+        "api-gateway"
+      ],
+      "direct_origins": [
+        "org.springframework.cloud:spring-cloud-starter-gateway"
+      ]
+    },
+    {
+      "pkg": "org.springframework:spring-webmvc",
+      "installed": "6.1.13",
+      "target_version": "6.2.19",
+      "jump": "minor",
+      "severities": [
+        "HIGH"
+      ],
+      "cves": [
+        "CVE-2024-38819",
+        "CVE-2026-41842",
+        "CVE-2026-41845"
+      ],
+      "fixed_fields": [
+        "6.1.14",
+        "7.0.8, 6.2.19"
+      ],
+      "modules": [
+        "eureka-server",
+        "market-service",
+        "trade-service",
+        "user-service"
+      ],
+      "direct_origins": [
+        "org.springframework.boot:spring-boot-starter-web",
+        "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+      ]
+    }
+  ]
+}
