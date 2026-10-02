@@ -1,0 +1,26 @@
+baseline_policy:
+  version: v1
+  objective: >
+    Freeze architecture and infrastructure while removing the completed
+    business implementation so Claude must implement the functional contract.
+  preserve:
+    - docker_compose_topology
+    - pom_dependencies
+    - application_configuration
+    - spring_boot_main_classes
+  remove:
+    - business_logic
+    - controllers
+    - domain_entities
+    - repositories
+    - dtos
+    - internal_clients
+    - messaging_java_implementation
+    - project_tests
+    - target_directories
+  acceptance_tests:
+    location: outside_agent_workspace
+    agent_may_modify: false
+  manual_reference:
+    use: comparison_only
+    may_seed_agent_workspace: false

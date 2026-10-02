@@ -1,0 +1,30 @@
+# Papéis das implementações no estudo
+
+legacy-chatpt:
+  role: manual_reference_v1
+  description: >
+    Implementação anterior já concluída e medida. É a fonte dos valores de
+    LOC, arquivos, Lizard, complexidade ciclomática e 12 testes funcionais.
+  orchestration: user_in_the_loop
+  baseline_source_for_automated_experiment: true
+
+tcc-financeiro:
+  role: manual_multiagent_claude_reference
+  description: >
+    Implementação com Claude e quatro papéis/agentes, porém sem orquestração
+    automática entre agentes. O usuário fez a mediação das conversas e
+    transferiu contexto/resultados entre eles.
+  orchestration: manual_user_mediated
+  baseline_source_for_automated_experiment: false
+  recommended_use:
+    - historical_process_comparison
+    - qualitative_reference
+    - quantitative_reference_if_metrics_are_collected_with_same_tools
+
+multiagent-experiment:
+  role: automated_multiagent_claude_experiment
+  description: >
+    Nova fase com Claude, workspaces limpos, baselines congelados, contratos
+    estruturados e agentes A1/A3 generativos + A2/A4 determinísticos.
+  orchestration: automated_python
+  baseline_source: legacy-chatpt

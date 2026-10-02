@@ -1,0 +1,48 @@
+{
+  "version": "1.0-locked",
+  "base_url_default": "http://localhost:8080",
+
+  "quotes": {
+    "AAPL": 200.00,
+    "MSFT": 400.00,
+    "GOOGL": 170.00,
+    "AMZN": 190.00,
+    "NVDA": 120.00
+  },
+
+  "endpoints": {
+    "create_user": "POST /api/users",
+    "quote": "GET /api/quotes/{symbol}",
+    "buy": "POST /api/trades/buy",
+    "sell": "POST /api/trades/sell",
+    "portfolio": "GET /api/users/{userId}/portfolio",
+    "history": "GET /api/users/{userId}/trades"
+  },
+
+  "expected_status": {
+    "quote_valid": [200],
+    "quote_invalid": [400],
+    "create_user": [201],
+    "duplicate_user": [400],
+    "buy_valid": [201],
+    "buy_insufficient": [400],
+    "shares_zero": [400],
+    "portfolio": [200],
+    "sell_valid": [201],
+    "oversell": [400],
+    "history": [200],
+    "unknown_user": [404]
+  },
+
+  "field_aliases": {
+    "user_id": ["id", "userId", "user_id"],
+    "cash": ["cash", "balance", "cashBalance"],
+    "price": ["price", "quote", "currentPrice"],
+    "symbol": ["symbol", "ticker"],
+    "holdings": ["holdings", "positions", "assets"],
+    "shares": ["shares", "quantity", "qty"],
+    "market_value": ["marketValue", "value", "totalValue"],
+    "portfolio_total": ["totalValue", "total", "portfolioValue"],
+    "trade_type": ["type", "tradeType", "operation"]
+  }
+}
