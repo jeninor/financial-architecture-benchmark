@@ -1,0 +1,12 @@
+{
+  "baseline": [
+    "app",
+    "postgres",
+    "postgres-test"
+  ],
+  "current": [
+    "app",
+    "postgres",
+    "postgres-test"
+  ]
+}

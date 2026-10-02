@@ -1,0 +1,99 @@
+{
+  "duration_api_ms": 148810,
+  "stop_reason": "end_turn",
+  "session_id": "8381556b-a21a-4346-8330-3936023ea1a8",
+  "total_cost_usd": 0.881136,
+  "usage": {
+    "input_tokens": 30,
+    "cache_creation_input_tokens": 45981,
+    "cache_read_input_tokens": 592940,
+    "output_tokens": 19729,
+    "output_tokens_details": {
+      "thinking_tokens": 2039
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 45981,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1438,
+        "cache_read_input_tokens": 57096,
+        "cache_creation_input_tokens": 497,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 497
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 30,
+      "outputTokens": 19729,
+      "cacheReadInputTokens": 592940,
+      "cacheCreationInputTokens": 45981,
+      "webSearchRequests": 0,
+      "costUSD": 0.881136,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2039,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 37,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "A implementação está pronta e funcionando: a aplicação está no ar em `http://localhost:8080`, o build Maven passa e os 6 endpoints responderam com os status do contrato no smoke test.\n\n**Arquivos criados ou modificados** (todos em `financial-monolith/`; `docker-compose.yml` e `pom.xml` não foram alterados)\n- `src/main/resources/application.yml`: adicionei `spring.jackson.deserialization.accept-float-as-int: false`, para que `shares: 1.5` retorne 400 em vez de ser truncado.\n- Novas classes em `src/main/java/com/juanesteban/tcc/finance/`:\n  - `common/`: `BusinessException` (400), `NotFoundException` (404) e `GlobalExceptionHandler` (validação e JSON/UUID malformado → 400).\n  - `quote/`: `Quote`, `QuoteService` (as 5 cotações fixas) e `QuoteController`.\n  - `user/`: `UserAccount`, `UserRepository`, `UserService`, `CreateUserRequest`, `UserResponse` e `UserController`. O saldo inicial é 10000.00 e a resposta expõe o UUID em `id` e em `userId`.\n  - `trade/`: `Trade`, `TradeType`, `TradeRepository`, `TradeRequest`, `TradeResponse`, `TradeService` e `TradeController` (`buy`, `sell` e histórico).\n  - `portfolio/`: `Holding`, `HoldingRepository`, `PortfolioService`, `PortfolioResponse` e `PortfolioController`. A resposta traz `cash`, `cashBalance`, `holdings` e `totalValue`.\n- Cada compra ou venda roda em uma única transação, com o usuário travado no banco durante a operação. Assim, uma operação rejeitada não altera saldo nem posição.\n\n**Comandos principais executados**\n- `docker compose up -d postgres app` e `docker compose restart app`\n- Smoke test com `curl` cobrindo os cenários do contrato\n- `mvn clean package` dentro do container `app` → gerou `target/financial-monolith-0.0.1-SNAPSHOT.jar`\n\n**Erro encontrado e correção**\n- O volume `workspace_finance_monolith_postgres_data` é compartilhado entre as execuções do experimento. Ele já tinha tabelas de execuções anteriores (`trades`, `holdings`, `users`, `app_users`) com ids `bigint`.\n- Com `ddl-auto: update`, o Hibernate não conseguia converter essas colunas para UUID e registrava erros de DDL.\n- Para não apagar dados de outras execuções, coloquei nas minhas entidades nomes de tabela próprios: `monolith_users`, `monolith_holdings` e `monolith_trades`. Depois disso, a aplicação sobe sem nenhum erro de DDL.\n- As tabelas antigas continuam no volume e não são usadas.\n\n**Estado final (smoke test)**\n- Usuário: novo → 201 com 10000.00; username repetido ou vazio → 400.\n- Cotação: válida → 200 (`{\"symbol\":\"AAPL\",\"price\":200.00}`); desconhecida → 400.\n- Compra e venda: válidas → 201; `shares` ≤ 0 ou fracionário → 400; símbolo inválido → 400; saldo ou posição insuficiente → 400; UUID de usuário inexistente → 404.\n- Portfólio depois de comprar 10 AAPL e vender 3: `cash` 8600.00 + `marketValue` 1400.00 = `totalValue` 10000.00. As operações rejeitadas não mudaram nada.\n- Histórico: array com `type` BUY/SELL; usuário inexistente → 404; UUID malformado → 400.\n\nO `mvn clean package` dentro do container deixou um diretório `target/` (de propriedade do root) no workspace; não removi.",
+  "ttft_ms": 1753,
+  "type": "result",
+  "duration_ms": 214393,
+  "uuid": "4386f48f-678d-4601-98f0-19ff2c0efc63",
+  "ttft_stream_ms": 871,
+  "time_to_request_ms": 76,
+  "first_content_frame_ms": 872,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_local_elapsed_seconds": 220.488
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-10-02T23:10:02.522515+00:00",
+  "agents": [
+    "A2",
+    "A4"
+  ],
+  "summary": {
+    "total_findings": 1,
+    "by_agent": {
+      "A2": 1,
+      "A4": 0
+    },
+    "by_severity": {
+      "HIGH": 1
+    },
+    "by_type": {
+      "QUALITY_HIGH_CCN": 1
+    }
+  },
+  "quality_summary": {
+    "physical_java_loc": 315,
+    "nonblank_java_loc": 274,
+    "java_files": 6,
+    "lizard_nloc": 274,
+    "functions": 11,
+    "cc_total": 30,
+    "cc_average": 2.727273,
+    "cc_max": 11,
+    "quality_findings": 1
+  },
+  "security_summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java",
+      "symbol": "FinanceService::trade( boolean buy , UUID userId , String symbol , Integer shares)",
+      "start_line": 55,
+      "metric": "ccn",
+      "value": 11,
+      "threshold": 10
+    }
+  ]
+}

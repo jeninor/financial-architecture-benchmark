@@ -1,0 +1,4 @@
+NAME                             IMAGE                            COMMAND                  SERVICE         CREATED              STATUS                        PORTS
+finance-monolith-app             maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   app             About a minute ago   Up 48 seconds                 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+finance-monolith-postgres        postgres:16-alpine               "docker-entrypoint.s…"   postgres        About a minute ago   Up About a minute (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+finance-monolith-postgres-test   postgres:16-alpine               "docker-entrypoint.s…"   postgres-test   About a minute ago   Up About a minute (healthy)   5432/tcp

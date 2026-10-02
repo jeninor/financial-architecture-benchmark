@@ -1,0 +1,111 @@
+{
+  "run_id": "P0006_monolith",
+  "architecture": "monolith",
+  "provider": "claude-code",
+  "model_requested": "sonnet",
+  "claude_version": "2.1.286 (Claude Code)",
+  "graphify": {
+    "image": "graphify-mcp:0.9.73",
+    "image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "created": "2026-10-02T03:51:50.064994378Z",
+    "mode": "orchestrator-side-retrieval",
+    "budget": 1200
+  },
+  "started_at_utc": "2026-10-02T04:36:09.762089+00:00",
+  "acceptance_contract_sha256": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+  "acceptance_runner_sha256": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+  "docker_compose_sha256": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+  "compose_services": [
+    "postgres-test",
+    "postgres",
+    "app"
+  ],
+  "finished_at_utc": "2026-10-02T04:48:04.038947+00:00",
+  "success": false,
+  "iterations_used": 3,
+  "elapsed_seconds": 714.276,
+  "reported_cost_usd_final_by_session": 0.231058,
+  "session_costs": {
+    "ebdae16a-1bab-4b4a-a050-67bdd9983b9d": 0.231058
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "graphify": {
+        "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0006_monolith/iteration_01/graphify/graphify-out/graph.json",
+        "graph_sha256": "866eeede6f569477915194a89906025e9b23dd1f160b204ba9b811e6af769056",
+        "graph_bytes": 7298,
+        "extract_elapsed_seconds": 4.909,
+        "nodes": 5,
+        "edges": 11
+      },
+      "claude": {
+        "session_id": "ebdae16a-1bab-4b4a-a050-67bdd9983b9d",
+        "total_cost_usd": 0.1517204,
+        "num_turns": 4,
+        "input_tokens": 8,
+        "output_tokens": 5824,
+        "cache_creation_input_tokens": 19161,
+        "cache_read_input_tokens": 84102,
+        "canonical_models": {
+          "claude-sonnet-5-5": "claude-sonnet-5-5"
+        },
+        "reported_cost_usd_incremental_derived": 0.1517204
+      },
+      "compose_up_ok": true,
+      "http_ready": false
+    },
+    {
+      "iteration": 2,
+      "graphify": {
+        "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0006_monolith/iteration_02/graphify/graphify-out/graph.json",
+        "graph_sha256": "642d0e32f39549636a398bf0199caa746a3e96e1967655f967da7b4560fd1d6f",
+        "graph_bytes": 89321,
+        "extract_elapsed_seconds": 4.278,
+        "nodes": 57,
+        "edges": 143
+      },
+      "claude": {
+        "session_id": "ebdae16a-1bab-4b4a-a050-67bdd9983b9d",
+        "total_cost_usd": 0.19781700000000002,
+        "num_turns": 2,
+        "input_tokens": 4,
+        "output_tokens": 1157,
+        "cache_creation_input_tokens": 5332,
+        "cache_read_input_tokens": 65953,
+        "canonical_models": {
+          "claude-sonnet-5-5": "claude-sonnet-5-5"
+        },
+        "reported_cost_usd_incremental_derived": 0.0460966
+      },
+      "compose_up_ok": true,
+      "http_ready": false
+    },
+    {
+      "iteration": 3,
+      "graphify": {
+        "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0006_monolith/iteration_03/graphify/graphify-out/graph.json",
+        "graph_sha256": "642d0e32f39549636a398bf0199caa746a3e96e1967655f967da7b4560fd1d6f",
+        "graph_bytes": 89321,
+        "extract_elapsed_seconds": 5.076,
+        "nodes": 57,
+        "edges": 143
+      },
+      "claude": {
+        "session_id": "ebdae16a-1bab-4b4a-a050-67bdd9983b9d",
+        "total_cost_usd": 0.231058,
+        "num_turns": 1,
+        "input_tokens": 2,
+        "output_tokens": 928,
+        "cache_creation_input_tokens": 4184,
+        "cache_read_input_tokens": 36105,
+        "canonical_models": {
+          "claude-sonnet-5-5": "claude-sonnet-5-5"
+        },
+        "reported_cost_usd_incremental_derived": 0.033241
+      },
+      "compose_up_ok": true,
+      "http_ready": false
+    }
+  ]
+}

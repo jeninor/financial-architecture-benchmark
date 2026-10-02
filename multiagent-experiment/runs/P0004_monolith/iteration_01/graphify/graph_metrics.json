@@ -1,0 +1,8 @@
+{
+  "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0004_monolith/iteration_01/graphify/graphify-out/graph.json",
+  "graph_sha256": "866eeede6f569477915194a89906025e9b23dd1f160b204ba9b811e6af769056",
+  "graph_bytes": 7298,
+  "extract_elapsed_seconds": 4.377,
+  "nodes": 5,
+  "edges": 11
+}

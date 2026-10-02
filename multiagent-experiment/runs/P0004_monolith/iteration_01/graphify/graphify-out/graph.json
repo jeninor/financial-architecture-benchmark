@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "id": "pkg_com_juanesteban_tcc_financial_monolith",
+      "label": "com.juanesteban.tcc:financial-monolith",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication",
+      "label": "FinancialMonolithApplication.java",
+      "file_type": "code",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication",
+      "label": "FinancialMonolithApplication",
+      "file_type": "code",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L9",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L11"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_boot_autoconfigure_springbootapplication",
+      "label": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_web",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_data_jpa",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_postgresql_postgresql",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_validation",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_financial_monolith",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_test",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "financial-monolith/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication",
+      "target": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication",
+      "target": "financial_monolith_src_main_java_com_juanesteban_tcc_finance_financialmonolithapplication_financialmonolithapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "extracted_sources": [
+    "/project/BASELINE_MANIFEST.json",
+    "/project/financial-monolith/pom.xml",
+    "/project/financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java"
+  ]
+}

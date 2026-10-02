@@ -1,0 +1,91 @@
+{
+  "run_id": "P0004_monolith",
+  "architecture": "monolith",
+  "provider": "claude-code",
+  "model_requested": "sonnet",
+  "claude_version": "2.1.286 (Claude Code)",
+  "graphify": {
+    "image": "graphify-mcp:0.9.73",
+    "image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "created": "2026-10-02T03:51:50.064994378Z",
+    "mode": "orchestrator-side-retrieval",
+    "budget": 1200
+  },
+  "started_at_utc": "2026-10-02T04:16:08.334083+00:00",
+  "acceptance_contract_sha256": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+  "acceptance_runner_sha256": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+  "docker_compose_sha256": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+  "compose_services": [
+    "postgres-test",
+    "postgres",
+    "app"
+  ],
+  "finished_at_utc": "2026-10-02T04:22:03.588454+00:00",
+  "success": true,
+  "iterations_used": 2,
+  "elapsed_seconds": 355.254,
+  "reported_cost_usd_final_by_session": 0.249916,
+  "session_costs": {
+    "ab7f1585-4c93-4726-8325-e718e264aad7": 0.24991599999999997
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "graphify": {
+        "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0004_monolith/iteration_01/graphify/graphify-out/graph.json",
+        "graph_sha256": "866eeede6f569477915194a89906025e9b23dd1f160b204ba9b811e6af769056",
+        "graph_bytes": 7298,
+        "extract_elapsed_seconds": 4.377,
+        "nodes": 5,
+        "edges": 11
+      },
+      "claude": {
+        "session_id": "ab7f1585-4c93-4726-8325-e718e264aad7",
+        "total_cost_usd": 0.17533159999999998,
+        "num_turns": 4,
+        "input_tokens": 8,
+        "output_tokens": 6656,
+        "cache_creation_input_tokens": 23011,
+        "cache_read_input_tokens": 83558,
+        "canonical_models": {
+          "claude-sonnet-5-5": "claude-sonnet-5-5"
+        },
+        "reported_cost_usd_incremental_derived": 0.1753316
+      },
+      "compose_up_ok": true,
+      "http_ready": false
+    },
+    {
+      "iteration": 2,
+      "graphify": {
+        "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0004_monolith/iteration_02/graphify/graphify-out/graph.json",
+        "graph_sha256": "27a84cf5f55a6b7e999157ea8723f69dfdc2c22b29a8cde30335322a3a12b798",
+        "graph_bytes": 145377,
+        "extract_elapsed_seconds": 10.293,
+        "nodes": 93,
+        "edges": 223
+      },
+      "claude": {
+        "session_id": "ab7f1585-4c93-4726-8325-e718e264aad7",
+        "total_cost_usd": 0.24991599999999997,
+        "num_turns": 3,
+        "input_tokens": 6,
+        "output_tokens": 1812,
+        "cache_creation_input_tokens": 8576,
+        "cache_read_input_tokens": 110742,
+        "canonical_models": {
+          "claude-sonnet-5-5": "claude-sonnet-5-5"
+        },
+        "reported_cost_usd_incremental_derived": 0.0745844
+      },
+      "compose_up_ok": true,
+      "http_ready": true,
+      "acceptance": {
+        "passed": 12,
+        "failed": 0,
+        "total": 12,
+        "success": true
+      }
+    }
+  ]
+}

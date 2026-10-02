@@ -1,0 +1,164 @@
+{
+  "BASELINE_MANIFEST.json": {
+    "mtime": 1790902495.744291,
+    "seen": 1790913641.126771,
+    "ast_hash": "8b48df9e65fc018b4fc58afade094bc5",
+    "semantic_hash": "8b48df9e65fc018b4fc58afade094bc5"
+  },
+  "financial-monolith/pom.xml": {
+    "mtime": 1789612399.3104715,
+    "seen": 1790913641.1267772,
+    "ast_hash": "0963d0bffdc8618c271fbd9084bac618",
+    "semantic_hash": "0963d0bffdc8618c271fbd9084bac618"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java": {
+    "mtime": 1789432863.5516384,
+    "seen": 1790913641.1267805,
+    "ast_hash": "72b8e13ddd9a11be06ce8513ef0d6314",
+    "semantic_hash": "72b8e13ddd9a11be06ce8513ef0d6314"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/common/BusinessException.java": {
+    "mtime": 1790913437.2585742,
+    "seen": 1790913641.1267831,
+    "ast_hash": "5db952c6308193c2bba80cce4ca05cf6",
+    "semantic_hash": "5db952c6308193c2bba80cce4ca05cf6"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/common/GlobalExceptionHandler.java": {
+    "mtime": 1790913445.261668,
+    "seen": 1790913641.126786,
+    "ast_hash": "316df6babb3ae959bf13b989077c7362",
+    "semantic_hash": "316df6babb3ae959bf13b989077c7362"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/common/NotFoundException.java": {
+    "mtime": 1790913438.6675906,
+    "seen": 1790913641.1267889,
+    "ast_hash": "61cded229904476c40bb7a33538703c3",
+    "semantic_hash": "61cded229904476c40bb7a33538703c3"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/portfolio/Holding.java": {
+    "mtime": 1790913558.8625758,
+    "seen": 1790913641.126792,
+    "ast_hash": "e6864dc1cba3ffeab04528c073f4adfd",
+    "semantic_hash": "e6864dc1cba3ffeab04528c073f4adfd"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/portfolio/HoldingRepository.java": {
+    "mtime": 1790913480.419079,
+    "seen": 1790913641.1267946,
+    "ast_hash": "68bbd2af835aaa10bbeeab20752344c8",
+    "semantic_hash": "68bbd2af835aaa10bbeeab20752344c8"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/portfolio/PortfolioController.java": {
+    "mtime": 1790913517.7095149,
+    "seen": 1790913641.1267972,
+    "ast_hash": "8b9a3c47883cd76a57eb95f53c2a9da6",
+    "semantic_hash": "8b9a3c47883cd76a57eb95f53c2a9da6"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/portfolio/PortfolioResponse.java": {
+    "mtime": 1790913482.7212744,
+    "seen": 1790913641.1268,
+    "ast_hash": "0772674acd9a18f8b0bdb3dafade8a4b",
+    "semantic_hash": "0772674acd9a18f8b0bdb3dafade8a4b"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/portfolio/PortfolioService.java": {
+    "mtime": 1790913488.620175,
+    "seen": 1790913641.126803,
+    "ast_hash": "c85637c558e3832b80659cd1b8f5c3e5",
+    "semantic_hash": "c85637c558e3832b80659cd1b8f5c3e5"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/quote/Quote.java": {
+    "mtime": 1790913450.1527252,
+    "seen": 1790913641.1268063,
+    "ast_hash": "d1f59b038530fc3a917f5a97e817dc23",
+    "semantic_hash": "d1f59b038530fc3a917f5a97e817dc23"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/quote/QuoteController.java": {
+    "mtime": 1790913452.6757545,
+    "seen": 1790913641.126809,
+    "ast_hash": "8c29fabb7e8b778eb9ebbc9063fc5b1e",
+    "semantic_hash": "8c29fabb7e8b778eb9ebbc9063fc5b1e"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/quote/QuoteService.java": {
+    "mtime": 1790913448.868418,
+    "seen": 1790913641.1268117,
+    "ast_hash": "7f2ed6f742343886369a35a72b7d71f9",
+    "semantic_hash": "7f2ed6f742343886369a35a72b7d71f9"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/Trade.java": {
+    "mtime": 1790913558.8649955,
+    "seen": 1790913641.1268141,
+    "ast_hash": "f95487b0ae0861d98b7749ca7c61fc6b",
+    "semantic_hash": "f95487b0ae0861d98b7749ca7c61fc6b"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeController.java": {
+    "mtime": 1790913515.2214859,
+    "seen": 1790913641.126817,
+    "ast_hash": "d71364452c1253a9ce2ab38b90971b03",
+    "semantic_hash": "d71364452c1253a9ce2ab38b90971b03"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeRepository.java": {
+    "mtime": 1790913497.2082753,
+    "seen": 1790913641.1268198,
+    "ast_hash": "ca6dc8e1b201681d44d7bdd6d43ab9c0",
+    "semantic_hash": "ca6dc8e1b201681d44d7bdd6d43ab9c0"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeRequest.java": {
+    "mtime": 1790913499.1272979,
+    "seen": 1790913641.1268227,
+    "ast_hash": "ff0406a2cd7a24438c9c25b18260b010",
+    "semantic_hash": "ff0406a2cd7a24438c9c25b18260b010"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeResponse.java": {
+    "mtime": 1790913501.721328,
+    "seen": 1790913641.1268253,
+    "ast_hash": "658e3a137bdd20da195d6df0eafdfc53",
+    "semantic_hash": "658e3a137bdd20da195d6df0eafdfc53"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeService.java": {
+    "mtime": 1790913510.8224344,
+    "seen": 1790913641.126828,
+    "ast_hash": "373cd0b92468cd3e35341a52b2a9e594",
+    "semantic_hash": "373cd0b92468cd3e35341a52b2a9e594"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/trade/TradeType.java": {
+    "mtime": 1790913489.92019,
+    "seen": 1790913641.1268308,
+    "ast_hash": "28a81f7c3c984e234b27fee3ec50f8bb",
+    "semantic_hash": "28a81f7c3c984e234b27fee3ec50f8bb"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/CreateUserRequest.java": {
+    "mtime": 1790913466.6279178,
+    "seen": 1790913641.1268337,
+    "ast_hash": "cba1767f4a3af65e731fd61827781b3b",
+    "semantic_hash": "cba1767f4a3af65e731fd61827781b3b"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/UserAccount.java": {
+    "mtime": 1790913558.859427,
+    "seen": 1790913641.126837,
+    "ast_hash": "000f8cec2a2a2aca72624499eacc329b",
+    "semantic_hash": "000f8cec2a2a2aca72624499eacc329b"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/UserController.java": {
+    "mtime": 1790913471.7329776,
+    "seen": 1790913641.1268399,
+    "ast_hash": "18356a7317c007a23698b968ba1fa993",
+    "semantic_hash": "18356a7317c007a23698b968ba1fa993"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/UserRepository.java": {
+    "mtime": 1790913460.317449,
+    "seen": 1790913641.1268423,
+    "ast_hash": "e257acf2f40eff3798709bef2983f897",
+    "semantic_hash": "e257acf2f40eff3798709bef2983f897"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/UserResponse.java": {
+    "mtime": 1790913468.8279436,
+    "seen": 1790913641.1268451,
+    "ast_hash": "878a7bbc64e79b3b09f9950e9c0da080",
+    "semantic_hash": "878a7bbc64e79b3b09f9950e9c0da080"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/user/UserService.java": {
+    "mtime": 1790913465.0298991,
+    "seen": 1790913641.1268482,
+    "ast_hash": "06236273596b4d197db2a1b528d5ec86",
+    "semantic_hash": "06236273596b4d197db2a1b528d5ec86"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "session_id": "ab7f1585-4c93-4726-8325-e718e264aad7",
+  "total_cost_usd": 0.24991599999999997,
+  "num_turns": 3,
+  "input_tokens": 6,
+  "output_tokens": 1812,
+  "cache_creation_input_tokens": 8576,
+  "cache_read_input_tokens": 110742,
+  "canonical_models": {
+    "claude-sonnet-5-5": "claude-sonnet-5-5"
+  },
+  "reported_cost_usd_incremental_derived": 0.0745844
+}

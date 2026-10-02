@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "source_scanners": [
+    "secret",
+    "misconfig"
+  ],
+  "artifact_scanners": [
+    "vuln"
+  ],
+  "severities": [
+    "HIGH",
+    "CRITICAL"
+  ],
+  "offline_scan": true,
+  "require_built_jar": true,
+  "exclude_jar_suffixes": [
+    "-sources.jar",
+    "-javadoc.jar",
+    ".original",
+    ".jar.original"
+  ],
+  "notes": [
+    "Source scan never resolves Maven dependencies.",
+    "Vulnerability scan targets built JAR artifacts only.",
+    "All Trivy scans run with --network none and frozen DB/cache."
+  ]
+}

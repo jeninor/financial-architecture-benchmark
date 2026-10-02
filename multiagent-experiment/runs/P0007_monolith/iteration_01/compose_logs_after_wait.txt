@@ -1,0 +1,3317 @@
+finance-monolith-postgres-test  | The files belonging to this database system will be owned by user "postgres".
+finance-monolith-postgres-test  | This user must also own the server process.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | The database cluster will be initialized with locale "en_US.utf8".
+finance-monolith-postgres-test  | The default database encoding has accordingly been set to "UTF8".
+finance-monolith-postgres-test  | The default text search configuration will be set to "english".
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | Data page checksums are disabled.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-monolith-postgres-test  | creating subdirectories ... ok
+finance-monolith-postgres-test  | selecting dynamic shared memory implementation ... posix
+finance-monolith-postgres-test  | selecting default max_connections ... 100
+finance-monolith-postgres-test  | selecting default shared_buffers ... 128MB
+finance-monolith-postgres-test  | selecting default time zone ... UTC
+finance-monolith-postgres-test  | creating configuration files ... ok
+finance-monolith-postgres-test  | running bootstrap script ... ok
+finance-monolith-postgres-test  | sh: locale: not found
+finance-monolith-postgres-test  | 2026-10-02 20:28:00.388 UTC [48] WARNING:  no usable system locales were found
+finance-monolith-postgres-test  | performing post-bootstrap initialization ... ok
+finance-monolith-postgres-test  | syncing data to disk ... ok
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | Success. You can now start the database server using:
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | initdb: warning: enabling "trust" authentication for local connections
+finance-monolith-postgres-test  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-monolith-postgres-test  | waiting for server to start....2026-10-02 20:28:04.585 UTC [60] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres-test  | 2026-10-02 20:28:04.639 UTC [60] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres-test  | 2026-10-02 20:28:04.902 UTC [63] LOG:  database system was shut down at 2026-10-02 20:28:02 UTC
+finance-monolith-postgres-test  | 2026-10-02 20:28:05.008 UTC [60] LOG:  database system is ready to accept connections
+finance-monolith-postgres-test  |  done
+finance-monolith-postgres-test  | server started
+finance-monolith-postgres-test  | CREATE DATABASE
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | waiting for server to shut down....2026-10-02 20:28:05.710 UTC [60] LOG:  received fast shutdown request
+finance-monolith-postgres-test  | 2026-10-02 20:28:05.778 UTC [60] LOG:  aborting any active transactions
+finance-monolith-postgres-test  | 2026-10-02 20:28:05.787 UTC [60] LOG:  background worker "logical replication launcher" (PID 66) exited with exit code 1
+finance-monolith-postgres-test  | 2026-10-02 20:28:05.787 UTC [61] LOG:  shutting down
+finance-monolith-postgres-test  | 2026-10-02 20:28:05.878 UTC [61] LOG:  checkpoint starting: shutdown immediate
+finance-monolith-postgres-test  | .2026-10-02 20:28:07.140 UTC [61] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.368 s, sync=0.718 s, total=1.353 s; sync files=301, longest=0.218 s, average=0.003 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D68, redo lsn=0/1925D68
+finance-monolith-postgres-test  | 2026-10-02 20:28:07.153 UTC [60] LOG:  database system is shut down
+finance-monolith-postgres-test  |  done
+finance-monolith-postgres-test  | server stopped
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | PostgreSQL init process complete; ready for start up.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 2026-10-02 20:28:07.436 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres-test  | 2026-10-02 20:28:07.436 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-monolith-postgres-test  | 2026-10-02 20:28:07.436 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-monolith-postgres-test  | 2026-10-02 20:28:07.749 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres-test  | 2026-10-02 20:28:08.263 UTC [76] LOG:  database system was shut down at 2026-10-02 20:28:07 UTC
+finance-monolith-postgres-test  | 2026-10-02 20:28:08.474 UTC [83] FATAL:  the database system is starting up
+finance-monolith-postgres-test  | 2026-10-02 20:28:08.656 UTC [1] LOG:  database system is ready to accept connections
+finance-monolith-postgres       | The files belonging to this database system will be owned by user "postgres".
+finance-monolith-postgres       | This user must also own the server process.
+finance-monolith-postgres       | 
+finance-monolith-postgres       | The database cluster will be initialized with locale "en_US.utf8".
+finance-monolith-postgres       | The default database encoding has accordingly been set to "UTF8".
+finance-monolith-postgres       | The default text search configuration will be set to "english".
+finance-monolith-postgres       | 
+finance-monolith-postgres       | Data page checksums are disabled.
+finance-monolith-postgres       | 
+finance-monolith-postgres       | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-monolith-postgres       | creating subdirectories ... ok
+finance-monolith-postgres       | selecting dynamic shared memory implementation ... posix
+finance-monolith-postgres       | selecting default max_connections ... 100
+finance-monolith-postgres       | selecting default shared_buffers ... 128MB
+finance-monolith-postgres       | selecting default time zone ... UTC
+finance-monolith-postgres       | creating configuration files ... ok
+finance-monolith-postgres       | running bootstrap script ... ok
+finance-monolith-postgres       | sh: locale: not found
+finance-monolith-postgres       | 2026-10-02 20:28:00.387 UTC [47] WARNING:  no usable system locales were found
+finance-monolith-postgres       | performing post-bootstrap initialization ... ok
+finance-monolith-postgres       | initdb: warning: enabling "trust" authentication for local connections
+finance-monolith-postgres       | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-monolith-postgres       | syncing data to disk ... ok
+finance-monolith-postgres       | 
+finance-monolith-postgres       | 
+finance-monolith-postgres       | Success. You can now start the database server using:
+finance-monolith-postgres       | 
+finance-monolith-postgres       |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-monolith-postgres       | 
+finance-monolith-postgres       | waiting for server to start....2026-10-02 20:28:04.905 UTC [59] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres       | 2026-10-02 20:28:04.965 UTC [59] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres       | 2026-10-02 20:28:05.237 UTC [62] LOG:  database system was shut down at 2026-10-02 20:28:02 UTC
+finance-monolith-postgres       | 2026-10-02 20:28:05.336 UTC [59] LOG:  database system is ready to accept connections
+finance-monolith-postgres       |  done
+finance-monolith-postgres       | server started
+finance-monolith-postgres       | CREATE DATABASE
+finance-monolith-postgres       | 
+finance-monolith-postgres       | 
+finance-monolith-postgres       | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-monolith-postgres       | 
+finance-monolith-postgres       | waiting for server to shut down....2026-10-02 20:28:06.115 UTC [59] LOG:  received fast shutdown request
+finance-monolith-postgres       | 2026-10-02 20:28:06.254 UTC [59] LOG:  aborting any active transactions
+finance-monolith-postgres       | 2026-10-02 20:28:06.258 UTC [59] LOG:  background worker "logical replication launcher" (PID 65) exited with exit code 1
+finance-monolith-postgres       | 2026-10-02 20:28:06.258 UTC [60] LOG:  shutting down
+finance-monolith-postgres       | 2026-10-02 20:28:06.338 UTC [60] LOG:  checkpoint starting: shutdown immediate
+finance-monolith-postgres       | .2026-10-02 20:28:07.215 UTC [60] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.111 s, sync=0.428 s, total=0.957 s; sync files=301, longest=0.249 s, average=0.002 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D58, redo lsn=0/1925D58
+finance-monolith-postgres       | 2026-10-02 20:28:07.234 UTC [59] LOG:  database system is shut down
+finance-monolith-postgres       |  done
+finance-monolith-postgres       | server stopped
+finance-monolith-postgres       | 
+finance-monolith-postgres       | PostgreSQL init process complete; ready for start up.
+finance-monolith-postgres       | 
+finance-monolith-postgres       | 2026-10-02 20:28:07.656 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres       | 2026-10-02 20:28:07.656 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-monolith-postgres       | 2026-10-02 20:28:07.656 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-monolith-postgres       | 2026-10-02 20:28:08.154 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres       | 2026-10-02 20:28:09.374 UTC [81] LOG:  database system was shut down at 2026-10-02 20:28:07 UTC
+finance-monolith-postgres       | 2026-10-02 20:28:09.374 UTC [82] FATAL:  the database system is starting up
+finance-monolith-postgres       | 2026-10-02 20:28:09.518 UTC [1] LOG:  database system is ready to accept connections
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/3.5.0/spring-boot-actuator-autoconfigure-3.5.0.jar
+finance-monolith-app            | Progress (2): 0.3/1.8 MB | 0.4/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.5/1.3 MB
+Progress (2): 0.3/1.8 MB | 0.6/1.3 MB
+Progress (3): 0.3/1.8 MB | 0.6/1.3 MB | 4.8 kB
+Progress (3): 0.3/1.8 MB | 0.6/1.3 MB | 4.8 kB
+Progress (4): 0.3/1.8 MB | 0.6/1.3 MB | 4.8 kB | 7.7/93 kB
+Progress (4): 0.3/1.8 MB | 0.6/1.3 MB | 4.8 kB | 7.7/93 kB
+Progress (4): 0.3/1.8 MB | 0.6/1.3 MB | 4.8 kB | 16/93 kB 
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/3.5.0/spring-boot-starter-actuator-3.5.0.jar (4.8 kB at 3.8 kB/s)
+finance-monolith-app            | Progress (3): 0.3/1.8 MB | 0.6/1.3 MB | 16/93 kB
+                                                
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/3.5.0/spring-boot-actuator-3.5.0.jar
+finance-monolith-app            | Progress (3): 0.3/1.8 MB | 0.6/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.6/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.7/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.8/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 0.9/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.0/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.1/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 16/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 32/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 49/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 57/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 73/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 90/93 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 93 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar (93 kB at 73 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.15.0/micrometer-observation-1.15.0.jar
+finance-monolith-app            | Progress (2): 0.3/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.3/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.3/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 7.7/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 11/834 kB 
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 28/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 44/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 61/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 77/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 93/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 98/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 115/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 131/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 147/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 164/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 180/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 197/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 197/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 213/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 221/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 238/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 254/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 270/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 287/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 303/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 319/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 336/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 352/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 369/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 385/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 401/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 418/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 434/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 451/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 467/834 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 7.7/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 16/703 kB 
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 32/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 49/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 65/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 483/834 kB | 81/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 500/834 kB | 81/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 500/834 kB | 98/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 516/834 kB | 98/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 516/834 kB | 114/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 114/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 131/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 147/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 163/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 180/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 196/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 212/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 229/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 233/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 250/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 266/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 266/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 532/834 kB | 282/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 549/834 kB | 282/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 549/834 kB | 299/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 565/834 kB | 299/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 565/834 kB | 315/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 582/834 kB | 315/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 582/834 kB | 331/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 598/834 kB | 331/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 598/834 kB | 348/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 614/834 kB | 348/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 614/834 kB | 364/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 631/834 kB | 364/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 631/834 kB | 381/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 647/834 kB | 381/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 647/834 kB | 397/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 664/834 kB | 397/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 664/834 kB | 413/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 680/834 kB | 413/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 680/834 kB | 430/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 680/834 kB | 446/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 680/834 kB | 463/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 680/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 696/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 713/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 729/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 745/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 762/834 kB | 479/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 762/834 kB | 495/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 778/834 kB | 495/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 778/834 kB | 512/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 778/834 kB | 528/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 795/834 kB | 528/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 795/834 kB | 544/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 811/834 kB | 544/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 811/834 kB | 561/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 827/834 kB | 561/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 834 kB | 561/703 kB    
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 834 kB | 577/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 834 kB | 594/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 834 kB | 610/703 kB
+Progress (4): 0.3/1.8 MB | 1.2/1.3 MB | 834 kB | 626/703 kB
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/3.5.0/spring-boot-actuator-autoconfigure-3.5.0.jar (834 kB at 631 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.15.0/micrometer-commons-1.15.0.jar
+finance-monolith-app            | Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 643/703 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 659/703 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 676/703 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 692/703 kB
+Progress (3): 0.3/1.8 MB | 1.2/1.3 MB | 703 kB    
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/3.5.0/spring-boot-actuator-3.5.0.jar (703 kB at 531 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-jakarta9/1.15.0/micrometer-jakarta9-1.15.0.jar
+finance-monolith-app            | Progress (2): 0.4/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.4/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 7.7/75 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 16/75 kB 
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 28/75 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 44/75 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 61/75 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 75 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.15.0/micrometer-observation-1.15.0.jar (75 kB at 56 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.15.0/micrometer-core-1.15.0.jar
+finance-monolith-app            | Progress (2): 0.4/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.4/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 7.7/49 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 11/49 kB 
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 28/49 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 44/49 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 49 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.15.0/micrometer-commons-1.15.0.jar (49 kB at 36 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar
+finance-monolith-app            | Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 3.2/33 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 3.2/33 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 11/33 kB 
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 28/33 kB
+Progress (3): 0.4/1.8 MB | 1.2/1.3 MB | 33 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-jakarta9/1.15.0/micrometer-jakarta9-1.15.0.jar (33 kB at 24 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar
+finance-monolith-app            | Progress (2): 0.4/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.5/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 7.7/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 7.7/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 24/864 kB 
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 40/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 57/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 73/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 90/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 90/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 106/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 122/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 139/864 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 139/864 kB | 7.7/30 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 139/864 kB | 16/30 kB 
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 139/864 kB | 30 kB   
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 155/864 kB | 30 kB
+                                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar (30 kB at 21 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/3.5.0/spring-boot-starter-test-3.5.0.jar
+finance-monolith-app            | Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 172/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 188/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 188/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 204/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 221/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 233/864 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 233/864 kB | 7.7/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 233/864 kB | 16/177 kB 
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 233/864 kB | 24/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 250/864 kB | 24/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 266/864 kB | 24/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 266/864 kB | 40/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 266/864 kB | 57/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 266/864 kB | 73/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 266/864 kB | 90/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 282/864 kB | 90/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 282/864 kB | 106/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 282/864 kB | 122/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 282/864 kB | 139/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 282/864 kB | 155/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 299/864 kB | 155/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 299/864 kB | 172/177 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 299/864 kB | 177 kB    
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar (177 kB at 125 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.5.0/spring-boot-test-3.5.0.jar
+finance-monolith-app            | Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 299/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 315/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 331/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 348/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 364/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 381/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 397/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 413/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 430/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 446/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 446/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 463/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 479/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 495/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 512/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 528/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 544/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 544/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 561/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 577/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 594/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 610/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 626/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 643/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 659/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 659/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 676/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 692/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 708/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 725/864 kB
+Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 741/864 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 741/864 kB | 4.8 kB
+Progress (4): 0.5/1.8 MB | 1.2/1.3 MB | 757/864 kB | 4.8 kB
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/3.5.0/spring-boot-starter-test-3.5.0.jar (4.8 kB at 3.3 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.5.0/spring-boot-test-autoconfigure-3.5.0.jar
+finance-monolith-app            | Progress (3): 0.5/1.8 MB | 1.2/1.3 MB | 774/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 774/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 790/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 807/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 823/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 824/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 841/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 857/864 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 864 kB    
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.15.0/micrometer-core-1.15.0.jar (864 kB at 596 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar
+finance-monolith-app            | Progress (2): 0.6/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.6/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 7.7/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 7.7/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 24/257 kB 
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 40/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 57/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 73/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 90/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 106/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 122/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 139/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 139/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 155/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 172/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 188/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 204/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 221/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 237/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 253/257 kB
+Progress (3): 0.6/1.8 MB | 1.2/1.3 MB | 257 kB    
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/3.5.0/spring-boot-test-3.5.0.jar (257 kB at 175 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar
+finance-monolith-app            | Progress (2): 0.6/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.6/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.7/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 7.7/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 16/227 kB 
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 25/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 41/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 57/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 74/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 90/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 106/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 115/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 115/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 131/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 147/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 164/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 172/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 188/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 197/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 205/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 221/227 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 227 kB    
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/3.5.0/spring-boot-test-autoconfigure-3.5.0.jar (227 kB at 153 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar
+finance-monolith-app            | Progress (2): 0.7/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.7/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.7/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.7/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 7.7/277 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 16/277 kB 
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 28/277 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 44/277 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 61/277 kB
+Progress (3): 0.7/1.8 MB | 1.2/1.3 MB | 77/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 77/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 93/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 110/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 126/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 142/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 142/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 7.7/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 16/131 kB 
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 24/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 40/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 57/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 159/277 kB | 73/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 175/277 kB | 73/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 175/277 kB | 90/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 192/277 kB | 90/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 192/277 kB | 106/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 192/277 kB | 122/131 kB
+Progress (4): 0.8/1.8 MB | 1.2/1.3 MB | 192/277 kB | 131 kB    
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar (131 kB at 86 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar
+finance-monolith-app            | Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 208/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 208/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 224/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 241/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 257/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 274/277 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 277 kB    
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar (277 kB at 182 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar
+finance-monolith-app            | Progress (2): 0.8/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.8/1.8 MB | 1.2/1.3 MB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 3.1/67 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 20/67 kB 
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 36/67 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 36/67 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 52/67 kB
+Progress (3): 0.8/1.8 MB | 1.2/1.3 MB | 67 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar (67 kB at 44 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar
+finance-monolith-app            | Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 0.9/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.0/1.8 MB | 1.2/1.3 MB
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 7.7/126 kB
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 11/126 kB 
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 28/126 kB
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 44/126 kB
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 61/126 kB
+Progress (3): 1.0/1.8 MB | 1.2/1.3 MB | 77/126 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 77/126 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 93/126 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 110/126 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 110/126 kB | 7.7/122 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126/126 kB | 7.7/122 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 7.7/122 kB    
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 15/122 kB 
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 32/122 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 48/122 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 48/122 kB
+Progress (4): 1.1/1.8 MB | 1.2/1.3 MB | 126 kB | 65/122 kB
+                                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar (126 kB at 80 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar
+finance-monolith-app            | Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 81/122 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 97/122 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 114/122 kB
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 122 kB    
+Progress (3): 1.1/1.8 MB | 1.2/1.3 MB | 122 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar (122 kB at 78 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar
+finance-monolith-app            | Progress (2): 1.1/1.8 MB | 1.2/1.3 MB
+Progress (2): 1.1/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.1/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.1/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.1/1.8 MB | 1.3/1.3 MB
+Progress (3): 1.1/1.8 MB | 1.3/1.3 MB | 7.7/30 kB
+Progress (3): 1.1/1.8 MB | 1.3/1.3 MB | 16/30 kB 
+Progress (3): 1.1/1.8 MB | 1.3/1.3 MB | 28/30 kB
+Progress (3): 1.1/1.8 MB | 1.3/1.3 MB | 28/30 kB
+Progress (3): 1.1/1.8 MB | 1.3/1.3 MB | 30 kB   
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar (30 kB at 19 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar
+finance-monolith-app            | Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3/1.3 MB
+Progress (2): 1.2/1.8 MB | 1.3 MB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar (1.3 MB at 835 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar
+finance-monolith-app            | Progress (1): 1.2/1.8 MB
+Progress (1): 1.2/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.3/1.8 MB
+Progress (1): 1.4/1.8 MB
+Progress (1): 1.4/1.8 MB
+Progress (2): 1.4/1.8 MB | 7.7/98 kB
+Progress (2): 1.4/1.8 MB | 15/98 kB 
+Progress (2): 1.4/1.8 MB | 32/98 kB
+Progress (2): 1.4/1.8 MB | 48/98 kB
+Progress (2): 1.4/1.8 MB | 65/98 kB
+Progress (2): 1.4/1.8 MB | 65/98 kB
+Progress (2): 1.4/1.8 MB | 81/98 kB
+Progress (2): 1.4/1.8 MB | 97/98 kB
+Progress (2): 1.4/1.8 MB | 98 kB   
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar (98 kB at 61 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar
+finance-monolith-app            | Progress (1): 1.4/1.8 MB
+Progress (2): 1.4/1.8 MB | 0/1.4 MB
+Progress (2): 1.4/1.8 MB | 0/1.4 MB
+Progress (2): 1.4/1.8 MB | 0/1.4 MB
+Progress (2): 1.4/1.8 MB | 0/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.1/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.4/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.2/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.3/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (3): 1.5/1.8 MB | 0.4/1.4 MB | 6.4 kB
+Progress (3): 1.5/1.8 MB | 0.4/1.4 MB | 6.4 kB
+Progress (3): 1.5/1.8 MB | 0.4/1.4 MB | 6.4 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar (6.4 kB at 3.9 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+finance-monolith-app            | Progress (2): 1.5/1.8 MB | 0.4/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (2): 1.5/1.8 MB | 0.5/1.4 MB
+Progress (3): 1.5/1.8 MB | 0.5/1.4 MB | 7.7/126 kB
+Progress (3): 1.5/1.8 MB | 0.5/1.4 MB | 7.7/126 kB
+Progress (3): 1.5/1.8 MB | 0.6/1.4 MB | 7.7/126 kB
+Progress (3): 1.5/1.8 MB | 0.6/1.4 MB | 24/126 kB 
+Progress (3): 1.5/1.8 MB | 0.6/1.4 MB | 24/126 kB
+Progress (3): 1.5/1.8 MB | 0.6/1.4 MB | 24/126 kB
+Progress (3): 1.5/1.8 MB | 0.6/1.4 MB | 40/126 kB
+Progress (3): 1.6/1.8 MB | 0.6/1.4 MB | 40/126 kB
+Progress (3): 1.6/1.8 MB | 0.6/1.4 MB | 40/126 kB
+Progress (3): 1.6/1.8 MB | 0.6/1.4 MB | 40/126 kB
+Progress (3): 1.6/1.8 MB | 0.6/1.4 MB | 57/126 kB
+Progress (3): 1.6/1.8 MB | 0.6/1.4 MB | 57/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 57/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 73/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 73/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 73/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 73/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 90/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 90/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 90/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 90/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 90/126 kB
+Progress (3): 1.6/1.8 MB | 0.7/1.4 MB | 106/126 kB
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 106/126 kB
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 106/126 kB
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 122/126 kB
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 122/126 kB
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 126 kB    
+Progress (3): 1.6/1.8 MB | 0.8/1.4 MB | 126 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar (126 kB at 77 kB/s)
+finance-monolith-app            | Progress (2): 1.6/1.8 MB | 0.8/1.4 MB
+                                     
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar
+finance-monolith-app            | Progress (2): 1.6/1.8 MB | 0.8/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.8/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.8/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.6/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.7/1.8 MB | 0.9/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.0/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.1/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.2/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.7/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.3/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.4/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.4/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.4/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.4/1.4 MB
+Progress (2): 1.8/1.8 MB | 1.4 MB    
+Progress (2): 1.8/1.8 MB | 1.4 MB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar (1.4 MB at 847 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+finance-monolith-app            | Progress (1): 1.8/1.8 MB
+Progress (1): 1.8/1.8 MB
+Progress (1): 1.8 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar (1.8 MB at 1.1 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar
+finance-monolith-app            | Progress (1): 7.7/233 kB
+Progress (1): 16/233 kB 
+Progress (1): 32/233 kB
+Progress (1): 49/233 kB
+Progress (1): 65/233 kB
+Progress (1): 81/233 kB
+Progress (1): 98/233 kB
+Progress (1): 114/233 kB
+Progress (1): 131/233 kB
+Progress (1): 147/233 kB
+Progress (1): 163/233 kB
+Progress (1): 180/233 kB
+Progress (1): 196/233 kB
+Progress (2): 196/233 kB | 7.7/14 kB
+Progress (2): 196/233 kB | 11/14 kB 
+Progress (2): 196/233 kB | 14 kB   
+Progress (2): 212/233 kB | 14 kB
+Progress (2): 229/233 kB | 14 kB
+Progress (2): 233 kB | 14 kB    
+                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 8.6 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar
+finance-monolith-app            | Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar (233 kB at 141 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar
+finance-monolith-app            | Progress (1): 7.7/602 kB
+Progress (1): 16/602 kB 
+Progress (1): 24/602 kB
+Progress (1): 40/602 kB
+Progress (1): 57/602 kB
+Progress (1): 73/602 kB
+Progress (2): 73/602 kB | 7.7/152 kB
+Progress (2): 73/602 kB | 16/152 kB 
+Progress (3): 73/602 kB | 16/152 kB | 6.8 kB
+Progress (3): 73/602 kB | 24/152 kB | 6.8 kB
+                                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 4.0 kB/s)
+finance-monolith-app            | Progress (2): 90/602 kB | 24/152 kB
+                                   
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar
+finance-monolith-app            | Progress (2): 90/602 kB | 40/152 kB
+Progress (2): 106/602 kB | 40/152 kB
+Progress (2): 106/602 kB | 57/152 kB
+Progress (2): 106/602 kB | 73/152 kB
+Progress (2): 106/602 kB | 90/152 kB
+Progress (2): 122/602 kB | 90/152 kB
+Progress (3): 122/602 kB | 90/152 kB | 3.2/256 kB
+Progress (3): 122/602 kB | 90/152 kB | 20/256 kB 
+Progress (3): 122/602 kB | 106/152 kB | 20/256 kB
+Progress (3): 122/602 kB | 106/152 kB | 36/256 kB
+Progress (3): 122/602 kB | 106/152 kB | 52/256 kB
+Progress (3): 122/602 kB | 106/152 kB | 61/256 kB
+Progress (3): 139/602 kB | 106/152 kB | 61/256 kB
+Progress (3): 139/602 kB | 106/152 kB | 77/256 kB
+Progress (3): 139/602 kB | 122/152 kB | 77/256 kB
+Progress (3): 155/602 kB | 122/152 kB | 77/256 kB
+Progress (3): 155/602 kB | 122/152 kB | 93/256 kB
+Progress (3): 155/602 kB | 139/152 kB | 93/256 kB
+Progress (3): 155/602 kB | 139/152 kB | 110/256 kB
+Progress (3): 155/602 kB | 139/152 kB | 126/256 kB
+Progress (3): 155/602 kB | 139/152 kB | 142/256 kB
+Progress (3): 155/602 kB | 152 kB | 142/256 kB    
+Progress (3): 155/602 kB | 152 kB | 159/256 kB
+Progress (3): 155/602 kB | 152 kB | 175/256 kB
+Progress (3): 155/602 kB | 152 kB | 192/256 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar (152 kB at 90 kB/s)
+finance-monolith-app            | Progress (2): 155/602 kB | 208/256 kB
+                                     
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar
+finance-monolith-app            | Progress (2): 155/602 kB | 224/256 kB
+Progress (2): 172/602 kB | 224/256 kB
+Progress (2): 172/602 kB | 241/256 kB
+Progress (2): 172/602 kB | 256 kB    
+Progress (2): 188/602 kB | 256 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar (256 kB at 151 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3.jar
+finance-monolith-app            | Progress (2): 188/602 kB | 7.7/292 kB
+Progress (2): 188/602 kB | 16/292 kB 
+Progress (2): 188/602 kB | 24/292 kB
+Progress (2): 200/602 kB | 24/292 kB
+Progress (2): 200/602 kB | 40/292 kB
+Progress (2): 200/602 kB | 57/292 kB
+Progress (2): 200/602 kB | 73/292 kB
+Progress (2): 200/602 kB | 90/292 kB
+Progress (2): 200/602 kB | 98/292 kB
+Progress (2): 217/602 kB | 98/292 kB
+Progress (2): 217/602 kB | 115/292 kB
+Progress (2): 217/602 kB | 131/292 kB
+Progress (2): 217/602 kB | 147/292 kB
+Progress (2): 217/602 kB | 164/292 kB
+Progress (2): 217/602 kB | 180/292 kB
+Progress (2): 217/602 kB | 197/292 kB
+Progress (2): 217/602 kB | 213/292 kB
+Progress (2): 233/602 kB | 213/292 kB
+Progress (2): 233/602 kB | 229/292 kB
+Progress (2): 233/602 kB | 246/292 kB
+Progress (2): 233/602 kB | 262/292 kB
+Progress (2): 233/602 kB | 279/292 kB
+Progress (2): 233/602 kB | 292 kB    
+Progress (2): 250/602 kB | 292 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar (292 kB at 172 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar
+finance-monolith-app            | Progress (1): 266/602 kB
+Progress (1): 282/602 kB
+Progress (1): 299/602 kB
+Progress (1): 315/602 kB
+Progress (1): 331/602 kB
+Progress (1): 348/602 kB
+Progress (1): 364/602 kB
+Progress (1): 381/602 kB
+Progress (1): 397/602 kB
+Progress (1): 413/602 kB
+Progress (1): 430/602 kB
+Progress (1): 446/602 kB
+Progress (1): 463/602 kB
+Progress (1): 479/602 kB
+Progress (1): 495/602 kB
+Progress (1): 512/602 kB
+Progress (1): 528/602 kB
+Progress (1): 544/602 kB
+Progress (1): 561/602 kB
+Progress (1): 577/602 kB
+Progress (2): 577/602 kB | 7.7/709 kB
+Progress (2): 577/602 kB | 8.2/709 kB
+Progress (2): 577/602 kB | 25/709 kB 
+Progress (2): 577/602 kB | 41/709 kB
+Progress (2): 577/602 kB | 57/709 kB
+Progress (2): 594/602 kB | 57/709 kB
+Progress (2): 602 kB | 57/709 kB    
+Progress (2): 602 kB | 74/709 kB
+Progress (2): 602 kB | 90/709 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar (602 kB at 349 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar
+finance-monolith-app            | Progress (1): 106/709 kB
+Progress (1): 123/709 kB
+Progress (1): 139/709 kB
+Progress (1): 156/709 kB
+Progress (1): 172/709 kB
+Progress (1): 188/709 kB
+Progress (1): 197/709 kB
+Progress (1): 213/709 kB
+Progress (1): 221/709 kB
+Progress (1): 238/709 kB
+Progress (1): 254/709 kB
+Progress (1): 258/709 kB
+Progress (1): 266/709 kB
+Progress (1): 282/709 kB
+Progress (2): 282/709 kB | 7.7/49 kB
+Progress (2): 282/709 kB | 15/49 kB 
+Progress (2): 299/709 kB | 15/49 kB
+Progress (2): 299/709 kB | 32/49 kB
+Progress (2): 315/709 kB | 32/49 kB
+Progress (2): 315/709 kB | 48/49 kB
+Progress (2): 315/709 kB | 49 kB   
+Progress (2): 331/709 kB | 49 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3.jar (49 kB at 29 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar
+finance-monolith-app            | Progress (1): 348/709 kB
+Progress (1): 364/709 kB
+Progress (1): 381/709 kB
+Progress (1): 397/709 kB
+Progress (1): 413/709 kB
+Progress (1): 430/709 kB
+Progress (1): 446/709 kB
+Progress (1): 463/709 kB
+Progress (1): 479/709 kB
+Progress (1): 495/709 kB
+Progress (1): 512/709 kB
+Progress (1): 528/709 kB
+Progress (1): 544/709 kB
+Progress (1): 561/709 kB
+Progress (1): 577/709 kB
+Progress (1): 594/709 kB
+Progress (1): 610/709 kB
+Progress (1): 626/709 kB
+Progress (1): 643/709 kB
+Progress (1): 659/709 kB
+Progress (1): 676/709 kB
+Progress (1): 692/709 kB
+Progress (1): 708/709 kB
+Progress (1): 709 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar (709 kB at 407 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar
+finance-monolith-app            | Progress (1): 3.2/9.4 kB
+Progress (1): 9.4 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar (9.4 kB at 5.4 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.jar
+finance-monolith-app            | Progress (1): 7.7/366 kB
+Progress (1): 16/366 kB 
+Progress (2): 16/366 kB | 7.7/31 kB
+Progress (2): 16/366 kB | 11/31 kB 
+Progress (2): 32/366 kB | 11/31 kB
+Progress (2): 32/366 kB | 28/31 kB
+Progress (2): 49/366 kB | 28/31 kB
+Progress (2): 49/366 kB | 31 kB   
+Progress (2): 57/366 kB | 31 kB
+                               
+Downloaded from central: https://repo.maven.apache.org/maven2/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar (31 kB at 18 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.2.7/spring-test-6.2.7.jar
+finance-monolith-app            | Progress (1): 73/366 kB
+Progress (1): 90/366 kB
+Progress (1): 106/366 kB
+Progress (1): 122/366 kB
+Progress (1): 139/366 kB
+Progress (1): 155/366 kB
+Progress (1): 172/366 kB
+Progress (1): 188/366 kB
+Progress (1): 204/366 kB
+Progress (1): 221/366 kB
+Progress (1): 237/366 kB
+Progress (2): 237/366 kB | 7.7/18 kB
+Progress (2): 237/366 kB | 11/18 kB 
+Progress (2): 237/366 kB | 18 kB   
+Progress (2): 253/366 kB | 18 kB
+Progress (2): 270/366 kB | 18 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar (18 kB at 10 kB/s)
+finance-monolith-app            | Progress (1): 286/366 kB
+                        
+Downloading from central: https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.10.1/xmlunit-core-2.10.1.jar
+finance-monolith-app            | Progress (1): 303/366 kB
+Progress (1): 319/366 kB
+Progress (1): 335/366 kB
+Progress (1): 352/366 kB
+Progress (1): 366 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar (366 kB at 206 kB/s)
+finance-monolith-app            | Progress (1): 0/2.0 MB
+Progress (1): 0/2.0 MB
+Progress (1): 0/2.0 MB
+Progress (1): 0/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.1/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.2/2.0 MB
+Progress (1): 0.3/2.0 MB
+Progress (1): 0.3/2.0 MB
+Progress (1): 0.3/2.0 MB
+Progress (1): 0.3/2.0 MB
+Progress (1): 0.3/2.0 MB
+Progress (2): 0.3/2.0 MB | 7.7/25 kB
+Progress (2): 0.3/2.0 MB | 7.7/25 kB
+Progress (2): 0.3/2.0 MB | 16/25 kB 
+Progress (2): 0.4/2.0 MB | 16/25 kB
+Progress (2): 0.4/2.0 MB | 25 kB   
+Progress (2): 0.4/2.0 MB | 25 kB
+Progress (2): 0.4/2.0 MB | 25 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.jar (25 kB at 14 kB/s)
+finance-monolith-app            | Progress (1): 0.4/2.0 MB
+Progress (1): 0.4/2.0 MB
+Progress (2): 0.4/2.0 MB | 0/1.0 MB
+Progress (2): 0.4/2.0 MB | 0/1.0 MB
+Progress (2): 0.4/2.0 MB | 0/1.0 MB
+Progress (2): 0.4/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0/1.0 MB
+Progress (2): 0.5/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.6/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.7/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.8/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.1/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 0.9/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.0/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.2/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.1/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.2/2.0 MB | 0.3/1.0 MB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 7.7/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 7.7/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 15/176 kB 
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 15/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 15/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 32/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 32/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 48/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 48/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 48/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 65/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 81/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 81/176 kB
+Progress (3): 1.2/2.0 MB | 0.3/1.0 MB | 97/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 97/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 114/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 114/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 114/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 130/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 130/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 147/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 147/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 163/176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 176 kB    
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 176 kB
+Progress (3): 1.3/2.0 MB | 0.3/1.0 MB | 176 kB
+Progress (3): 1.4/2.0 MB | 0.3/1.0 MB | 176 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.10.1/xmlunit-core-2.10.1.jar (176 kB at 97 kB/s)
+finance-monolith-app            | Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.4/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.3/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.5/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.6/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.4/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.7/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.8/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 1.9/2.0 MB | 0.5/1.0 MB
+Progress (2): 2.0 MB | 0.5/1.0 MB    
+Progress (2): 2.0 MB | 0.6/1.0 MB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar (2.0 MB at 1.1 MB/s)
+finance-monolith-app            | Progress (1): 0.6/1.0 MB
+Progress (1): 0.6/1.0 MB
+Progress (1): 0.6/1.0 MB
+Progress (1): 0.6/1.0 MB
+Progress (1): 0.6/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.7/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.8/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 0.9/1.0 MB
+Progress (1): 1.0/1.0 MB
+Progress (1): 1.0/1.0 MB
+Progress (1): 1.0/1.0 MB
+Progress (1): 1.0/1.0 MB
+Progress (1): 1.0 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/6.2.7/spring-test-6.2.7.jar (1.0 MB at 555 kB/s)
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- jacoco:0.8.13:prepare-agent (default) @ financial-monolith ---
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+finance-monolith-app            | Progress (1): 810 B
+Progress (1): 2.4 kB
+Progress (1): 4.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 94 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom
+finance-monolith-app            | Progress (1): 707 B
+Progress (1): 2.5 kB
+Progress (1): 6.4 kB
+Progress (1): 9.2 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 21 kB
+Progress (1): 22 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom (22 kB at 581 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+finance-monolith-app            | Progress (1): 735 B
+Progress (1): 2.6 kB
+Progress (1): 8.6 kB
+Progress (1): 12 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 339 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.pom
+finance-monolith-app            | Progress (1): 794 B
+Progress (1): 2.2 kB
+Progress (1): 4.4 kB
+Progress (1): 4.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.pom (4.5 kB at 107 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom
+finance-monolith-app            | Progress (1): 781 B
+Progress (1): 2.3 kB
+Progress (1): 4.5 kB
+Progress (1): 4.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom (4.9 kB at 136 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/36/maven-parent-36.pom
+finance-monolith-app            | Progress (1): 725 B
+Progress (1): 1.9 kB
+Progress (1): 5.4 kB
+Progress (1): 9.7 kB
+Progress (1): 14 kB 
+Progress (1): 19 kB
+Progress (1): 23 kB
+Progress (1): 26 kB
+Progress (1): 28 kB
+Progress (1): 30 kB
+Progress (1): 34 kB
+Progress (1): 37 kB
+Progress (1): 40 kB
+Progress (1): 45 kB
+Progress (1): 45 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/36/maven-parent-36.pom (45 kB at 1.1 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/26/apache-26.pom
+finance-monolith-app            | Progress (1): 744 B
+Progress (1): 2.1 kB
+Progress (1): 3.9 kB
+Progress (1): 7.3 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 21 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/26/apache-26.pom (21 kB at 513 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 2.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom (2.7 kB at 76 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 3.0 kB
+Progress (1): 5.9 kB
+Progress (1): 8.7 kB
+Progress (1): 12 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom (14 kB at 427 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.pom
+finance-monolith-app            | Progress (1): 729 B
+Progress (1): 2.3 kB
+Progress (1): 4.7 kB
+Progress (1): 8.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.pom (8.2 kB at 235 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/8/plexus-8.pom
+finance-monolith-app            | Progress (1): 696 B
+Progress (1): 2.7 kB
+Progress (1): 6.4 kB
+Progress (1): 9.2 kB
+Progress (1): 11 kB 
+Progress (1): 15 kB
+Progress (1): 20 kB
+Progress (1): 24 kB
+Progress (1): 25 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/8/plexus-8.pom (25 kB at 707 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.pom
+finance-monolith-app            | Progress (1): 764 B
+Progress (1): 2.1 kB
+Progress (1): 5.2 kB
+Progress (1): 7.8 kB
+Progress (1): 10 kB 
+Progress (1): 12 kB
+Progress (1): 15 kB
+Progress (1): 18 kB
+Progress (1): 20 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.pom (20 kB at 564 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom
+finance-monolith-app            | Progress (1): 703 B
+Progress (1): 1.8 kB
+Progress (1): 3.1 kB
+Progress (1): 4.6 kB
+Progress (1): 6.7 kB
+Progress (1): 8.1 kB
+Progress (1): 10 kB 
+Progress (1): 12 kB
+Progress (1): 15 kB
+Progress (1): 17 kB
+Progress (1): 20 kB
+Progress (1): 22 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 32 kB
+Progress (1): 32 kB
+Progress (1): 36 kB
+Progress (1): 39 kB
+Progress (1): 42 kB
+Progress (1): 44 kB
+Progress (1): 47 kB
+Progress (1): 51 kB
+Progress (1): 54 kB
+Progress (1): 56 kB
+Progress (1): 61 kB
+Progress (1): 65 kB
+Progress (1): 73 kB
+Progress (1): 76 kB
+Progress (1): 79 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom (79 kB at 2.2 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom
+finance-monolith-app            | Progress (1): 749 B
+Progress (1): 2.1 kB
+Progress (1): 3.9 kB
+Progress (1): 7.9 kB
+Progress (1): 13 kB 
+Progress (1): 16 kB
+Progress (1): 18 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom (18 kB at 594 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.2/junit-bom-5.7.2.pom
+finance-monolith-app            | Progress (1): 912 B
+Progress (1): 4.1 kB
+Progress (1): 5.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.2/junit-bom-5.7.2.pom (5.1 kB at 159 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
+finance-monolith-app            | Progress (1): 816 B
+Progress (1): 2.4 kB
+Progress (1): 2.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (2.4 kB at 68 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+finance-monolith-app            | Progress (1): 770 B
+Progress (1): 2.9 kB
+Progress (1): 6.5 kB
+Progress (1): 9.1 kB
+Progress (1): 9.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (9.3 kB at 275 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+finance-monolith-app            | Progress (1): 742 B
+Progress (1): 2.0 kB
+Progress (1): 6.6 kB
+Progress (1): 11 kB 
+Progress (1): 15 kB
+Progress (1): 17 kB
+Progress (1): 21 kB
+Progress (1): 23 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 kB at 612 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+finance-monolith-app            | Progress (1): 754 B
+Progress (1): 2.0 kB
+Progress (1): 3.7 kB
+Progress (1): 7.1 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom (14 kB at 390 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom
+finance-monolith-app            | Progress (1): 835 B
+Progress (1): 1.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.pom (1.4 kB at 34 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom
+finance-monolith-app            | Progress (1): 762 B
+Progress (1): 2.2 kB
+Progress (1): 5.7 kB
+Progress (1): 8.9 kB
+Progress (1): 9.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0/doxia-1.0.pom (9.6 kB at 276 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom
+finance-monolith-app            | Progress (1): 768 B
+Progress (1): 2.0 kB
+Progress (1): 6.4 kB
+Progress (1): 11 kB 
+Progress (1): 11 kB
+Progress (1): 14 kB
+Progress (1): 16 kB
+Progress (1): 22 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 32 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom (32 kB at 879 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+finance-monolith-app            | Progress (1): 790 B
+Progress (1): 2.1 kB
+Progress (1): 4.2 kB
+Progress (1): 4.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (4.5 kB at 132 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13.pom
+finance-monolith-app            | Progress (1): 884 B
+Progress (1): 3.5 kB
+Progress (1): 3.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13.pom (3.5 kB at 100 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.pom
+finance-monolith-app            | Progress (1): 894 B
+Progress (1): 2.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.pom (2.1 kB at 55 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom
+finance-monolith-app            | Progress (1): 1.3 kB
+Progress (1): 2.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom (2.4 kB at 54 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.pom (2.8 kB at 71 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 2.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.pom (2.6 kB at 65 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.pom
+finance-monolith-app            | Progress (1): 898 B
+Progress (1): 1.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.pom (1.9 kB at 54 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+finance-monolith-app            | Progress (1): 7.7/247 kB
+Progress (1): 16/247 kB 
+Progress (1): 24/247 kB
+Progress (1): 40/247 kB
+Progress (1): 57/247 kB
+Progress (1): 73/247 kB
+Progress (1): 90/247 kB
+Progress (1): 106/247 kB
+Progress (1): 122/247 kB
+Progress (1): 139/247 kB
+Progress (1): 155/247 kB
+Progress (1): 172/247 kB
+Progress (1): 188/247 kB
+Progress (1): 204/247 kB
+Progress (1): 221/247 kB
+Progress (1): 237/247 kB
+Progress (1): 247 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (247 kB at 5.3 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+finance-monolith-app            | Progress (1): 7.7/36 kB
+Progress (1): 8.2/36 kB
+Progress (1): 25/36 kB 
+Progress (1): 36 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar (36 kB at 1.0 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar
+finance-monolith-app            | Progress (1): 3.2/327 kB
+Progress (1): 11/327 kB 
+Progress (1): 28/327 kB
+Progress (1): 44/327 kB
+Progress (1): 61/327 kB
+Progress (1): 77/327 kB
+Progress (1): 93/327 kB
+Progress (1): 110/327 kB
+Progress (1): 126/327 kB
+Progress (1): 134/327 kB
+Progress (1): 151/327 kB
+Progress (1): 167/327 kB
+Progress (1): 183/327 kB
+Progress (1): 200/327 kB
+Progress (1): 216/327 kB
+Progress (1): 233/327 kB
+Progress (1): 249/327 kB
+Progress (1): 265/327 kB
+Progress (1): 282/327 kB
+Progress (1): 298/327 kB
+Progress (1): 306/327 kB
+Progress (1): 323/327 kB
+Progress (1): 327 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar (327 kB at 7.8 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.jar
+finance-monolith-app            | Progress (1): 7.7/41 kB
+Progress (1): 16/41 kB 
+Progress (1): 32/41 kB
+Progress (1): 41 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar (41 kB at 894 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar
+finance-monolith-app            | Progress (1): 7.7/10 kB
+Progress (2): 7.7/10 kB | 7.3/11 kB
+Progress (2): 10 kB | 7.3/11 kB    
+Progress (2): 10 kB | 11 kB    
+                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar (11 kB at 206 kB/s)
+finance-monolith-app            | Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 194 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar
+finance-monolith-app            | Progress (1): 3.2/303 kB
+Progress (1): 20/303 kB 
+Progress (1): 36/303 kB
+Progress (1): 52/303 kB
+Progress (1): 61/303 kB
+Progress (1): 77/303 kB
+Progress (1): 93/303 kB
+Progress (1): 110/303 kB
+Progress (1): 126/303 kB
+Progress (1): 142/303 kB
+Progress (1): 159/303 kB
+Progress (1): 175/303 kB
+Progress (1): 192/303 kB
+Progress (1): 208/303 kB
+Progress (1): 224/303 kB
+Progress (1): 241/303 kB
+Progress (1): 250/303 kB
+Progress (1): 266/303 kB
+Progress (1): 282/303 kB
+Progress (1): 299/303 kB
+Progress (1): 303 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar (303 kB at 4.2 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.jar
+finance-monolith-app            | Progress (1): 7.7/126 kB
+Progress (1): 16/126 kB 
+Progress (1): 32/126 kB
+Progress (1): 49/126 kB
+Progress (1): 65/126 kB
+Progress (1): 81/126 kB
+Progress (1): 98/126 kB
+Progress (2): 98/126 kB | 7.7/223 kB
+Progress (2): 98/126 kB | 16/223 kB 
+Progress (2): 98/126 kB | 24/223 kB
+Progress (2): 98/126 kB | 40/223 kB
+Progress (2): 114/126 kB | 40/223 kB
+Progress (2): 126 kB | 40/223 kB    
+Progress (2): 126 kB | 57/223 kB
+Progress (2): 126 kB | 73/223 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar (126 kB at 1.6 MB/s)
+finance-monolith-app            | Progress (1): 90/223 kB
+Progress (1): 106/223 kB
+Progress (1): 122/223 kB
+Progress (1): 135/223 kB
+Progress (1): 151/223 kB
+Progress (1): 168/223 kB
+Progress (1): 184/223 kB
+Progress (1): 200/223 kB
+Progress (1): 217/223 kB
+Progress (1): 223 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.jar (223 kB at 2.7 MB/s)
+finance-monolith-app            | Progress (1): 7.7/73 kB
+Progress (1): 16/73 kB 
+Progress (1): 24/73 kB
+Progress (1): 40/73 kB
+Progress (1): 57/73 kB
+Progress (1): 73/73 kB
+Progress (1): 73 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar (73 kB at 721 kB/s)
+finance-monolith-app            | Progress (1): 3.2/131 kB
+Progress (1): 20/131 kB 
+Progress (1): 36/131 kB
+Progress (1): 52/131 kB
+Progress (1): 69/131 kB
+Progress (1): 85/131 kB
+Progress (1): 101/131 kB
+Progress (1): 118/131 kB
+Progress (1): 131 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.jar (131 kB at 1.2 MB/s)
+finance-monolith-app            | Progress (1): 7.7/52 kB
+Progress (1): 11/52 kB 
+Progress (1): 28/52 kB
+Progress (1): 44/52 kB
+Progress (1): 52 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar (52 kB at 468 kB/s)
+finance-monolith-app            | [INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar=destfile=/workspace/target/jacoco.exec
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- resources:3.3.1:resources (default-resources) @ financial-monolith ---
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.pom
+finance-monolith-app            | Progress (1): 1.4 kB
+Progress (1): 2.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.pom (2.7 kB at 53 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom
+finance-monolith-app            | Progress (1): 821 B
+Progress (1): 3.0 kB
+Progress (1): 6.4 kB
+Progress (1): 9.0 kB
+Progress (1): 11 kB 
+Progress (1): 16 kB
+Progress (1): 20 kB
+Progress (1): 23 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom (23 kB at 469 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.pom
+finance-monolith-app            | Progress (1): 726 B
+Progress (1): 2.4 kB
+Progress (1): 4.4 kB
+Progress (1): 8.6 kB
+Progress (1): 8.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.pom (8.8 kB at 179 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/10/plexus-10.pom
+finance-monolith-app            | Progress (1): 696 B
+Progress (1): 2.7 kB
+Progress (1): 6.4 kB
+Progress (1): 9.2 kB
+Progress (1): 11 kB 
+Progress (1): 16 kB
+Progress (1): 20 kB
+Progress (1): 24 kB
+Progress (1): 25 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/10/plexus-10.pom (25 kB at 462 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.pom
+finance-monolith-app            | Progress (1): 793 B
+Progress (1): 2.3 kB
+Progress (1): 5.6 kB
+Progress (1): 6.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.pom (6.0 kB at 102 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/39/maven-shared-components-39.pom
+finance-monolith-app            | Progress (1): 812 B
+Progress (1): 2.2 kB
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/39/maven-shared-components-39.pom (3.2 kB at 61 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+finance-monolith-app            | Progress (1): 612 B
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (612 B at 6.3 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom
+finance-monolith-app            | Progress (1): 910 B
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom (3.2 kB at 64 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+finance-monolith-app            | Progress (1): 1.2 kB
+Progress (1): 3.7 kB
+Progress (1): 7.3 kB
+Progress (1): 8.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom (8.4 kB at 155 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+finance-monolith-app            | Progress (1): 1.3 kB
+Progress (1): 5.5 kB
+Progress (1): 8.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 152 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.pom
+finance-monolith-app            | Progress (1): 725 B
+Progress (1): 2.4 kB
+Progress (1): 4.5 kB
+Progress (1): 8.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.pom (8.0 kB at 134 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
+finance-monolith-app            | Progress (1): 740 B
+Progress (1): 2.1 kB
+Progress (1): 5.4 kB
+Progress (1): 8.8 kB
+Progress (1): 12 kB 
+Progress (1): 15 kB
+Progress (1): 17 kB
+Progress (1): 19 kB
+Progress (1): 21 kB
+Progress (1): 24 kB
+Progress (1): 28 kB
+Progress (1): 30 kB
+Progress (1): 31 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom (31 kB at 344 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom
+finance-monolith-app            | Progress (1): 912 B
+Progress (1): 4.1 kB
+Progress (1): 5.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom (5.1 kB at 67 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar
+finance-monolith-app            | Progress (1): 7.7/85 kB
+Progress (1): 16/85 kB 
+Progress (1): 32/85 kB
+Progress (1): 48/85 kB
+Progress (1): 65/85 kB
+Progress (1): 81/85 kB
+Progress (1): 85 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar (85 kB at 1.4 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
+finance-monolith-app            | Progress (1): 3.2/55 kB
+Progress (1): 20/55 kB 
+Progress (1): 36/55 kB
+Progress (1): 52/55 kB
+Progress (1): 55 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.jar (55 kB at 1.4 MB/s)
+finance-monolith-app            | Progress (1): 7.7/8.5 kB
+Progress (1): 8.5 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar (8.5 kB at 197 kB/s)
+finance-monolith-app            | Progress (1): 2.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar (2.5 kB at 53 kB/s)
+finance-monolith-app            | Progress (1): 3.2/587 kB
+Progress (1): 20/587 kB 
+Progress (1): 36/587 kB
+Progress (1): 52/587 kB
+Progress (1): 69/587 kB
+Progress (1): 85/587 kB
+Progress (1): 101/587 kB
+Progress (1): 118/587 kB
+Progress (1): 126/587 kB
+Progress (1): 142/587 kB
+Progress (1): 159/587 kB
+Progress (1): 175/587 kB
+Progress (1): 192/587 kB
+Progress (1): 208/587 kB
+Progress (1): 224/587 kB
+Progress (1): 241/587 kB
+Progress (1): 257/587 kB
+Progress (1): 274/587 kB
+Progress (1): 290/587 kB
+Progress (1): 306/587 kB
+Progress (1): 323/587 kB
+Progress (1): 339/587 kB
+Progress (1): 347/587 kB
+Progress (1): 364/587 kB
+Progress (2): 364/587 kB | 7.7/269 kB
+Progress (2): 364/587 kB | 16/269 kB 
+Progress (2): 380/587 kB | 16/269 kB
+Progress (2): 380/587 kB | 32/269 kB
+Progress (2): 396/587 kB | 32/269 kB
+Progress (2): 413/587 kB | 32/269 kB
+Progress (2): 429/587 kB | 32/269 kB
+Progress (2): 429/587 kB | 49/269 kB
+Progress (2): 446/587 kB | 49/269 kB
+Progress (2): 462/587 kB | 49/269 kB
+Progress (2): 478/587 kB | 49/269 kB
+Progress (2): 495/587 kB | 49/269 kB
+Progress (2): 495/587 kB | 65/269 kB
+Progress (2): 511/587 kB | 65/269 kB
+Progress (2): 511/587 kB | 81/269 kB
+Progress (2): 527/587 kB | 81/269 kB
+Progress (2): 527/587 kB | 98/269 kB
+Progress (2): 544/587 kB | 98/269 kB
+Progress (2): 560/587 kB | 98/269 kB
+Progress (2): 577/587 kB | 98/269 kB
+Progress (2): 587 kB | 98/269 kB    
+Progress (2): 587 kB | 114/269 kB
+Progress (2): 587 kB | 131/269 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (587 kB at 9.6 MB/s)
+finance-monolith-app            | Progress (1): 147/269 kB
+Progress (1): 163/269 kB
+Progress (1): 180/269 kB
+Progress (1): 196/269 kB
+Progress (1): 212/269 kB
+Progress (1): 229/269 kB
+Progress (1): 245/269 kB
+Progress (1): 262/269 kB
+Progress (1): 269 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar (269 kB at 3.8 MB/s)
+finance-monolith-app            | [INFO] Copying 1 resource from src/main/resources to target/classes
+finance-monolith-app            | [INFO] Copying 0 resource from src/main/resources to target/classes
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- compiler:3.14.0:compile (default-compile) @ financial-monolith ---
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.pom
+finance-monolith-app            | Progress (1): 820 B
+Progress (1): 2.3 kB
+Progress (1): 3.2 kB
+Progress (1): 5.7 kB
+Progress (1): 5.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.pom (5.9 kB at 89 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+finance-monolith-app            | Progress (1): 806 B
+Progress (1): 2.3 kB
+Progress (1): 4.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (4.7 kB at 91 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+finance-monolith-app            | Progress (1): 773 B
+Progress (1): 2.4 kB
+Progress (1): 4.2 kB
+Progress (1): 6.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (6.4 kB at 127 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+finance-monolith-app            | Progress (1): 726 B
+Progress (1): 2.0 kB
+Progress (1): 5.9 kB
+Progress (1): 10 kB 
+Progress (1): 15 kB
+Progress (1): 19 kB
+Progress (1): 22 kB
+Progress (1): 25 kB
+Progress (1): 27 kB
+Progress (1): 31 kB
+Progress (1): 33 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (33 kB at 552 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+finance-monolith-app            | Progress (1): 749 B
+Progress (1): 2.1 kB
+Progress (1): 4.1 kB
+Progress (1): 9.0 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (14 kB at 311 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.pom
+finance-monolith-app            | Progress (1): 1.9 kB
+Progress (1): 4.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.pom (4.1 kB at 89 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.4.0/plexus-languages-1.4.0.pom
+finance-monolith-app            | Progress (1): 1.4 kB
+Progress (1): 3.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.4.0/plexus-languages-1.4.0.pom (3.9 kB at 80 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/20/plexus-20.pom
+finance-monolith-app            | Progress (1): 826 B
+Progress (1): 2.9 kB
+Progress (1): 6.2 kB
+Progress (1): 8.8 kB
+Progress (1): 10 kB 
+Progress (1): 13 kB
+Progress (1): 17 kB
+Progress (1): 20 kB
+Progress (1): 24 kB
+Progress (1): 28 kB
+Progress (1): 29 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/20/plexus-20.pom (29 kB at 584 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom
+finance-monolith-app            | Progress (1): 872 B
+Progress (1): 3.4 kB
+Progress (1): 6.5 kB
+Progress (1): 11 kB 
+Progress (1): 13 kB
+Progress (1): 18 kB
+Progress (1): 18 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom (18 kB at 321 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom
+finance-monolith-app            | Progress (1): 1.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom (1.4 kB at 21 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom
+finance-monolith-app            | Progress (1): 1.2 kB
+Progress (1): 4.5 kB
+Progress (1): 7.6 kB
+Progress (1): 7.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom (7.6 kB at 158 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom
+finance-monolith-app            | Progress (1): 691 B
+Progress (1): 2.5 kB
+Progress (1): 6.4 kB
+Progress (1): 8.9 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 19 kB
+Progress (1): 21 kB
+Progress (1): 25 kB
+Progress (1): 28 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom (28 kB at 564 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom
+finance-monolith-app            | Progress (1): 908 B
+Progress (1): 4.1 kB
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom (5.6 kB at 126 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom
+finance-monolith-app            | Progress (1): 729 B
+Progress (1): 2.2 kB
+Progress (1): 4.3 kB
+Progress (1): 7.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom (7.8 kB at 191 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom
+finance-monolith-app            | Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom (1.3 kB at 28 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+finance-monolith-app            | Progress (1): 818 B
+Progress (1): 2.6 kB
+Progress (1): 3.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 95 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+finance-monolith-app            | Progress (1): 826 B
+Progress (1): 2.9 kB
+Progress (1): 6.2 kB
+Progress (1): 8.8 kB
+Progress (1): 10 kB 
+Progress (1): 14 kB
+Progress (1): 17 kB
+Progress (1): 21 kB
+Progress (1): 25 kB
+Progress (1): 29 kB
+Progress (1): 29 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 636 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom
+finance-monolith-app            | Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom (1.3 kB at 27 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom
+finance-monolith-app            | Progress (1): 1.6 kB
+Progress (1): 1.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom (1.6 kB at 36 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar
+finance-monolith-app            | Progress (1): 7.7/151 kB
+Progress (1): 11/151 kB 
+Progress (1): 28/151 kB
+Progress (1): 44/151 kB
+Progress (1): 61/151 kB
+Progress (1): 77/151 kB
+Progress (1): 93/151 kB
+Progress (1): 110/151 kB
+Progress (1): 126/151 kB
+Progress (1): 142/151 kB
+Progress (1): 151 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar (151 kB at 3.1 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar
+finance-monolith-app            | Progress (1): 7.7/29 kB
+Progress (1): 7.7/29 kB
+Progress (1): 24/29 kB 
+Progress (1): 29 kB   
+Progress (2): 29 kB | 5.2 kB
+                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar (5.2 kB at 159 kB/s)
+finance-monolith-app            | Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar (29 kB at 855 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar
+finance-monolith-app            | Progress (1): 7.7/57 kB
+Progress (1): 8.2/57 kB
+Progress (1): 25/57 kB 
+Progress (1): 41/57 kB
+Progress (1): 57 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.4.0/plexus-java-1.4.0.jar (57 kB at 1.5 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar
+finance-monolith-app            | Progress (1): 7.7/14 kB
+Progress (1): 14 kB    
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 kB at 276 kB/s)
+finance-monolith-app            | Progress (1): 7.7/353 kB
+Progress (1): 7.7/353 kB
+Progress (1): 24/353 kB 
+Progress (1): 40/353 kB
+Progress (1): 57/353 kB
+Progress (1): 73/353 kB
+Progress (1): 90/353 kB
+Progress (1): 106/353 kB
+Progress (1): 122/353 kB
+Progress (1): 139/353 kB
+Progress (1): 155/353 kB
+Progress (1): 172/353 kB
+Progress (1): 188/353 kB
+Progress (1): 204/353 kB
+Progress (1): 221/353 kB
+Progress (1): 237/353 kB
+Progress (1): 253/353 kB
+Progress (1): 270/353 kB
+Progress (1): 274/353 kB
+Progress (1): 290/353 kB
+Progress (1): 307/353 kB
+Progress (1): 323/353 kB
+Progress (1): 339/353 kB
+Progress (1): 347/353 kB
+Progress (1): 353 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar (353 kB at 6.1 MB/s)
+finance-monolith-app            | Progress (1): 3.2/94 kB
+Progress (1): 20/94 kB 
+Progress (1): 36/94 kB
+Progress (1): 52/94 kB
+Progress (1): 61/94 kB
+Progress (1): 77/94 kB
+Progress (1): 93/94 kB
+Progress (1): 94 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 1.5 MB/s)
+finance-monolith-app            | Progress (1): 7.7/26 kB
+Progress (1): 16/26 kB 
+Progress (1): 24/26 kB
+Progress (1): 26 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar (26 kB at 396 kB/s)
+finance-monolith-app            | Progress (1): 7.7/193 kB
+Progress (1): 16/193 kB 
+Progress (1): 25/193 kB
+Progress (1): 41/193 kB
+Progress (1): 57/193 kB
+Progress (1): 74/193 kB
+Progress (1): 90/193 kB
+Progress (1): 106/193 kB
+Progress (1): 123/193 kB
+Progress (1): 139/193 kB
+Progress (1): 156/193 kB
+Progress (1): 172/193 kB
+Progress (1): 188/193 kB
+Progress (1): 193 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar (193 kB at 2.6 MB/s)
+finance-monolith-app            | [INFO] Recompiling the module because of changed source code.
+finance-monolith-app            | [INFO] Compiling 6 source files with javac [debug parameters release 21] to target/classes
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- resources:3.3.1:testResources (default-testResources) @ financial-monolith ---
+finance-monolith-app            | [INFO] skip non existing resourceDirectory /workspace/src/test/resources
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ financial-monolith ---
+finance-monolith-app            | [INFO] No sources to compile
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] <<< spring-boot:3.5.0:run (default-cli) < test-compile @ financial-monolith <<<
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] 
+finance-monolith-app            | [INFO] --- spring-boot:3.5.0:run (default-cli) @ financial-monolith ---
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.pom
+finance-monolith-app            | Progress (1): 981 B
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.pom (3.2 kB at 89 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.pom
+finance-monolith-app            | Progress (1): 1.4 kB
+Progress (1): 2.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.pom (2.3 kB at 55 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.pom
+finance-monolith-app            | Progress (1): 1.4 kB
+Progress (1): 2.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.pom (2.0 kB at 55 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.pom
+finance-monolith-app            | Progress (1): 753 B
+Progress (1): 1.9 kB
+Progress (1): 3.5 kB
+Progress (1): 6.8 kB
+Progress (1): 9.5 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 17 kB
+Progress (1): 22 kB
+Progress (1): 22 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.pom (22 kB at 517 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom
+finance-monolith-app            | Progress (1): 706 B
+Progress (1): 1.9 kB
+Progress (1): 3.1 kB
+Progress (1): 4.7 kB
+Progress (1): 6.4 kB
+Progress (1): 8.4 kB
+Progress (1): 10 kB 
+Progress (1): 13 kB
+Progress (1): 15 kB
+Progress (1): 18 kB
+Progress (1): 19 kB
+Progress (1): 23 kB
+Progress (1): 25 kB
+Progress (1): 28 kB
+Progress (1): 32 kB
+Progress (1): 32 kB
+Progress (1): 35 kB
+Progress (1): 41 kB
+Progress (1): 44 kB
+Progress (1): 46 kB
+Progress (1): 49 kB
+Progress (1): 51 kB
+Progress (1): 54 kB
+Progress (1): 58 kB
+Progress (1): 60 kB
+Progress (1): 64 kB
+Progress (1): 67 kB
+Progress (1): 71 kB
+Progress (1): 74 kB
+Progress (1): 76 kB
+Progress (1): 78 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom (78 kB at 1.4 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom
+finance-monolith-app            | Progress (1): 743 B
+Progress (1): 2.1 kB
+Progress (1): 4.0 kB
+Progress (1): 6.3 kB
+Progress (1): 11 kB 
+Progress (1): 16 kB
+Progress (1): 20 kB
+Progress (1): 22 kB
+Progress (1): 23 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom (23 kB at 567 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.0/junit-bom-5.10.0.pom
+finance-monolith-app            | Progress (1): 913 B
+Progress (1): 4.1 kB
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.0/junit-bom-5.10.0.pom (5.6 kB at 157 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.pom
+finance-monolith-app            | Progress (1): 867 B
+Progress (1): 3.2 kB
+Progress (1): 5.6 kB
+Progress (1): 6.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.pom (6.1 kB at 152 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.4.4/httpclient5-parent-5.4.4.pom
+finance-monolith-app            | Progress (1): 841 B
+Progress (1): 2.2 kB
+Progress (1): 4.0 kB
+Progress (1): 8.4 kB
+Progress (1): 11 kB 
+Progress (1): 15 kB
+Progress (1): 16 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.4.4/httpclient5-parent-5.4.4.pom (16 kB at 407 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom
+finance-monolith-app            | Progress (1): 805 B
+Progress (1): 2.1 kB
+Progress (1): 4.1 kB
+Progress (1): 5.9 kB
+Progress (1): 7.1 kB
+Progress (1): 8.5 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 18 kB
+Progress (1): 22 kB
+Progress (1): 24 kB
+Progress (1): 27 kB
+Progress (1): 30 kB
+Progress (1): 30 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom (30 kB at 719 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom
+finance-monolith-app            | Progress (1): 745 B
+Progress (1): 2.1 kB
+Progress (1): 3.9 kB
+Progress (1): 7.3 kB
+Progress (1): 12 kB 
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 20 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/27/apache-27.pom (20 kB at 536 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.pom
+finance-monolith-app            | Progress (1): 883 B
+Progress (1): 2.9 kB
+Progress (1): 3.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.pom (3.9 kB at 94 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.3.4/httpcore5-parent-5.3.4.pom
+finance-monolith-app            | Progress (1): 846 B
+Progress (1): 2.2 kB
+Progress (1): 3.9 kB
+Progress (1): 7.5 kB
+Progress (1): 10 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.3.4/httpcore5-parent-5.3.4.pom (14 kB at 324 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.pom
+finance-monolith-app            | Progress (1): 890 B
+Progress (1): 3.1 kB
+Progress (1): 3.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.pom (3.6 kB at 90 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/tomlj/tomlj/1.0.0/tomlj-1.0.0.pom
+finance-monolith-app            | Progress (1): 1.2 kB
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/tomlj/tomlj/1.0.0/tomlj-1.0.0.pom (2.8 kB at 66 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.pom
+finance-monolith-app            | Progress (1): 915 B
+Progress (1): 3.3 kB
+Progress (1): 3.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.pom (3.6 kB at 80 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-master/4.7.2/antlr4-master-4.7.2.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 2.9 kB
+Progress (1): 4.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-master/4.7.2/antlr4-master-4.7.2.pom (4.4 kB at 100 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 3.7 kB
+Progress (1): 4.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom (4.3 kB at 95 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 2.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.pom (2.2 kB at 49 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.3.2/maven-common-artifact-filters-3.3.2.pom
+finance-monolith-app            | Progress (1): 791 B
+Progress (1): 2.3 kB
+Progress (1): 5.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.3.2/maven-common-artifact-filters-3.3.2.pom (5.3 kB at 117 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/37/maven-shared-components-37.pom
+finance-monolith-app            | Progress (1): 781 B
+Progress (1): 2.3 kB
+Progress (1): 4.5 kB
+Progress (1): 4.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/37/maven-shared-components-37.pom (4.9 kB at 136 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/37/maven-parent-37.pom
+finance-monolith-app            | Progress (1): 721 B
+Progress (1): 1.9 kB
+Progress (1): 5.4 kB
+Progress (1): 9.5 kB
+Progress (1): 14 kB 
+Progress (1): 19 kB
+Progress (1): 23 kB
+Progress (1): 26 kB
+Progress (1): 28 kB
+Progress (1): 30 kB
+Progress (1): 34 kB
+Progress (1): 37 kB
+Progress (1): 40 kB
+Progress (1): 45 kB
+Progress (1): 46 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/37/maven-parent-37.pom (46 kB at 1.2 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 3.4 kB
+Progress (1): 3.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.pom (3.8 kB at 101 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 3.1 kB
+Progress (1): 3.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.pom (3.4 kB at 92 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.5.0/maven-shade-plugin-3.5.0.pom
+finance-monolith-app            | Progress (1): 764 B
+Progress (1): 2.3 kB
+Progress (1): 4.8 kB
+Progress (1): 8.4 kB
+Progress (1): 11 kB 
+Progress (1): 12 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.5.0/maven-shade-plugin-3.5.0.pom (12 kB at 303 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 3.3 kB
+Progress (1): 3.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.pom (3.8 kB at 91 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.32/slf4j-parent-1.7.32.pom
+finance-monolith-app            | Progress (1): 1.0 kB
+Progress (1): 3.2 kB
+Progress (1): 6.0 kB
+Progress (1): 9.1 kB
+Progress (1): 12 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.32/slf4j-parent-1.7.32.pom (14 kB at 384 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.pom
+finance-monolith-app            | Progress (1): 1.3 kB
+Progress (1): 2.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.pom (2.4 kB at 68 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.pom (2.8 kB at 70 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 2.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.pom (2.6 kB at 72 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom
+finance-monolith-app            | Progress (1): 956 B
+Progress (1): 2.2 kB
+Progress (1): 3.2 kB
+Progress (1): 4.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom (4.6 kB at 110 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.pom
+finance-monolith-app            | Progress (1): 786 B
+Progress (1): 2.2 kB
+Progress (1): 4.4 kB
+Progress (1): 6.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.pom (6.2 kB at 142 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.pom
+finance-monolith-app            | Progress (1): 937 B
+Progress (1): 2.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.pom (2.2 kB at 55 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.0.v20140518/aether-1.0.0.v20140518.pom
+finance-monolith-app            | Progress (1): 798 B
+Progress (1): 3.2 kB
+Progress (1): 5.1 kB
+Progress (1): 9.1 kB
+Progress (1): 12 kB 
+Progress (1): 17 kB
+Progress (1): 20 kB
+Progress (1): 23 kB
+Progress (1): 28 kB
+Progress (1): 30 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.0.v20140518/aether-1.0.0.v20140518.pom (30 kB at 793 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.pom
+finance-monolith-app            | Progress (1): 938 B
+Progress (1): 1.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.pom (1.9 kB at 54 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.pom
+finance-monolith-app            | Progress (1): 771 B
+Progress (1): 2.1 kB
+Progress (1): 5.2 kB
+Progress (1): 7.9 kB
+Progress (1): 10 kB 
+Progress (1): 12 kB
+Progress (1): 15 kB
+Progress (1): 18 kB
+Progress (1): 20 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.pom (20 kB at 521 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/58/commons-parent-58.pom
+finance-monolith-app            | Progress (1): 781 B
+Progress (1): 2.0 kB
+Progress (1): 3.4 kB
+Progress (1): 4.9 kB
+Progress (1): 7.1 kB
+Progress (1): 8.4 kB
+Progress (1): 11 kB 
+Progress (1): 13 kB
+Progress (1): 16 kB
+Progress (1): 18 kB
+Progress (1): 21 kB
+Progress (1): 23 kB
+Progress (1): 26 kB
+Progress (1): 29 kB
+Progress (1): 33 kB
+Progress (1): 33 kB
+Progress (1): 37 kB
+Progress (1): 41 kB
+Progress (1): 44 kB
+Progress (1): 47 kB
+Progress (1): 49 kB
+Progress (1): 52 kB
+Progress (1): 56 kB
+Progress (1): 58 kB
+Progress (1): 61 kB
+Progress (1): 65 kB
+Progress (1): 68 kB
+Progress (1): 74 kB
+Progress (1): 77 kB
+Progress (1): 80 kB
+Progress (1): 83 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/58/commons-parent-58.pom (83 kB at 1.7 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
+finance-monolith-app            | Progress (1): 907 B
+Progress (1): 4.1 kB
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom (5.6 kB at 137 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.pom
+finance-monolith-app            | Progress (1): 1.1 kB
+Progress (1): 5.0 kB
+Progress (1): 8.6 kB
+Progress (1): 13 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.pom (14 kB at 309 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom
+finance-monolith-app            | Progress (1): 763 B
+Progress (1): 2.2 kB
+Progress (1): 5.1 kB
+Progress (1): 8.9 kB
+Progress (1): 12 kB 
+Progress (1): 14 kB
+Progress (1): 16 kB
+Progress (1): 19 kB
+Progress (1): 22 kB
+Progress (1): 24 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom (24 kB at 553 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom
+finance-monolith-app            | Progress (1): 704 B
+Progress (1): 1.9 kB
+Progress (1): 3.2 kB
+Progress (1): 4.7 kB
+Progress (1): 8.4 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+Progress (1): 17 kB
+Progress (1): 21 kB
+Progress (1): 24 kB
+Progress (1): 26 kB
+Progress (1): 29 kB
+Progress (1): 32 kB
+Progress (1): 36 kB
+Progress (1): 38 kB
+Progress (1): 39 kB
+Progress (1): 41 kB
+Progress (1): 45 kB
+Progress (1): 50 kB
+Progress (1): 55 kB
+Progress (1): 59 kB
+Progress (1): 62 kB
+Progress (1): 64 kB
+Progress (1): 66 kB
+Progress (1): 68 kB
+Progress (1): 70 kB
+Progress (1): 72 kB
+Progress (1): 72 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom (72 kB at 1.4 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.jar
+finance-monolith-app            | Progress (1): 7.7/319 kB
+Progress (1): 16/319 kB 
+Progress (1): 24/319 kB
+Progress (1): 40/319 kB
+Progress (1): 57/319 kB
+Progress (1): 73/319 kB
+Progress (1): 90/319 kB
+Progress (1): 90/319 kB
+Progress (1): 106/319 kB
+Progress (1): 123/319 kB
+Progress (1): 139/319 kB
+Progress (1): 156/319 kB
+Progress (1): 164/319 kB
+Progress (1): 180/319 kB
+Progress (1): 197/319 kB
+Progress (1): 213/319 kB
+Progress (1): 229/319 kB
+Progress (1): 246/319 kB
+Progress (1): 262/319 kB
+Progress (1): 273/319 kB
+Progress (1): 290/319 kB
+Progress (1): 306/319 kB
+Progress (1): 319 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.jar (319 kB at 5.9 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.jar
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar
+finance-monolith-app            | Progress (1): 0/1.4 MB
+Progress (1): 0/1.4 MB
+Progress (1): 0/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (1): 0.1/1.4 MB
+Progress (2): 0.1/1.4 MB | 0/1.1 MB
+Progress (2): 0.1/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.2/1.4 MB | 0/1.1 MB
+Progress (2): 0.3/1.4 MB | 0/1.1 MB
+Progress (2): 0.3/1.4 MB | 0/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (2): 0.3/1.4 MB | 0.1/1.1 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.3/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.1/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.2/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.4/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.3/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.4/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (3): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB
+Progress (4): 0.5/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 7.3/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 24/909 kB 
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 24/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 24/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 24/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 40/909 kB
+Progress (4): 0.6/1.4 MB | 0.5/1.1 MB | 0.1/1.9 MB | 40/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 40/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 40/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 56/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 73/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 73/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 89/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 89/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 89/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 106/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 106/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 122/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 122/909 kB
+Progress (4): 0.6/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 138/909 kB
+Progress (4): 0.7/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 138/909 kB
+Progress (4): 0.7/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 155/909 kB
+Progress (4): 0.7/1.4 MB | 0.6/1.1 MB | 0.1/1.9 MB | 155/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 155/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 155/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 155/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 171/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 171/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 171/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 187/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 187/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 204/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 204/909 kB
+Progress (4): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 220/909 kB
+Progress (5): 0.7/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 220/909 kB | 7.7/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 220/909 kB | 7.7/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 220/909 kB | 16/912 kB 
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 220/909 kB | 16/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 237/909 kB | 16/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 237/909 kB | 16/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 237/909 kB | 28/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 237/909 kB | 28/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 237/909 kB | 44/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 253/909 kB | 44/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 253/909 kB | 44/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 253/909 kB | 44/912 kB
+Progress (5): 0.8/1.4 MB | 0.7/1.1 MB | 0.1/1.9 MB | 253/909 kB | 61/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 253/909 kB | 61/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 61/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 77/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 77/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 77/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 93/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 93/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 269/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 110/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 126/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 126/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 126/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 126/912 kB
+Progress (5): 0.8/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 142/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 142/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 159/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 159/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 175/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 286/909 kB | 192/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 302/909 kB | 192/912 kB
+Progress (5): 0.9/1.4 MB | 0.8/1.1 MB | 0.1/1.9 MB | 302/909 kB | 208/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 208/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 224/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 224/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 241/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 241/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 241/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 257/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 257/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.1/1.9 MB | 302/909 kB | 274/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.2/1.9 MB | 302/909 kB | 274/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.2/1.9 MB | 302/909 kB | 274/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.2/1.9 MB | 302/909 kB | 290/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.2/1.9 MB | 302/909 kB | 290/912 kB
+Progress (5): 0.9/1.4 MB | 0.9/1.1 MB | 0.2/1.9 MB | 302/909 kB | 306/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 306/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 323/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 323/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 323/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 323/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 323/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 339/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 339/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 355/912 kB
+Progress (5): 0.9/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 355/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 355/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 302/909 kB | 372/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 319/909 kB | 372/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 319/909 kB | 372/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 319/909 kB | 388/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 335/909 kB | 388/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 335/909 kB | 388/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 335/909 kB | 405/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 335/909 kB | 405/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 351/909 kB | 405/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 351/909 kB | 421/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 351/909 kB | 421/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 351/909 kB | 421/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 351/909 kB | 437/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 368/909 kB | 437/912 kB
+Progress (5): 1.0/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 368/909 kB | 437/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 368/909 kB | 437/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 368/909 kB | 454/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 384/909 kB | 454/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 384/909 kB | 454/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 384/909 kB | 454/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 384/909 kB | 470/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 400/909 kB | 470/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 400/909 kB | 470/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 400/909 kB | 487/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 400/909 kB | 487/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 487/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 503/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 505/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 505/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 505/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 417/909 kB | 522/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 433/909 kB | 522/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.2/1.9 MB | 433/909 kB | 522/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 433/909 kB | 522/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 433/909 kB | 538/912 kB
+Progress (5): 1.1/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 538/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 538/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 538/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 538/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 554/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 554/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 554/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 571/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 571/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 571/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 571/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 587/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 587/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 587/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 587/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 604/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 604/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 604/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 604/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 604/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.3/1.9 MB | 450/909 kB | 620/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.4/1.9 MB | 450/909 kB | 620/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.4/1.9 MB | 450/909 kB | 636/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.4/1.9 MB | 450/909 kB | 636/912 kB
+Progress (5): 1.2/1.4 MB | 1.0/1.1 MB | 0.4/1.9 MB | 450/909 kB | 653/912 kB
+Progress (5): 1.2/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 653/912 kB
+Progress (5): 1.2/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 653/912 kB
+Progress (5): 1.2/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 669/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 669/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 686/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 686/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 450/909 kB | 702/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 466/909 kB | 702/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 466/909 kB | 702/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 466/909 kB | 718/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 482/909 kB | 718/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 482/909 kB | 718/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 482/909 kB | 735/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 482/909 kB | 751/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 499/909 kB | 751/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 499/909 kB | 751/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 515/909 kB | 751/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 515/909 kB | 767/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 515/909 kB | 767/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 767/912 kB
+Progress (5): 1.3/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 784/912 kB
+Progress (5): 1.4/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 784/912 kB
+Progress (5): 1.4/1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 800/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 800/912 kB    
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 817/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 817/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 833/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 532/909 kB | 833/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 548/909 kB | 833/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 548/909 kB | 849/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 548/909 kB | 866/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 548/909 kB | 866/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 548/909 kB | 882/912 kB
+Progress (5): 1.4 MB | 1.1/1.1 MB | 0.4/1.9 MB | 564/909 kB | 882/912 kB
+                                                                        
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar (1.4 MB at 15 MB/s)
+finance-monolith-app            | Progress (4): 1.1/1.1 MB | 0.4/1.9 MB | 564/909 kB | 899/912 kB
+                                                               
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar
+finance-monolith-app            | Progress (4): 1.1/1.1 MB | 0.4/1.9 MB | 564/909 kB | 899/912 kB
+Progress (4): 1.1/1.1 MB | 0.4/1.9 MB | 564/909 kB | 912 kB    
+Progress (4): 1.1/1.1 MB | 0.4/1.9 MB | 564/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.4/1.9 MB | 581/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 581/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 597/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 597/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 597/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 613/909 kB | 912 kB
+Progress (4): 1.1/1.1 MB | 0.5/1.9 MB | 613/909 kB | 912 kB
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.jar (912 kB at 10 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/tomlj/tomlj/1.0.0/tomlj-1.0.0.jar
+finance-monolith-app            | Progress (3): 1.1/1.1 MB | 0.5/1.9 MB | 613/909 kB
+Progress (3): 1.1/1.1 MB | 0.5/1.9 MB | 613/909 kB
+Progress (3): 1.1/1.1 MB | 0.5/1.9 MB | 630/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 630/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 630/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 630/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 630/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 646/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 646/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 646/909 kB
+Progress (3): 1.1/1.1 MB | 0.6/1.9 MB | 663/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 663/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 679/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 679/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 679/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 679/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 679/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 695/909 kB
+Progress (3): 1.1/1.1 MB | 0.7/1.9 MB | 695/909 kB
+Progress (3): 1.1/1.1 MB | 0.8/1.9 MB | 695/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 695/909 kB    
+Progress (3): 1.1 MB | 0.8/1.9 MB | 712/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 712/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 712/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 712/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 712/909 kB
+Progress (3): 1.1 MB | 0.8/1.9 MB | 728/909 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar (1.1 MB at 11 MB/s)
+finance-monolith-app            | Progress (2): 0.8/1.9 MB | 728/909 kB
+                                     
+Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar
+finance-monolith-app            | Progress (2): 0.9/1.9 MB | 728/909 kB
+Progress (2): 0.9/1.9 MB | 728/909 kB
+Progress (2): 0.9/1.9 MB | 728/909 kB
+Progress (2): 0.9/1.9 MB | 728/909 kB
+Progress (2): 0.9/1.9 MB | 745/909 kB
+Progress (2): 0.9/1.9 MB | 745/909 kB
+Progress (2): 0.9/1.9 MB | 745/909 kB
+Progress (2): 1.0/1.9 MB | 745/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 761/909 kB
+Progress (2): 1.0/1.9 MB | 777/909 kB
+Progress (2): 1.1/1.9 MB | 777/909 kB
+Progress (2): 1.1/1.9 MB | 794/909 kB
+Progress (2): 1.1/1.9 MB | 794/909 kB
+Progress (2): 1.1/1.9 MB | 810/909 kB
+Progress (2): 1.1/1.9 MB | 810/909 kB
+Progress (2): 1.1/1.9 MB | 810/909 kB
+Progress (2): 1.1/1.9 MB | 810/909 kB
+Progress (2): 1.1/1.9 MB | 826/909 kB
+Progress (2): 1.1/1.9 MB | 843/909 kB
+Progress (2): 1.1/1.9 MB | 843/909 kB
+Progress (2): 1.1/1.9 MB | 859/909 kB
+Progress (2): 1.2/1.9 MB | 859/909 kB
+Progress (2): 1.2/1.9 MB | 876/909 kB
+Progress (2): 1.2/1.9 MB | 876/909 kB
+Progress (2): 1.2/1.9 MB | 876/909 kB
+Progress (2): 1.2/1.9 MB | 892/909 kB
+Progress (2): 1.2/1.9 MB | 892/909 kB
+Progress (2): 1.2/1.9 MB | 908/909 kB
+Progress (2): 1.2/1.9 MB | 909 kB    
+Progress (2): 1.2/1.9 MB | 909 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar (909 kB at 8.4 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+finance-monolith-app            | Progress (1): 1.2/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (2): 1.7/1.9 MB | 7.7/157 kB
+Progress (2): 1.7/1.9 MB | 8.2/157 kB
+Progress (2): 1.7/1.9 MB | 25/157 kB 
+Progress (2): 1.7/1.9 MB | 41/157 kB
+Progress (2): 1.7/1.9 MB | 57/157 kB
+Progress (2): 1.7/1.9 MB | 57/157 kB
+Progress (2): 1.7/1.9 MB | 74/157 kB
+Progress (2): 1.7/1.9 MB | 90/157 kB
+Progress (2): 1.7/1.9 MB | 90/157 kB
+Progress (2): 1.7/1.9 MB | 106/157 kB
+Progress (2): 1.7/1.9 MB | 123/157 kB
+Progress (2): 1.7/1.9 MB | 139/157 kB
+Progress (2): 1.7/1.9 MB | 139/157 kB
+Progress (2): 1.7/1.9 MB | 156/157 kB
+Progress (2): 1.7/1.9 MB | 157 kB    
+Progress (2): 1.8/1.9 MB | 157 kB
+Progress (2): 1.8/1.9 MB | 157 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/tomlj/tomlj/1.0.0/tomlj-1.0.0.jar (157 kB at 1.2 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.jar
+finance-monolith-app            | Progress (2): 1.8/1.9 MB | 7.7/242 kB
+Progress (2): 1.8/1.9 MB | 16/242 kB 
+Progress (2): 1.8/1.9 MB | 16/242 kB
+Progress (2): 1.8/1.9 MB | 32/242 kB
+Progress (2): 1.8/1.9 MB | 48/242 kB
+Progress (2): 1.8/1.9 MB | 65/242 kB
+Progress (3): 1.8/1.9 MB | 65/242 kB | 7.7/338 kB
+Progress (3): 1.8/1.9 MB | 65/242 kB | 15/338 kB 
+Progress (3): 1.8/1.9 MB | 65/242 kB | 15/338 kB
+Progress (3): 1.8/1.9 MB | 65/242 kB | 15/338 kB
+Progress (3): 1.8/1.9 MB | 65/242 kB | 15/338 kB
+Progress (3): 1.9/1.9 MB | 65/242 kB | 15/338 kB
+Progress (3): 1.9/1.9 MB | 65/242 kB | 15/338 kB
+Progress (3): 1.9/1.9 MB | 81/242 kB | 15/338 kB
+Progress (3): 1.9 MB | 81/242 kB | 15/338 kB    
+Progress (3): 1.9 MB | 81/242 kB | 32/338 kB
+                                            
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar (1.9 MB at 13 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.3.2/maven-common-artifact-filters-3.3.2.jar
+finance-monolith-app            | Progress (2): 97/242 kB | 32/338 kB
+Progress (2): 114/242 kB | 32/338 kB
+Progress (2): 130/242 kB | 32/338 kB
+Progress (2): 147/242 kB | 32/338 kB
+Progress (2): 147/242 kB | 48/338 kB
+Progress (2): 163/242 kB | 48/338 kB
+Progress (2): 179/242 kB | 48/338 kB
+Progress (2): 196/242 kB | 48/338 kB
+Progress (2): 196/242 kB | 65/338 kB
+Progress (2): 212/242 kB | 65/338 kB
+Progress (2): 228/242 kB | 65/338 kB
+Progress (2): 242 kB | 65/338 kB    
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar (242 kB at 1.7 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.jar
+finance-monolith-app            | Progress (1): 81/338 kB
+Progress (1): 97/338 kB
+Progress (1): 114/338 kB
+Progress (1): 130/338 kB
+Progress (2): 130/338 kB | 7.7/20 kB
+Progress (2): 130/338 kB | 11/20 kB 
+Progress (2): 130/338 kB | 20 kB   
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar (20 kB at 126 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.jar
+finance-monolith-app            | Progress (1): 147/338 kB
+Progress (1): 163/338 kB
+Progress (2): 163/338 kB | 7.7/58 kB
+Progress (2): 163/338 kB | 16/58 kB 
+Progress (2): 163/338 kB | 32/58 kB
+Progress (2): 163/338 kB | 49/58 kB
+Progress (2): 163/338 kB | 58 kB   
+Progress (3): 163/338 kB | 58 kB | 7.7/466 kB
+Progress (3): 163/338 kB | 58 kB | 11/466 kB 
+Progress (3): 163/338 kB | 58 kB | 28/466 kB
+Progress (3): 163/338 kB | 58 kB | 44/466 kB
+                                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.3.2/maven-common-artifact-filters-3.3.2.jar (58 kB at 347 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.5.0/maven-shade-plugin-3.5.0.jar
+finance-monolith-app            | Progress (2): 179/338 kB | 44/466 kB
+Progress (2): 179/338 kB | 61/466 kB
+Progress (2): 179/338 kB | 77/466 kB
+Progress (2): 179/338 kB | 93/466 kB
+Progress (2): 179/338 kB | 110/466 kB
+Progress (2): 179/338 kB | 126/466 kB
+Progress (2): 179/338 kB | 142/466 kB
+Progress (2): 179/338 kB | 159/466 kB
+Progress (2): 179/338 kB | 175/466 kB
+Progress (2): 179/338 kB | 192/466 kB
+Progress (2): 196/338 kB | 192/466 kB
+Progress (2): 196/338 kB | 208/466 kB
+Progress (2): 196/338 kB | 224/466 kB
+Progress (2): 196/338 kB | 241/466 kB
+Progress (2): 196/338 kB | 257/466 kB
+Progress (2): 196/338 kB | 274/466 kB
+Progress (2): 196/338 kB | 290/466 kB
+Progress (2): 196/338 kB | 295/466 kB
+Progress (2): 196/338 kB | 311/466 kB
+Progress (2): 196/338 kB | 328/466 kB
+Progress (2): 196/338 kB | 344/466 kB
+Progress (2): 196/338 kB | 360/466 kB
+Progress (2): 212/338 kB | 360/466 kB
+Progress (2): 212/338 kB | 377/466 kB
+Progress (2): 212/338 kB | 393/466 kB
+Progress (2): 212/338 kB | 410/466 kB
+Progress (2): 212/338 kB | 426/466 kB
+Progress (2): 212/338 kB | 442/466 kB
+Progress (2): 212/338 kB | 459/466 kB
+Progress (2): 212/338 kB | 466 kB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.jar (466 kB at 2.6 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar
+finance-monolith-app            | Progress (1): 228/338 kB
+Progress (1): 245/338 kB
+Progress (2): 245/338 kB | 7.7/75 kB
+Progress (2): 245/338 kB | 16/75 kB 
+Progress (2): 245/338 kB | 24/75 kB
+Progress (2): 245/338 kB | 40/75 kB
+Progress (2): 245/338 kB | 57/75 kB
+Progress (2): 261/338 kB | 57/75 kB
+Progress (2): 261/338 kB | 73/75 kB
+Progress (2): 261/338 kB | 75 kB   
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.jar (75 kB at 401 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar
+finance-monolith-app            | Progress (1): 278/338 kB
+Progress (1): 294/338 kB
+Progress (1): 310/338 kB
+Progress (1): 327/338 kB
+Progress (2): 327/338 kB | 7.7/147 kB
+Progress (2): 327/338 kB | 15/147 kB 
+Progress (2): 327/338 kB | 32/147 kB
+Progress (2): 327/338 kB | 48/147 kB
+Progress (2): 327/338 kB | 65/147 kB
+Progress (2): 338 kB | 65/147 kB    
+Progress (2): 338 kB | 81/147 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar (338 kB at 1.6 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar
+finance-monolith-app            | Progress (1): 97/147 kB
+Progress (1): 114/147 kB
+Progress (1): 130/147 kB
+Progress (1): 147/147 kB
+Progress (1): 147 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.5.0/maven-shade-plugin-3.5.0.jar (147 kB at 701 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar
+finance-monolith-app            | Progress (1): 7.7/122 kB
+Progress (1): 11/122 kB 
+Progress (1): 28/122 kB
+Progress (1): 44/122 kB
+Progress (1): 55/122 kB
+Progress (1): 71/122 kB
+Progress (1): 88/122 kB
+Progress (1): 104/122 kB
+Progress (1): 120/122 kB
+Progress (1): 122 kB    
+Progress (2): 122 kB | 7.7/48 kB
+Progress (2): 122 kB | 15/48 kB 
+Progress (2): 122 kB | 32/48 kB
+                               
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar (122 kB at 564 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.jar
+finance-monolith-app            | Progress (1): 48 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.jar (48 kB at 221 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar
+finance-monolith-app            | Progress (1): 7.7/72 kB
+Progress (1): 16/72 kB 
+Progress (1): 28/72 kB
+Progress (1): 44/72 kB
+Progress (1): 61/72 kB
+Progress (1): 72 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar (72 kB at 310 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar
+finance-monolith-app            | Progress (1): 7.7/328 kB
+Progress (1): 16/328 kB 
+Progress (1): 24/328 kB
+Progress (1): 40/328 kB
+Progress (1): 57/328 kB
+Progress (1): 73/328 kB
+Progress (2): 73/328 kB | 7.7/52 kB
+Progress (2): 90/328 kB | 7.7/52 kB
+Progress (2): 90/328 kB | 16/52 kB 
+Progress (2): 106/328 kB | 16/52 kB
+Progress (2): 122/328 kB | 16/52 kB
+Progress (2): 139/328 kB | 16/52 kB
+Progress (2): 139/328 kB | 32/52 kB
+Progress (2): 155/328 kB | 32/52 kB
+Progress (2): 172/328 kB | 32/52 kB
+Progress (2): 188/328 kB | 32/52 kB
+Progress (2): 204/328 kB | 32/52 kB
+Progress (2): 221/328 kB | 32/52 kB
+Progress (2): 221/328 kB | 49/52 kB
+Progress (2): 237/328 kB | 49/52 kB
+Progress (2): 237/328 kB | 52 kB   
+Progress (2): 253/328 kB | 52 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar (52 kB at 208 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar
+finance-monolith-app            | Progress (1): 270/328 kB
+Progress (2): 270/328 kB | 7.7/146 kB
+Progress (2): 270/328 kB | 11/146 kB 
+Progress (2): 270/328 kB | 28/146 kB
+Progress (2): 270/328 kB | 44/146 kB
+Progress (2): 270/328 kB | 61/146 kB
+Progress (2): 286/328 kB | 61/146 kB
+Progress (2): 303/328 kB | 61/146 kB
+Progress (2): 303/328 kB | 77/146 kB
+Progress (2): 303/328 kB | 93/146 kB
+Progress (2): 319/328 kB | 93/146 kB
+Progress (2): 319/328 kB | 110/146 kB
+Progress (2): 319/328 kB | 126/146 kB
+Progress (2): 328 kB | 126/146 kB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar (328 kB at 1.3 MB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.jar
+finance-monolith-app            | Progress (1): 142/146 kB
+Progress (1): 146 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar (146 kB at 574 kB/s)
+finance-monolith-app            | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar
+finance-monolith-app            | Progress (1): 7.7/43 kB
+Progress (1): 16/43 kB 
+Progress (1): 32/43 kB
+Progress (1): 43 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.jar (43 kB at 160 kB/s)
+finance-monolith-app            | Progress (1): 7.7/484 kB
+Progress (1): 16/484 kB 
+Progress (2): 16/484 kB | 7.7/136 kB
+Progress (2): 16/484 kB | 16/136 kB 
+Progress (2): 16/484 kB | 32/136 kB
+Progress (2): 16/484 kB | 49/136 kB
+Progress (2): 16/484 kB | 65/136 kB
+Progress (2): 24/484 kB | 65/136 kB
+Progress (2): 24/484 kB | 81/136 kB
+Progress (2): 24/484 kB | 98/136 kB
+Progress (3): 24/484 kB | 98/136 kB | 7.7/233 kB
+Progress (3): 24/484 kB | 98/136 kB | 8.2/233 kB
+Progress (3): 24/484 kB | 98/136 kB | 11/233 kB 
+Progress (3): 24/484 kB | 98/136 kB | 28/233 kB
+Progress (3): 24/484 kB | 98/136 kB | 44/233 kB
+Progress (3): 24/484 kB | 98/136 kB | 61/233 kB
+Progress (4): 24/484 kB | 98/136 kB | 61/233 kB | 7.3/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 77/233 kB | 7.3/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 85/233 kB | 7.3/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 85/233 kB | 24/752 kB 
+Progress (4): 24/484 kB | 98/136 kB | 98/233 kB | 24/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 98/233 kB | 40/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 115/233 kB | 40/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 131/233 kB | 40/752 kB
+Progress (4): 24/484 kB | 98/136 kB | 131/233 kB | 56/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 131/233 kB | 56/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 142/233 kB | 56/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 159/233 kB | 56/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 175/233 kB | 56/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 175/233 kB | 73/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 192/233 kB | 73/752 kB
+Progress (4): 40/484 kB | 98/136 kB | 208/233 kB | 73/752 kB
+Progress (4): 40/484 kB | 114/136 kB | 208/233 kB | 73/752 kB
+Progress (4): 40/484 kB | 114/136 kB | 208/233 kB | 89/752 kB
+Progress (4): 40/484 kB | 114/136 kB | 208/233 kB | 101/752 kB
+Progress (4): 40/484 kB | 114/136 kB | 224/233 kB | 101/752 kB
+Progress (4): 40/484 kB | 114/136 kB | 233 kB | 101/752 kB    
+Progress (4): 40/484 kB | 131/136 kB | 233 kB | 101/752 kB
+                                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.jar (233 kB at 802 kB/s)
+finance-monolith-app            | Progress (3): 40/484 kB | 136 kB | 101/752 kB
+Progress (3): 40/484 kB | 136 kB | 118/752 kB
+Progress (3): 57/484 kB | 136 kB | 118/752 kB
+Progress (3): 57/484 kB | 136 kB | 130/752 kB
+Progress (3): 57/484 kB | 136 kB | 147/752 kB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar (136 kB at 465 kB/s)
+finance-monolith-app            | Progress (2): 57/484 kB | 163/752 kB
+Progress (2): 57/484 kB | 179/752 kB
+Progress (2): 57/484 kB | 196/752 kB
+Progress (2): 57/484 kB | 212/752 kB
+Progress (2): 73/484 kB | 212/752 kB
+Progress (2): 73/484 kB | 228/752 kB
+Progress (2): 73/484 kB | 245/752 kB
+Progress (2): 73/484 kB | 261/752 kB
+Progress (2): 73/484 kB | 278/752 kB
+Progress (2): 90/484 kB | 278/752 kB
+Progress (2): 90/484 kB | 294/752 kB
+Progress (2): 90/484 kB | 310/752 kB
+Progress (2): 90/484 kB | 327/752 kB
+Progress (2): 90/484 kB | 343/752 kB
+Progress (2): 106/484 kB | 343/752 kB
+Progress (2): 106/484 kB | 360/752 kB
+Progress (2): 106/484 kB | 376/752 kB
+Progress (2): 106/484 kB | 392/752 kB
+Progress (2): 106/484 kB | 409/752 kB
+Progress (2): 106/484 kB | 425/752 kB
+Progress (2): 122/484 kB | 425/752 kB
+Progress (2): 122/484 kB | 441/752 kB
+Progress (2): 122/484 kB | 458/752 kB
+Progress (2): 122/484 kB | 474/752 kB
+Progress (2): 122/484 kB | 491/752 kB
+Progress (2): 122/484 kB | 507/752 kB
+Progress (2): 139/484 kB | 507/752 kB
+Progress (2): 139/484 kB | 523/752 kB
+Progress (2): 139/484 kB | 540/752 kB
+Progress (2): 139/484 kB | 556/752 kB
+Progress (2): 139/484 kB | 573/752 kB
+Progress (2): 155/484 kB | 573/752 kB
+Progress (2): 155/484 kB | 589/752 kB
+Progress (2): 155/484 kB | 605/752 kB
+Progress (2): 155/484 kB | 622/752 kB
+Progress (2): 155/484 kB | 638/752 kB
+Progress (2): 155/484 kB | 654/752 kB
+Progress (2): 172/484 kB | 654/752 kB
+Progress (2): 172/484 kB | 671/752 kB
+Progress (2): 172/484 kB | 687/752 kB
+Progress (2): 172/484 kB | 704/752 kB
+Progress (2): 172/484 kB | 720/752 kB
+Progress (2): 172/484 kB | 730/752 kB
+Progress (2): 172/484 kB | 736/752 kB
+Progress (2): 188/484 kB | 736/752 kB
+Progress (2): 188/484 kB | 752 kB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar (752 kB at 2.4 MB/s)
+finance-monolith-app            | Progress (1): 204/484 kB
+Progress (1): 221/484 kB
+Progress (1): 237/484 kB
+Progress (1): 253/484 kB
+Progress (1): 270/484 kB
+Progress (1): 286/484 kB
+Progress (1): 303/484 kB
+Progress (1): 319/484 kB
+Progress (1): 335/484 kB
+Progress (1): 352/484 kB
+Progress (1): 368/484 kB
+Progress (1): 385/484 kB
+Progress (1): 401/484 kB
+Progress (1): 417/484 kB
+Progress (1): 434/484 kB
+Progress (1): 450/484 kB
+Progress (1): 466/484 kB
+Progress (1): 483/484 kB
+Progress (1): 484 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar (484 kB at 1.3 MB/s)
+finance-monolith-app            | [INFO] Attaching agents: []
+finance-monolith-app            | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-monolith-app            | 
+finance-monolith-app            |   .   ____          _            __ _ _
+finance-monolith-app            |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+finance-monolith-app            | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+finance-monolith-app            |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+finance-monolith-app            |   '  |____| .__|_| |_|_| |_\__, | / / / /
+finance-monolith-app            |  =========|_|==============|___/=/_/_/_/
+finance-monolith-app            | 
+finance-monolith-app            |  :: Spring Boot ::                (v3.5.0)
+finance-monolith-app            | 
+finance-monolith-app            | 2026-10-02T20:28:47.381Z  INFO 99 --- [financial-monolith] [           main] c.j.t.f.FinancialMonolithApplication     : Starting FinancialMonolithApplication using Java 21.0.7 with PID 99 (/workspace/target/classes started by root in /workspace)
+finance-monolith-app            | 2026-10-02T20:28:47.384Z  INFO 99 --- [financial-monolith] [           main] c.j.t.f.FinancialMonolithApplication     : No active profile set, falling back to 1 default profile: "default"
+finance-monolith-app            | 2026-10-02T20:28:50.937Z  INFO 99 --- [financial-monolith] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+finance-monolith-app            | 2026-10-02T20:28:51.001Z  INFO 99 --- [financial-monolith] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+finance-monolith-app            | 2026-10-02T20:28:51.979Z  INFO 99 --- [financial-monolith] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+finance-monolith-app            | 2026-10-02T20:28:52.002Z  INFO 99 --- [financial-monolith] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+finance-monolith-app            | 2026-10-02T20:28:52.002Z  INFO 99 --- [financial-monolith] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+finance-monolith-app            | 2026-10-02T20:28:53.288Z  INFO 99 --- [financial-monolith] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+finance-monolith-app            | 2026-10-02T20:28:53.293Z  INFO 99 --- [financial-monolith] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4624 ms
+finance-monolith-app            | 2026-10-02T20:28:53.576Z  INFO 99 --- [financial-monolith] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+finance-monolith-app            | 2026-10-02T20:28:53.633Z  INFO 99 --- [financial-monolith] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+finance-monolith-app            | 2026-10-02T20:28:53.672Z  INFO 99 --- [financial-monolith] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+finance-monolith-app            | 2026-10-02T20:28:54.230Z  INFO 99 --- [financial-monolith] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+finance-monolith-app            | 2026-10-02T20:28:54.303Z  INFO 99 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+finance-monolith-app            | 2026-10-02T20:28:54.492Z  INFO 99 --- [financial-monolith] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e0b123
+finance-monolith-app            | 2026-10-02T20:28:54.494Z  INFO 99 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+finance-monolith-app            | 2026-10-02T20:28:54.569Z  INFO 99 --- [financial-monolith] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+finance-monolith-app            | 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+finance-monolith-app            | 	Database driver: undefined/unknown
+finance-monolith-app            | 	Database version: 16.15
+finance-monolith-app            | 	Autocommit mode: undefined/unknown
+finance-monolith-app            | 	Isolation level: undefined/unknown
+finance-monolith-app            | 	Minimum pool size: undefined/unknown
+finance-monolith-app            | 	Maximum pool size: undefined/unknown
+finance-monolith-app            | 2026-10-02T20:28:55.784Z  INFO 99 --- [financial-monolith] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table app_users (
+finance-monolith-app            |         id uuid not null,
+finance-monolith-app            |         cash numeric(19,2) not null,
+finance-monolith-app            |         username varchar(255) not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table positions (
+finance-monolith-app            |         id bigint generated by default as identity,
+finance-monolith-app            |         shares integer not null,
+finance-monolith-app            |         symbol varchar(255) not null,
+finance-monolith-app            |         user_id uuid not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table trades (
+finance-monolith-app            |         id bigint generated by default as identity,
+finance-monolith-app            |         created_at timestamp(6) with time zone not null,
+finance-monolith-app            |         price numeric(19,2) not null,
+finance-monolith-app            |         shares integer not null,
+finance-monolith-app            |         symbol varchar(255) not null,
+finance-monolith-app            |         total numeric(19,2) not null,
+finance-monolith-app            |         type varchar(255) not null,
+finance-monolith-app            |         user_id uuid not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists app_users 
+finance-monolith-app            |        drop constraint if exists UKspsnwr241e9k9c8p5xl4k45ih
+finance-monolith-app            | 2026-10-02T20:28:58.260Z  WARN 99 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+finance-monolith-app            | 2026-10-02T20:28:58.260Z  WARN 99 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukspsnwr241e9k9c8p5xl4k45ih" of relation "app_users" does not exist, skipping
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists app_users 
+finance-monolith-app            |        add constraint UKspsnwr241e9k9c8p5xl4k45ih unique (username)
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists positions 
+finance-monolith-app            |        drop constraint if exists UKpq2blungy8od7q8a01bvsyjid
+finance-monolith-app            | 2026-10-02T20:28:58.585Z  WARN 99 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+finance-monolith-app            | 2026-10-02T20:28:58.586Z  WARN 99 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukpq2blungy8od7q8a01bvsyjid" of relation "positions" does not exist, skipping
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists positions 
+finance-monolith-app            |        add constraint UKpq2blungy8od7q8a01bvsyjid unique (user_id, symbol)
+finance-monolith-app            | 2026-10-02T20:28:58.804Z  INFO 99 --- [financial-monolith] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+finance-monolith-app            | 2026-10-02T20:28:59.120Z  INFO 99 --- [financial-monolith] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+finance-monolith-app            | 2026-10-02T20:28:59.912Z  WARN 99 --- [financial-monolith] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+finance-monolith-app            | 2026-10-02T20:29:01.201Z  INFO 99 --- [financial-monolith] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+finance-monolith-app            | 2026-10-02T20:29:01.574Z  INFO 99 --- [financial-monolith] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+finance-monolith-app            | 2026-10-02T20:29:01.597Z  INFO 99 --- [financial-monolith] [           main] c.j.t.f.FinancialMonolithApplication     : Started FinancialMonolithApplication in 14.9 seconds (process running for 15.219)
+finance-monolith-app            | 2026-10-02T20:29:03.160Z  INFO 99 --- [financial-monolith] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+finance-monolith-app            | 2026-10-02T20:29:03.160Z  INFO 99 --- [financial-monolith] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+finance-monolith-app            | 2026-10-02T20:29:03.162Z  INFO 99 --- [financial-monolith] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

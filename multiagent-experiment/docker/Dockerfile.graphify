@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+
+ARG GRAPHIFY_VERSION=0.9.73
+
+RUN pip install --no-cache-dir "graphifyy[mcp]==${GRAPHIFY_VERSION}"
+
+WORKDIR /work
+
+CMD ["graphify", "--help"]

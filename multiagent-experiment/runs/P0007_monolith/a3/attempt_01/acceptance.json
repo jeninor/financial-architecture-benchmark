@@ -1,0 +1,150 @@
+{
+  "run_id": "P0007_monolith_a3_01",
+  "base_url": "http://localhost:8080",
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "tests": [
+    {
+      "id": "T01",
+      "name": "valid quote",
+      "passed": true,
+      "elapsed_ms": 30.43,
+      "message": "PASS",
+      "http_statuses": [
+        200
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "invalid symbol",
+      "passed": true,
+      "elapsed_ms": 24.578,
+      "message": "PASS",
+      "http_statuses": [
+        400
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "create user with initial cash",
+      "passed": true,
+      "elapsed_ms": 236.541,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "duplicate username",
+      "passed": true,
+      "elapsed_ms": 25.379,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "valid buy",
+      "passed": true,
+      "elapsed_ms": 89.054,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "insufficient cash",
+      "passed": true,
+      "elapsed_ms": 36.883,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400,
+        200
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "zero shares rejected",
+      "passed": true,
+      "elapsed_ms": 17.849,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "portfolio calculation",
+      "passed": true,
+      "elapsed_ms": 61.489,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "valid sell",
+      "passed": true,
+      "elapsed_ms": 75.133,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "oversell leaves state unchanged",
+      "passed": true,
+      "elapsed_ms": 61.169,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        200,
+        400,
+        200
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "trade history",
+      "passed": true,
+      "elapsed_ms": 92.388,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "unknown user",
+      "passed": true,
+      "elapsed_ms": 6.084,
+      "message": "PASS",
+      "http_statuses": [
+        404
+      ]
+    }
+  ]
+}

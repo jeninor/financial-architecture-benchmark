@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "source_run": "P0007_monolith",
+  "started_at_utc": "2026-10-02T23:18:09.942543+00:00",
+  "model_requested": "sonnet",
+  "claude_version": "2.1.286 (Claude Code)",
+  "graphify": {
+    "requested_ref": "graphify-mcp:0.9.73",
+    "runtime_ref": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "created": "2026-10-02T03:51:50.064994378Z",
+    "docker_context": "desktop-linux",
+    "resolution_method": "image-ls-id-fallback",
+    "tag_listing": {
+      "repository": "graphify-mcp",
+      "tag": "0.9.73",
+      "id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+      "ref": "graphify-mcp:0.9.73"
+    },
+    "other_context_matches": []
+  },
+  "graph_budget": 1200,
+  "startup_timeout_seconds": 360,
+  "findings_json_sha256": "24b87f1b0e372f5bba6819c0e52b4832eaa250b99276fe321633548e24ceaf16",
+  "quality_before_sha256": "da48876834081c82862e53957d2e6437d45261e0038799b820b8244217f35cb1",
+  "security_before_sha256": "9b59a27be1717ee1d9728ad14fffaf414fa75fc5010fd5741930266aac44c6b7",
+  "docker_compose_sha256": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+  "compose_services": [
+    "postgres",
+    "app",
+    "postgres-test"
+  ],
+  "total_findings": 1
+}

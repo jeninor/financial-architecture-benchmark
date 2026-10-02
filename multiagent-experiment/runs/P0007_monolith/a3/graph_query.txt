@@ -1,0 +1,1 @@
+Locate the source symbols and structural relationships most relevant to these deterministic refactoring findings. Focus only on code/configuration that may need modification: A2 | QUALITY_HIGH_CCN | HIGH | financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java | FinanceService::trade( boolean buy , UUID userId , String symbol , Integer shares) | ccn | 11

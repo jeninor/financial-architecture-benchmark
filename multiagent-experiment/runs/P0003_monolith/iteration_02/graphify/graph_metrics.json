@@ -1,0 +1,27 @@
+{
+  "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0003_monolith/iteration_02/graphify/graphify-out/graph.json",
+  "graph_sha256": "e999a68386d914304261065f5f2e95e066ebe1c765e58ba27f0adbf354daf096",
+  "graph_bytes": 244967,
+  "extract_elapsed_seconds": 6.651,
+  "nodes": 131,
+  "edges": 391,
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-v",
+    "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0003_monolith/workspace:/project:ro",
+    "-v",
+    "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0003_monolith/iteration_02/graphify:/output",
+    "graphify-mcp:0.9.73",
+    "graphify",
+    "extract",
+    "/project",
+    "--code-only",
+    "--no-cluster",
+    "--out",
+    "/output"
+  ]
+}

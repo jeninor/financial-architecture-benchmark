@@ -1,0 +1,20 @@
+{
+  "BASELINE_MANIFEST.json": {
+    "mtime": 1790902495.744291,
+    "seen": 1790915772.9384704,
+    "ast_hash": "8b48df9e65fc018b4fc58afade094bc5",
+    "semantic_hash": "8b48df9e65fc018b4fc58afade094bc5"
+  },
+  "financial-monolith/pom.xml": {
+    "mtime": 1789612399.3104715,
+    "seen": 1790915772.938478,
+    "ast_hash": "0963d0bffdc8618c271fbd9084bac618",
+    "semantic_hash": "0963d0bffdc8618c271fbd9084bac618"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java": {
+    "mtime": 1789432863.5516384,
+    "seen": 1790915772.9384825,
+    "ast_hash": "72b8e13ddd9a11be06ce8513ef0d6314",
+    "semantic_hash": "72b8e13ddd9a11be06ce8513ef0d6314"
+  }
+}

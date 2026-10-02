@@ -1,0 +1,50 @@
+{
+  "BASELINE_MANIFEST.json": {
+    "mtime": 1790902495.744291,
+    "seen": 1790983101.8972645,
+    "ast_hash": "8b48df9e65fc018b4fc58afade094bc5",
+    "semantic_hash": "8b48df9e65fc018b4fc58afade094bc5"
+  },
+  "financial-monolith/pom.xml": {
+    "mtime": 1789612399.3104715,
+    "seen": 1790983101.8972716,
+    "ast_hash": "0963d0bffdc8618c271fbd9084bac618",
+    "semantic_hash": "0963d0bffdc8618c271fbd9084bac618"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/ApiExceptionHandler.java": {
+    "mtime": 1790972816.8951306,
+    "seen": 1790983101.8972757,
+    "ast_hash": "1ebd64fe4360aa10c7a0a7a72857b08d",
+    "semantic_hash": "1ebd64fe4360aa10c7a0a7a72857b08d"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/Domain.java": {
+    "mtime": 1790972816.8871307,
+    "seen": 1790983101.8972793,
+    "ast_hash": "2e9a6b904d0084f867f03c1088848dd4",
+    "semantic_hash": "2e9a6b904d0084f867f03c1088848dd4"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java": {
+    "mtime": 1790972816.8941307,
+    "seen": 1790983101.897283,
+    "ast_hash": "5ed37a666f8c42ba89b5be3b3d0125af",
+    "semantic_hash": "5ed37a666f8c42ba89b5be3b3d0125af"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java": {
+    "mtime": 1790972816.8921306,
+    "seen": 1790983101.8972864,
+    "ast_hash": "9bc5a4227f4c8e47cbbff19c77dbee37",
+    "semantic_hash": "9bc5a4227f4c8e47cbbff19c77dbee37"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java": {
+    "mtime": 1789432863.5516384,
+    "seen": 1790983101.8972902,
+    "ast_hash": "72b8e13ddd9a11be06ce8513ef0d6314",
+    "semantic_hash": "72b8e13ddd9a11be06ce8513ef0d6314"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java": {
+    "mtime": 1790972816.8891306,
+    "seen": 1790983101.8972938,
+    "ast_hash": "558d83a25f1c61e57a8dc91f7d8b8f11",
+    "semantic_hash": "558d83a25f1c61e57a8dc91f7d8b8f11"
+  }
+}

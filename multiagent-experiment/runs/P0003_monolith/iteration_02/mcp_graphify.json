@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "graphify": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--network",
+        "none",
+        "-v",
+        "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0003_monolith/workspace:/project:ro",
+        "-v",
+        "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0003_monolith/iteration_02/graphify/graphify-out:/graphify-out:ro",
+        "graphify-mcp:0.9.73",
+        "python",
+        "-m",
+        "graphify.serve",
+        "/graphify-out/graph.json"
+      ]
+    }
+  }
+}

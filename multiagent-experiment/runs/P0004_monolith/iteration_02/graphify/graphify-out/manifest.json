@@ -1,0 +1,56 @@
+{
+  "BASELINE_MANIFEST.json": {
+    "mtime": 1790902495.744291,
+    "seen": 1790914830.8126879,
+    "ast_hash": "8b48df9e65fc018b4fc58afade094bc5",
+    "semantic_hash": "8b48df9e65fc018b4fc58afade094bc5"
+  },
+  "financial-monolith/pom.xml": {
+    "mtime": 1789612399.3104715,
+    "seen": 1790914830.8126943,
+    "ast_hash": "0963d0bffdc8618c271fbd9084bac618",
+    "semantic_hash": "0963d0bffdc8618c271fbd9084bac618"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java": {
+    "mtime": 1789432863.5516384,
+    "seen": 1790914830.8126976,
+    "ast_hash": "72b8e13ddd9a11be06ce8513ef0d6314",
+    "semantic_hash": "72b8e13ddd9a11be06ce8513ef0d6314"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/ApiController.java": {
+    "mtime": 1790914605.3013046,
+    "seen": 1790914830.8127005,
+    "ast_hash": "7d4ef8dcd2cfc7c0b033eeff466ffe17",
+    "semantic_hash": "7d4ef8dcd2cfc7c0b033eeff466ffe17"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/AppUser.java": {
+    "mtime": 1790914605.292946,
+    "seen": 1790914830.8127031,
+    "ast_hash": "33c28c8c3add621d354d99b24e2d3b39",
+    "semantic_hash": "33c28c8c3add621d354d99b24e2d3b39"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java": {
+    "mtime": 1790914605.2993047,
+    "seen": 1790914830.812706,
+    "ast_hash": "6d53e7d77a7f8f020a9246d0d92b3f7f",
+    "semantic_hash": "6d53e7d77a7f8f020a9246d0d92b3f7f"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/Holding.java": {
+    "mtime": 1790914605.2943046,
+    "seen": 1790914830.8127089,
+    "ast_hash": "9810124de9c9831a23aa3412f46566d1",
+    "semantic_hash": "9810124de9c9831a23aa3412f46566d1"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/Repositories.java": {
+    "mtime": 1790914605.2973046,
+    "seen": 1790914830.8127117,
+    "ast_hash": "efa020aef665c5c601d4da320a276924",
+    "semantic_hash": "efa020aef665c5c601d4da320a276924"
+  },
+  "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/Trade.java": {
+    "mtime": 1790914605.2963047,
+    "seen": 1790914830.8127148,
+    "ast_hash": "3759a2c1928e0ca5aeba33d4a3558ca6",
+    "semantic_hash": "3759a2c1928e0ca5aeba33d4a3558ca6"
+  }
+}
