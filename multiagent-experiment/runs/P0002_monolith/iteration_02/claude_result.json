@@ -1,0 +1,99 @@
+{
+  "duration_api_ms": 160027,
+  "stop_reason": "end_turn",
+  "session_id": "af57934a-5ae6-4a0c-88a4-44aa70e99a65",
+  "total_cost_usd": 0.9422387999999999,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 5486,
+    "cache_read_input_tokens": 229628,
+    "output_tokens": 2472,
+    "output_tokens_details": {
+      "thinking_tokens": 710
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 5486,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 463,
+        "cache_read_input_tokens": 58818,
+        "cache_creation_input_tokens": 1507,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1507
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 34,
+      "outputTokens": 20423,
+      "thinkingTokens": 2629,
+      "cacheReadInputTokens": 719694,
+      "cacheCreationInputTokens": 48713,
+      "webSearchRequests": 0,
+      "costUSD": 0.9422387999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 4,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The start failure was my fault, not a problem in the code: I had left the `postgres` and `app` containers from my smoke test running. They were under the default Compose project `workspace`, and `docker-compose.yml` uses fixed `container_name`s. So the harness's `p0002-monolith` project couldn't create its `finance-monolith-postgres` container.\n\n**What I did:**\n- **Cleanup:** I ran `docker compose -p workspace down` without `-v`. That removed only the two containers I had started; their volumes are still there.\n- **Fresh-database check:** in a separate throwaway project (`p0002verify`), I started `postgres` and `app` on a brand-new volume. The app started with no DDL warnings or errors. A quick smoke test returned the expected statuses (201/400/200/404), and the portfolio showed `totalValue` 10000.00 after a buy and a sell.\n- **Teardown:** I removed that project completely with `down -v`, including its volumes.\n\nNo Java code needed changing, and `docker-compose.yml` is unchanged.\n\nNow the only `finance-monolith-*` container left is the harness's own `finance-monolith-postgres-test` (project `p0002-monolith`, state `Created`), which I didn't touch. All the fixed container names are free, so you can rerun the harness's `docker compose up`.\n\nFrom now on I'll tear down any containers I start for testing before handing the run back.",
+  "ttft_ms": 1988,
+  "type": "result",
+  "duration_ms": 83808,
+  "uuid": "ae801fee-4684-454e-894b-0c88498d7c72",
+  "ttft_stream_ms": 896,
+  "time_to_request_ms": 159,
+  "first_content_frame_ms": 897,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_local_elapsed_seconds": 85.558
+}

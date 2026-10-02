@@ -1,0 +1,17 @@
+{
+  "run_id": "P0001_monolith",
+  "kind": "pilot",
+  "architecture": "monolith",
+  "provider": "claude-code",
+  "model_requested": "claude-opus-5-5",
+  "claude_version": "2.1.286 (Claude Code)",
+  "started_at_utc": "2026-10-02T02:39:39.797044+00:00",
+  "acceptance_contract_sha256": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+  "acceptance_runner_sha256": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+  "docker_compose_sha256": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+  "compose_services": [
+    "postgres",
+    "app",
+    "postgres-test"
+  ]
+}

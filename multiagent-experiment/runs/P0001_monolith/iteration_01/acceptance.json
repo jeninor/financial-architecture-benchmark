@@ -1,0 +1,150 @@
+{
+  "run_id": "P0001_monolith_i01",
+  "base_url": "http://localhost:8080",
+  "total": 12,
+  "passed": 8,
+  "failed": 4,
+  "pass_rate": 0.6666666666666666,
+  "tests": [
+    {
+      "id": "T01",
+      "name": "valid quote",
+      "passed": true,
+      "elapsed_ms": 30.985,
+      "message": "PASS",
+      "http_statuses": [
+        200
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "invalid symbol",
+      "passed": false,
+      "elapsed_ms": 16.272,
+      "message": "expected HTTP [400], got 404; body={\"timestamp\":\"2026-10-02T02:43:51.589921793Z\",\"status\":404,\"error\":\"Not Found\",\"message\":\"Unknown symbol: INVALID\"}",
+      "http_statuses": [
+        404
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "create user with initial cash",
+      "passed": true,
+      "elapsed_ms": 361.276,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "duplicate username",
+      "passed": false,
+      "elapsed_ms": 41.58,
+      "message": "expected HTTP [400], got 409; body={\"timestamp\":\"2026-10-02T02:43:52.002559090Z\",\"status\":409,\"error\":\"Conflict\",\"message\":\"Username already exists: exp_P0001_monolith_i01_t04\"}",
+      "http_statuses": [
+        201,
+        409
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "valid buy",
+      "passed": true,
+      "elapsed_ms": 95.377,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "insufficient cash",
+      "passed": true,
+      "elapsed_ms": 35.008,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400,
+        200
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "zero shares rejected",
+      "passed": true,
+      "elapsed_ms": 138.387,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "portfolio calculation",
+      "passed": true,
+      "elapsed_ms": 61.19,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "valid sell",
+      "passed": true,
+      "elapsed_ms": 67.154,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "oversell leaves state unchanged",
+      "passed": true,
+      "elapsed_ms": 58.516,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        201,
+        200,
+        400,
+        200
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "trade history",
+      "passed": false,
+      "elapsed_ms": 62.736,
+      "message": "history should contain BUY and SELL; types=['', '']",
+      "http_statuses": [
+        201,
+        201,
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "unknown user",
+      "passed": false,
+      "elapsed_ms": 6.094,
+      "message": "expected HTTP [404], got 400; body={\"timestamp\":\"2026-10-02T02:43:52.527735449Z\",\"status\":400,\"error\":\"Bad Request\",\"message\":\"Malformed request\"}",
+      "http_statuses": [
+        400
+      ]
+    }
+  ]
+}

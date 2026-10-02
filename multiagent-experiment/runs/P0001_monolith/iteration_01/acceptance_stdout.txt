@@ -1,0 +1,25 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : P0001_monolith_i01
+
+T01  PASS  valid quote                             30.985 ms  HTTP=[200]
+T02  FAIL  invalid symbol                          16.272 ms  HTTP=[404]
+     expected HTTP [400], got 404; body={"timestamp":"2026-10-02T02:43:51.589921793Z","status":404,"error":"Not Found","message":"Unknown symbol: INVALID"}
+T03  PASS  create user with initial cash          361.276 ms  HTTP=[201, 200]
+T04  FAIL  duplicate username                      41.580 ms  HTTP=[201, 409]
+     expected HTTP [400], got 409; body={"timestamp":"2026-10-02T02:43:52.002559090Z","status":409,"error":"Conflict","message":"Username already exists: exp_P0001_monolith_i01_t04"}
+T05  PASS  valid buy                               95.377 ms  HTTP=[201, 201, 200]
+T06  PASS  insufficient cash                       35.008 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                   138.387 ms  HTTP=[201, 400]
+T08  PASS  portfolio calculation                   61.190 ms  HTTP=[201, 201, 201, 200]
+T09  PASS  valid sell                              67.154 ms  HTTP=[201, 201, 201, 200]
+T10  PASS  oversell leaves state unchanged         58.516 ms  HTTP=[201, 201, 200, 400, 200]
+T11  FAIL  trade history                           62.736 ms  HTTP=[201, 201, 201, 200]
+     history should contain BUY and SELL; types=['', '']
+T12  FAIL  unknown user                             6.094 ms  HTTP=[400]
+     expected HTTP [404], got 400; body={"timestamp":"2026-10-02T02:43:52.527735449Z","status":400,"error":"Bad Request","message":"Malformed request"}
+
+RESULT: 8/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0001_monolith/iteration_01/acceptance.json
