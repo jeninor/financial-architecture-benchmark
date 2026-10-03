@@ -4,3 +4,4 @@ target/
 *.log
 .env
 .DS_Storemultiagent-experiment/tool-cache/
+multiagent-experiment/tool-cache/
