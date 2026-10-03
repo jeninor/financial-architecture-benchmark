@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-10-03T00:21:03.679108+00:00",
+  "agents": [
+    "A2",
+    "A4"
+  ],
+  "summary": {
+    "total_findings": 1,
+    "by_agent": {
+      "A2": 1,
+      "A4": 0
+    },
+    "by_severity": {
+      "HIGH": 1
+    },
+    "by_type": {
+      "QUALITY_HIGH_CCN": 1
+    }
+  },
+  "quality_summary": {
+    "physical_java_loc": 666,
+    "nonblank_java_loc": 535,
+    "java_files": 16,
+    "lizard_nloc": 534,
+    "functions": 20,
+    "cc_total": 44,
+    "cc_average": 2.2,
+    "cc_max": 13,
+    "quality_findings": 1
+  },
+  "security_summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "symbol": "UserController::apply( @ PathVariable(\"id\") UUID id , @ RequestBody ApplyRequest req)",
+      "start_line": 73,
+      "metric": "ccn",
+      "value": 13,
+      "threshold": 10
+    }
+  ]
+}

@@ -3,4 +3,4 @@ target/
 .vscode/
 *.log
 .env
-.DS_Store
+.DS_Storemultiagent-experiment/tool-cache/

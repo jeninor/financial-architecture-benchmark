@@ -1,0 +1,21 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : P0008_microservices_i03
+
+T01  PASS  valid quote                             37.004 ms  HTTP=[200]
+T02  PASS  invalid symbol                          27.040 ms  HTTP=[400]
+T03  PASS  create user with initial cash          757.239 ms  HTTP=[201, 200]
+T04  PASS  duplicate username                     168.746 ms  HTTP=[201, 400]
+T05  PASS  valid buy                              916.203 ms  HTTP=[201, 201, 200]
+T06  PASS  insufficient cash                      134.212 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                    35.195 ms  HTTP=[201, 400]
+T08  PASS  portfolio calculation                  694.707 ms  HTTP=[201, 201, 201, 200]
+T09  PASS  valid sell                             249.909 ms  HTTP=[201, 201, 201, 200]
+T10  PASS  oversell leaves state unchanged        167.100 ms  HTTP=[201, 201, 200, 400, 200]
+T11  PASS  trade history                          285.225 ms  HTTP=[201, 201, 201, 200]
+T12  PASS  unknown user                            24.577 ms  HTTP=[404]
+
+RESULT: 12/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0008_microservices/iteration_03/acceptance.json

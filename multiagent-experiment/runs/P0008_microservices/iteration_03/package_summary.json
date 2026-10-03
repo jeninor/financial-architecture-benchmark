@@ -1,0 +1,22 @@
+{
+  "discovery-server": {
+    "returncode": 0,
+    "tail": " Container p0008-microservices-discovery-server-run-14e5a4280cdd Creating \n Container p0008-microservices-discovery-server-run-14e5a4280cdd Created \nPicked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC\n"
+  },
+  "api-gateway": {
+    "returncode": 0,
+    "tail": " Container p0008-microservices-api-gateway-run-bf0b759698a2 Creating \n Container p0008-microservices-api-gateway-run-bf0b759698a2 Created \nPicked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC\n"
+  },
+  "user-service": {
+    "returncode": 0,
+    "tail": " Container p0008-microservices-user-service-run-2e31a3ef3a56 Creating \n Container p0008-microservices-user-service-run-2e31a3ef3a56 Created \nPicked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC\n"
+  },
+  "market-service": {
+    "returncode": 0,
+    "tail": " Container p0008-microservices-market-service-run-2e8d80d58461 Creating \n Container p0008-microservices-market-service-run-2e8d80d58461 Created \nPicked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC\n"
+  },
+  "trade-service": {
+    "returncode": 0,
+    "tail": " Container p0008-microservices-trade-service-run-be149c7af2b1 Creating \n Container p0008-microservices-trade-service-run-be149c7af2b1 Created \nPicked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC\n"
+  }
+}

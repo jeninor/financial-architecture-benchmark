@@ -1,0 +1,108 @@
+{
+  "quality": {
+    "physical_java_loc": {
+      "before": 666,
+      "after": 678,
+      "delta": 12
+    },
+    "nonblank_java_loc": {
+      "before": 535,
+      "after": 544,
+      "delta": 9
+    },
+    "java_files": {
+      "before": 16,
+      "after": 16,
+      "delta": 0
+    },
+    "lizard_nloc": {
+      "before": 534,
+      "after": 543,
+      "delta": 9
+    },
+    "functions": {
+      "before": 20,
+      "after": 23,
+      "delta": 3
+    },
+    "cc_total": {
+      "before": 44,
+      "after": 47,
+      "delta": 3
+    },
+    "cc_average": {
+      "before": 2.2,
+      "after": 2.043478,
+      "delta": -0.156522
+    },
+    "cc_max": {
+      "before": 13,
+      "after": 7,
+      "delta": -6
+    },
+    "quality_findings": {
+      "before": 1,
+      "after": 0,
+      "delta": -1
+    }
+  },
+  "security": {
+    "vulnerabilities": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "secrets": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "misconfigurations": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "HIGH": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "CRITICAL": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    }
+  },
+  "acceptance_after": {
+    "passed": 12,
+    "total": 12
+  },
+  "a3_reported_cost_usd": 0.1053136,
+  "artifacts": [
+    {
+      "path": "api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar",
+      "bytes": 50761194,
+      "sha256": "64d9799ccb71bd595b0eee7acf6fd7c6086693d84728d13b288f032edbc1bd6e"
+    },
+    {
+      "path": "discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar",
+      "bytes": 58184441,
+      "sha256": "1630f6866f7620fa673c4e2c2489035ddd406ee3d41ad10f6646fe6cedbcc818"
+    },
+    {
+      "path": "market-service/target/market-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 46850232,
+      "sha256": "bdcb04a218ffa82650517a9be7b6de1a1c684d478391fc6e1553c76792186a72"
+    },
+    {
+      "path": "trade-service/target/trade-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 83638723,
+      "sha256": "7191e5ad82b18ff44971a0da71da288d40e9956fafb1e14001ea95963ca6cc33"
+    },
+    {
+      "path": "user-service/target/user-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 82125676,
+      "sha256": "d22bd469bf93587140fe408fe19e475c584101c74e30af4c4d80bc877038bd97"
+    }
+  ]
+}

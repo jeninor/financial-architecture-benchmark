@@ -1,0 +1,80 @@
+spring:
+
+  application:
+    name: api-gateway
+
+  cloud:
+
+    loadbalancer:
+      cache:
+        enabled: false
+
+    gateway:
+
+      server:
+
+        webflux:
+
+          routes:
+
+            - id: user-service
+              uri: lb://user-service
+              predicates:
+                - Path=/api/users
+
+            - id: market-service
+              uri: lb://market-service
+              predicates:
+                - Path=/api/quotes/**
+
+            - id: trade-service
+              uri: lb://trade-service
+              predicates:
+                - Path=/api/trades/**
+
+            - id: portfolio-service
+              uri: lb://trade-service
+              predicates:
+                - Path=/api/users/*/portfolio
+
+            - id: history-service
+              uri: lb://trade-service
+              predicates:
+                - Path=/api/users/*/trades
+
+
+server:
+
+  port: 8080
+
+
+eureka:
+
+  client:
+
+    registry-fetch-interval-seconds: 3
+
+    service-url:
+
+      defaultZone:
+        ${EUREKA_SERVER_URL:http://discovery-server:8761/eureka/}
+
+  instance:
+
+    lease-renewal-interval-in-seconds: 3
+
+
+    prefer-ip-address: true
+
+
+management:
+
+  endpoints:
+
+    web:
+
+      exposure:
+
+        include:
+          - health
+          - info

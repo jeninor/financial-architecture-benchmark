@@ -1,0 +1,166 @@
+Locate the microservice source files, configuration and structural relationships most relevant to this failure. Focus on the smallest repair consistent with the frozen architecture. Failure kind=BUILD_OR_START_FAILURE. Evidence:
+328 kB
+Progress (1): 123/328 kB
+Progress (1): 131/328 kB
+Progress (1): 147/328 kB
+Progress (1): 164/328 kB
+Progress (1): 180/328 kB
+Progress (1): 197/328 kB
+Progress (1): 213/328 kB
+Progress (1): 229/328 kB
+Progress (1): 246/328 kB
+Progress (1): 262/328 kB
+Progress (1): 270/328 kB
+Progress (1): 287/328 kB
+Progress (2): 287/328 kB | 7.7/136 kB
+Progress (2): 287/328 kB | 11/136 kB 
+Progress (2): 303/328 kB | 11/136 kB
+Progress (2): 319/328 kB | 11/136 kB
+Progress (2): 328 kB | 11/136 kB    
+Progress (2): 328 kB | 28/136 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar (328 kB at 1.3 MB/s)
+finance-ms-discovery       | Progress (1): 44/136 kB
+Progress (1): 61/136 kB
+Progress (1): 77/136 kB
+Progress (1): 93/136 kB
+Progress (1): 110/136 kB
+Progress (1): 126/136 kB
+Progress (1): 136 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar (136 kB at 524 kB/s)
+finance-ms-discovery       | Progress (1): 3.2/484 kB
+Progress (2): 3.2/484 kB | 7.7/233 kB
+Progress (2): 3.2/484 kB | 16/233 kB 
+Progress (2): 3.2/484 kB | 24/233 kB
+Progress (2): 3.2/484 kB | 33/233 kB
+Progress (2): 20/484 kB | 33/233 kB 
+Progress (2): 20/484 kB | 49/233 kB
+Progress (2): 20/484 kB | 66/233 kB
+Progress (2): 20/484 kB | 82/233 kB
+Progress (2): 20/484 kB | 98/233 kB
+Progress (2): 20/484 kB | 115/233 kB
+Progress (2): 20/484 kB | 118/233 kB
+Progress (2): 28/484 kB | 118/233 kB
+Progress (2): 28/484 kB | 135/233 kB
+Progress (2): 28/484 kB | 147/233 kB
+Progress (2): 28/484 kB | 164/233 kB
+Progress (2): 28/484 kB | 180/233 kB
+Progress (2): 28/484 kB | 197/233 kB
+Progress (2): 44/484 kB | 197/233 kB
+Progress (2): 44/484 kB | 213/233 kB
+Progress (2): 44/484 kB | 229/233 kB
+Progress (2): 44/484 kB | 233 kB    
+Progress (2): 61/484 kB | 233 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.jar (233 kB at 827 kB/s)
+finance-ms-discovery       | Progress (1): 77/484 kB
+Progress (2): 77/484 kB | 7.7/752 kB
+Progress (2): 77/484 kB | 16/752 kB 
+Progress (2): 77/484 kB | 32/752 kB
+Progress (2): 93/484 kB | 32/752 kB
+Progress (2): 110/484 kB | 32/752 kB
+Progress (2): 110/484 kB | 48/752 kB
+Progress (2): 110/484 kB | 65/752 kB
+Progress (2): 123/484 kB | 65/752 kB
+Progress (2): 123/484 kB | 81/752 kB
+Progress (2): 123/484 kB | 97/752 kB
+Progress (2): 139/484 kB | 97/752 kB
+Progress (2): 139/484 kB | 114/752 kB
+Progress (2): 156/484 kB | 114/752 kB
+Progress (2): 156/484 kB | 130/752 kB
+Progress (2): 172/484 kB | 130/752 kB
+Progress (2): 172/484 kB | 147/752 kB
+Progress (2): 180/484 kB | 147/752 kB
+Progress (2): 180/484 kB | 163/752 kB
+Progress (2): 197/484 kB | 163/752 kB
+Progress (2): 197/484 kB | 179/752 kB
+Progress (2): 205/484 kB | 179/752 kB
+Progress (2): 205/484 kB | 196/752 kB
+Progress (2): 213/484 kB | 196/752 kB
+Progress (2): 213/484 kB | 212/752 kB
+Progress (2): 229/484 kB | 212/752 kB
+Progress (2): 229/484 kB | 228/752 kB
+Progress (2): 246/484 kB | 228/752 kB
+Progress (2): 246/484 kB | 245/752 kB
+Progress (2): 246/484 kB | 261/752 kB
+Progress (2): 262/484 kB | 261/752 kB
+Progress (2): 262/484 kB | 278/752 kB
+Progress (2): 279/484 kB | 278/752 kB
+Progress (2): 279/484 kB | 294/752 kB
+Progress (2): 295/484 kB | 294/752 kB
+Progress (2): 295/484 kB | 310/752 kB
+Progress (2): 295/484 kB | 327/752 kB
+Progress (2): 311/484 kB | 327/752 kB
+Progress (2): 311/484 kB | 343/752 kB
+Progress (2): 311/484 kB | 360/752 kB
+Progress (2): 328/484 kB | 360/752 kB
+Progress (2): 344/484 kB | 360/752 kB
+Progress (2): 344/484 kB | 376/752 kB
+Progress (2): 344/484 kB | 392/752 kB
+Progress (2): 360/484 kB | 392/752 kB
+Progress (2): 360/484 kB | 409/752 kB
+Progress (2): 377/484 kB | 409/752 kB
+Progress (2): 377/484 kB | 425/752 kB
+Progress (2): 393/484 kB | 425/752 kB
+Progress (2): 393/484 kB | 441/752 kB
+Progress (2): 410/484 kB | 441/752 kB
+Progress (2): 410/484 kB | 458/752 kB
+Progress (2): 426/484 kB | 458/752 kB
+Progress (2): 426/484 kB | 474/752 kB
+Progress (2): 426/484 kB | 491/752 kB
+Progress (2): 442/484 kB | 491/752 kB
+Progress (2): 442/484 kB | 507/752 kB
+Progress (2): 459/484 kB | 507/752 kB
+Progress (2): 459/484 kB | 523/752 kB
+Progress (2): 475/484 kB | 523/752 kB
+Progress (2): 484 kB | 523/752 kB    
+Progress (2): 484 kB | 540/752 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar (484 kB at 1.5 MB/s)
+finance-ms-discovery       | Progress (1): 556/752 kB
+Progress (1): 573/752 kB
+Progress (1): 589/752 kB
+Progress (1): 605/752 kB
+Progress (1): 622/752 kB
+Progress (1): 638/752 kB
+Progress (1): 654/752 kB
+Progress (1): 671/752 kB
+Progress (1): 687/752 kB
+Progress (1): 704/752 kB
+Progress (1): 720/752 kB
+Progress (1): 736/752 kB
+Progress (1): 751/752 kB
+Progress (1): 752 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar (752 kB at 2.1 MB/s)
+finance-ms-discovery       | [INFO] Attaching agents: []
+finance-ms-discovery       | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-ms-discovery       | 
+finance-ms-discovery       |   .   ____          _            __ _ _
+finance-ms-discovery       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+finance-ms-discovery       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+finance-ms-discovery       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+finance-ms-discovery       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+finance-ms-discovery       |  =========|_|==============|___/=/_/_/_/
+finance-ms-discovery       | 
+finance-ms-discovery       |  :: Spring Boot ::                (v3.5.0)
+finance-ms-discovery       | 
+finance-ms-discovery       | 2026-10-02T23:53:17.731Z  INFO 91 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : Starting DiscoveryServerApplication using Java 21.0.7 with PID 91 (/workspace/target/classes started by root in /workspace)
+finance-ms-discovery       | 2026-10-02T23:53:17.737Z  INFO 91 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : No active profile set, falling back to 1 default profile: "default"
+finance-ms-discovery       | 2026-10-02T23:53:20.401Z  INFO 91 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=760fa6b5-e5a8-3a86-aa85-e5d9d39c61b6
+finance-ms-discovery       | 2026-10-02T23:53:20.960Z  INFO 91 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+finance-ms-discovery       | 2026-10-02T23:53:20.983Z  INFO 91 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+finance-ms-discovery       | 2026-10-02T23:53:20.983Z  INFO 91 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+finance-ms-discovery       | 2026-10-02T23:53:21.087Z  INFO 91 --- [discovery-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+finance-ms-discovery       | 2026-10-02T23:53:21.090Z  INFO 91 --- [discovery-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3238 ms
+
+NAME                        IMAGE                            COMMAND                  SERVICE            CREATED          STATUS                     PORTS
+finance-ms-api-gateway      maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   api-gateway        46 seconds ago   Created                    
+finance-ms-discovery        maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   discovery-server   57 seconds ago   Up 39 seconds              0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+finance-ms-market-service   maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   market-service     54 seconds ago   Up 32 seconds              0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+finance-ms-rabbitmq         rabbitmq:3-management-alpine     "docker-entrypoint.s…"   rabbitmq           57 seconds ago   Exited (1) 3 seconds ago   
+finance-ms-trade-postgres   postgres:16-alpine               "docker-entrypoint.s…"   trade-postgres     57 seconds ago   Up 41 seconds (healthy)    5432/tcp
+finance-ms-trade-service    maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   trade-service      47 seconds ago   Created                    
+finance-ms-user-postgres    postgres:16-alpine               "docker-entrypoint.s…"   user-postgres      57 seconds ago   Up 39 seconds (healthy)    5432/tcp
+finance-ms-user-service     maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   user-service       50 seconds ago   Created                    

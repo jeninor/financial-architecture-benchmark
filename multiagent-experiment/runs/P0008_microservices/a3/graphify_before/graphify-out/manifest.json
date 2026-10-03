@@ -1,0 +1,134 @@
+{
+  "BASELINE_MANIFEST.json": {
+    "mtime": 1790902496.166286,
+    "seen": 1790987357.0508995,
+    "ast_hash": "479d82a0f5633729e55917c93c371102",
+    "semantic_hash": "479d82a0f5633729e55917c93c371102"
+  },
+  "api-gateway/pom.xml": {
+    "mtime": 1789669406.0317247,
+    "seen": 1790987357.05091,
+    "ast_hash": "830e8cc6d5cec173053bc3e62938c28b",
+    "semantic_hash": "830e8cc6d5cec173053bc3e62938c28b"
+  },
+  "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java": {
+    "mtime": 1789669933.3127499,
+    "seen": 1790987357.0509143,
+    "ast_hash": "e028d67d3c86e6edc7fc73c9c14e22db",
+    "semantic_hash": "e028d67d3c86e6edc7fc73c9c14e22db"
+  },
+  "discovery-server/pom.xml": {
+    "mtime": 1789613734.6223278,
+    "seen": 1790987357.050917,
+    "ast_hash": "1be4daf4e05c6a22dd9ebfc701ebeaba",
+    "semantic_hash": "1be4daf4e05c6a22dd9ebfc701ebeaba"
+  },
+  "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java": {
+    "mtime": 1789613765.649025,
+    "seen": 1790987357.050919,
+    "ast_hash": "d77f66d9312cb59f53d5aaad62ac5793",
+    "semantic_hash": "d77f66d9312cb59f53d5aaad62ac5793"
+  },
+  "market-service/pom.xml": {
+    "mtime": 1789664869.3162482,
+    "seen": 1790987357.0509217,
+    "ast_hash": "baad7108996a59fc24985c28dffa16a8",
+    "semantic_hash": "baad7108996a59fc24985c28dffa16a8"
+  },
+  "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java": {
+    "mtime": 1789663512.1076045,
+    "seen": 1790987357.0509245,
+    "ast_hash": "16cc20ea53808fcb9bdbbe60f540a626",
+    "semantic_hash": "16cc20ea53808fcb9bdbbe60f540a626"
+  },
+  "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java": {
+    "mtime": 1790985113.73075,
+    "seen": 1790987357.0509264,
+    "ast_hash": "4cff502a5f6b72385e4b33e527bbc9b2",
+    "semantic_hash": "4cff502a5f6b72385e4b33e527bbc9b2"
+  },
+  "trade-service/pom.xml": {
+    "mtime": 1789680906.0360053,
+    "seen": 1790987357.0509286,
+    "ast_hash": "bf42ce8b35c5691aca4308219b5b678e",
+    "semantic_hash": "bf42ce8b35c5691aca4308219b5b678e"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/Clients.java": {
+    "mtime": 1790985113.7437503,
+    "seen": 1790987357.0509305,
+    "ast_hash": "234f6b3a3a07a78b5e9d6a511519682f",
+    "semantic_hash": "234f6b3a3a07a78b5e9d6a511519682f"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/MessagingConfig.java": {
+    "mtime": 1790985113.7457504,
+    "seen": 1790987357.0509326,
+    "ast_hash": "52c3eaa61fd03c04d38afab5fc4e214b",
+    "semantic_hash": "52c3eaa61fd03c04d38afab5fc4e214b"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java": {
+    "mtime": 1790985380.8427644,
+    "seen": 1790987357.0509353,
+    "ast_hash": "f8bdf210eec1596ba363338d02b63503",
+    "semantic_hash": "f8bdf210eec1596ba363338d02b63503"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java": {
+    "mtime": 1790985113.7407503,
+    "seen": 1790987357.0509377,
+    "ast_hash": "460d3e79fc27739bd7ee788f2e33f0bf",
+    "semantic_hash": "460d3e79fc27739bd7ee788f2e33f0bf"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java": {
+    "mtime": 1790985113.7427504,
+    "seen": 1790987357.0509398,
+    "ast_hash": "16a740bb0fdb63835a22990f6b7bdc99",
+    "semantic_hash": "16a740bb0fdb63835a22990f6b7bdc99"
+  },
+  "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java": {
+    "mtime": 1789667302.0822177,
+    "seen": 1790987357.0509422,
+    "ast_hash": "9563aff652b02255709e22f0dde0530f",
+    "semantic_hash": "9563aff652b02255709e22f0dde0530f"
+  },
+  "user-service/pom.xml": {
+    "mtime": 1789683310.4680154,
+    "seen": 1790987357.0509443,
+    "ast_hash": "1e5304ad19139d367f72c5626c5a07d1",
+    "semantic_hash": "1e5304ad19139d367f72c5626c5a07d1"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/Position.java": {
+    "mtime": 1790985139.4859295,
+    "seen": 1790987357.0509462,
+    "ast_hash": "60e1682da2606917514b9fa12d92e51f",
+    "semantic_hash": "60e1682da2606917514b9fa12d92e51f"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java": {
+    "mtime": 1790985113.7377503,
+    "seen": 1790987357.0509484,
+    "ast_hash": "e0640f9aefdd88c5e87389866718a5ee",
+    "semantic_hash": "e0640f9aefdd88c5e87389866718a5ee"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java": {
+    "mtime": 1790985113.7317502,
+    "seen": 1790987357.050951,
+    "ast_hash": "4bb58a9f11c07d5cdd201bb683a56cea",
+    "semantic_hash": "4bb58a9f11c07d5cdd201bb683a56cea"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java": {
+    "mtime": 1790985113.7387502,
+    "seen": 1790987357.0509534,
+    "ast_hash": "856e23c8d8fbe334fa13b6b79c5b0e75",
+    "semantic_hash": "856e23c8d8fbe334fa13b6b79c5b0e75"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java": {
+    "mtime": 1790985113.7357502,
+    "seen": 1790987357.0509558,
+    "ast_hash": "6b2d8f8da6ccd3479d4ea3c093e08726",
+    "semantic_hash": "6b2d8f8da6ccd3479d4ea3c093e08726"
+  },
+  "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java": {
+    "mtime": 1789661684.9505475,
+    "seen": 1790987357.050958,
+    "ast_hash": "9a99b2d614ea8eca80c50062d4effe30",
+    "semantic_hash": "9a99b2d614ea8eca80c50062d4effe30"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "graph_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0008_microservices/a3/graphify_before/graphify-out/graph.json",
+  "graph_sha256": "8c15577bc11e64ee336669b5ad419bee964d474373c24e23d4b6c5fecbdf29a5",
+  "graph_bytes": 217906,
+  "extract_elapsed_seconds": 20.727,
+  "nodes": 130,
+  "edges": 373,
+  "runtime_image_ref": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689"
+}

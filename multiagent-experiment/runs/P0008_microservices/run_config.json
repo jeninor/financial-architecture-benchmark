@@ -1,0 +1,40 @@
+{
+  "run_id": "P0008_microservices",
+  "kind": "pilot",
+  "architecture": "microservices",
+  "provider": "claude-code",
+  "model_requested": "sonnet",
+  "claude_version": "2.1.286 (Claude Code)",
+  "graphify": {
+    "requested_ref": "graphify-mcp:0.9.73",
+    "runtime_ref": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "created": "2026-10-02T03:51:50.064994378Z",
+    "docker_context": "desktop-linux",
+    "resolution_method": "inspect-tag",
+    "other_context_matches": [],
+    "mode": "orchestrator-side-retrieval-after-failure",
+    "budget": 1200
+  },
+  "started_at_utc": "2026-10-02T23:50:56.646099+00:00",
+  "acceptance_contract_sha256": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+  "acceptance_runner_sha256": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+  "architecture_contract_sha256": "fd80305030561795e30be8eb2fb131a81461bcfe01ef52ed1f7e3f2afa317745",
+  "docker_compose_sha256": "082ef287289114dd36b6cebae6e44ee8e3882a279ebfc4d640e66dea88e1c520",
+  "compose_services": [
+    "discovery-server",
+    "rabbitmq",
+    "user-postgres",
+    "user-service",
+    "market-service",
+    "trade-postgres",
+    "trade-service",
+    "api-gateway"
+  ],
+  "startup_timeout_seconds": 360,
+  "limits": {
+    "max_iterations": 3,
+    "max_turns_first": 15,
+    "max_turns_fix": 8
+  }
+}

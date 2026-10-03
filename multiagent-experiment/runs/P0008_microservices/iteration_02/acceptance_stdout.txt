@@ -1,0 +1,22 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : P0008_microservices_i02
+
+T01  PASS  valid quote                             39.476 ms  HTTP=[200]
+T02  PASS  invalid symbol                          30.840 ms  HTTP=[400]
+T03  FAIL  create user with initial cash          816.139 ms  HTTP=[201, 502]
+     expected HTTP [200], got 502; body={"timestamp":"2026-10-02T23:55:49.893+00:00","status":502,"error":"Bad Gateway","path":"/api/users/efed8210-1769-4ba8-8ac3-0b561f083e5a/portfolio"}
+T04  PASS  duplicate username                      89.849 ms  HTTP=[201, 400]
+T05  PASS  valid buy                             1093.620 ms  HTTP=[201, 201, 200]
+T06  PASS  insufficient cash                      127.048 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                    43.078 ms  HTTP=[201, 400]
+T08  PASS  portfolio calculation                  277.203 ms  HTTP=[201, 201, 201, 200]
+T09  PASS  valid sell                             861.636 ms  HTTP=[201, 201, 201, 200]
+T10  PASS  oversell leaves state unchanged        495.302 ms  HTTP=[201, 201, 200, 400, 200]
+T11  PASS  trade history                          463.356 ms  HTTP=[201, 201, 201, 200]
+T12  PASS  unknown user                            27.374 ms  HTTP=[404]
+
+RESULT: 11/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/P0008_microservices/iteration_02/acceptance.json
