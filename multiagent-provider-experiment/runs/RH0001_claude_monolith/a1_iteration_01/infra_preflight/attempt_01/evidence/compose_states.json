@@ -1,0 +1,81 @@
+{
+  "postgres": {
+    "service": "postgres",
+    "container_id": "7485d9058fe5bc1ad0a0914089260bac6e5ce113eb5858744260cc2e464c7bb1",
+    "container_name": "finance-monolith-postgres",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-04T03:26:53.732605741Z",
+        "end": "2026-10-04T03:26:53.813249094Z",
+        "exit_code": 2,
+        "output": "/var/run/postgresql:5432 - no response\n"
+      },
+      {
+        "start": "2026-10-04T03:26:58.815565219Z",
+        "end": "2026-10-04T03:26:58.898625612Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T03:27:03.90103366Z",
+        "end": "2026-10-04T03:27:03.965059827Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T03:27:08.96616672Z",
+        "end": "2026-10-04T03:27:09.053496313Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  },
+  "app": {
+    "service": "app",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  },
+  "postgres-test": {
+    "service": "postgres-test",
+    "container_id": "6b557eee8237c01f4c627c007c81b51d6aa881af1ca3aa016f74ee551b3387c9",
+    "container_name": "finance-monolith-postgres-test",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-04T03:26:52.900586614Z",
+        "end": "2026-10-04T03:26:52.985282645Z",
+        "exit_code": 2,
+        "output": "/var/run/postgresql:5432 - no response\n"
+      },
+      {
+        "start": "2026-10-04T03:26:57.986688756Z",
+        "end": "2026-10-04T03:26:58.093167283Z",
+        "exit_code": 2,
+        "output": "/var/run/postgresql:5432 - no response\n"
+      },
+      {
+        "start": "2026-10-04T03:27:03.097012426Z",
+        "end": "2026-10-04T03:27:03.178492477Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T03:27:08.179422156Z",
+        "end": "2026-10-04T03:27:08.265299495Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  }
+}

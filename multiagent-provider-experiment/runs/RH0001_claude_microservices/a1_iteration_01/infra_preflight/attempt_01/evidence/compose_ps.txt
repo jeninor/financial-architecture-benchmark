@@ -1,0 +1,4 @@
+NAME                        IMAGE                          COMMAND                  SERVICE          CREATED         STATUS                          PORTS
+finance-ms-rabbitmq         rabbitmq:3-management-alpine   "docker-entrypoint.s…"   rabbitmq         2 minutes ago   Exited (1) About a minute ago   
+finance-ms-trade-postgres   postgres:16-alpine             "docker-entrypoint.s…"   trade-postgres   2 minutes ago   Up 2 minutes (healthy)          5432/tcp
+finance-ms-user-postgres    postgres:16-alpine             "docker-entrypoint.s…"   user-postgres    2 minutes ago   Up 2 minutes (healthy)          5432/tcp

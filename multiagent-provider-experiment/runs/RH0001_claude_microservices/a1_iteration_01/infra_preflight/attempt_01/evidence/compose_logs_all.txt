@@ -1,0 +1,269 @@
+finance-ms-user-postgres  | The files belonging to this database system will be owned by user "postgres".
+finance-ms-user-postgres  | This user must also own the server process.
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | The database cluster will be initialized with locale "en_US.utf8".
+finance-ms-user-postgres  | The default database encoding has accordingly been set to "UTF8".
+finance-ms-user-postgres  | The default text search configuration will be set to "english".
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | Data page checksums are disabled.
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-ms-user-postgres  | creating subdirectories ... ok
+finance-ms-user-postgres  | selecting dynamic shared memory implementation ... posix
+finance-ms-user-postgres  | selecting default max_connections ... 100
+finance-ms-user-postgres  | selecting default shared_buffers ... 128MB
+finance-ms-user-postgres  | selecting default time zone ... UTC
+finance-ms-user-postgres  | creating configuration files ... ok
+finance-ms-user-postgres  | running bootstrap script ... ok
+finance-ms-user-postgres  | sh: locale: not found
+finance-ms-user-postgres  | 2026-10-04 03:29:48.957 UTC [36] WARNING:  no usable system locales were found
+finance-ms-user-postgres  | performing post-bootstrap initialization ... ok
+finance-ms-user-postgres  | syncing data to disk ... ok
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | Success. You can now start the database server using:
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | initdb: warning: enabling "trust" authentication for local connections
+finance-ms-user-postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-ms-user-postgres  | waiting for server to start....2026-10-04 03:29:52.913 UTC [42] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-ms-user-postgres  | 2026-10-04 03:29:53.322 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-ms-user-postgres  | .2026-10-04 03:29:54.049 UTC [51] LOG:  database system was shut down at 2026-10-04 03:29:49 UTC
+finance-ms-user-postgres  | 2026-10-04 03:29:54.050 UTC [52] FATAL:  the database system is starting up
+finance-ms-user-postgres  | 2026-10-04 03:29:54.213 UTC [42] LOG:  database system is ready to accept connections
+finance-ms-user-postgres  |  done
+finance-ms-user-postgres  | server started
+finance-ms-user-postgres  | CREATE DATABASE
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | waiting for server to shut down....2026-10-04 03:29:55.268 UTC [42] LOG:  received fast shutdown request
+finance-ms-user-postgres  | 2026-10-04 03:29:55.518 UTC [42] LOG:  aborting any active transactions
+finance-ms-user-postgres  | 2026-10-04 03:29:55.528 UTC [42] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+finance-ms-user-postgres  | 2026-10-04 03:29:55.534 UTC [49] LOG:  shutting down
+finance-ms-user-postgres  | 2026-10-04 03:29:55.869 UTC [49] LOG:  checkpoint starting: shutdown immediate
+finance-ms-user-postgres  | ..2026-10-04 03:29:57.297 UTC [49] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.140 s, sync=0.581 s, total=1.763 s; sync files=301, longest=0.211 s, average=0.002 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D58, redo lsn=0/1925D58
+finance-ms-user-postgres  | 2026-10-04 03:29:57.303 UTC [42] LOG:  database system is shut down
+finance-ms-user-postgres  |  done
+finance-ms-user-postgres  | server stopped
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | PostgreSQL init process complete; ready for start up.
+finance-ms-user-postgres  | 
+finance-ms-user-postgres  | 2026-10-04 03:29:57.762 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-ms-user-postgres  | 2026-10-04 03:29:57.762 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-ms-user-postgres  | 2026-10-04 03:29:57.762 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-ms-user-postgres  | 2026-10-04 03:29:58.052 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-ms-user-postgres  | 2026-10-04 03:29:58.619 UTC [65] LOG:  database system was shut down at 2026-10-04 03:29:57 UTC
+finance-ms-user-postgres  | 2026-10-04 03:29:58.913 UTC [1] LOG:  database system is ready to accept connections
+finance-ms-rabbitmq       | 2026-10-04 03:30:03.026256+00:00 [error] <0.172.0> Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces
+finance-ms-rabbitmq       | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>   crasher:
+finance-ms-rabbitmq       | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     initial call: auth:init/1
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     pid: <0.172.0>
+finance-ms-trade-postgres  | The files belonging to this database system will be owned by user "postgres".
+finance-ms-trade-postgres  | This user must also own the server process.
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | The database cluster will be initialized with locale "en_US.utf8".
+finance-ms-trade-postgres  | The default database encoding has accordingly been set to "UTF8".
+finance-ms-trade-postgres  | The default text search configuration will be set to "english".
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | Data page checksums are disabled.
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-ms-trade-postgres  | creating subdirectories ... ok
+finance-ms-trade-postgres  | selecting dynamic shared memory implementation ... posix
+finance-ms-trade-postgres  | selecting default max_connections ... 100
+finance-ms-trade-postgres  | selecting default shared_buffers ... 128MB
+finance-ms-trade-postgres  | selecting default time zone ... UTC
+finance-ms-trade-postgres  | creating configuration files ... ok
+finance-ms-trade-postgres  | running bootstrap script ... ok
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     registered_name: []
+finance-ms-trade-postgres  | sh: locale: not found
+finance-ms-trade-postgres  | 2026-10-04 03:29:49.073 UTC [34] WARNING:  no usable system locales were found
+finance-ms-trade-postgres  | performing post-bootstrap initialization ... ok
+finance-ms-trade-postgres  | syncing data to disk ... ok
+finance-ms-trade-postgres  | 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     exception error: "Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces"
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>       in function  auth:init_no_setcookie/0 (auth.erl, line 313)
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>       in call from auth:init/1 (auth.erl, line 165)
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>       in call from gen_server:init_it/2 (gen_server.erl, line 980)
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>       in call from gen_server:init_it/6 (gen_server.erl, line 935)
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     ancestors: [net_sup,kernel_sup,<0.47.0>]
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     message_queue_len: 0
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     messages: []
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     links: [<0.170.0>]
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     dictionary: []
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     trap_exit: true
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     status: running
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     heap_size: 1598
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     stack_size: 28
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>     reductions: 2313
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0>   neighbours:
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.040211+00:00 [error] <0.172.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>     supervisor: {local,net_sup}
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>     errorContext: start_error
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>     reason: {"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | Success. You can now start the database server using:
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>              [{auth,init_no_setcookie,0,[{file,"auth.erl"},{line,313}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>               {auth,init,1,[{file,"auth.erl"},{line,165}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>               {gen_server,init_it,2,[{file,"gen_server.erl"},{line,980}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>               {gen_server,init_it,6,[{file,"gen_server.erl"},{line,935}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>               {proc_lib,init_p_do_apply,3,
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                         [{file,"proc_lib.erl"},{line,241}]}]}
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>     offender: [{pid,undefined},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {id,auth},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {mfargs,{auth,start_link,[]}},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {restart_type,permanent},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {significant,false},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {shutdown,2000},
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0>                {child_type,worker}]
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.072002+00:00 [error] <0.170.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> BOOT FAILED
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> ===========
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | initdb: warning: enabling "trust" authentication for local connections
+finance-ms-trade-postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-ms-trade-postgres  | waiting for server to start....2026-10-04 03:29:52.298 UTC [40] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-ms-trade-postgres  | 2026-10-04 03:29:52.410 UTC [40] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-ms-trade-postgres  | .2026-10-04 03:29:53.531 UTC [49] LOG:  database system was shut down at 2026-10-04 03:29:49 UTC
+finance-ms-trade-postgres  | 2026-10-04 03:29:53.531 UTC [50] FATAL:  the database system is starting up
+finance-ms-trade-postgres  | .2026-10-04 03:29:53.923 UTC [40] LOG:  database system is ready to accept connections
+finance-ms-trade-postgres  |  done
+finance-ms-trade-postgres  | server started
+finance-ms-trade-postgres  | CREATE DATABASE
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-ms-trade-postgres  | 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> Exception during startup:
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> error:{badmatch,{error,{{shutdown,{failed_to_start_child,auth,{"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",[{auth,init_no_setcookie,0,[{file,"auth.erl"},{line,313}]},{auth,init,1,[{file,"auth.erl"},{line,165}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,980}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,935}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,241}]}]}}},{child,undefined,net_sup_dynamic,{erl_distribution,start_link,[#{name => rabbit_prelaunch_1@localhost,supervisor => net_sup_dynamic,net_tickintensity => 4,net_ticktime => 60,name_domain => shortnames,clean_halt => false}]},permanent,false,1000,supervisor,[erl_distribution]}}}}
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     rabbit_prelaunch_dist:duplicate_node_check/1, line 80
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     rabbit_prelaunch_dist:setup/1, line 23
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     rabbit_prelaunch:do_run/0, line 115
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     rabbit_prelaunch:run_prelaunch_first_phase/0, line 32
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     supervisor:do_start_child_i/3, line 420
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     supervisor:do_start_child/2, line 406
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     supervisor:-start_children/2-fun-0-/3, line 390
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0>     supervisor:children_map/4, line 1275
+finance-ms-rabbitmq        | 2026-10-04 03:30:03.076103+00:00 [error] <0.156.0> 
+finance-ms-rabbitmq        | 
+finance-ms-rabbitmq        | BOOT FAILED
+finance-ms-rabbitmq        | ===========
+finance-ms-rabbitmq        | Exception during startup:
+finance-ms-rabbitmq        | 
+finance-ms-rabbitmq        | error:{badmatch,{error,{{shutdown,{failed_to_start_child,auth,{"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",[{auth,init_no_setcookie,0,[{file,"auth.erl"},{line,313}]},{auth,init,1,[{file,"auth.erl"},{line,165}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,980}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,935}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,241}]}]}}},{child,undefined,net_sup_dynamic,{erl_distribution,start_link,[#{name => rabbit_prelaunch_1@localhost,supervisor => net_sup_dynamic,net_tickintensity => 4,net_ticktime => 60,name_domain => shortnames,clean_halt => false}]},permanent,false,1000,supervisor,[erl_distribution]}}}}
+finance-ms-rabbitmq        | 
+finance-ms-rabbitmq        |     rabbit_prelaunch_dist:duplicate_node_check/1, line 80
+finance-ms-rabbitmq        |     rabbit_prelaunch_dist:setup/1, line 23
+finance-ms-rabbitmq        |     rabbit_prelaunch:do_run/0, line 115
+finance-ms-rabbitmq        |     rabbit_prelaunch:run_prelaunch_first_phase/0, line 32
+finance-ms-rabbitmq        |     supervisor:do_start_child_i/3, line 420
+finance-ms-rabbitmq        |     supervisor:do_start_child/2, line 406
+finance-ms-rabbitmq        |     supervisor:-start_children/2-fun-0-/3, line 390
+finance-ms-rabbitmq        |     supervisor:children_map/4, line 1275
+finance-ms-rabbitmq        | 
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>     supervisor: {local,rabbit_prelaunch_sup}
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>     errorContext: start_error
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>     reason: {badmatch,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                 {error,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                     {{shutdown,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                          {failed_to_start_child,auth,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                              {"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                               [{auth,init_no_setcookie,0,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                    [{file,"auth.erl"},{line,313}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                {auth,init,1,[{file,"auth.erl"},{line,165}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                {gen_server,init_it,2,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                    [{file,"gen_server.erl"},{line,980}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                {gen_server,init_it,6,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                    [{file,"gen_server.erl"},{line,935}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                {proc_lib,init_p_do_apply,3,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                    [{file,"proc_lib.erl"},{line,241}]}]}}},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                      {child,undefined,net_sup_dynamic,
+finance-ms-trade-postgres  | waiting for server to shut down....2026-10-04 03:29:54.738 UTC [40] LOG:  received fast shutdown request
+finance-ms-trade-postgres  | 2026-10-04 03:29:54.950 UTC [40] LOG:  aborting any active transactions
+finance-ms-trade-postgres  | 2026-10-04 03:29:54.953 UTC [40] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+finance-ms-trade-postgres  | 2026-10-04 03:29:54.956 UTC [47] LOG:  shutting down
+finance-ms-trade-postgres  | 2026-10-04 03:29:55.059 UTC [47] LOG:  checkpoint starting: shutdown immediate
+finance-ms-trade-postgres  | ..2026-10-04 03:29:57.163 UTC [47] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.943 s, total=2.207 s; sync files=301, longest=0.367 s, average=0.004 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D60, redo lsn=0/1925D60
+finance-ms-trade-postgres  | 2026-10-04 03:29:57.189 UTC [40] LOG:  database system is shut down
+finance-ms-trade-postgres  |  done
+finance-ms-trade-postgres  | server stopped
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | PostgreSQL init process complete; ready for start up.
+finance-ms-trade-postgres  | 
+finance-ms-trade-postgres  | 2026-10-04 03:29:57.712 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-ms-trade-postgres  | 2026-10-04 03:29:57.712 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-ms-trade-postgres  | 2026-10-04 03:29:57.712 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-ms-trade-postgres  | 2026-10-04 03:29:58.000 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-ms-trade-postgres  | 2026-10-04 03:29:58.391 UTC [63] LOG:  database system was shut down at 2026-10-04 03:29:57 UTC
+finance-ms-trade-postgres  | 2026-10-04 03:29:58.598 UTC [70] FATAL:  the database system is starting up
+finance-ms-trade-postgres  | 2026-10-04 03:29:58.760 UTC [1] LOG:  database system is ready to accept connections
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                          {erl_distribution,start_link,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                              [#{name => rabbit_prelaunch_1@localhost,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                 supervisor => net_sup_dynamic,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                 net_tickintensity => 4,net_ticktime => 60,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                 name_domain => shortnames,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                                 clean_halt => false}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                          permanent,false,1000,supervisor,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                          [erl_distribution]}}}}
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>     offender: [{pid,undefined},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {id,prelaunch},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {restart_type,transient},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {significant,false},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {shutdown,5000},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0>                {child_type,worker}]
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.078405+00:00 [error] <0.156.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>   crasher:
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     initial call: application_master:init/4
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     pid: <0.154.0>
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     registered_name: []
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     exception exit: {{shutdown,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                       {failed_to_start_child,prelaunch,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                        {badmatch,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                         {error,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                          {{shutdown,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                            {failed_to_start_child,auth,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                             {"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                              [{auth,init_no_setcookie,0,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                [{file,"auth.erl"},{line,313}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                               {auth,init,1,[{file,"auth.erl"},{line,165}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                               {gen_server,init_it,2,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                [{file,"gen_server.erl"},{line,980}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                               {gen_server,init_it,6,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                [{file,"gen_server.erl"},{line,935}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                               {proc_lib,init_p_do_apply,3,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                [{file,"proc_lib.erl"},{line,241}]}]}}},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                           {child,undefined,net_sup_dynamic,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                            {erl_distribution,start_link,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                             [#{name => rabbit_prelaunch_1@localhost,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                supervisor => net_sup_dynamic,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                net_tickintensity => 4,net_ticktime => 60,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                name_domain => shortnames,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                                clean_halt => false}]},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                            permanent,false,1000,supervisor,
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                            [erl_distribution]}}}}}},
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>       in function  application_master:init/4 (application_master.erl, line 142)
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     ancestors: [<0.153.0>]
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     message_queue_len: 1
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     messages: [{'EXIT',<0.155.0>,normal}]
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     links: [<0.153.0>,<0.44.0>]
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     dictionary: []
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     trap_exit: true
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     status: running
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     heap_size: 610
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     stack_size: 28
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>     reductions: 242
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0>   neighbours:
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.080179+00:00 [error] <0.154.0> 
+finance-ms-rabbitmq        | 2026-10-04 03:30:04.082922+00:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{badmatch,{error,{{shutdown,{failed_to_start_child,auth,{"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces",[{auth,init_no_setcookie,0,[{file,"auth.erl"},{line,313}]},{auth,init,1,[{file,"auth.erl"},{line,165}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,980}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,935}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,241}]}]}}},{child,undefined,net_sup_dynamic,{erl_distribution,start_link,[#{name => rabbit_prelaunch_1@localhost,supervisor => net_sup_dynamic,net_tickintensity => 4,net_ticktime => 60,name_domain => shortnames,clean_halt => false}]},permanent,false,1000,supervisor,[erl_distribution]}}}}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+finance-ms-rabbitmq        | Kernel pid terminated (application_controller) ("{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{badmatch,{error,{{shutdown,{failed_to_start_child,auth,{\"Error when reading /var/lib/rabbitmq/.erlang.cookie: eacces\",[{auth,init_no_setcookie,0,[{file,\"auth.erl\"},{line,313}]},{auth,init,1,[{file,\"auth.erl\"},{line,165}]},{gen_server,init_it,2,[{file,\"gen_server.erl\"},{line,980}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,935}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,241}]}]}}},{child,undefined,net_sup_dynamic,{erl_distribution,start_link,[#{name => rabbit_prelaunch_1@localhost,supervisor => net_sup_dynamic,net_tickintensity => 4,net_ticktime => 60,name_domain => shortnames,clean_halt => false}]},permanent,false,1000,supervisor,[erl_distribution]}}}}}},{rabbit_prelaunch_app,start,[normal,[]]}}}")
+finance-ms-rabbitmq        | 

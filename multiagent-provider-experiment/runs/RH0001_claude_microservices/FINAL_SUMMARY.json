@@ -1,0 +1,629 @@
+{
+  "schema_version": 2,
+  "run_id": "RH0001_claude_microservices",
+  "kind": "official",
+  "architecture": "microservices",
+  "provider": "claude",
+  "provider_cli_version": "2.1.286 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "model_verification": "trace_result_canonical_model",
+  "provider_policy": {
+    "workspace_write": "bwrap_workspace_rw_plus_native_allowlist",
+    "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+    "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+    "shell_network": "forbidden_and_trace_audited",
+    "docker": "filesystem_isolated_and_trace_audited",
+    "web_browser": "forbidden_by_native_allowlist_and_trace_audited",
+    "mcp": "forbidden_by_native_allowlist_and_trace_audited",
+    "subagents": "forbidden_by_native_allowlist_and_trace_audited"
+  },
+  "started_at_utc": "2026-10-04T03:29:36.879872+00:00",
+  "protocol_name": "official_finance_architecture_provider_experiment_v1",
+  "protocol_sha256": "4548f12eea1d41548a0772b9bca8771436f748c2d2e21d1e5980056c30415238",
+  "environment_lock_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/environment_lock_provider_v1.json",
+  "environment_lock_sha256": "6cee347c9df9f376e7e3e654032eab07de6c9d59265ced305c7e26d955ad0514",
+  "docker_context": "desktop-linux",
+  "graphify_image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+  "lizard_image_id": "sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13",
+  "trivy_image_id": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969",
+  "trivy_cache_manifest_sha256": "b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32",
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_initial_timeout_seconds": 2400,
+    "a1_repair_timeout_seconds": 1200,
+    "a3_refactor_timeout_seconds": 1200,
+    "a3_repair_timeout_seconds": 900,
+    "a3_max_repair_attempts": 1,
+    "infra_preflight_max_attempts": 3,
+    "infra_preflight_timeout_seconds": 120,
+    "infra_stability_seconds": 8,
+    "infra_runtime_recovery_attempts": 2,
+    "docker_settle_seconds": 3,
+    "application_readiness_stable_checks": 3,
+    "application_readiness_poll_seconds": 2
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-before-each-provider-execution-attempt",
+    "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
+    "notes": "The orchestrator starts each provider execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before the coding provider is called."
+  },
+  "infrastructure_policy": {
+    "preflight_before_provider": true,
+    "infra_retries_consume_provider_iterations": false,
+    "independent_infra_services": {
+      "monolith": [
+        "postgres",
+        "postgres-test"
+      ],
+      "microservices": [
+        "rabbitmq",
+        "user-postgres",
+        "trade-postgres"
+      ]
+    },
+    "capture_all_service_logs_and_health": true,
+    "application_readiness": "all key public routes reachable without gateway 502/503 for 3 consecutive polls",
+    "graphify_after_final_a1_attempt": false,
+    "classification": "independent dependency failure => INFRASTRUCTURE_ABORT; provider policy/runtime/model failure => invalid or aborted provider execution; app/acceptance failure after healthy infrastructure => experimental agent outcome"
+  },
+  "monetary_cost": {
+    "available": false,
+    "usd": null
+  },
+  "finished_at_utc": "2026-10-04T03:33:35.693038+00:00",
+  "success": false,
+  "termination_reason": "PROVIDER_POLICY_VIOLATION",
+  "experimental_status": "INVALID_PROVIDER_POLICY",
+  "primary_analysis_eligible": false,
+  "failure_stage": "A1",
+  "a1": {
+    "success": false,
+    "termination_reason": "PROVIDER_POLICY_VIOLATION",
+    "iterations_used": 1,
+    "elapsed_seconds": 230.924,
+    "provider_metrics": {
+      "invocations": 1,
+      "elapsed_seconds": 59.973,
+      "tool_calls": 4,
+      "failed_tool_calls": 0,
+      "policy_violation_invocations": 1,
+      "reported_cost_usd": null,
+      "native_usage_by_invocation": [
+        {
+          "usage": {
+            "input_tokens": 10,
+            "cache_creation_input_tokens": 31555,
+            "cache_read_input_tokens": 133032,
+            "output_tokens": 9517,
+            "output_tokens_details": {
+              "thinking_tokens": 1565
+            },
+            "server_tool_use": {
+              "web_search_requests": 0,
+              "web_fetch_requests": 0
+            },
+            "service_tier": "standard",
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 31555,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "inference_geo": "not_available",
+            "iterations": [
+              {
+                "input_tokens": 2,
+                "output_tokens": 682,
+                "cache_read_input_tokens": 42198,
+                "cache_creation_input_tokens": 864,
+                "cache_creation": {
+                  "ephemeral_5m_input_tokens": 0,
+                  "ephemeral_1h_input_tokens": 864
+                },
+                "type": "message"
+              }
+            ],
+            "speed": "standard",
+            "fallback_credit": null
+          },
+          "modelUsage": {
+            "claude-sonnet-5-5": {
+              "inputTokens": 10,
+              "outputTokens": 9517,
+              "cacheReadInputTokens": 133032,
+              "cacheCreationInputTokens": 31555,
+              "webSearchRequests": 0,
+              "costUSD": 0.2480164,
+              "contextWindow": 1000000,
+              "maxOutputTokens": 128000,
+              "thinkingTokens": 1565,
+              "canonicalModel": "claude-sonnet-5-5",
+              "provider": "firstParty",
+              "costBasis": "list"
+            }
+          },
+          "total_cost_usd": 0.2480164,
+          "permission_denials": [],
+          "terminal_reason": "completed",
+          "subtype": "success"
+        }
+      ]
+    },
+    "artifacts": [],
+    "infrastructure_preflights": [
+      {
+        "iteration_target": 1,
+        "result": {
+          "success": true,
+          "attempts": [
+            {
+              "attempt": 1,
+              "compose_up_returncode": 0,
+              "wait": {
+                "success": false,
+                "terminal_failure": false,
+                "states": {
+                  "discovery-server": {
+                    "service": "discovery-server",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "rabbitmq": {
+                    "service": "rabbitmq",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "user-postgres": {
+                    "service": "user-postgres",
+                    "container_id": "6eb57b46989f7f0b23008a82848d0d691a24180bc840c1b46ecce93d5920128b",
+                    "container_name": "finance-ms-user-postgres",
+                    "status": "running",
+                    "running": true,
+                    "exit_code": 0,
+                    "error": "",
+                    "health": "healthy",
+                    "health_log": [
+                      {
+                        "start": "2026-10-04T03:31:25.505853342Z",
+                        "end": "2026-10-04T03:31:25.592404704Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:30.594336455Z",
+                        "end": "2026-10-04T03:31:30.747323113Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:35.749221124Z",
+                        "end": "2026-10-04T03:31:35.854900947Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:40.85585914Z",
+                        "end": "2026-10-04T03:31:40.917811776Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:45.919121771Z",
+                        "end": "2026-10-04T03:31:46.023767219Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      }
+                    ]
+                  },
+                  "user-service": {
+                    "service": "user-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "market-service": {
+                    "service": "market-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "trade-postgres": {
+                    "service": "trade-postgres",
+                    "container_id": "32ba889de67bdd561ea9b938f929449f72a5af7b2fe89463693f225e206ce1f6",
+                    "container_name": "finance-ms-trade-postgres",
+                    "status": "running",
+                    "running": true,
+                    "exit_code": 0,
+                    "error": "",
+                    "health": "healthy",
+                    "health_log": [
+                      {
+                        "start": "2026-10-04T03:31:25.016796125Z",
+                        "end": "2026-10-04T03:31:25.103936276Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:30.104827224Z",
+                        "end": "2026-10-04T03:31:30.265900858Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:35.268872765Z",
+                        "end": "2026-10-04T03:31:35.339192743Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:40.339959641Z",
+                        "end": "2026-10-04T03:31:40.433354864Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:31:45.434836127Z",
+                        "end": "2026-10-04T03:31:45.502844512Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      }
+                    ]
+                  },
+                  "trade-service": {
+                    "service": "trade-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "api-gateway": {
+                    "service": "api-gateway",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  }
+                },
+                "elapsed_seconds": 120.863
+              },
+              "evidence_dir": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0001_claude_microservices/a1_iteration_01/infra_preflight/attempt_01/evidence"
+            },
+            {
+              "attempt": 2,
+              "compose_up_returncode": 0,
+              "wait": {
+                "success": true,
+                "states": {
+                  "user-postgres": {
+                    "service": "user-postgres",
+                    "container_id": "dcb9dda97cb6d193428c7f6d4f1c4230203e67022e13f13bd14a39fc87fdad09",
+                    "container_name": "finance-ms-user-postgres",
+                    "status": "running",
+                    "running": true,
+                    "exit_code": 0,
+                    "error": "",
+                    "health": "healthy",
+                    "health_log": [
+                      {
+                        "start": "2026-10-04T03:32:11.645874954Z",
+                        "end": "2026-10-04T03:32:11.706081805Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:32:16.7069225Z",
+                        "end": "2026-10-04T03:32:16.810169769Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:32:21.811071216Z",
+                        "end": "2026-10-04T03:32:21.91402337Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      }
+                    ]
+                  },
+                  "discovery-server": {
+                    "service": "discovery-server",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "rabbitmq": {
+                    "service": "rabbitmq",
+                    "container_id": "2249da91f85bbae1eb093066ca0078847d8942bf34ebd667297aa6f866687d0b",
+                    "container_name": "finance-ms-rabbitmq",
+                    "status": "running",
+                    "running": true,
+                    "exit_code": 0,
+                    "error": "",
+                    "health": "healthy",
+                    "health_log": [
+                      {
+                        "start": "2026-10-04T03:32:16.685934583Z",
+                        "end": "2026-10-04T03:32:17.829160868Z",
+                        "exit_code": 0,
+                        "output": "Ping succeeded\n"
+                      }
+                    ]
+                  },
+                  "user-service": {
+                    "service": "user-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "trade-postgres": {
+                    "service": "trade-postgres",
+                    "container_id": "33aebb80d35b7ac82fb0e44b41bd8cbe20eb3df4e24172bd583aadddf33e0255",
+                    "container_name": "finance-ms-trade-postgres",
+                    "status": "running",
+                    "running": true,
+                    "exit_code": 0,
+                    "error": "",
+                    "health": "healthy",
+                    "health_log": [
+                      {
+                        "start": "2026-10-04T03:32:11.760883981Z",
+                        "end": "2026-10-04T03:32:11.883988333Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:32:16.887480018Z",
+                        "end": "2026-10-04T03:32:16.999956846Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      },
+                      {
+                        "start": "2026-10-04T03:32:22.000923061Z",
+                        "end": "2026-10-04T03:32:22.074384981Z",
+                        "exit_code": 0,
+                        "output": "/var/run/postgresql:5432 - accepting connections\n"
+                      }
+                    ]
+                  },
+                  "market-service": {
+                    "service": "market-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "trade-service": {
+                    "service": "trade-service",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  },
+                  "api-gateway": {
+                    "service": "api-gateway",
+                    "container_id": null,
+                    "status": "missing",
+                    "health": null,
+                    "exit_code": null
+                  }
+                },
+                "elapsed_seconds": 20.3
+              },
+              "evidence_dir": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0001_claude_microservices/a1_iteration_01/infra_preflight/attempt_02/evidence"
+            }
+          ],
+          "states": {
+            "user-postgres": {
+              "service": "user-postgres",
+              "container_id": "dcb9dda97cb6d193428c7f6d4f1c4230203e67022e13f13bd14a39fc87fdad09",
+              "container_name": "finance-ms-user-postgres",
+              "status": "running",
+              "running": true,
+              "exit_code": 0,
+              "error": "",
+              "health": "healthy",
+              "health_log": [
+                {
+                  "start": "2026-10-04T03:32:11.645874954Z",
+                  "end": "2026-10-04T03:32:11.706081805Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                },
+                {
+                  "start": "2026-10-04T03:32:16.7069225Z",
+                  "end": "2026-10-04T03:32:16.810169769Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                },
+                {
+                  "start": "2026-10-04T03:32:21.811071216Z",
+                  "end": "2026-10-04T03:32:21.91402337Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                }
+              ]
+            },
+            "discovery-server": {
+              "service": "discovery-server",
+              "container_id": null,
+              "status": "missing",
+              "health": null,
+              "exit_code": null
+            },
+            "rabbitmq": {
+              "service": "rabbitmq",
+              "container_id": "2249da91f85bbae1eb093066ca0078847d8942bf34ebd667297aa6f866687d0b",
+              "container_name": "finance-ms-rabbitmq",
+              "status": "running",
+              "running": true,
+              "exit_code": 0,
+              "error": "",
+              "health": "healthy",
+              "health_log": [
+                {
+                  "start": "2026-10-04T03:32:16.685934583Z",
+                  "end": "2026-10-04T03:32:17.829160868Z",
+                  "exit_code": 0,
+                  "output": "Ping succeeded\n"
+                }
+              ]
+            },
+            "user-service": {
+              "service": "user-service",
+              "container_id": null,
+              "status": "missing",
+              "health": null,
+              "exit_code": null
+            },
+            "trade-postgres": {
+              "service": "trade-postgres",
+              "container_id": "33aebb80d35b7ac82fb0e44b41bd8cbe20eb3df4e24172bd583aadddf33e0255",
+              "container_name": "finance-ms-trade-postgres",
+              "status": "running",
+              "running": true,
+              "exit_code": 0,
+              "error": "",
+              "health": "healthy",
+              "health_log": [
+                {
+                  "start": "2026-10-04T03:32:11.760883981Z",
+                  "end": "2026-10-04T03:32:11.883988333Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                },
+                {
+                  "start": "2026-10-04T03:32:16.887480018Z",
+                  "end": "2026-10-04T03:32:16.999956846Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                },
+                {
+                  "start": "2026-10-04T03:32:22.000923061Z",
+                  "end": "2026-10-04T03:32:22.074384981Z",
+                  "exit_code": 0,
+                  "output": "/var/run/postgresql:5432 - accepting connections\n"
+                }
+              ]
+            },
+            "market-service": {
+              "service": "market-service",
+              "container_id": null,
+              "status": "missing",
+              "health": null,
+              "exit_code": null
+            },
+            "trade-service": {
+              "service": "trade-service",
+              "container_id": null,
+              "status": "missing",
+              "health": null,
+              "exit_code": null
+            },
+            "api-gateway": {
+              "service": "api-gateway",
+              "container_id": null,
+              "status": "missing",
+              "health": null,
+              "exit_code": null
+            }
+          }
+        }
+      }
+    ],
+    "iterations": [
+      {
+        "iteration": 1,
+        "provider_call": {
+          "provider": "claude",
+          "model": "claude-sonnet-5-5",
+          "session_id": "68287196-4142-4cce-8bc5-cc1b6658bf0d",
+          "success": false,
+          "returncode": 0,
+          "elapsed_seconds": 59.973,
+          "input_tokens": 10,
+          "output_tokens": 9517,
+          "cached_tokens": 133032,
+          "thinking_tokens": 1565,
+          "native_turns": 5,
+          "tool_calls": 4,
+          "failed_tool_calls": 0,
+          "policy_violation": true,
+          "policy_violations": [
+            "forbidden provider Docker command: find . -type f -not -path './.git/*' -not -path '*/target/*' | head -100 && cat docker-compose.yml"
+          ],
+          "final_response": "I implemented all four services, but nothing has been compiled or run. `mvn` isn't installed in this environment, so the first real build will be yours.\n\n**What each service does**\n- **market-service:** `GET /api/quotes/{symbol}` returns the fixed prices. An unknown symbol gives 400.\n- **user-service:**\n  - `POST /api/users` creates a user with 10000.00 cash. A duplicate or blank username gives 400.\n  - Two internal endpoints sit behind the trade flow: `GET /internal/users/{id}` and `POST /internal/users/{id}/apply`.\n  - `apply` changes cash and position under a database lock. It rejects insufficient cash or position with 400 and an unknown user with 404, and leaves state unchanged on any rejection.\n- **trade-service:**\n  - Buy and sell validate the request first. They check the symbol against market-service, call `apply` on user-service, then save the trade in the trade database.\n  - `/api/users/{id}/trades` returns the history, with `type` set to `BUY` or `SELL`.\n  - `/api/users/{id}/portfolio` combines the user's cash and positions from user-service with prices from market-service. It returns `cash`, `cashBalance`, `holdings` (symbol, shares, price, marketValue) and `totalValue`.\n  - After each successful trade it publishes a message to `financial.exchange` with key `trade.completed`. It declares `trade.audit.queue`, and a publish failure is logged without failing the trade.\n- **api-gateway and discovery-server:** I left both unchanged. The gateway already routes portfolio and history to trade-service, which matches how I built them.\n\n**Uncertainties**\n- Because of the missing compiler, a typo or wiring error is possible.\n- A trade is saved only after user-service has already applied it. If the save fails, cash and position will have changed with no trade record. That follows from the no-distributed-transaction rule.\n- A request that is both invalid and for an unknown user gets 400, because validation runs first. The contract doesn't say which should win.",
+          "native_usage": {
+            "usage": {
+              "input_tokens": 10,
+              "cache_creation_input_tokens": 31555,
+              "cache_read_input_tokens": 133032,
+              "output_tokens": 9517,
+              "output_tokens_details": {
+                "thinking_tokens": 1565
+              },
+              "server_tool_use": {
+                "web_search_requests": 0,
+                "web_fetch_requests": 0
+              },
+              "service_tier": "standard",
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 31555,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "inference_geo": "not_available",
+              "iterations": [
+                {
+                  "input_tokens": 2,
+                  "output_tokens": 682,
+                  "cache_read_input_tokens": 42198,
+                  "cache_creation_input_tokens": 864,
+                  "cache_creation": {
+                    "ephemeral_5m_input_tokens": 0,
+                    "ephemeral_1h_input_tokens": 864
+                  },
+                  "type": "message"
+                }
+              ],
+              "speed": "standard",
+              "fallback_credit": null
+            },
+            "modelUsage": {
+              "claude-sonnet-5-5": {
+                "inputTokens": 10,
+                "outputTokens": 9517,
+                "cacheReadInputTokens": 133032,
+                "cacheCreationInputTokens": 31555,
+                "webSearchRequests": 0,
+                "costUSD": 0.2480164,
+                "contextWindow": 1000000,
+                "maxOutputTokens": 128000,
+                "thinkingTokens": 1565,
+                "canonicalModel": "claude-sonnet-5-5",
+                "provider": "firstParty",
+                "costBasis": "list"
+              }
+            },
+            "total_cost_usd": 0.2480164,
+            "permission_denials": [],
+            "terminal_reason": "completed",
+            "subtype": "success"
+          },
+          "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0001_claude_microservices/a1_iteration_01/provider_trace.jsonl",
+          "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0001_claude_microservices/a1_iteration_01/provider_trace.stderr.log"
+        },
+        "failure_class": "PROVIDER_POLICY_VIOLATION"
+      }
+    ]
+  },
+  "elapsed_seconds": 238.813
+}
