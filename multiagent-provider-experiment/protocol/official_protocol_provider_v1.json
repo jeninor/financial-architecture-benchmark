@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "protocol_name": "official_finance_architecture_provider_experiment_v1",
+  "protocol_name": "official_finance_architecture_provider_experiment_v1_1",
   "run_kind": "official",
   "providers": {
     "claude": {
@@ -106,7 +106,7 @@
     "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
     "notes": "The orchestrator starts each provider execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before the coding provider is called."
   },
-  "environment_lock": "multiagent-provider-experiment/protocol/environment_lock_provider_v1.json",
+  "environment_lock": "multiagent-provider-experiment/protocol/environment_lock_provider_v1_1.json",
   "protocol_file": "multiagent-provider-experiment/protocol/official_protocol_provider_v1.json",
   "infrastructure_policy": {
     "preflight_before_provider": true,
@@ -164,5 +164,15 @@
     "provider_local_java_maven_required": false,
     "authoritative_build_and_acceptance_owner": "orchestrator",
     "reason": "Preserve comparability with the Claude reference methodology; providers modify/inspect code while orchestrator-controlled Docker performs authoritative build/runtime/acceptance."
+  },
+  "protocol_revision": {
+    "version": "1.1",
+    "supersedes": "official_finance_architecture_provider_experiment_v1",
+    "reason": "Fix false-positive Docker command audit for references to filenames such as docker-compose.yml.",
+    "experimental_runs_before_fix": [
+      "RH0001_claude_monolith",
+      "RH0001_claude_microservices"
+    ],
+    "disposition": "invalid_harness_runs_excluded_from_primary_analysis"
   }
 }

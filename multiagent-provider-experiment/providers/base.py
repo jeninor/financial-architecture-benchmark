@@ -10,8 +10,19 @@ from typing import Any
 
 
 # Provider agents never own Docker. Docker belongs to the orchestrator.
+#
+# Detect Docker only when it is being invoked as a shell command.
+# References to project files such as docker-compose.yml are allowed.
+# Bubblewrap remains the isolation boundary; this regex is the
+# trace-level policy audit.
 FORBIDDEN_DOCKER = re.compile(
-    r"(?<![\w.-])docker\b",
+    r"(?:^|(?:&&|\|\||[;|\n])\s*)"
+    r"(?:(?:sudo(?:\s+-\S+)*|command)\s+)?"
+    r"(?:env\s+)?"
+    r"(?:[A-Za-z_][A-Za-z0-9_]*=[^\s;&|]+\s+)*"
+    r"(?:[^\s;&|]*/)?"
+    r"docker(?:-compose)?"
+    r"(?=\s|$|[;&|])",
     re.IGNORECASE,
 )
 

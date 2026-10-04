@@ -1,0 +1,59 @@
+{
+  "schema_version": 3,
+  "created_at_utc": "2026-10-04T04:02:12.289086+00:00",
+  "protocol_sha256": "816c134f974d70317332e9a5ade8549b85dc219b16e6afa1cee9fe60d2b1079f",
+  "docker_context": "desktop-linux",
+  "providers": {
+    "claude": {
+      "cli_version": "2.1.286 (Claude Code)",
+      "model_requested": "claude-sonnet-5-5",
+      "model_verification": "trace_result_canonical_model"
+    },
+    "codex": {
+      "cli_version": "codex-cli 0.160.0",
+      "model_requested": "gpt-6-sol",
+      "model_verification": "explicit_cli_argument"
+    },
+    "antigravity": {
+      "cli_version": "1.2.16",
+      "model_requested": "gemini-3.1-pro-high",
+      "model_verification": "trace_init_model"
+    }
+  },
+  "images": {
+    "graphify": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "lizard": "sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13",
+    "trivy": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969"
+  },
+  "trivy_cache_manifest_sha256": "b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32",
+  "common_hashes": {
+    "official_runner": "f5cd021e71109f2b21d336bb66f95e048affde4c7137f06c2be1720825997d7a",
+    "provider_base": "167d0b3d95194c6faf560affec599d9be2f2ff51c0a2a76f94b0521bdcf12211",
+    "provider_bwrap": "c4b0a9bbf42ae02a31026b688ce62dc2d2c3a5236b3614a26f7319c4db90b2e4",
+    "provider_claude": "ba10181f93c4df487180fc4b7532e96ab04dd22c0a07dfe34e60a2a50b8a26b3",
+    "provider_codex": "4791c9d404a80af705ca1ef21c22957a815bbb1e79087380c2a4bc5d79d4723e",
+    "provider_antigravity": "e4e17b41b25608196f4cca60431707abcda15737f9b88a6a9cf5d90ac880ae33",
+    "a4_runner": "81221118306edd877343c38dad907f0665138be112e3737d9a8d379f6ad60cdb",
+    "graphify_runtime": "03490ef40fc18b2c54481b09207f65a159aabd5aae5900e2bc2f893602e79c2c",
+    "public_api": "60fc8247588cbe8b2a27863ff2e18c5d1cf63083b6e169e316486403a9ff1049",
+    "requirements": "a81c4383432872d8585f168b6e3cde1d028000dd72e1b60443b7dd8c56bd657f",
+    "acceptance_runner": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+    "acceptance_contract": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+    "quality_policy": "7e38a3c40c78267f1df973bb89c2d8f56a1f68d55dcaff23ff00a7d023e76a78",
+    "security_policy": "4b333a77e71880e9f46e0db2b1426a6e082e25dae29d449df15afb57b8788737"
+  },
+  "architectures": {
+    "monolith": {
+      "docker_compose": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+      "architecture_contract": "26ebec0e9bced9bb1336d7a9d1d1e34d5290b2cc3ae3bb7696bf37c2cfbb695b",
+      "builder_prompt": "df677568e7177c72068b9e36bb05dc3c707dcd8931f8bca0c20cbce93e0f3c1c",
+      "refactor_prompt": "b21b5b84a238fade018173d3ed3d8665c04147b38ab26fdca1cf7324eccdb35b"
+    },
+    "microservices": {
+      "docker_compose": "082ef287289114dd36b6cebae6e44ee8e3882a279ebfc4d640e66dea88e1c520",
+      "architecture_contract": "fd80305030561795e30be8eb2fb131a81461bcfe01ef52ed1f7e3f2afa317745",
+      "builder_prompt": "6465a5365f60a320f8ca14d95465922b8b62e46588c36b3e469c710808915631",
+      "refactor_prompt": "3b0e2d208019ce621f99cf45c681594b19b93a48ffd1eb678b87d4fa3e7ce243"
+    }
+  }
+}

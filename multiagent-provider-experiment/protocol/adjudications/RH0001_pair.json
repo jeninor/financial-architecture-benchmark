@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "pair": "RH0001",
+  "provider": "claude",
+  "protocol": "official_finance_architecture_provider_experiment_v1",
+  "status": "INVALID_HARNESS_POLICY_FALSE_POSITIVE",
+  "primary_analysis_eligible": false,
+  "affected_runs": [
+    "RH0001_claude_monolith",
+    "RH0001_claude_microservices"
+  ],
+  "reason": "The frozen v1 Docker-command audit matched the substring 'docker' inside the filename docker-compose.yml. Neither recorded command invoked Docker. Both runs were therefore terminated by a harness false positive rather than by a provider policy violation.",
+  "disposition": "Preserve all RH0001 evidence. Exclude RH0001 from primary provider comparison. Supersede protocol v1 with v1.1 containing only the Docker-command audit correction and associated freeze metadata."
+}
