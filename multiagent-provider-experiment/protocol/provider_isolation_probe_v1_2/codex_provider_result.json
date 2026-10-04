@@ -1,0 +1,27 @@
+{
+  "provider": "codex",
+  "model": "gpt-6-sol",
+  "session_id": "01a10563-d09c-73e3-a98f-d4cd2361389f",
+  "success": true,
+  "returncode": 0,
+  "elapsed_seconds": 20.02,
+  "input_tokens": 27959,
+  "output_tokens": 156,
+  "cached_tokens": 25472,
+  "thinking_tokens": 42,
+  "native_turns": 1,
+  "tool_calls": 1,
+  "failed_tool_calls": 0,
+  "policy_violation": false,
+  "policy_violations": [],
+  "final_response": "Executed `./isolation_probe.sh` exactly once. It exited with code 0 and reported workspace write access passed; outside and historical reads, Docker access, and both socket paths were blocked or hidden.",
+  "native_usage": {
+    "input_tokens": 27959,
+    "cached_input_tokens": 25472,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 156,
+    "reasoning_output_tokens": 42
+  },
+  "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/provider_isolation_probe_v1_2/codex_trace.jsonl",
+  "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/provider_isolation_probe_v1_2/codex_trace.stderr.log"
+}

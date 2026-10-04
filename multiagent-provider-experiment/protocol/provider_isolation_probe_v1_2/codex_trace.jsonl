@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a10563-d09c-73e3-a98f-d4cd2361389f"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll run `./isolation_probe.sh` once from the workspace, then stop."}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"/bin/bash -c ./isolation_probe.sh","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"command_execution","command":"/bin/bash -c ./isolation_probe.sh","aggregated_output":"WORKSPACE_WRITE=PASS\n./isolation_probe.sh: line 19: /tmp/outside.out: Read-only file system\nOUTSIDE_READ=BLOCKED\n./isolation_probe.sh: line 29: /tmp/historical.out: Read-only file system\nHISTORICAL_READ=BLOCKED\n./isolation_probe.sh: line 37: /tmp/docker.out: Read-only file system\nDOCKER_RC=1\nDOCKER_ACCESS=BLOCKED\nDESKTOP_SOCKET=HIDDEN\nVAR_RUN_SOCKET=HIDDEN\n","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"Executed `./isolation_probe.sh` exactly once. It exited with code 0 and reported workspace write access passed; outside and historical reads, Docker access, and both socket paths were blocked or hidden."}}
+{"type":"turn.completed","usage":{"input_tokens":27959,"cached_input_tokens":25472,"cache_write_input_tokens":0,"output_tokens":156,"reasoning_output_tokens":42}}

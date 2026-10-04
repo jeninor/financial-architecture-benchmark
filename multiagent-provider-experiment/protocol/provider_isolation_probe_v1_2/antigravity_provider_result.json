@@ -1,0 +1,27 @@
+{
+  "provider": "antigravity",
+  "model": "gemini-3.1-pro-high",
+  "session_id": "fbffd85e-6fb0-49ca-ba9f-65035eeae517",
+  "success": true,
+  "returncode": 0,
+  "elapsed_seconds": 17.27,
+  "input_tokens": 18254,
+  "output_tokens": 816,
+  "cached_tokens": 8093,
+  "thinking_tokens": 660,
+  "native_turns": 1,
+  "tool_calls": 1,
+  "failed_tool_calls": 0,
+  "policy_violation": false,
+  "policy_violations": [],
+  "final_response": "I have executed `./isolation_probe.sh` as requested. The script has finished and I will now stop further execution. Here is the output from the script:\n\n```\nWORKSPACE_WRITE=PASS\nOUTSIDE_READ=BLOCKED\nHISTORICAL_READ=BLOCKED\nDOCKER_RC=1\nDOCKER_ACCESS=BLOCKED\nDESKTOP_SOCKET=HIDDEN\nVAR_RUN_SOCKET=HIDDEN\n```\n",
+  "native_usage": {
+    "input_tokens": 18254,
+    "output_tokens": 816,
+    "thinking_tokens": 660,
+    "cache_read_tokens": 8093,
+    "total_tokens": 19070
+  },
+  "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/provider_isolation_probe_v1_2/antigravity_trace.jsonl",
+  "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/provider_isolation_probe_v1_2/antigravity_trace.stderr.log"
+}

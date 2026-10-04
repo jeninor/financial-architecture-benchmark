@@ -1,0 +1,41 @@
+{
+  "protocol_name": "official_finance_architecture_provider_experiment_v1_2",
+  "protocol_sha256": "4c1e63998f96494edac71f4d657a56c0106f957b9c11c1df233e45b9cd4de936",
+  "payload_sha256": "637a99814b9863b470aa654a807d49a5c2d94472cc5b0843995e999d9571d014",
+  "providers": {
+    "claude": {
+      "version": "2.1.286 (Claude Code)",
+      "model": "claude-sonnet-5-5",
+      "provider_success": true,
+      "policy_violation": false,
+      "returncode": 0,
+      "probe_results_sha256": "2419521e3e4cc13a32030301254e40f20fe32214bf4b59c0d2575ae9884ef956",
+      "trace_sha256": "afa0240a75125d9bdf6066eb9d877079efd5bcb7c51c2a986ecbc8cd5f3ca41b",
+      "missing_expectations": [],
+      "pass": true
+    },
+    "codex": {
+      "version": "codex-cli 0.160.0",
+      "model": "gpt-6-sol",
+      "provider_success": true,
+      "policy_violation": false,
+      "returncode": 0,
+      "probe_results_sha256": "2419521e3e4cc13a32030301254e40f20fe32214bf4b59c0d2575ae9884ef956",
+      "trace_sha256": "26f0e42d99bc992f347d33733c3399b05fecd8812979ddaa0d450af0d0d2c785",
+      "missing_expectations": [],
+      "pass": true
+    },
+    "antigravity": {
+      "version": "1.2.16",
+      "model": "gemini-3.1-pro-high",
+      "provider_success": true,
+      "policy_violation": false,
+      "returncode": 0,
+      "probe_results_sha256": "2419521e3e4cc13a32030301254e40f20fe32214bf4b59c0d2575ae9884ef956",
+      "trace_sha256": "cf23669f142240840b9f3d063cad0f1f46eea6f3bd785dcbb53adbdb82bb91e6",
+      "missing_expectations": [],
+      "pass": true
+    }
+  },
+  "overall_pass": true
+}
