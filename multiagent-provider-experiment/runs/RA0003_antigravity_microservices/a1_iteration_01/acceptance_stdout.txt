@@ -1,0 +1,26 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : RA0003_antigravity_microservices_a1_01
+
+T01  PASS  valid quote                             41.558 ms  HTTP=[200]
+T02  PASS  invalid symbol                           9.084 ms  HTTP=[400]
+T03  PASS  create user with initial cash          172.171 ms  HTTP=[201, 200]
+T04  PASS  duplicate username                      37.164 ms  HTTP=[201, 400]
+T05  FAIL  valid buy                              231.673 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T06:17:21.458+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T06  PASS  insufficient cash                       77.797 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                    25.943 ms  HTTP=[201, 400]
+T08  FAIL  portfolio calculation                   80.698 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T06:17:21.648+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T09  FAIL  valid sell                              71.966 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T06:17:21.722+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T10  FAIL  oversell leaves state unchanged         75.437 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T06:17:21.797+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T11  FAIL  trade history                           73.267 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T06:17:21.871+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T12  PASS  unknown user                            11.235 ms  HTTP=[404]
+
+RESULT: 7/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_microservices/a1_iteration_01/acceptance.json

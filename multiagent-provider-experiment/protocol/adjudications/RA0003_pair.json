@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "pair": "RA0003",
+  "provider": "antigravity",
+  "protocol": "official_finance_architecture_provider_experiment_v1_2",
+  "primary_analysis_eligible": false,
+  "status": "NON_PRIMARY_PROVIDER_POLICY_AND_RUNTIME_FAILURE",
+  "runs": {
+    "RA0003_antigravity_monolith": {
+      "experimental_status": "INVALID_PROVIDER_POLICY",
+      "termination_reason": "PROVIDER_POLICY_VIOLATION",
+      "failure_stage": "A1",
+      "classification": "genuine_provider_policy_violation",
+      "evidence": {
+        "command": "docker --version",
+        "note": "The command was actually issued by the provider. This is not the historical docker-compose.yml false positive. Docker daemon access remained isolated."
+      }
+    },
+    "RA0003_antigravity_microservices": {
+      "experimental_status": "ABORTED_PROVIDER_RUNTIME",
+      "termination_reason": "PROVIDER_RUNTIME_ABORT",
+      "failure_stage": "A1",
+      "classification": "external_provider_quota_exhaustion",
+      "evidence": {
+        "iteration_1_acceptance": "7/12",
+        "iteration_2": "repair invocation began and modified workspace files",
+        "provider_error": "RESOURCE_EXHAUSTED",
+        "http_status": 429,
+        "retryable": true,
+        "message": "Individual quota reached"
+      }
+    }
+  },
+  "harness_defect_observed": false,
+  "disposition": "Preserve both runs as operational evidence. Exclude both from primary outcome metrics. Do not resume or overwrite RA0003. Any future Antigravity execution must use a new run identifier and be reported separately."
+}

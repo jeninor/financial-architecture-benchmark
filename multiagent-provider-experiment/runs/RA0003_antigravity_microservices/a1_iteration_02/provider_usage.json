@@ -1,0 +1,27 @@
+{
+  "provider": "antigravity",
+  "model": "gemini-3.1-pro-high",
+  "session_id": "50044978-9a8c-46cc-8df7-78cb2f65b937",
+  "success": false,
+  "returncode": 3,
+  "elapsed_seconds": 209.37,
+  "input_tokens": 204096,
+  "output_tokens": 41556,
+  "cached_tokens": 1542780,
+  "thinking_tokens": 24841,
+  "native_turns": 2,
+  "tool_calls": 7,
+  "failed_tool_calls": 0,
+  "policy_violation": false,
+  "policy_violations": [],
+  "final_response": "",
+  "native_usage": {
+    "input_tokens": 204096,
+    "output_tokens": 41556,
+    "thinking_tokens": 24841,
+    "cache_read_tokens": 1542780,
+    "total_tokens": 245652
+  },
+  "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_microservices/a1_iteration_02/provider_trace.jsonl",
+  "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_microservices/a1_iteration_02/provider_trace.stderr.log"
+}

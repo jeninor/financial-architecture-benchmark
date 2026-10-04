@@ -1,0 +1,240 @@
+{
+  "success": false,
+  "termination_reason": "PROVIDER_POLICY_VIOLATION",
+  "iterations_used": 1,
+  "elapsed_seconds": 343.487,
+  "provider_metrics": {
+    "invocations": 1,
+    "elapsed_seconds": 312.507,
+    "tool_calls": 30,
+    "failed_tool_calls": 0,
+    "policy_violation_invocations": 1,
+    "reported_cost_usd": null,
+    "native_usage_by_invocation": [
+      {
+        "input_tokens": 144263,
+        "output_tokens": 10939,
+        "thinking_tokens": 3951,
+        "cache_read_tokens": 598527,
+        "total_tokens": 155202
+      }
+    ]
+  },
+  "artifacts": [],
+  "infrastructure_preflights": [
+    {
+      "iteration_target": 1,
+      "result": {
+        "success": true,
+        "attempts": [
+          {
+            "attempt": 1,
+            "compose_up_returncode": 0,
+            "wait": {
+              "success": true,
+              "states": {
+                "postgres": {
+                  "service": "postgres",
+                  "container_id": "6ed7236d7b8595c55e84ff8900c77afff4df2e5081c74e6f915e03256a3200c6",
+                  "container_name": "finance-monolith-postgres",
+                  "status": "running",
+                  "running": true,
+                  "exit_code": 0,
+                  "error": "",
+                  "health": "healthy",
+                  "health_log": [
+                    {
+                      "start": "2026-10-04T06:00:28.33869922Z",
+                      "end": "2026-10-04T06:00:28.39824388Z",
+                      "exit_code": 2,
+                      "output": "/var/run/postgresql:5432 - no response\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:33.398754248Z",
+                      "end": "2026-10-04T06:00:33.490374317Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:38.49248303Z",
+                      "end": "2026-10-04T06:00:38.58104329Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:43.581648772Z",
+                      "end": "2026-10-04T06:00:43.651053059Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    }
+                  ]
+                },
+                "app": {
+                  "service": "app",
+                  "container_id": null,
+                  "status": "missing",
+                  "health": null,
+                  "exit_code": null
+                },
+                "postgres-test": {
+                  "service": "postgres-test",
+                  "container_id": "0ffdd3881532d3911019d40810aa49b4e47d4139d35dc3a23250b3af74d9ea29",
+                  "container_name": "finance-monolith-postgres-test",
+                  "status": "running",
+                  "running": true,
+                  "exit_code": 0,
+                  "error": "",
+                  "health": "healthy",
+                  "health_log": [
+                    {
+                      "start": "2026-10-04T06:00:28.144786229Z",
+                      "end": "2026-10-04T06:00:28.225469185Z",
+                      "exit_code": 1,
+                      "output": "/var/run/postgresql:5432 - rejecting connections\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:33.227701036Z",
+                      "end": "2026-10-04T06:00:33.31127154Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:38.31249844Z",
+                      "end": "2026-10-04T06:00:38.384479956Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    },
+                    {
+                      "start": "2026-10-04T06:00:43.38508622Z",
+                      "end": "2026-10-04T06:00:43.45907454Z",
+                      "exit_code": 0,
+                      "output": "/var/run/postgresql:5432 - accepting connections\n"
+                    }
+                  ]
+                }
+              },
+              "elapsed_seconds": 21.744
+            },
+            "evidence_dir": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/a1_iteration_01/infra_preflight/attempt_01/evidence"
+          }
+        ],
+        "states": {
+          "postgres": {
+            "service": "postgres",
+            "container_id": "6ed7236d7b8595c55e84ff8900c77afff4df2e5081c74e6f915e03256a3200c6",
+            "container_name": "finance-monolith-postgres",
+            "status": "running",
+            "running": true,
+            "exit_code": 0,
+            "error": "",
+            "health": "healthy",
+            "health_log": [
+              {
+                "start": "2026-10-04T06:00:28.33869922Z",
+                "end": "2026-10-04T06:00:28.39824388Z",
+                "exit_code": 2,
+                "output": "/var/run/postgresql:5432 - no response\n"
+              },
+              {
+                "start": "2026-10-04T06:00:33.398754248Z",
+                "end": "2026-10-04T06:00:33.490374317Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T06:00:38.49248303Z",
+                "end": "2026-10-04T06:00:38.58104329Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T06:00:43.581648772Z",
+                "end": "2026-10-04T06:00:43.651053059Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              }
+            ]
+          },
+          "app": {
+            "service": "app",
+            "container_id": null,
+            "status": "missing",
+            "health": null,
+            "exit_code": null
+          },
+          "postgres-test": {
+            "service": "postgres-test",
+            "container_id": "0ffdd3881532d3911019d40810aa49b4e47d4139d35dc3a23250b3af74d9ea29",
+            "container_name": "finance-monolith-postgres-test",
+            "status": "running",
+            "running": true,
+            "exit_code": 0,
+            "error": "",
+            "health": "healthy",
+            "health_log": [
+              {
+                "start": "2026-10-04T06:00:28.144786229Z",
+                "end": "2026-10-04T06:00:28.225469185Z",
+                "exit_code": 1,
+                "output": "/var/run/postgresql:5432 - rejecting connections\n"
+              },
+              {
+                "start": "2026-10-04T06:00:33.227701036Z",
+                "end": "2026-10-04T06:00:33.31127154Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T06:00:38.31249844Z",
+                "end": "2026-10-04T06:00:38.384479956Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T06:00:43.38508622Z",
+                "end": "2026-10-04T06:00:43.45907454Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "provider_call": {
+        "provider": "antigravity",
+        "model": "gemini-3.1-pro-high",
+        "session_id": "98442e89-e91d-4938-ad38-f81248d63311",
+        "success": false,
+        "returncode": 0,
+        "elapsed_seconds": 312.507,
+        "input_tokens": 144263,
+        "output_tokens": 10939,
+        "cached_tokens": 598527,
+        "thinking_tokens": 3951,
+        "native_turns": 1,
+        "tool_calls": 30,
+        "failed_tool_calls": 0,
+        "policy_violation": true,
+        "policy_violations": [
+          "forbidden provider Docker command: docker --version"
+        ],
+        "final_response": "",
+        "native_usage": {
+          "input_tokens": 144263,
+          "output_tokens": 10939,
+          "thinking_tokens": 3951,
+          "cache_read_tokens": 598527,
+          "total_tokens": 155202
+        },
+        "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/a1_iteration_01/provider_trace.jsonl",
+        "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/a1_iteration_01/provider_trace.stderr.log"
+      },
+      "failure_class": "PROVIDER_POLICY_VIOLATION"
+    }
+  ]
+}

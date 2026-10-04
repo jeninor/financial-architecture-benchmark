@@ -1,0 +1,10 @@
+{
+  "removed": [
+    "ra0003-antigravity-microservices_finance_ms_rabbitmq_data",
+    "ra0003-antigravity-microservices_finance_ms_trade_data",
+    "ra0003-antigravity-microservices_finance_ms_user_data"
+  ],
+  "preserved": [
+    "ra0003-antigravity-microservices_finance_ms_maven_cache"
+  ]
+}

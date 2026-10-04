@@ -1,0 +1,193 @@
+{
+  "ready": true,
+  "infra_failure": false,
+  "states": {
+    "discovery-server": {
+      "service": "discovery-server",
+      "container_id": "fe82e9398f3864ff7dff0dfddf59be8dcce428553104f10d40bb470a48763ae5",
+      "container_name": "finance-ms-discovery",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    },
+    "market-service": {
+      "service": "market-service",
+      "container_id": "f976bef45bf358947b226251f257fb36297acaf47c82e77bd694c4cbc3980f44",
+      "container_name": "finance-ms-market-service",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    },
+    "rabbitmq": {
+      "service": "rabbitmq",
+      "container_id": "f1f45f6c88ba3b80193383644f4af720d295da3239ae6e30378920381e7c2178",
+      "container_name": "finance-ms-rabbitmq",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T06:16:31.043301143Z",
+          "end": "2026-10-04T06:16:32.490844444Z",
+          "exit_code": 0,
+          "output": "Ping succeeded\n"
+        },
+        {
+          "start": "2026-10-04T06:16:42.494683921Z",
+          "end": "2026-10-04T06:16:43.302048242Z",
+          "exit_code": 0,
+          "output": "Ping succeeded\n"
+        },
+        {
+          "start": "2026-10-04T06:16:53.302682854Z",
+          "end": "2026-10-04T06:16:54.249362788Z",
+          "exit_code": 0,
+          "output": "Ping succeeded\n"
+        },
+        {
+          "start": "2026-10-04T06:17:04.250688263Z",
+          "end": "2026-10-04T06:17:05.103854292Z",
+          "exit_code": 0,
+          "output": "Ping succeeded\n"
+        },
+        {
+          "start": "2026-10-04T06:17:15.104900584Z",
+          "end": "2026-10-04T06:17:16.000747988Z",
+          "exit_code": 0,
+          "output": "Ping succeeded\n"
+        }
+      ]
+    },
+    "trade-postgres": {
+      "service": "trade-postgres",
+      "container_id": "91b366a241097593ebb8b80318c9774293d6958239aec3263cbb199586410541",
+      "container_name": "finance-ms-trade-postgres",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T06:16:54.616047021Z",
+          "end": "2026-10-04T06:16:54.746355997Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:16:59.747522206Z",
+          "end": "2026-10-04T06:16:59.829787639Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:04.831499658Z",
+          "end": "2026-10-04T06:17:04.948123826Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:09.949837975Z",
+          "end": "2026-10-04T06:17:10.011146674Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:15.012756957Z",
+          "end": "2026-10-04T06:17:15.079117831Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    },
+    "user-postgres": {
+      "service": "user-postgres",
+      "container_id": "3a5208af79af93c487633ca60f776e7ef063e88862b0e9e2fea40c11acc747bc",
+      "container_name": "finance-ms-user-postgres",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T06:16:58.333504126Z",
+          "end": "2026-10-04T06:16:58.416319704Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:03.417489843Z",
+          "end": "2026-10-04T06:17:03.483544724Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:08.485153053Z",
+          "end": "2026-10-04T06:17:08.584821254Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:13.585766759Z",
+          "end": "2026-10-04T06:17:13.652966118Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T06:17:18.653860125Z",
+          "end": "2026-10-04T06:17:18.730892263Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    },
+    "user-service": {
+      "service": "user-service",
+      "container_id": "8fec46836392051e7d765103a4f9b1340257e5d438399bd4b19994ed8ca11c7b",
+      "container_name": "finance-ms-user-service",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    },
+    "trade-service": {
+      "service": "trade-service",
+      "container_id": "5912b398e3d3d5281dc387fa9b4568262e726c4531268ad15e0bb0b695e01abe",
+      "container_name": "finance-ms-trade-service",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    },
+    "api-gateway": {
+      "service": "api-gateway",
+      "container_id": "25bd8ed9e9ef72142f684404e0965534a8351f15bc79ee4e0b1ac4730c8b9d21",
+      "container_name": "finance-ms-api-gateway",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    }
+  },
+  "route_checks": {
+    "http://localhost:8080/api/quotes/AAPL": true,
+    "http://localhost:8080/api/users/00000000-0000-0000-0000-000000000001/portfolio": true,
+    "http://localhost:8080/api/users/00000000-0000-0000-0000-000000000001/trades": true
+  },
+  "stable_checks": 3
+}

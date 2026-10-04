@@ -1,0 +1,8 @@
+{
+  "removed": [
+    "ra0003-antigravity-monolith_finance_monolith_postgres_data"
+  ],
+  "preserved": [
+    "ra0003-antigravity-monolith_finance_monolith_maven_cache"
+  ]
+}

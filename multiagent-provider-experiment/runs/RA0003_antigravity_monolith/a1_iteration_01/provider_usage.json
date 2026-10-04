@@ -1,0 +1,29 @@
+{
+  "provider": "antigravity",
+  "model": "gemini-3.1-pro-high",
+  "session_id": "98442e89-e91d-4938-ad38-f81248d63311",
+  "success": false,
+  "returncode": 0,
+  "elapsed_seconds": 312.507,
+  "input_tokens": 144263,
+  "output_tokens": 10939,
+  "cached_tokens": 598527,
+  "thinking_tokens": 3951,
+  "native_turns": 1,
+  "tool_calls": 30,
+  "failed_tool_calls": 0,
+  "policy_violation": true,
+  "policy_violations": [
+    "forbidden provider Docker command: docker --version"
+  ],
+  "final_response": "",
+  "native_usage": {
+    "input_tokens": 144263,
+    "output_tokens": 10939,
+    "thinking_tokens": 3951,
+    "cache_read_tokens": 598527,
+    "total_tokens": 155202
+  },
+  "trace_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/a1_iteration_01/provider_trace.jsonl",
+  "stderr_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/a1_iteration_01/provider_trace.stderr.log"
+}
