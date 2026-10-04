@@ -1,0 +1,15 @@
+]633;E;echo "ENVIRONMENT_LOCK";c2d74a47-27d9-46e1-9504-930dc35bb29f]633;CENVIRONMENT_LOCK
+6cee347c9df9f376e7e3e654032eab07de6c9d59265ced305c7e26d955ad0514  multiagent-provider-experiment/protocol/environment_lock_provider_v1.json
+
+PROVIDER_ADAPTERS
+ba10181f93c4df487180fc4b7532e96ab04dd22c0a07dfe34e60a2a50b8a26b3  multiagent-provider-experiment/providers/claude_provider.py
+4791c9d404a80af705ca1ef21c22957a815bbb1e79087380c2a4bc5d79d4723e  multiagent-provider-experiment/providers/codex_provider.py
+e4e17b41b25608196f4cca60431707abcda15737f9b88a6a9cf5d90ac880ae33  multiagent-provider-experiment/providers/antigravity_provider.py
+
+TOOL_IMAGES
+[graphify-mcp:0.9.73] -> sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689
+[multiagent-lizard:1.24.0] -> sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13
+[aquasec/trivy:0.74.0] -> sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969
+
+IMAGE_ARCHIVE
+de6b01f5bb9ccd071162fb2e9eee972ae32b0326829535a805924672c6668fab  /home/alunos/.local/share/financial-architecture-provider-images-v1/provider-tools-v1.tar

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scanners": [
+    "vuln",
+    "secret",
+    "misconfig"
+  ],
+  "severities": [
+    "HIGH",
+    "CRITICAL"
+  ],
+  "skip_db_update": true,
+  "skip_java_db_update": true,
+  "skip_check_update": true
+}

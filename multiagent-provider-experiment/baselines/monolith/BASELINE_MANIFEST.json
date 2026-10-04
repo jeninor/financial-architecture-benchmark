@@ -1,0 +1,53 @@
+{
+  "baseline_version": "v2",
+  "architecture": "monolith",
+  "created_at_utc": "2026-10-02T00:54:55.738950+00:00",
+  "source_repository": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark",
+  "source_architecture_root": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/monolith",
+  "source_git_commit": "add5165c47bd9e69582bf588f4714ec6f7410af0",
+  "source_git_branch": "main",
+  "source_worktree_clean": false,
+  "source_role": "legacy-chatpt-manual-reference",
+  "policy": {
+    "keep": [
+      "Docker Compose topology",
+      "Maven dependency/build configuration",
+      "Spring application configuration",
+      "Spring Boot main application classes"
+    ],
+    "remove": [
+      "business/domain implementation",
+      "controllers",
+      "services",
+      "repositories",
+      "DTOs",
+      "internal clients",
+      "messaging Java implementation",
+      "project tests",
+      "target directories"
+    ],
+    "external_acceptance_tests_editable_by_agent": false
+  },
+  "files": [
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/monolith/docker-compose.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/monolith/docker-compose.yml",
+      "sha256": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/monolith/financial-monolith/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/monolith/financial-monolith/pom.xml",
+      "sha256": "cdc03c9c2c36639f62dfbd06af163c7bf1ea437448fcceb2d059acefa24416d5"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/monolith/financial-monolith/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/monolith/financial-monolith/src/main/resources/application.yml",
+      "sha256": "992379667fbdecff437ba486725958b1f5b7a793abdc1210c8efe94e4032f842"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/monolith/financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/monolith/financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "sha256": "80fc311cba8a01ff9836ff669a1269d172d342bd6f2ae0da6fe635e43f508dbb"
+    }
+  ]
+}

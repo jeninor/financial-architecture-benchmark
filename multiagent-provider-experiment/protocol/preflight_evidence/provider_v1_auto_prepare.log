@@ -1,0 +1,59 @@
+[23:43:32] Docker daemon/context preflight
+Docker context: desktop-linux
+Provider claude: 2.1.286 (Claude Code)
+Provider codex: codex-cli 0.160.0
+Provider antigravity: 1.2.16
+[23:43:32] Lizard missing -> building Docker image automatically
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 246B 0.0s done
+#1 DONE 0.3s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.4s
+
+#4 [internal] load build context
+#4 transferring context: 5.34kB 0.0s done
+#4 DONE 0.5s
+
+#5 [1/3] FROM docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
+#5 resolve docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
+#5 resolve docker.io/library/python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f 0.6s done
+#5 DONE 0.7s
+
+#6 [2/3] RUN pip install --no-cache-dir "lizard==1.24.0"
+#6 CACHED
+
+#7 [3/3] COPY quality_analyzer.py /opt/quality_analyzer.py
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 exporting manifest sha256:b7b39b2a0769ccd6fcf846492028132b052079d5772039ab0bdefdb1f8835154 0.1s done
+#8 exporting config sha256:27dff4eaba7d8ecd87e8a2e1538daa89fbd967251cf8544c21d37a656453932f
+#8 exporting config sha256:27dff4eaba7d8ecd87e8a2e1538daa89fbd967251cf8544c21d37a656453932f 0.1s done
+#8 exporting attestation manifest sha256:517d58518edc315a16a2b2f3dd8b550dce72e7815e0ee6fb42b3c8fb11450c53
+#8 exporting attestation manifest sha256:517d58518edc315a16a2b2f3dd8b550dce72e7815e0ee6fb42b3c8fb11450c53 0.7s done
+#8 exporting manifest list sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13
+#8 exporting manifest list sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13 0.3s done
+#8 naming to docker.io/library/multiagent-lizard:1.24.0
+#8 naming to docker.io/library/multiagent-lizard:1.24.0 0.1s done
+#8 unpacking to docker.io/library/multiagent-lizard:1.24.0
+#8 unpacking to docker.io/library/multiagent-lizard:1.24.0 0.2s done
+#8 DONE 1.9s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ml61qqoqu4sy386tugkbmonhc
+
+Trivy cache manifest: b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32
+Trivy cache files verified: 646
+[23:43:52] Trivy offline cache smoke
+Trivy offline smoke: PASS
+monolith: services=postgres,app,postgres-test
+microservices: services=discovery-server,market-service,rabbitmq,trade-postgres,user-postgres,user-service,trade-service,api-gateway
+
+RESULT: OK — preparation only; no coding provider was called.

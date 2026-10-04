@@ -1,0 +1,2 @@
+2026-10-04T01:00:39.969881Z ERROR codex_core::tools::router: error=failed to spawn code-mode host /home/alunos/bin/codex-code-mode-host: No such file or directory (os error 2)
+2026-10-04T01:00:43.236919Z ERROR codex_core::tools::router: error=failed to spawn code-mode host /home/alunos/bin/codex-code-mode-host: No such file or directory (os error 2)

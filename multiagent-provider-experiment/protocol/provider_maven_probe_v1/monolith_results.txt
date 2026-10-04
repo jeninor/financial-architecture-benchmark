@@ -1,0 +1,16 @@
+===== JAVA =====
+./maven_probe.sh: linha 12: java: comando não encontrado
+JAVA_RC=127
+
+===== MAVEN =====
+./maven_probe.sh: linha 18: mvn: comando não encontrado
+MAVEN_VERSION_RC=127
+
+===== POMS =====
+POM_COUNT=1
+
+BUILD=./financial-monolith/pom.xml
+./maven_probe.sh: linha 48: mvn: comando não encontrado
+BUILD_RC=127
+
+OVERALL_RC=1

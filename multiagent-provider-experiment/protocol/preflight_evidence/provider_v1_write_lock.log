@@ -1,0 +1,15 @@
+[23:49:10] Docker daemon/context preflight
+Docker context: desktop-linux
+Provider claude: 2.1.286 (Claude Code)
+Provider codex: codex-cli 0.160.0
+Provider antigravity: 1.2.16
+Trivy cache manifest: b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32
+Trivy cache files verified: 646
+[23:49:17] Trivy offline cache smoke
+Trivy offline smoke: PASS
+monolith: services=postgres-test,postgres,app
+microservices: services=user-postgres,discovery-server,rabbitmq,user-service,market-service,trade-postgres,trade-service,api-gateway
+Environment lock written: /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/environment_lock_provider_v1.json
+
+RESULT: OK — preparation only; no coding provider was called.
+Environment lock: /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/environment_lock_provider_v1.json

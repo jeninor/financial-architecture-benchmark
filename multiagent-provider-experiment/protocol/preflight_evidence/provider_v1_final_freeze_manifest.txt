@@ -1,0 +1,9 @@
+]633;E;echo "LOCK_SHA256";c2d74a47-27d9-46e1-9504-930dc35bb29f]633;CLOCK_SHA256
+ea69b8cd834f6ba200f0a251684a4997c6af2faa20886d950f366c5eb608da08  multiagent-provider-experiment/protocol/environment_lock_provider_v1.json
+
+TOOL_IMAGES
+[graphify-mcp:0.9.73] -> sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689
+[multiagent-lizard:1.24.0] -> sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13
+[aquasec/trivy:0.74.0] -> sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969
+
+ARCHIVE

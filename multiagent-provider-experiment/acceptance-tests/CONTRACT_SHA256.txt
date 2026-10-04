@@ -1,0 +1,2 @@
+dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c  acceptance-tests/run_acceptance.py
+dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47  acceptance-tests/acceptance_contract.json

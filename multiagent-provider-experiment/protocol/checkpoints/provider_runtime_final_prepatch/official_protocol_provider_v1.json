@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "protocol_name": "official_finance_architecture_provider_experiment_v1",
+  "run_kind": "official",
+  "providers": {
+    "claude": {
+      "expected_cli_version": "2.1.286 (Claude Code)",
+      "model_requested": "claude-sonnet-5-5",
+      "model_verification": "trace_result_canonical_model",
+      "native_limits": {
+        "a1_first_max_turns": 15,
+        "a1_fix_max_turns": 8,
+        "a3_refactor_max_turns": 8,
+        "a3_repair_max_turns": 5
+      },
+      "policy": {
+        "workspace_write": "bwrap_workspace_rw_plus_native_allowlist",
+        "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+        "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+        "shell_network": "forbidden_and_trace_audited",
+        "docker": "filesystem_isolated_and_trace_audited",
+        "web_browser": "forbidden_by_native_allowlist_and_trace_audited",
+        "mcp": "forbidden_by_native_allowlist_and_trace_audited",
+        "subagents": "forbidden_by_native_allowlist_and_trace_audited"
+      }
+    },
+    "codex": {
+      "expected_cli_version": "codex-cli 0.160.0",
+      "model_requested": "gpt-6-sol",
+      "model_verification": "explicit_cli_argument",
+      "reasoning_effort": "medium",
+      "policy": {
+        "workspace_write": "bwrap_workspace_rw_plus_native_workspace_write",
+        "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+        "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+        "shell_network": "forbidden_and_trace_audited",
+        "docker": "filesystem_isolated_and_trace_audited",
+        "web_browser": "forbidden",
+        "mcp": "forbidden",
+        "subagents": "forbidden"
+      }
+    },
+    "antigravity": {
+      "expected_cli_version": "1.2.16",
+      "model_requested": "gemini-3.1-pro-high",
+      "model_verification": "trace_init_model",
+      "policy": {
+        "workspace_write": "bwrap_workspace_rw_plus_native_sandbox",
+        "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+        "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+        "shell_network": "forbidden_and_trace_audited",
+        "docker": "filesystem_isolated_and_trace_audited",
+        "web_browser": "forbidden_and_trace_audited",
+        "mcp": "forbidden_and_trace_audited",
+        "subagents": "forbidden_and_trace_audited"
+      }
+    }
+  },
+  "graphify": {
+    "image": "graphify-mcp:0.9.73",
+    "budget": 1200,
+    "mode": "orchestrator-side-retrieval-after-failure"
+  },
+  "quality": {
+    "image": "multiagent-lizard:1.24.0",
+    "policy": "multiagent-provider-experiment/policies/quality_policy.json"
+  },
+  "security": {
+    "image": "aquasec/trivy:0.74.0",
+    "policy": "multiagent-provider-experiment/policies/security_policy_v2.json",
+    "cache": "multiagent-experiment/tool-cache/trivy",
+    "cache_manifest": "multiagent-experiment/protocol/TRIVY_CACHE_MANIFEST_V3.json",
+    "offline_only": true,
+    "allow_initialization": false,
+    "required_cache_files": [
+      "db/trivy.db",
+      "db/metadata.json",
+      "java-db/trivy-java.db",
+      "java-db/metadata.json",
+      "policy/metadata.json"
+    ],
+    "preflight": "required-files+full-cache-hash+offline-vuln+offline-secret-misconfig"
+  },
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_initial_timeout_seconds": 2400,
+    "a1_repair_timeout_seconds": 1200,
+    "a3_refactor_timeout_seconds": 1200,
+    "a3_repair_timeout_seconds": 900,
+    "a3_max_repair_attempts": 1,
+    "infra_preflight_max_attempts": 3,
+    "infra_preflight_timeout_seconds": 120,
+    "infra_stability_seconds": 8,
+    "infra_runtime_recovery_attempts": 2,
+    "docker_settle_seconds": 3,
+    "application_readiness_stable_checks": 3,
+    "application_readiness_poll_seconds": 2
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-before-each-provider-execution-attempt",
+    "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
+    "notes": "The orchestrator starts each provider execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before the coding provider is called."
+  },
+  "environment_lock": "multiagent-provider-experiment/protocol/environment_lock_provider_v1.json",
+  "protocol_file": "multiagent-provider-experiment/protocol/official_protocol_provider_v1.json",
+  "infrastructure_policy": {
+    "preflight_before_provider": true,
+    "infra_retries_consume_provider_iterations": false,
+    "independent_infra_services": {
+      "monolith": [
+        "postgres",
+        "postgres-test"
+      ],
+      "microservices": [
+        "rabbitmq",
+        "user-postgres",
+        "trade-postgres"
+      ]
+    },
+    "capture_all_service_logs_and_health": true,
+    "application_readiness": "all key public routes reachable without gateway 502/503 for 3 consecutive polls",
+    "graphify_after_final_a1_attempt": false,
+    "classification": "independent dependency failure => INFRASTRUCTURE_ABORT; provider policy/runtime/model failure => invalid or aborted provider execution; app/acceptance failure after healthy infrastructure => experimental agent outcome"
+  },
+  "cost_policy": {
+    "monetary_cost_comparable": false,
+    "reported_cost_usd": null,
+    "native_usage_preserved_per_invocation": true
+  },
+  "provider_isolation": {
+    "mechanism": "bubblewrap",
+    "required": true,
+    "workspace_mount": "read_write",
+    "host_home": "hidden",
+    "host_run": "hidden",
+    "docker_desktop_socket": "hidden",
+    "var_run_docker_socket": "hidden",
+    "resolver": "selective_read_only_restore",
+    "environment": "clearenv_with_minimal_allowlist",
+    "probe": "multiagent-provider-experiment/protocol/provider_isolation_probe_v3",
+    "probe_expected": {
+      "workspace_write": "PASS",
+      "outside_read": "BLOCKED",
+      "historical_read": "BLOCKED",
+      "docker_access": "BLOCKED",
+      "desktop_socket": "HIDDEN",
+      "var_run_socket": "HIDDEN"
+    },
+    "provider_seed_home": "persistent_authentication_seed",
+    "provider_runtime_home": "fresh_private_tmp_clone_on_new_native_session",
+    "native_resume": "reuse_same_runtime_home_within_native_session",
+    "runtime_root": "/tmp/financial-architecture-provider-runtime-v1-<uid>"
+  },
+  "provider_local_build_policy": {
+    "provider_local_java_maven_required": false,
+    "authoritative_build_and_acceptance_owner": "orchestrator",
+    "reason": "Preserve comparability with the Claude reference methodology; providers modify/inspect code while orchestrator-controlled Docker performs authoritative build/runtime/acceptance."
+  }
+}

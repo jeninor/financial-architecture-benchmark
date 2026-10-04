@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "production_glob": "**/src/main/java/**/*.java",
+  "thresholds": {
+    "max_function_ccn": 10,
+    "max_function_nloc": 60,
+    "max_file_nloc": 300,
+    "max_parameters": 6
+  }
+}
