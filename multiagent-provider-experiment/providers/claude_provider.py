@@ -31,6 +31,7 @@ A3_ALLOWED_TOOLS = {
     "Edit",
     "Glob",
     "Grep",
+    "Bash",
 }
 
 
@@ -111,8 +112,17 @@ class ClaudeProvider:
             "--model",
             model,
 
+            # --tools controls which built-in tools actually exist.
+            "--tools",
+            ",".join(sorted(allowed)),
+
+            # --allowedTools controls permission for that reduced set.
             "--allowedTools",
             ",".join(sorted(allowed)),
+
+            # Do not inherit MCP servers or slash-command skills.
+            "--strict-mcp-config",
+            "--disable-slash-commands",
         ]
 
         if session_id:

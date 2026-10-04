@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "pair": "RH0002",
+  "provider": "claude",
+  "protocol": "official_finance_architecture_provider_experiment_v1_1",
+  "status": "INVALID_HARNESS_V1_1",
+  "primary_analysis_eligible": false,
+  "affected_runs": [
+    "RH0002_claude_monolith",
+    "RH0002_claude_microservices"
+  ],
+  "observations": {
+    "monolith": "Completed successfully under v1.1 and is preserved as diagnostic evidence, but the RH0002 pair is excluded from the primary cross-provider comparison because v1.1 was superseded before comparable runs of all providers were executed.",
+    "microservices_a1": "A1 completed in one provider invocation and passed the immutable acceptance suite 12/12.",
+    "microservices_a2": "A2 reported two QUALITY_HIGH_CCN findings.",
+    "microservices_a4": "A4 reported zero findings under the frozen policy and snapshot.",
+    "microservices_a3": "The A3 path exposed harness defects before completion and therefore is not interpreted as a provider outcome."
+  },
+  "harness_defects": [
+    {
+      "id": "A3_TOOL_POLICY_INCONSISTENCY",
+      "description": "The provider-neutral A3 policy explicitly allowed local shell commands for file inspection/editing, but the Claude adapter omitted Bash from A3_ALLOWED_TOOLS and later classified a read-only Bash cat command as a provider policy violation."
+    },
+    {
+      "id": "APPLICATION_READINESS_ACCEPTED_5XX",
+      "description": "route_reachable treated HTTP status codes other than 502/503 as ready, allowing HTTP 500 responses caused by unresolved downstream services to satisfy the readiness gate."
+    },
+    {
+      "id": "A3_REPAIR_EVIDENCE_TAIL_TRUNCATION",
+      "description": "refactor_repair_prompt retained only the final 12000 characters of evidence, which could discard the failed acceptance-test descriptions placed at the beginning of the repair evidence."
+    }
+  ],
+  "disposition": "Preserve RH0002 evidence. Exclude the pair from the primary provider comparison. Supersede v1.1 with v1.2 and restart all providers from frozen baselines."
+}

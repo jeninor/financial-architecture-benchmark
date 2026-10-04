@@ -413,10 +413,10 @@ def route_reachable(url: str) -> bool:
         with urllib.request.urlopen(url, timeout=3) as resp:
             return True
     except urllib.error.HTTPError as e:
-        # 502/503 mean the gateway/downstream path is not ready. Any other
-        # HTTP response proves the route is reachable; correctness belongs to
-        # the immutable acceptance suite, not the readiness gate.
-        return e.code not in (502, 503)
+        # A 4xx response proves that the route/application path is reachable.
+        # Any 5xx response means the application or a downstream dependency
+        # is not ready yet. Functional correctness belongs to acceptance.
+        return 400 <= e.code < 500
     except Exception:
         return False
 
@@ -771,13 +771,22 @@ def findings_query(findings: dict, architecture: str) -> str:
 def refactor_repair_prompt(
     kind: str, evidence: str, graph_context: str, findings: dict
 ) -> str:
+    bounded_evidence = evidence
+
+    if len(bounded_evidence) > 12000:
+        bounded_evidence = (
+            evidence[:6000]
+            + "\n\n...[MIDDLE OF EVIDENCE TRUNCATED]...\n\n"
+            + evidence[-6000:]
+        )
+
     return f"""The previous refactor did not pass the orchestrator gate.
 
 FAILURE KIND:
 {kind}
 
 EVIDENCE:
-{evidence[-12000:]}
+{bounded_evidence}
 
 GRAPHIFY CONTEXT:
 {graph_context}
@@ -787,7 +796,8 @@ ORIGINAL DETERMINISTIC FINDINGS:
 
 Repair only the regression introduced by the refactor.
 Preserve public behavior and the frozen architecture.
-Do not run Bash, Docker, Maven or tests.
+Local shell commands may be used only to inspect or edit files.
+Do not run Docker, Maven, Gradle, builds, tests or application processes.
 """
 
 
