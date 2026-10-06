@@ -1,0 +1,19 @@
+{
+  "pair": "R0002",
+  "monolith": {
+    "raw_status": "SUCCESS",
+    "individual_run_valid": true
+  },
+  "microservices": {
+    "raw_runner_status": "A1_FAILED",
+    "scientific_status": "ABORTED_INFRASTRUCTURE",
+    "primary_analysis_eligible": false,
+    "reason": [
+      "A1 iteration 1: fresh RabbitMQ container exited with code 1",
+      "A1 iteration 3: fresh user-postgres became unhealthy",
+      "dependent user-service, trade-service and api-gateway did not start"
+    ]
+  },
+  "paired_primary_comparison_eligible": false,
+  "note": "Raw experimental evidence is preserved unchanged."
+}

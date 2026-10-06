@@ -1,0 +1,113 @@
+{
+  "baseline_version": "v2",
+  "architecture": "microservices",
+  "created_at_utc": "2026-10-02T00:54:56.151208+00:00",
+  "source_repository": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark",
+  "source_architecture_root": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices",
+  "source_git_commit": "add5165c47bd9e69582bf588f4714ec6f7410af0",
+  "source_git_branch": "main",
+  "source_worktree_clean": false,
+  "source_role": "legacy-chatpt-manual-reference",
+  "policy": {
+    "keep": [
+      "Docker Compose topology",
+      "Maven dependency/build configuration",
+      "Spring application configuration",
+      "Spring Boot main application classes"
+    ],
+    "remove": [
+      "business/domain implementation",
+      "controllers",
+      "services",
+      "repositories",
+      "DTOs",
+      "internal clients",
+      "messaging Java implementation",
+      "project tests",
+      "target directories"
+    ],
+    "external_acceptance_tests_editable_by_agent": false
+  },
+  "files": [
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/docker-compose.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/docker-compose.yml",
+      "sha256": "082ef287289114dd36b6cebae6e44ee8e3882a279ebfc4d640e66dea88e1c520"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/discovery-server/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/discovery-server/pom.xml",
+      "sha256": "0d830cef81d3b98bf14854217b2abb17c47c66761d75c870ea1884a4b02630a4"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/discovery-server/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/discovery-server/src/main/resources/application.yml",
+      "sha256": "3c5beffe86978cc08e92054c1dac3a4a165687a9be7835a0515de108303f180f"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "sha256": "b2957612b3e4a5340ffe1d1cb9668a02308cfac8d773bf809acfc0d84d9675d3"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/api-gateway/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/api-gateway/pom.xml",
+      "sha256": "4eb105d14b8a574f10ca660f9627cb5a4f1b2fd6a51eb08c948e3cdc0cf25fa7"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/api-gateway/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/api-gateway/src/main/resources/application.yml",
+      "sha256": "12b51569fbfcaf310ac5c5664e19224db351617c7d875f02a45682e2f635fd65"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "sha256": "f5efe8838bbc15e70e98baf5837cde1ab40820e0d47d199ff9579db78efde9dd"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/user-service/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/user-service/pom.xml",
+      "sha256": "7ea59db9d049bbf30a7e399cd071545b8f2a269bb3b849fe59f2c8519b46be0c"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/user-service/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/user-service/src/main/resources/application.yml",
+      "sha256": "a0cd568ed2342043036c82d4f78d4bb502e85403162859bac1667becb7f80f7a"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "sha256": "f7bf35f4f8f4ac77986f1f5339a18b9bd382fb90b6974088c99d440c2b479fc4"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/market-service/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/market-service/pom.xml",
+      "sha256": "af45cbc2c42b1f230045e2d9e0d70ec3b5c5ac229257f8338b9b884485c98ac6"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/market-service/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/market-service/src/main/resources/application.yml",
+      "sha256": "a440060a2f913e7feb570c3c4d5149deb7bf69b461e3019f517aa18eba5a2a12"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "sha256": "b877dedddebf93b63132e3a48a6504f89a6fa738f5bb2f0a7eb0b0ed685e99e8"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/trade-service/pom.xml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/trade-service/pom.xml",
+      "sha256": "deafe489982d2c367a1a6b0563b99311f36462633f0e4c539a3cc32630090551"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/trade-service/src/main/resources/application.yml",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/trade-service/src/main/resources/application.yml",
+      "sha256": "6e7a15611a295d10dff23c1fd80b3be20644d00f0b82bc54186fb591a8867375"
+    },
+    {
+      "source": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/legacy-chatpt/microservices/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "destination": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/baselines/microservices/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "sha256": "66d8c963d416e5e17399949ddf9ca4734b69c0ac915c52a28dbad4e19822f423"
+    }
+  ]
+}

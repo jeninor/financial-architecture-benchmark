@@ -1,0 +1,8 @@
+{
+  "removed": [
+    "rc0003-codex-monolith_finance_monolith_postgres_data"
+  ],
+  "preserved": [
+    "rc0003-codex-monolith_finance_monolith_maven_cache"
+  ]
+}

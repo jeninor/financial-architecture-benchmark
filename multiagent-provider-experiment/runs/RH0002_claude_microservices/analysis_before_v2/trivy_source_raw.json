@@ -1,0 +1,486 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a10525-a028-7a0c-add5-800f99131927",
+  "CreatedAt": "2026-10-04T04:21:54.344660672Z",
+  "ArtifactName": "/workspace",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "api-gateway/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:api-gateway:0.0.1-SNAPSHOT::f7349a3b",
+          "Name": "com.juanesteban.tcc:api-gateway",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/api-gateway@0.0.1-SNAPSHOT",
+            "UID": "32acfa4cecca3c73"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::d9b3a023",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "3078bba177411f74"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 50,
+              "EndLine": 55
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-gateway-server-webflux::4572d734",
+          "Name": "org.springframework.cloud:spring-cloud-starter-gateway-server-webflux",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-gateway-server-webflux",
+            "UID": "6c6f39dcb9f543b8"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 29,
+              "EndLine": 34
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-loadbalancer::6971a16e",
+          "Name": "org.springframework.cloud:spring-cloud-starter-loadbalancer",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-loadbalancer",
+            "UID": "dad479b911cfad7e"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 43,
+              "EndLine": 48
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client::eb03b404",
+          "Name": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client",
+            "UID": "1b412d1341a0e74"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 36,
+              "EndLine": 41
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    },
+    {
+      "Target": "discovery-server/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:discovery-server:0.0.1-SNAPSHOT::2854fee3",
+          "Name": "com.juanesteban.tcc:discovery-server",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/discovery-server@0.0.1-SNAPSHOT",
+            "UID": "885b9972a688292e"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::79a4b508",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "d0e93372e2bfb840"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 50,
+              "EndLine": 60
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server::8574f548",
+          "Name": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-netflix-eureka-server",
+            "UID": "ce60203ed746c8a4"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 38,
+              "EndLine": 48
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    },
+    {
+      "Target": "market-service/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:market-service:0.0.1-SNAPSHOT::4f76e231",
+          "Name": "com.juanesteban.tcc:market-service",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/market-service@0.0.1-SNAPSHOT",
+            "UID": "b73ffa6ed3b6c1e5"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::4e615ca0",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "e48b66479fd4ec58"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 41,
+              "EndLine": 44
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-web::45eab9fd",
+          "Name": "org.springframework.boot:spring-boot-starter-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-web",
+            "UID": "b57e7e4206c8782d"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 31,
+              "EndLine": 34
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client::7ef7d3e7",
+          "Name": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client",
+            "UID": "8f0944485f34894b"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 36,
+              "EndLine": 39
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    },
+    {
+      "Target": "trade-service/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:trade-service:0.0.1-SNAPSHOT::2bf226e0",
+          "Name": "com.juanesteban.tcc:trade-service",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/trade-service@0.0.1-SNAPSHOT",
+            "UID": "6b788977518b466c"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.postgresql:postgresql::5fb77c05",
+          "Name": "org.postgresql:postgresql",
+          "Identifier": {
+            "PURL": "pkg:maven/org.postgresql/postgresql",
+            "UID": "fe94e9c627b87351"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 46,
+              "EndLine": 50
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::34cfdec3",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "1d65a128979d2de2"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 66,
+              "EndLine": 71
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-amqp::b3f2bab9",
+          "Name": "org.springframework.boot:spring-boot-starter-amqp",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-amqp",
+            "UID": "e10d6c464125ce8d"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 81,
+              "EndLine": 84
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-data-jpa::a764cff6",
+          "Name": "org.springframework.boot:spring-boot-starter-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa",
+            "UID": "2077a320cbd8bb6b"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 36,
+              "EndLine": 39
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-validation::4347a6b9",
+          "Name": "org.springframework.boot:spring-boot-starter-validation",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-validation",
+            "UID": "efe3401c3d774ced"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 41,
+              "EndLine": 44
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-web::93fba666",
+          "Name": "org.springframework.boot:spring-boot-starter-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-web",
+            "UID": "5f19d7c2016fc922"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 31,
+              "EndLine": 34
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client::cf45a445",
+          "Name": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client",
+            "UID": "23dd05692b4ace17"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 52,
+              "EndLine": 57
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-openfeign::79d7d73b",
+          "Name": "org.springframework.cloud:spring-cloud-starter-openfeign",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-openfeign",
+            "UID": "e8d1143ee3abd41d"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 59,
+              "EndLine": 64
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    },
+    {
+      "Target": "user-service/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:user-service:0.0.1-SNAPSHOT::98342fe1",
+          "Name": "com.juanesteban.tcc:user-service",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/user-service@0.0.1-SNAPSHOT",
+            "UID": "2627bab8bd8e10c5"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.postgresql:postgresql::eb5c5910",
+          "Name": "org.postgresql:postgresql",
+          "Identifier": {
+            "PURL": "pkg:maven/org.postgresql/postgresql",
+            "UID": "7914758897ca1047"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 78,
+              "EndLine": 90
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::f6ee6218",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "927521f39cde954f"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 104,
+              "EndLine": 112
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-amqp::274939d0",
+          "Name": "org.springframework.boot:spring-boot-starter-amqp",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-amqp",
+            "UID": "aff2b2df9a042ead"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 129,
+              "EndLine": 132
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-data-jpa::758b0f0c",
+          "Name": "org.springframework.boot:spring-boot-starter-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa",
+            "UID": "b299941935e28fdf"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 56,
+              "EndLine": 64
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-validation::6db587bf",
+          "Name": "org.springframework.boot:spring-boot-starter-validation",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-validation",
+            "UID": "e3ac997ae3ca5d94"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 67,
+              "EndLine": 75
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-web::4e291a29",
+          "Name": "org.springframework.boot:spring-boot-starter-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-web",
+            "UID": "c467602cb1aca99a"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 45,
+              "EndLine": 53
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client::b6fe6739",
+          "Name": "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client",
+            "UID": "258672eac9e9f18b"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 93,
+              "EndLine": 101
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    }
+  ]
+}

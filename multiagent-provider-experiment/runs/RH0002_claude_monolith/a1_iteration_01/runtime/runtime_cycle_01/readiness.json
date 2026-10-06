@@ -1,0 +1,107 @@
+{
+  "ready": true,
+  "infra_failure": false,
+  "states": {
+    "postgres": {
+      "service": "postgres",
+      "container_id": "8d90d88855133292ab98bc551f72c5903e9f9d5e63bbf55e823fcbff36b554e9",
+      "container_name": "finance-monolith-postgres",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T04:14:29.74680401Z",
+          "end": "2026-10-04T04:14:29.841684577Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:34.842796721Z",
+          "end": "2026-10-04T04:14:34.92149199Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:39.922776115Z",
+          "end": "2026-10-04T04:14:40.005859275Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:45.007012146Z",
+          "end": "2026-10-04T04:14:45.113505673Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:50.116279725Z",
+          "end": "2026-10-04T04:14:50.199185422Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    },
+    "app": {
+      "service": "app",
+      "container_id": "19f08594b1d59c90ad123ed80e10538e4c6862b712b88188c31fc8b16fad4b5f",
+      "container_name": "finance-monolith-app",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": null,
+      "health_log": []
+    },
+    "postgres-test": {
+      "service": "postgres-test",
+      "container_id": "71cd36e9cbf47111e3a01c46fb81b11850743bd4fc37f39e0e9a03dd44248d75",
+      "container_name": "finance-monolith-postgres-test",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T04:14:28.714781366Z",
+          "end": "2026-10-04T04:14:28.791544919Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:33.792836408Z",
+          "end": "2026-10-04T04:14:33.890588845Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:38.89200347Z",
+          "end": "2026-10-04T04:14:39.035458656Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:44.037761639Z",
+          "end": "2026-10-04T04:14:44.112676178Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T04:14:49.11529907Z",
+          "end": "2026-10-04T04:14:49.237277743Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    }
+  },
+  "route_checks": {
+    "http://localhost:8080/api/quotes/AAPL": true,
+    "http://localhost:8080/api/users/00000000-0000-0000-0000-000000000001/portfolio": true,
+    "http://localhost:8080/api/users/00000000-0000-0000-0000-000000000001/trades": true
+  },
+  "stable_checks": 3
+}

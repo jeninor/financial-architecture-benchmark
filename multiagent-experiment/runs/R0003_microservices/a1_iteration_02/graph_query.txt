@@ -1,0 +1,66 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this STARTUP_TIMEOUT failure. Include service startup dependencies, gateway routing, Eureka/Feign relationships and service-owned persistence where relevant.
+ConfigClusterResolver      : Resolving eureka endpoints via configuration
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.000541+00:00 [info] <0.636.0> Starting message stores for vhost '/'[0m
+finance-ms-trade-service   | 2026-10-03T03:57:44.414Z  INFO 68 --- [trade-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.001773+00:00 [info] <0.645.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.009990+00:00 [info] <0.636.0> Started message store of type transient for vhost '/'[0m
+finance-ms-trade-service   | 2026-10-03T03:57:44.415Z  INFO 68 --- [trade-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+finance-ms-trade-service   | 2026-10-03T03:57:44.441Z  INFO 68 --- [trade-service] [           main] c.j.tcc.trade.TradeServiceApplication    : Started TradeServiceApplication in 17.145 seconds (process running for 19.456)
+finance-ms-trade-service   | 2026-10-03T03:57:44.462Z  INFO 68 --- [trade-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRADE-SERVICE/2a3ff2dd0fa0:trade-service:8083 - registration status: 204
+finance-ms-trade-service   | 2026-10-03T03:58:14.376Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+finance-ms-trade-service   | 2026-10-03T03:58:14.377Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+finance-ms-trade-service   | 2026-10-03T03:58:14.415Z  INFO 68 --- [trade-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+finance-ms-trade-service   | 2026-10-03T04:02:44.003Z  INFO 68 --- [trade-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.010742+00:00 [info] <0.649.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.013444+00:00 [warning] <0.649.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.017732+00:00 [info] <0.636.0> Started message store of type persistent for vhost '/'[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.018296+00:00 [info] <0.636.0> Recovering 0 queues of type rabbit_classic_queue took 88ms[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.018602+00:00 [info] <0.636.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.018968+00:00 [info] <0.636.0> Recovering 0 queues of type rabbit_stream_queue took 0ms[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.071149+00:00 [info] <0.254.0> Created user 'finance'[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.179366+00:00 [info] <0.254.0> Successfully set user tags for user 'finance' to [administrator][0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221020+00:00 [info] <0.254.0> Successfully set permissions for user 'finance' in virtual host '/' to '.*', '.*', '.*'[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221127+00:00 [info] <0.254.0> Running boot step rabbit_observer_cli defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221232+00:00 [info] <0.254.0> Running boot step rabbit_looking_glass defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221285+00:00 [info] <0.254.0> Running boot step rabbit_core_metrics_gc defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221459+00:00 [info] <0.254.0> Running boot step background_gc defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221648+00:00 [info] <0.254.0> Running boot step routing_ready defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221694+00:00 [info] <0.254.0> Running boot step pre_flight defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221756+00:00 [info] <0.254.0> Running boot step notify_cluster defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221818+00:00 [info] <0.254.0> Running boot step networking defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.221975+00:00 [info] <0.254.0> Running boot step rabbit_quorum_queue_periodic_membership_reconciliation defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.222355+00:00 [info] <0.254.0> Running boot step definition_import_worker_pool defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.222500+00:00 [info] <0.315.0> Starting worker pool 'definition_import_pool' with 8 processes in it[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.223293+00:00 [info] <0.254.0> Running boot step cluster_name defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.223445+00:00 [info] <0.254.0> Initialising internal cluster ID to 'rabbitmq-cluster-id-Xg0FnWmx-UOTjFolPP4Dhw'[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.262843+00:00 [info] <0.254.0> Running boot step virtual_host_reconciliation defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.263252+00:00 [info] <0.254.0> Running boot step direct_client defined by app rabbit[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.263560+00:00 [info] <0.254.0> Running boot step rabbit_federation_exchange defined by app rabbitmq_federation[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.264176+00:00 [info] <0.254.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:19.264475+00:00 [info] <0.690.0> Resetting node maintenance status[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0> Deprecated features: `management_metrics_collection`: Feature `management_metrics_collection` is deprecated.[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0> By default, this feature can still be used for now.[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0> Its use will not be permitted by default in a future minor RabbitMQ version and the feature will be removed from a future major RabbitMQ version; actual versions to be determined.[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0> To continue using this feature when it is not permitted by default, set the following parameter in your configuration:[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0>     "deprecated_features.permit.management_metrics_collection = true"[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0> To test RabbitMQ as if the feature was removed, set this in your configuration:[0m
+finance-ms-rabbitmq        | [38;5;214m2026-10-03 03:56:19.606426+00:00 [warning] <0.719.0>     "deprecated_features.permit.management_metrics_collection = false"[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.035339+00:00 [info] <0.756.0> Management plugin: HTTP (non-TLS) listener started on port 15672[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.035553+00:00 [info] <0.786.0> Statistics database started.[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.035675+00:00 [info] <0.785.0> Starting worker pool 'management_worker_pool' with 3 processes in it[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.049165+00:00 [info] <0.804.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.049459+00:00 [info] <0.690.0> Ready to start client connection listeners[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.052012+00:00 [info] <0.848.0> started TCP listener on [::]:5672[0m
+finance-ms-rabbitmq        |  completed with 5 plugins.
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0> Server startup complete; 5 plugins started.[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0>  * rabbitmq_prometheus[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0>  * rabbitmq_federation[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0>  * rabbitmq_management[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0>  * rabbitmq_management_agent[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.152438+00:00 [info] <0.690.0>  * rabbitmq_web_dispatch[0m
+finance-ms-rabbitmq        | 2026-10-03 03:56:23.296434+00:00 [info] <0.9.0> Time to start RabbitMQ: 17403 ms[0m

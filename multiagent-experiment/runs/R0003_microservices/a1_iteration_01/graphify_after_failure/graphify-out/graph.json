@@ -1,0 +1,4210 @@
+{
+  "nodes": [
+    {
+      "id": "pkg_com_juanesteban_tcc_api_gateway",
+      "label": "com.juanesteban.tcc:api-gateway",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication",
+      "label": "ApiGatewayApplication.java",
+      "file_type": "code",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication",
+      "label": "ApiGatewayApplication",
+      "file_type": "code",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L9",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L13"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_com_juanesteban_tcc_discovery_server",
+      "label": "com.juanesteban.tcc:\n        discovery-server\n    ",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "discovery-server/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication",
+      "label": "DiscoveryServerApplication.java",
+      "file_type": "code",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication",
+      "label": "DiscoveryServerApplication",
+      "file_type": "code",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L12",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L14"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_com_juanesteban_tcc_market_service",
+      "label": "com.juanesteban.tcc:market-service",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication",
+      "label": "MarketServiceApplication.java",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication",
+      "label": "MarketServiceApplication",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L9",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L13"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "label": "QuoteController.java",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller",
+      "label": "QuoteController",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_java_restcontroller",
+      "label": "RestController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller_quote",
+      "label": ".quote()",
+      "file_type": "code",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L20",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "get",
+            "receiver_type": "QUOTES",
+            "lang": "java",
+            "line": "L22"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L26"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_java_getmapping",
+      "label": "GetMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_com_juanesteban_tcc_trade_service",
+      "label": "com.juanesteban.tcc:trade-service",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "label": "TradeController.java",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "label": "TradeConfig",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L22",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_lbrestclientbuilder",
+      "label": ".lbRestClientBuilder()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L25",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "builder",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L28"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_builder",
+      "label": "Builder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_financialexchange",
+      "label": ".financialExchange()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "directexchange",
+      "label": "DirectExchange",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditqueue",
+      "label": ".tradeAuditQueue()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditbinding",
+      "label": ".tradeAuditBinding()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L41",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "bind",
+            "receiver_type": "BindingBuilder",
+            "lang": "java",
+            "line": "L43"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "binding",
+      "label": "Binding",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_messageconverter",
+      "label": ".messageConverter()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "label": "TradeController",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L52",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_restcontroller",
+      "label": "RestController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tradecontroller",
+      "label": ".TradeController()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L62",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "clone",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L65"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_buy",
+      "label": ".buy()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L69",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_postmapping",
+      "label": "PostMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_sell",
+      "label": ".sell()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L74",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "label": ".trade()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L79",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "fromString",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L82"
+          },
+          {
+            "callee": "valueOf",
+            "receiver_type": "String",
+            "lang": "java",
+            "line": "L82"
+          },
+          {
+            "callee": "floor",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L87"
+          },
+          {
+            "callee": "get",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L99"
+          },
+          {
+            "callee": "valueOf",
+            "receiver_type": "HttpStatus",
+            "lang": "java",
+            "line": "L102"
+          },
+          {
+            "callee": "post",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L111"
+          },
+          {
+            "callee": "convertAndSend",
+            "receiver_type": "RabbitTemplate",
+            "lang": "java",
+            "line": "L119"
+          },
+          {
+            "callee": "warn",
+            "receiver_type": "Logger",
+            "lang": "java",
+            "line": "L121"
+          },
+          {
+            "callee": "status",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L123"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_history",
+      "label": ".history()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L126",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "get",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L129"
+          },
+          {
+            "callee": "valueOf",
+            "receiver_type": "HttpStatus",
+            "lang": "java",
+            "line": "L131"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_getmapping",
+      "label": "GetMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "label": ".toMap()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L136",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "valueOf",
+            "receiver_type": "BigDecimal",
+            "lang": "java",
+            "line": "L144"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "label": "TradeRecord.java",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "label": "TradeRecord",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_java_entity",
+      "label": "Entity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_java_table",
+      "label": "Table",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_traderecord",
+      "label": ".TradeRecord()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getid",
+      "label": ".getId()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getuserid",
+      "label": ".getUserId()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_gettype",
+      "label": ".getType()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getsymbol",
+      "label": ".getSymbol()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getshares",
+      "label": ".getShares()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getprice",
+      "label": ".getPrice()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getcreatedat",
+      "label": ".getCreatedAt()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository",
+      "label": "TradeRepository.java",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "label": "TradeRepository",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository_findbyuseridorderbycreatedatasc",
+      "label": ".findByUserIdOrderByCreatedAtAsc()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication",
+      "label": "TradeServiceApplication.java",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication",
+      "label": "TradeServiceApplication",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L11",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L13"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_com_juanesteban_tcc_user_service",
+      "label": "com.juanesteban.tcc:\n        user-service\n    ",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "maven",
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "version": "0.0.1-SNAPSHOT",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position",
+      "label": "Position.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "label": "Position",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_java_entity",
+      "label": "Entity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_java_table",
+      "label": "Table",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_position",
+      "label": ".Position()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getuserid",
+      "label": ".getUserId()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getsymbol",
+      "label": ".getSymbol()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getshares",
+      "label": ".getShares()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_setshares",
+      "label": ".setShares()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "label": "PositionRepository.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "label": "PositionRepository",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuserid",
+      "label": ".findByUserId()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuseridandsymbol",
+      "label": ".findByUserIdAndSymbol()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount",
+      "label": "UserAccount.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "label": "UserAccount",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_java_entity",
+      "label": "Entity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_java_table",
+      "label": "Table",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_useraccount",
+      "label": ".UserAccount()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getid",
+      "label": ".getId()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getusername",
+      "label": ".getUsername()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "label": ".getCash()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_setcash",
+      "label": ".setCash()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "label": "UserController.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig",
+      "label": "ClientConfig",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L18",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig_lbrestclientbuilder",
+      "label": ".lbRestClientBuilder()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L20",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "builder",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L23"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_builder",
+      "label": "Builder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "label": "UserController",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L27",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_restcontroller",
+      "label": "RestController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "label": ".UserController()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "baseUrl",
+            "receiver_type": "Builder",
+            "lang": "java",
+            "line": "L40"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L43",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "randomUUID",
+            "receiver_type": "UUID",
+            "lang": "java",
+            "line": "L54"
+          },
+          {
+            "callee": "status",
+            "receiver_type": "ResponseEntity",
+            "lang": "java",
+            "line": "L64"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_postmapping",
+      "label": "PostMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L67",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_getmapping",
+      "label": "GetMapping",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "label": ".portfolio()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L79",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "valueOf",
+            "receiver_type": "BigDecimal",
+            "lang": "java",
+            "line": "L88"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_price",
+      "label": ".price()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L106",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "get",
+            "receiver_type": "RestClient",
+            "lang": "java",
+            "line": "L107"
+          },
+          {
+            "callee": "valueOf",
+            "receiver_type": "String",
+            "lang": "java",
+            "line": "L108"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "label": ".apply()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L112",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "valueOf",
+            "receiver_type": "String",
+            "lang": "java",
+            "line": "L115"
+          },
+          {
+            "callee": "valueOf",
+            "receiver_type": "BigDecimal",
+            "lang": "java",
+            "line": "L124"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L145"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "label": "UserRepository.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "label": "UserRepository",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L12",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_existsbyusername",
+      "label": ".existsByUsername()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "label": ".findForUpdate()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication",
+      "label": "UserServiceApplication.java",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication",
+      "label": "UserServiceApplication",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L9",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "run",
+            "receiver_type": "SpringApplication",
+            "lang": "java",
+            "line": "L11"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_boot_autoconfigure_springbootapplication",
+      "label": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_cloud_netflix_eureka_server_enableeurekaserver",
+      "label": "org.springframework.cloud.netflix.eureka.server.EnableEurekaServer",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_slf4j_logger",
+      "label": "org.slf4j.Logger",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_amqp_rabbit_core_rabbittemplate",
+      "label": "org.springframework.amqp.rabbit.core.RabbitTemplate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_amqp_support_converter_messageconverter",
+      "label": "org.springframework.amqp.support.converter.MessageConverter",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_cloud_client_loadbalancer_loadbalanced",
+      "label": "org.springframework.cloud.client.loadbalancer.LoadBalanced",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_context_annotation_bean",
+      "label": "org.springframework.context.annotation.Bean",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_context_annotation_configuration",
+      "label": "org.springframework.context.annotation.Configuration",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_http_responseentity",
+      "label": "org.springframework.http.ResponseEntity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_web_client_restclient",
+      "label": "org.springframework.web.client.RestClient",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_data_jpa_repository_jparepository",
+      "label": "org.springframework.data.jpa.repository.JpaRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_cloud_openfeign_enablefeignclients",
+      "label": "org.springframework.cloud.openfeign.EnableFeignClients",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_beans_factory_annotation_autowired",
+      "label": "org.springframework.beans.factory.annotation.Autowired",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_transaction_annotation_transactional",
+      "label": "org.springframework.transaction.annotation.Transactional",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_data_jpa_repository_lock",
+      "label": "org.springframework.data.jpa.repository.Lock",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "org_springframework_data_jpa_repository_query",
+      "label": "org.springframework.data.jpa.repository.Query",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pkg_com_juanesteban_tcc_api_gateway",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_gateway_server_webflux",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_api_gateway",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_netflix_eureka_client",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_api_gateway",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_loadbalancer",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_api_gateway",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_api_gateway",
+      "target": "pkg_org_springframework_cloud_spring_cloud_dependencies",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api-gateway/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication",
+      "target": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication",
+      "target": "api_gateway_src_main_java_com_juanesteban_tcc_gateway_apigatewayapplication_apigatewayapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_discovery_server",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_netflix_eureka_server",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "discovery-server/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_discovery_server",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "discovery-server/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_discovery_server",
+      "target": "pkg_org_springframework_cloud_spring_cloud_dependencies",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "discovery-server/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication",
+      "target": "org_springframework_cloud_netflix_eureka_server_enableeurekaserver",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication",
+      "target": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication",
+      "target": "org_springframework_cloud_netflix_eureka_server_enableeurekaserver",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication",
+      "target": "discovery_server_src_main_java_com_juanesteban_tcc_discovery_discoveryserverapplication_discoveryserverapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_market_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_web",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_market_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_netflix_eureka_client",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_market_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_market_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_test",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_market_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_dependencies",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "market-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_marketserviceapplication_marketserviceapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "annotation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "responsestatusexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "bigdecimal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "map",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_java_restcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller_quote",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_quotecontroller_quote",
+      "target": "market_service_src_main_java_com_juanesteban_tcc_market_quotecontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_web",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_data_jpa",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_validation",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_postgresql_postgresql",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_netflix_eureka_client",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_openfeign",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_test",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_amqp",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_trade_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_dependencies",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "trade-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_slf4j_logger",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "loggerfactory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "core",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_amqp_rabbit_core_rabbittemplate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "jackson2jsonmessageconverter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_amqp_support_converter_messageconverter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_cloud_client_loadbalancer_loadbalanced",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_context_annotation_configuration",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_http_responseentity",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "annotation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "org_springframework_web_client_restclient",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "restclientresponseexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "responsestatusexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "bigdecimal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "util",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "org_springframework_context_annotation_configuration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_lbrestclientbuilder",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_lbrestclientbuilder",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_builder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_lbrestclientbuilder",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_lbrestclientbuilder",
+      "target": "org_springframework_cloud_client_loadbalancer_loadbalanced",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_financialexchange",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_financialexchange",
+      "target": "directexchange",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_financialexchange",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditqueue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditqueue",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditbinding",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditbinding",
+      "target": "directexchange",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditbinding",
+      "target": "binding",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_tradeauditbinding",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_messageconverter",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_messageconverter",
+      "target": "org_springframework_amqp_support_converter_messageconverter",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradeconfig_messageconverter",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_restcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "org_slf4j_logger",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "org_springframework_amqp_rabbit_core_rabbittemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "org_springframework_web_client_restclient",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tradecontroller",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tradecontroller",
+      "target": "org_springframework_amqp_rabbit_core_rabbittemplate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_builder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_buy",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_buy",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_buy",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_sell",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_sell",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_sell",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_history",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_history",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L126",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L136",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_buy",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_sell",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_trade",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "target": "persistence",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "target": "bigdecimal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "target": "instant",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_java_entity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_java_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_traderecord",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getuserid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_gettype",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getsymbol",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getshares",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getprice",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getcreatedat",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository",
+      "target": "list",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository_findbyuseridorderbycreatedatasc",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository_findbyuseridorderbycreatedatasc",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication",
+      "target": "org_springframework_cloud_openfeign_enablefeignclients",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication",
+      "target": "org_springframework_cloud_openfeign_enablefeignclients",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradeserviceapplication_tradeserviceapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_web",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_data_jpa",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_validation",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_postgresql_postgresql",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_starter_netflix_eureka_client",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_actuator",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_test",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_boot_spring_boot_starter_amqp",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_com_juanesteban_tcc_user_service",
+      "target": "pkg_org_springframework_cloud_spring_cloud_dependencies",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "user-service/pom.xml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position",
+      "target": "persistence",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_java_entity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_java_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_position",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getuserid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getsymbol",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getshares",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_setshares",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "target": "list",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "target": "optional",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuserid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuserid",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuseridandsymbol",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuseridandsymbol",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount",
+      "target": "persistence",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount",
+      "target": "bigdecimal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_java_entity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_java_table",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_useraccount",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getusername",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_setcash",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_beans_factory_annotation_autowired",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_cloud_client_loadbalancer_loadbalanced",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_context_annotation_configuration",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "dataintegrityviolationexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "httpstatus",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_http_responseentity",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "annotation",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "org_springframework_web_client_restclient",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "responsestatusexception",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "bigdecimal",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "util",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig",
+      "target": "org_springframework_context_annotation_configuration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig_lbrestclientbuilder",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig_lbrestclientbuilder",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_builder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig_lbrestclientbuilder",
+      "target": "org_springframework_context_annotation_bean",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_clientconfig_lbrestclientbuilder",
+      "target": "org_springframework_cloud_client_loadbalancer_loadbalanced",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_restcontroller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "org_springframework_web_client_restclient",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_builder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_usercontroller",
+      "target": "org_springframework_beans_factory_annotation_autowired",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "org_springframework_http_responseentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_getmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L79",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_price",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_java_postmapping",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_price",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "lockmodetype",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "org_springframework_data_jpa_repository_lock",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "org_springframework_data_jpa_repository_query",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "param",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "optional",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "uuid",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_existsbyusername",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "target": "org_springframework_data_jpa_repository_lock",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "target": "org_springframework_data_jpa_repository_query",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication",
+      "target": "springapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication",
+      "target": "org_springframework_boot_autoconfigure_springbootapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "attribute",
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userserviceapplication_userserviceapplication_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_history",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderepository_traderepository_findbyuseridorderbycreatedatasc",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getuserid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_gettype",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getsymbol",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getshares",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getprice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "trade_service_src_main_java_com_juanesteban_tcc_trade_tradecontroller_tradecontroller_tomap",
+      "target": "trade_service_src_main_java_com_juanesteban_tcc_trade_traderecord_traderecord_getcreatedat",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_existsbyusername",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getusername",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_create",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getusername",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_get",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_portfolio",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuserid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_userrepository_userrepository_findforupdate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_positionrepository_positionrepository_findbyuseridandsymbol",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_getcash",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_useraccount_useraccount_setcash",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_setshares",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "user_service_src_main_java_com_juanesteban_tcc_user_usercontroller_usercontroller_apply",
+      "target": "user_service_src_main_java_com_juanesteban_tcc_user_position_position_getshares",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "extracted_sources": [
+    "/project/BASELINE_MANIFEST.json",
+    "/project/api-gateway/pom.xml",
+    "/project/api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+    "/project/discovery-server/pom.xml",
+    "/project/discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+    "/project/market-service/pom.xml",
+    "/project/market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+    "/project/market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+    "/project/trade-service/pom.xml",
+    "/project/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+    "/project/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRecord.java",
+    "/project/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+    "/project/trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+    "/project/user-service/pom.xml",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/UserAccount.java",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+    "/project/user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java"
+  ]
+}

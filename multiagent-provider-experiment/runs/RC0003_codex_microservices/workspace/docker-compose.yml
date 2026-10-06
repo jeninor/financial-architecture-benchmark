@@ -1,0 +1,407 @@
+services:
+
+  user-postgres:
+    image: postgres:16-alpine
+    container_name: finance-ms-user-postgres
+
+    environment:
+      POSTGRES_DB: user_db
+      POSTGRES_USER: finance
+      POSTGRES_PASSWORD: finance
+      TZ: UTC
+      PGTZ: UTC
+
+    volumes:
+      - finance_ms_user_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U finance -d user_db"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+  discovery-server:
+    image: maven:3.9.9-eclipse-temurin-21
+    container_name: finance-ms-discovery
+
+    working_dir: /workspace
+
+    volumes:
+      - ./discovery-server:/workspace
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+      - "8761:8761"
+
+    environment:
+      TZ: UTC
+      JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+
+    command:
+      - mvn
+      - spring-boot:run
+
+
+  user-service:
+
+    image: maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-user-service
+
+    working_dir:
+      /workspace
+
+    volumes:
+      - ./user-service:/workspace
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+      - "8081:8081"
+
+    environment:
+
+      TZ: UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      SPRING_DATASOURCE_URL:
+        jdbc:postgresql://user-postgres:5432/user_db
+
+      SPRING_DATASOURCE_USERNAME:
+        finance
+
+      SPRING_DATASOURCE_PASSWORD:
+        finance
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+
+      SPRING_RABBITMQ_HOST:
+        rabbitmq
+
+      SPRING_RABBITMQ_PORT:
+        5672
+
+      SPRING_RABBITMQ_USERNAME:
+        finance
+
+      SPRING_RABBITMQ_PASSWORD:
+        finance
+
+    depends_on:
+
+      user-postgres:
+        condition: service_healthy
+
+      discovery-server:
+        condition: service_started
+
+      rabbitmq:
+        condition: service_healthy
+
+    command:
+      - mvn
+      - spring-boot:run
+  market-service:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-market-service
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./market-service:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+
+      - "8082:8082"
+
+    environment:
+
+      TZ: UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+
+    depends_on:
+
+      discovery-server:
+        condition: service_started
+
+    command:
+
+      - mvn
+
+      - spring-boot:run
+
+  
+  trade-postgres:
+
+    image: postgres:16-alpine
+
+    container_name:
+      finance-ms-trade-postgres
+
+    environment:
+
+      POSTGRES_DB:
+        trade_db
+
+      POSTGRES_USER:
+        finance
+
+      POSTGRES_PASSWORD:
+        finance
+
+      TZ:
+        UTC
+
+      PGTZ:
+        UTC
+
+    volumes:
+
+      - finance_ms_trade_data:/var/lib/postgresql/data
+
+    healthcheck:
+
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U finance -d trade_db"
+        ]
+
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+  trade-service:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-trade-service
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./trade-service:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+
+      - "8083:8083"
+
+    environment:
+
+      TZ:
+        UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      SPRING_DATASOURCE_URL:
+        jdbc:postgresql://trade-postgres:5432/trade_db
+
+      SPRING_DATASOURCE_USERNAME:
+        finance
+
+      SPRING_DATASOURCE_PASSWORD:
+        finance
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+      
+      SPRING_RABBITMQ_HOST:
+        rabbitmq
+
+      SPRING_RABBITMQ_PORT:
+        5672
+
+      SPRING_RABBITMQ_USERNAME:
+        finance
+
+      SPRING_RABBITMQ_PASSWORD:
+        finance
+
+    depends_on:
+
+      trade-postgres:
+        condition: service_healthy
+
+      discovery-server:
+        condition: service_started
+
+      user-service:
+        condition: service_started
+
+      market-service:
+        condition: service_started
+
+      rabbitmq:
+        condition: service_healthy
+
+    command:
+
+      - mvn
+
+      - spring-boot:run
+
+  api-gateway:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    container_name:
+      finance-ms-api-gateway
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./api-gateway:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    ports:
+
+      - "8080:8080"
+
+    environment:
+
+      TZ:
+        UTC
+
+      JAVA_TOOL_OPTIONS:
+        -Duser.timezone=UTC
+
+      EUREKA_SERVER_URL:
+        http://discovery-server:8761/eureka/
+
+    depends_on:
+
+      discovery-server:
+        condition: service_started
+
+      user-service:
+        condition: service_started
+
+      market-service:
+        condition: service_started
+
+      trade-service:
+        condition: service_started
+
+    command:
+
+      - mvn
+
+      - spring-boot:run
+
+
+  rabbitmq:
+
+    image:
+      rabbitmq:3-management-alpine
+
+    container_name:
+      finance-ms-rabbitmq
+
+    environment:
+
+      RABBITMQ_DEFAULT_USER:
+        finance
+
+      RABBITMQ_DEFAULT_PASS:
+        finance
+
+    ports:
+
+      - "5672:5672"
+      - "15672:15672"
+
+    volumes:
+
+      - finance_ms_rabbitmq_data:/var/lib/rabbitmq
+
+    healthcheck:
+
+      test:
+        [
+          "CMD",
+          "rabbitmq-diagnostics",
+          "-q",
+          "ping"
+        ]
+
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  e2e-tests:
+
+    image:
+      maven:3.9.9-eclipse-temurin-21
+
+    working_dir:
+      /workspace
+
+    volumes:
+
+      - ./e2e-tests:/workspace
+
+      - finance_ms_maven_cache:/root/.m2
+
+    environment:
+
+      BASE_URL:
+        http://api-gateway:8080
+
+    depends_on:
+
+      api-gateway:
+        condition: service_started
+
+      user-service:
+        condition: service_started
+
+      market-service:
+        condition: service_started
+
+      trade-service:
+        condition: service_started
+
+    profiles:
+      - test
+volumes:
+
+  finance_ms_user_data:
+
+  finance_ms_trade_data:
+
+  finance_ms_rabbitmq_data:
+
+  finance_ms_maven_cache:

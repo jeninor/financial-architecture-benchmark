@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "termination_reason": "SKIPPED_NO_FINDINGS",
+  "provider_metrics": {
+    "invocations": 0,
+    "elapsed_seconds": 0,
+    "tool_calls": 0,
+    "failed_tool_calls": 0,
+    "policy_violation_invocations": 0,
+    "reported_cost_usd": null,
+    "native_usage_by_invocation": []
+  }
+}

@@ -1,0 +1,27 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : RH0002_claude_microservices_a3_01
+
+T01  PASS  valid quote                             33.497 ms  HTTP=[200]
+T02  PASS  invalid symbol                           8.424 ms  HTTP=[400]
+T03  PASS  create user with initial cash          197.616 ms  HTTP=[201, 200]
+T04  PASS  duplicate username                      81.515 ms  HTTP=[201, 400]
+T05  FAIL  valid buy                               80.366 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T04:25:43.809+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T06  FAIL  insufficient cash                       46.509 ms  HTTP=[201, 500]
+     expected HTTP [400], got 500; body={"timestamp":"2026-10-04T04:25:43.855+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T07  PASS  zero shares rejected                    36.384 ms  HTTP=[201, 400]
+T08  FAIL  portfolio calculation                   47.993 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T04:25:43.940+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T09  FAIL  valid sell                              48.880 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T04:25:43.989+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T10  FAIL  oversell leaves state unchanged        385.651 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T04:25:44.375+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T11  FAIL  trade history                           60.685 ms  HTTP=[201, 500]
+     expected HTTP [201], got 500; body={"timestamp":"2026-10-04T04:25:44.435+00:00","status":500,"error":"Internal Server Error","path":"/api/trades/buy"}
+T12  PASS  unknown user                            14.171 ms  HTTP=[404]
+
+RESULT: 6/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0002_claude_microservices/a3/attempt_01/acceptance.json

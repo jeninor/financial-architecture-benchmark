@@ -1,0 +1,9 @@
+NAME                        IMAGE                            COMMAND                  SERVICE            CREATED              STATUS                     PORTS
+finance-ms-api-gateway      maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   api-gateway        42 seconds ago       Created                    
+finance-ms-discovery        maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   discovery-server   About a minute ago   Up 34 seconds              0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+finance-ms-market-service   maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   market-service     56 seconds ago       Up 22 seconds              0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+finance-ms-rabbitmq         rabbitmq:3-management-alpine     "docker-entrypoint.s…"   rabbitmq           About a minute ago   Exited (1) 4 seconds ago   
+finance-ms-trade-postgres   postgres:16-alpine               "docker-entrypoint.s…"   trade-postgres     About a minute ago   Up 35 seconds (healthy)    5432/tcp
+finance-ms-trade-service    maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   trade-service      46 seconds ago       Created                    
+finance-ms-user-postgres    postgres:16-alpine               "docker-entrypoint.s…"   user-postgres      About a minute ago   Up 34 seconds (healthy)    5432/tcp
+finance-ms-user-service     maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   user-service       50 seconds ago       Created                    

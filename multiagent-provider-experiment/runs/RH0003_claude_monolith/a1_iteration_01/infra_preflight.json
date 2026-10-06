@@ -1,0 +1,176 @@
+{
+  "success": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "compose_up_returncode": 0,
+      "wait": {
+        "success": true,
+        "states": {
+          "postgres": {
+            "service": "postgres",
+            "container_id": "a6eceb3d0fa70ca054fe102af575dbe250c3453827e82c02ba0c36164c925447",
+            "container_name": "finance-monolith-postgres",
+            "status": "running",
+            "running": true,
+            "exit_code": 0,
+            "error": "",
+            "health": "healthy",
+            "health_log": [
+              {
+                "start": "2026-10-04T05:00:47.411847436Z",
+                "end": "2026-10-04T05:00:47.49791982Z",
+                "exit_code": 2,
+                "output": "/var/run/postgresql:5432 - no response\n"
+              },
+              {
+                "start": "2026-10-04T05:00:52.499425697Z",
+                "end": "2026-10-04T05:00:52.659302707Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T05:00:57.66044859Z",
+                "end": "2026-10-04T05:00:57.755994197Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T05:01:02.757454529Z",
+                "end": "2026-10-04T05:01:02.828196545Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              }
+            ]
+          },
+          "app": {
+            "service": "app",
+            "container_id": null,
+            "status": "missing",
+            "health": null,
+            "exit_code": null
+          },
+          "postgres-test": {
+            "service": "postgres-test",
+            "container_id": "b8a55e52347d8b34dc9b2515d2314ee0e7422813066848388effae19558a37ab",
+            "container_name": "finance-monolith-postgres-test",
+            "status": "running",
+            "running": true,
+            "exit_code": 0,
+            "error": "",
+            "health": "healthy",
+            "health_log": [
+              {
+                "start": "2026-10-04T05:00:47.140023695Z",
+                "end": "2026-10-04T05:00:47.265641907Z",
+                "exit_code": 1,
+                "output": "/var/run/postgresql:5432 - rejecting connections\n"
+              },
+              {
+                "start": "2026-10-04T05:00:52.266847198Z",
+                "end": "2026-10-04T05:00:52.349598114Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T05:00:57.350531901Z",
+                "end": "2026-10-04T05:00:57.453898483Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              },
+              {
+                "start": "2026-10-04T05:01:02.454422036Z",
+                "end": "2026-10-04T05:01:02.542624371Z",
+                "exit_code": 0,
+                "output": "/var/run/postgresql:5432 - accepting connections\n"
+              }
+            ]
+          }
+        },
+        "elapsed_seconds": 21.514
+      },
+      "evidence_dir": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0003_claude_monolith/a1_iteration_01/infra_preflight/attempt_01/evidence"
+    }
+  ],
+  "states": {
+    "postgres": {
+      "service": "postgres",
+      "container_id": "a6eceb3d0fa70ca054fe102af575dbe250c3453827e82c02ba0c36164c925447",
+      "container_name": "finance-monolith-postgres",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T05:00:47.411847436Z",
+          "end": "2026-10-04T05:00:47.49791982Z",
+          "exit_code": 2,
+          "output": "/var/run/postgresql:5432 - no response\n"
+        },
+        {
+          "start": "2026-10-04T05:00:52.499425697Z",
+          "end": "2026-10-04T05:00:52.659302707Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T05:00:57.66044859Z",
+          "end": "2026-10-04T05:00:57.755994197Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T05:01:02.757454529Z",
+          "end": "2026-10-04T05:01:02.828196545Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    },
+    "app": {
+      "service": "app",
+      "container_id": null,
+      "status": "missing",
+      "health": null,
+      "exit_code": null
+    },
+    "postgres-test": {
+      "service": "postgres-test",
+      "container_id": "b8a55e52347d8b34dc9b2515d2314ee0e7422813066848388effae19558a37ab",
+      "container_name": "finance-monolith-postgres-test",
+      "status": "running",
+      "running": true,
+      "exit_code": 0,
+      "error": "",
+      "health": "healthy",
+      "health_log": [
+        {
+          "start": "2026-10-04T05:00:47.140023695Z",
+          "end": "2026-10-04T05:00:47.265641907Z",
+          "exit_code": 1,
+          "output": "/var/run/postgresql:5432 - rejecting connections\n"
+        },
+        {
+          "start": "2026-10-04T05:00:52.266847198Z",
+          "end": "2026-10-04T05:00:52.349598114Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T05:00:57.350531901Z",
+          "end": "2026-10-04T05:00:57.453898483Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        },
+        {
+          "start": "2026-10-04T05:01:02.454422036Z",
+          "end": "2026-10-04T05:01:02.542624371Z",
+          "exit_code": 0,
+          "output": "/var/run/postgresql:5432 - accepting connections\n"
+        }
+      ]
+    }
+  }
+}

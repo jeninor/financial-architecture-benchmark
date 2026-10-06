@@ -1,0 +1,229 @@
+{
+  "quality": {
+    "physical_java_loc": {
+      "before": 616,
+      "after": 631,
+      "delta": 15
+    },
+    "nonblank_java_loc": {
+      "before": 515,
+      "after": 526,
+      "delta": 11
+    },
+    "java_files": {
+      "before": 15,
+      "after": 15,
+      "delta": 0
+    },
+    "lizard_nloc": {
+      "before": 515,
+      "after": 526,
+      "delta": 11
+    },
+    "functions": {
+      "before": 29,
+      "after": 33,
+      "delta": 4
+    },
+    "cc_total": {
+      "before": 54,
+      "after": 58,
+      "delta": 4
+    },
+    "cc_average": {
+      "before": 1.862069,
+      "after": 1.757576,
+      "delta": -0.104493
+    },
+    "cc_max": {
+      "before": 12,
+      "after": 7,
+      "delta": -5
+    },
+    "quality_findings": {
+      "before": 1,
+      "after": 0,
+      "delta": -1
+    }
+  },
+  "security": {
+    "vulnerabilities": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "secrets": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "misconfigurations": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "HIGH": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "CRITICAL": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    }
+  },
+  "acceptance_after": {
+    "passed": 12,
+    "total": 12
+  },
+  "a3_provider_metrics": {
+    "invocations": 2,
+    "elapsed_seconds": 37.2,
+    "tool_calls": 9,
+    "failed_tool_calls": 0,
+    "policy_violation_invocations": 0,
+    "reported_cost_usd": null,
+    "native_usage_by_invocation": [
+      {
+        "usage": {
+          "input_tokens": 6,
+          "cache_creation_input_tokens": 10673,
+          "cache_read_input_tokens": 34084,
+          "output_tokens": 1903,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 10673,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 2,
+              "output_tokens": 329,
+              "cache_read_input_tokens": 15181,
+              "cache_creation_input_tokens": 1704,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1704
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard",
+          "fallback_credit": null
+        },
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 6,
+            "outputTokens": 1903,
+            "cacheReadInputTokens": 34084,
+            "cacheCreationInputTokens": 10673,
+            "webSearchRequests": 0,
+            "costUSD": 0.0685508,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "total_cost_usd": 0.0685508,
+        "permission_denials": [],
+        "terminal_reason": "completed",
+        "subtype": "success"
+      },
+      {
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 15497,
+          "cache_read_input_tokens": 129464,
+          "output_tokens": 2429,
+          "output_tokens_details": {
+            "thinking_tokens": 1122
+          },
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 15497,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "not_available",
+          "iterations": [
+            {
+              "input_tokens": 2,
+              "output_tokens": 994,
+              "cache_read_input_tokens": 30884,
+              "cache_creation_input_tokens": 1498,
+              "cache_creation": {
+                "ephemeral_5m_input_tokens": 0,
+                "ephemeral_1h_input_tokens": 1498
+              },
+              "type": "message"
+            }
+          ],
+          "speed": "standard",
+          "fallback_credit": null
+        },
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 16,
+            "outputTokens": 4332,
+            "thinkingTokens": 1122,
+            "cacheReadInputTokens": 163548,
+            "cacheCreationInputTokens": 26170,
+            "webSearchRequests": 0,
+            "costUSD": 0.1807416,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "total_cost_usd": 0.1807416,
+        "permission_denials": [],
+        "terminal_reason": "completed",
+        "subtype": "success"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar",
+      "bytes": 50761127,
+      "sha256": "683a3cf3cf345b564c492f7b93c84e9624faae54145ac518430789b584e78a0b"
+    },
+    {
+      "path": "discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar",
+      "bytes": 58184441,
+      "sha256": "4db482919571df906c2df30f2df4c04d2a6f183ba610e51549e367569b6aa514"
+    },
+    {
+      "path": "market-service/target/market-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 46849317,
+      "sha256": "3b6395369411d9aef709c35d36fed1db838a4e989d9329d6b67685f3bb3c2300"
+    },
+    {
+      "path": "trade-service/target/trade-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 83629483,
+      "sha256": "7c51e5d5bfe274df0ae96eddcf94df85fe03a7d28ea481cef33fd23e8e6bcd03"
+    },
+    {
+      "path": "user-service/target/user-service-0.0.1-SNAPSHOT.jar",
+      "bytes": 82124250,
+      "sha256": "55c0cbd66e8822f46f816d9d7b2f4813a37b8c7d9ad222e56b9fb10ca59cb8e5"
+    }
+  ]
+}

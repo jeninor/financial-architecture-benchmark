@@ -1,0 +1,21 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : RH0003_claude_microservices_a1_01
+
+T01  PASS  valid quote                             35.143 ms  HTTP=[200]
+T02  PASS  invalid symbol                          10.547 ms  HTTP=[400]
+T03  PASS  create user with initial cash          187.163 ms  HTTP=[201, 200]
+T04  PASS  duplicate username                      38.021 ms  HTTP=[201, 400]
+T05  PASS  valid buy                              946.775 ms  HTTP=[201, 201, 200]
+T06  PASS  insufficient cash                      104.139 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                    37.969 ms  HTTP=[201, 400]
+T08  PASS  portfolio calculation                  165.380 ms  HTTP=[201, 201, 201, 200]
+T09  PASS  valid sell                             167.995 ms  HTTP=[201, 201, 201, 200]
+T10  PASS  oversell leaves state unchanged        144.460 ms  HTTP=[201, 201, 200, 400, 200]
+T11  PASS  trade history                          261.242 ms  HTTP=[201, 201, 201, 200]
+T12  PASS  unknown user                            11.665 ms  HTTP=[404]
+
+RESULT: 12/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RH0003_claude_microservices/a1_iteration_01/acceptance.json

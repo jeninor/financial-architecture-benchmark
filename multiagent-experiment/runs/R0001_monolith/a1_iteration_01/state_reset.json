@@ -1,0 +1,8 @@
+{
+  "removed": [
+    "r0001-monolith_finance_monolith_postgres_data"
+  ],
+  "preserved": [
+    "r0001-monolith_finance_monolith_maven_cache"
+  ]
+}

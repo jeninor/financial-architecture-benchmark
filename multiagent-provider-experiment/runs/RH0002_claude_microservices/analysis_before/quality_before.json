@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "agent": "A2",
+  "tool": {
+    "name": "lizard",
+    "version": "unknown"
+  },
+  "scope": {
+    "root": "/workspace",
+    "production_only": true
+  },
+  "summary": {
+    "physical_java_loc": 599,
+    "nonblank_java_loc": 515,
+    "java_files": 16,
+    "lizard_nloc": 513,
+    "functions": 26,
+    "cc_total": 70,
+    "cc_average": 2.692308,
+    "cc_max": 13,
+    "quality_findings": 2
+  },
+  "thresholds": {
+    "max_function_ccn": 10,
+    "max_function_nloc": 60,
+    "max_file_nloc": 300,
+    "max_parameters": 6
+  },
+  "top_complex_functions": [
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "Apply::apply",
+      "long_name": "UserController::apply( @ PathVariable String id , @ RequestBody Apply req)",
+      "start_line": 80,
+      "end_line": 112,
+      "nloc": 33,
+      "ccn": 13,
+      "parameter_count": 2
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::trade",
+      "long_name": "TradeController::trade( String type , TradeRequest r)",
+      "start_line": 65,
+      "end_line": 101,
+      "nloc": 37,
+      "ccn": 11,
+      "parameter_count": 2
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "Apply::create",
+      "long_name": "UserController::create( @ RequestBody CreateUser req)",
+      "start_line": 51,
+      "end_line": 65,
+      "nloc": 15,
+      "ccn": 6,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::portfolio",
+      "long_name": "TradeController::portfolio( @ PathVariable String userId)",
+      "start_line": 136,
+      "end_line": 173,
+      "nloc": 38,
+      "ccn": 5,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::history",
+      "long_name": "TradeController::history( @ PathVariable String userId)",
+      "start_line": 117,
+      "end_line": 132,
+      "nloc": 16,
+      "ccn": 4,
+      "parameter_count": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "Apply::view",
+      "long_name": "UserController::view( User u)",
+      "start_line": 33,
+      "end_line": 48,
+      "nloc": 16,
+      "ccn": 3,
+      "parameter_count": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "Apply::get",
+      "long_name": "UserController::get( @ PathVariable String id)",
+      "start_line": 68,
+      "end_line": 75,
+      "nloc": 8,
+      "ccn": 3,
+      "parameter_count": 1
+    },
+    {
+      "file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "name": "QuoteController::quote",
+      "long_name": "QuoteController::quote( @ PathVariable String symbol)",
+      "start_line": 21,
+      "end_line": 27,
+      "nloc": 7,
+      "ccn": 3,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::parse",
+      "long_name": "TradeController::parse( String s)",
+      "start_line": 33,
+      "end_line": 39,
+      "nloc": 7,
+      "ccn": 3,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::price",
+      "long_name": "TradeController::price( String symbol)",
+      "start_line": 46,
+      "end_line": 53,
+      "nloc": 8,
+      "ccn": 2,
+      "parameter_count": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "Apply::parse",
+      "long_name": "UserController::parse( String s)",
+      "start_line": 25,
+      "end_line": 31,
+      "nloc": 7,
+      "ccn": 2,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeRequest::view",
+      "long_name": "TradeController::view( Trade t)",
+      "start_line": 103,
+      "end_line": 114,
+      "nloc": 12,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "name": "ApiGatewayApplication::main",
+      "long_name": "ApiGatewayApplication::main( String [ ] args)",
+      "start_line": 9,
+      "end_line": 17,
+      "nloc": 8,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "name": "MarketServiceApplication::main",
+      "long_name": "MarketServiceApplication::main( String [ ] args)",
+      "start_line": 9,
+      "end_line": 17,
+      "nloc": 8,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "name": "TradeController::TradeController",
+      "long_name": "TradeController::TradeController( TradeRepository trades , Clients . UserClient userClient , Clients . MarketClient marketClient , RabbitTemplate rabbit)",
+      "start_line": 23,
+      "end_line": 29,
+      "nloc": 7,
+      "ccn": 1,
+      "parameter_count": 4
+    },
+    {
+      "file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "name": "DiscoveryServerApplication::main",
+      "long_name": "DiscoveryServerApplication::main( String [ ] args)",
+      "start_line": 12,
+      "end_line": 18,
+      "nloc": 6,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "name": "TradeServiceApplication::main",
+      "long_name": "TradeServiceApplication::main( String [ ] args)",
+      "start_line": 11,
+      "end_line": 17,
+      "nloc": 6,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "name": "UserServiceApplication::main",
+      "long_name": "UserServiceApplication::main( String [ ] args)",
+      "start_line": 9,
+      "end_line": 15,
+      "nloc": 6,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "name": "UserController::UserController",
+      "long_name": "UserController::UserController( UserRepository users , PositionRepository positions)",
+      "start_line": 17,
+      "end_line": 20,
+      "nloc": 4,
+      "ccn": 1,
+      "parameter_count": 2
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/MessagingConfig.java",
+      "name": "MessagingConfig::tradeAuditBinding",
+      "long_name": "MessagingConfig::tradeAuditBinding( Queue tradeAuditQueue , DirectExchange financialExchange)",
+      "start_line": 22,
+      "end_line": 24,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 2
+    }
+  ],
+  "files": [
+    {
+      "file": "api-gateway/src/main/java/com/juanesteban/tcc/gateway/ApiGatewayApplication.java",
+      "physical_loc": 18,
+      "nonblank_loc": 14,
+      "lizard_nloc": 14,
+      "functions": 1
+    },
+    {
+      "file": "discovery-server/src/main/java/com/juanesteban/tcc/discovery/DiscoveryServerApplication.java",
+      "physical_loc": 19,
+      "nonblank_loc": 14,
+      "lizard_nloc": 14,
+      "functions": 1
+    },
+    {
+      "file": "market-service/src/main/java/com/juanesteban/tcc/market/MarketServiceApplication.java",
+      "physical_loc": 18,
+      "nonblank_loc": 14,
+      "lizard_nloc": 14,
+      "functions": 1
+    },
+    {
+      "file": "market-service/src/main/java/com/juanesteban/tcc/market/QuoteController.java",
+      "physical_loc": 28,
+      "nonblank_loc": 24,
+      "lizard_nloc": 24,
+      "functions": 1
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/Clients.java",
+      "physical_loc": 24,
+      "nonblank_loc": 19,
+      "lizard_nloc": 19,
+      "functions": 0
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/MessagingConfig.java",
+      "physical_loc": 28,
+      "nonblank_loc": 22,
+      "lizard_nloc": 22,
+      "functions": 4
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/Trade.java",
+      "physical_loc": 47,
+      "nonblank_loc": 42,
+      "lizard_nloc": 42,
+      "functions": 0
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "physical_loc": 174,
+      "nonblank_loc": 159,
+      "lizard_nloc": 158,
+      "functions": 10
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeRepository.java",
+      "physical_loc": 9,
+      "nonblank_loc": 7,
+      "lizard_nloc": 7,
+      "functions": 0
+    },
+    {
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeServiceApplication.java",
+      "physical_loc": 19,
+      "nonblank_loc": 14,
+      "lizard_nloc": 14,
+      "functions": 1
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/Position.java",
+      "physical_loc": 30,
+      "nonblank_loc": 25,
+      "lizard_nloc": 25,
+      "functions": 0
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/PositionRepository.java",
+      "physical_loc": 11,
+      "nonblank_loc": 9,
+      "lizard_nloc": 9,
+      "functions": 0
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/User.java",
+      "physical_loc": 29,
+      "nonblank_loc": 24,
+      "lizard_nloc": 24,
+      "functions": 0
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "physical_loc": 113,
+      "nonblank_loc": 103,
+      "lizard_nloc": 102,
+      "functions": 6
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserRepository.java",
+      "physical_loc": 16,
+      "nonblank_loc": 13,
+      "lizard_nloc": 13,
+      "functions": 0
+    },
+    {
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserServiceApplication.java",
+      "physical_loc": 16,
+      "nonblank_loc": 12,
+      "lizard_nloc": 12,
+      "functions": 1
+    }
+  ],
+  "findings": [
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "symbol": "TradeController::trade( String type , TradeRequest r)",
+      "start_line": 65,
+      "metric": "ccn",
+      "value": 11,
+      "threshold": 10
+    },
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "symbol": "UserController::apply( @ PathVariable String id , @ RequestBody Apply req)",
+      "start_line": 80,
+      "metric": "ccn",
+      "value": 13,
+      "threshold": 10
+    }
+  ]
+}

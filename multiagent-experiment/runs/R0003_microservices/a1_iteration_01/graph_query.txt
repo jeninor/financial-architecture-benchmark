@@ -1,0 +1,52 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this STARTUP_TIMEOUT failure. Include service startup dependencies, gateway routing, Eureka/Feign relationships and service-owned persistence where relevant.
+gle vip registry refresh property : null
+finance-ms-user-service    | 2026-10-03T03:50:12.167Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+finance-ms-user-service    | 2026-10-03T03:50:12.167Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+finance-ms-user-service    | 2026-10-03T03:50:12.167Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+finance-ms-user-service    | 2026-10-03T03:50:12.167Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+finance-ms-user-service    | 2026-10-03T03:50:12.167Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+finance-ms-user-service    | 2026-10-03T03:50:12.695Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+finance-ms-user-service    | 2026-10-03T03:50:12.697Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+finance-ms-user-service    | 2026-10-03T03:50:12.700Z  INFO 89 --- [user-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+finance-ms-user-service    | 2026-10-03T03:50:12.702Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790999412701 with initial instances count: 0
+finance-ms-user-service    | 2026-10-03T03:50:12.706Z  INFO 89 --- [user-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+finance-ms-user-service    | 2026-10-03T03:50:12.708Z  INFO 89 --- [user-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790999412708, current=UP, previous=STARTING]
+finance-ms-user-service    | 2026-10-03T03:50:12.711Z  INFO 89 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/8517e050df5f:user-service:8081: registering service...
+finance-ms-user-service    | 2026-10-03T03:50:12.727Z  INFO 89 --- [user-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+finance-ms-user-service    | 2026-10-03T03:50:12.728Z  INFO 89 --- [user-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+finance-ms-user-service    | 2026-10-03T03:50:12.752Z  INFO 89 --- [user-service] [           main] c.j.tcc.user.UserServiceApplication      : Started UserServiceApplication in 16.561 seconds (process running for 17.81)
+finance-ms-user-service    | 2026-10-03T03:50:12.903Z  INFO 89 --- [user-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/8517e050df5f:user-service:8081 - registration status: 204
+finance-ms-user-service    | 2026-10-03T03:50:42.701Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+finance-ms-discovery       | 2026-10-03T03:50:08.170Z  INFO 96 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+finance-ms-discovery       | 2026-10-03T03:50:08.196Z  INFO 96 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+finance-ms-discovery       | 2026-10-03T03:50:08.196Z  INFO 96 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+finance-ms-discovery       | 2026-10-03T03:50:08.197Z  INFO 96 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+finance-ms-discovery       | 2026-10-03T03:50:08.198Z  INFO 96 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+finance-ms-discovery       | 2026-10-03T03:50:08.199Z  INFO 96 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+finance-ms-discovery       | 2026-10-03T03:50:08.205Z  INFO 96 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+finance-ms-discovery       | 2026-10-03T03:50:08.242Z  INFO 96 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+finance-ms-discovery       | 2026-10-03T03:50:08.246Z  INFO 96 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+finance-ms-discovery       | 2026-10-03T03:50:08.292Z  INFO 96 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : Started DiscoveryServerApplication in 12.353 seconds (process running for 13.942)
+finance-ms-discovery       | 2026-10-03T03:50:12.523Z  INFO 96 --- [discovery-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T03:50:12.523Z  INFO 96 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T03:50:12.525Z  INFO 96 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+finance-ms-discovery       | 2026-10-03T03:50:12.892Z  INFO 96 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/8517e050df5f:user-service:8081 with status UP (replication=false)
+finance-ms-discovery       | 2026-10-03T03:50:13.614Z  INFO 96 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/8517e050df5f:user-service:8081 with status UP (replication=true)
+finance-ms-discovery       | 2026-10-03T03:50:33.203Z  WARN 96 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MARKET-SERVICE - 6880e89fdb4a:market-service:8082
+finance-ms-discovery       | 2026-10-03T03:50:33.204Z  WARN 96 --- [discovery-server] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MARKET-SERVICE - 6880e89fdb4a:market-service:8082
+finance-ms-discovery       | 2026-10-03T03:50:33.293Z  INFO 96 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/6880e89fdb4a:market-service:8082 with status UP (replication=false)
+finance-ms-discovery       | 2026-10-03T03:50:33.345Z  INFO 96 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/6880e89fdb4a:market-service:8082 with status UP (replication=false)
+finance-ms-discovery       | 2026-10-03T03:50:33.858Z  INFO 96 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/6880e89fdb4a:market-service:8082 with status UP (replication=true)
+finance-ms-discovery       | 2026-10-03T03:51:08.205Z  INFO 96 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+finance-ms-discovery       | 2026-10-03T03:52:08.207Z  INFO 96 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+finance-ms-discovery       | 2026-10-03T03:53:08.208Z  INFO 96 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+finance-ms-user-service    | 2026-10-03T03:50:42.702Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+finance-ms-user-service    | 2026-10-03T03:50:42.702Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+finance-ms-user-service    | 2026-10-03T03:50:42.702Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+finance-ms-user-service    | 2026-10-03T03:50:42.702Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+finance-ms-user-service    | 2026-10-03T03:50:42.702Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+finance-ms-user-service    | 2026-10-03T03:50:42.703Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+finance-ms-user-service    | 2026-10-03T03:50:42.741Z  INFO 89 --- [user-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+finance-ms-user-service    | 2026-10-03T03:55:12.178Z  INFO 89 --- [user-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+finance-ms-discovery       | 2026-10-03T03:54:08.212Z  INFO 96 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+finance-ms-discovery       | 2026-10-03T03:55:08.213Z  INFO 96 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar",
+    "bytes": 50761127,
+    "sha256": "683a3cf3cf345b564c492f7b93c84e9624faae54145ac518430789b584e78a0b"
+  },
+  {
+    "path": "discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar",
+    "bytes": 58184441,
+    "sha256": "4db482919571df906c2df30f2df4c04d2a6f183ba610e51549e367569b6aa514"
+  },
+  {
+    "path": "market-service/target/market-service-0.0.1-SNAPSHOT.jar",
+    "bytes": 46849317,
+    "sha256": "3b6395369411d9aef709c35d36fed1db838a4e989d9329d6b67685f3bb3c2300"
+  },
+  {
+    "path": "trade-service/target/trade-service-0.0.1-SNAPSHOT.jar",
+    "bytes": 83629483,
+    "sha256": "7c51e5d5bfe274df0ae96eddcf94df85fe03a7d28ea481cef33fd23e8e6bcd03"
+  },
+  {
+    "path": "user-service/target/user-service-0.0.1-SNAPSHOT.jar",
+    "bytes": 82124250,
+    "sha256": "55c0cbd66e8822f46f816d9d7b2f4813a37b8c7d9ad222e56b9fb10ca59cb8e5"
+  }
+]

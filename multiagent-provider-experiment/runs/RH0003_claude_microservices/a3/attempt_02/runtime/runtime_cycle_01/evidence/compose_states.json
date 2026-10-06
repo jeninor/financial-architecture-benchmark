@@ -1,0 +1,183 @@
+{
+  "discovery-server": {
+    "service": "discovery-server",
+    "container_id": "0f79b94cec46490364e0911068260a8044178fa256cea44942165cb8fef5add9",
+    "container_name": "finance-ms-discovery",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": null,
+    "health_log": []
+  },
+  "market-service": {
+    "service": "market-service",
+    "container_id": "a3a7db28d63e2af989b75271154ebef23fee41a21083728e0c59893acaa48af8",
+    "container_name": "finance-ms-market-service",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": null,
+    "health_log": []
+  },
+  "rabbitmq": {
+    "service": "rabbitmq",
+    "container_id": "c48f73238efa25cafa6a352620ee1fbc4de83e03287e8c0a0658183f2670eef8",
+    "container_name": "finance-ms-rabbitmq",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-04T05:15:41.882011611Z",
+        "end": "2026-10-04T05:15:42.692151192Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      },
+      {
+        "start": "2026-10-04T05:15:52.693158639Z",
+        "end": "2026-10-04T05:15:53.543197006Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      },
+      {
+        "start": "2026-10-04T05:16:03.54440188Z",
+        "end": "2026-10-04T05:16:04.95910044Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      },
+      {
+        "start": "2026-10-04T05:16:14.960214189Z",
+        "end": "2026-10-04T05:16:15.846145626Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      },
+      {
+        "start": "2026-10-04T05:16:25.848722642Z",
+        "end": "2026-10-04T05:16:26.747322607Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      }
+    ]
+  },
+  "trade-postgres": {
+    "service": "trade-postgres",
+    "container_id": "b633273372e42ac57fb75f44e5f82acce8bd4e1d7023405419d30f5af34e0b9f",
+    "container_name": "finance-ms-trade-postgres",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-04T05:16:06.073098109Z",
+        "end": "2026-10-04T05:16:06.14551404Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:11.14807158Z",
+        "end": "2026-10-04T05:16:11.23071108Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:16.233197054Z",
+        "end": "2026-10-04T05:16:16.405323924Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:21.407568933Z",
+        "end": "2026-10-04T05:16:21.479238299Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:26.480644467Z",
+        "end": "2026-10-04T05:16:26.551409386Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  },
+  "user-postgres": {
+    "service": "user-postgres",
+    "container_id": "755b2ecf42871745722ffa92e8c19a64f18b46ae49e86b0058cc558cf630c235",
+    "container_name": "finance-ms-user-postgres",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-04T05:16:07.457063816Z",
+        "end": "2026-10-04T05:16:07.535520917Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:12.537142717Z",
+        "end": "2026-10-04T05:16:12.6358673Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:17.637136196Z",
+        "end": "2026-10-04T05:16:17.753495342Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:22.754744878Z",
+        "end": "2026-10-04T05:16:22.971115596Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-04T05:16:27.972664646Z",
+        "end": "2026-10-04T05:16:28.103344964Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  },
+  "user-service": {
+    "service": "user-service",
+    "container_id": "e53e6b17d5fef44ea4c6361267276782836c2ce52134f8bdb7b09fd8880aa98d",
+    "container_name": "finance-ms-user-service",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": null,
+    "health_log": []
+  },
+  "trade-service": {
+    "service": "trade-service",
+    "container_id": "ee44fda424e46c5a6b37f24f7e7d0ba5aaddb762367bbb24bf9f45fd94046407",
+    "container_name": "finance-ms-trade-service",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": null,
+    "health_log": []
+  },
+  "api-gateway": {
+    "service": "api-gateway",
+    "container_id": "65914552e0f17537202071861d707f72f163c6386e73d6f0fb2ad618e3c7a9ba",
+    "container_name": "finance-ms-api-gateway",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": null,
+    "health_log": []
+  }
+}

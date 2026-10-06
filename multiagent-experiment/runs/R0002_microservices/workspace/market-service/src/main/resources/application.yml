@@ -1,0 +1,47 @@
+spring:
+
+  application:
+    name: market-service
+
+
+server:
+
+  port: 8082
+
+
+eureka:
+
+  client:
+
+    initial-instance-info-replication-interval-seconds: 1
+
+    instance-info-replication-interval-seconds: 2
+
+    registry-fetch-interval-seconds: 2
+
+    service-url:
+
+      defaultZone:
+        ${EUREKA_SERVER_URL:http://discovery-server:8761/eureka/}
+
+
+  instance:
+
+    prefer-ip-address: true
+
+    lease-renewal-interval-in-seconds: 2
+
+    lease-expiration-duration-in-seconds: 10
+
+
+management:
+
+  endpoints:
+
+    web:
+
+      exposure:
+
+        include:
+          - health
+          - info

@@ -1,0 +1,52 @@
+[
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a10525-af90-73a4-baab-f1461591ebb2",
+    "CreatedAt": "2026-10-04T04:21:58.288241139Z",
+    "ArtifactName": "/workspace/api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  },
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a10525-c2c2-7ccc-8c5b-c10f052c649d",
+    "CreatedAt": "2026-10-04T04:22:03.202840957Z",
+    "ArtifactName": "/workspace/discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  },
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a10525-d686-7d7f-955a-5df293d9e320",
+    "CreatedAt": "2026-10-04T04:22:08.262890426Z",
+    "ArtifactName": "/workspace/market-service/target/market-service-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  },
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a10525-eaef-71ec-ae32-06848c59eabe",
+    "CreatedAt": "2026-10-04T04:22:13.48713086Z",
+    "ArtifactName": "/workspace/trade-service/target/trade-service-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  },
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a10525-ffd3-7efc-a305-3feee8911e21",
+    "CreatedAt": "2026-10-04T04:22:18.835983676Z",
+    "ArtifactName": "/workspace/user-service/target/user-service-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  }
+]

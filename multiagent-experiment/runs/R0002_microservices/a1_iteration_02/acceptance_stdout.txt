@@ -1,0 +1,31 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : R0002_microservices_a1_02
+
+T01  PASS  valid quote                             39.190 ms  HTTP=[200]
+T02  PASS  invalid symbol                          26.739 ms  HTTP=[400]
+T03  FAIL  create user with initial cash           68.701 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.668+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"84861d11-4"}
+T04  FAIL  duplicate username                       8.379 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.691+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"4db50352-5"}
+T05  FAIL  valid buy                               10.768 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.702+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"99c0a638-6"}
+T06  FAIL  insufficient cash                        6.792 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.709+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"fb621469-7"}
+T07  FAIL  zero shares rejected                     7.267 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.716+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"46c444e0-8"}
+T08  FAIL  portfolio calculation                    5.442 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.722+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"1cba1244-9"}
+T09  FAIL  valid sell                               5.483 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.727+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"23f58fd3-10"}
+T10  FAIL  oversell leaves state unchanged          6.016 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.733+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"ff9e444c-11"}
+T11  FAIL  trade history                            5.758 ms  HTTP=[503]
+     expected HTTP [201], got 503; body={"timestamp":"2026-10-03T02:44:55.739+00:00","path":"/api/users","status":503,"error":"Service Unavailable","requestId":"709fe9a1-12"}
+T12  FAIL  unknown user                             6.734 ms  HTTP=[503]
+     expected HTTP [404], got 503; body={"timestamp":"2026-10-03T02:44:55.745+00:00","path":"/api/users/00000000-0000-0000-0000-000000000001/portfolio","status":503,"error":"Service Unavailable","requestId":"ff34a52a-13"}
+
+RESULT: 2/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/R0002_microservices/a1_iteration_02/acceptance.json

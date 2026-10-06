@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "agent": "A4",
+  "summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": []
+}

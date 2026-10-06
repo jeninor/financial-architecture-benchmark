@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "created_at_utc": "2026-10-03T02:30:42.659887+00:00",
+  "protocol_sha256": "880d9972e42dff73de8fe6a83ac84b38d30f101ff3597cfac4b78339e0d1d357",
+  "docker_context": "desktop-linux",
+  "claude_version": "2.1.286 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "expected_canonical_model": "claude-sonnet-5-5",
+  "images": {
+    "graphify": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+    "lizard": "sha256:9f6c2dfdc71bc073b36ada67979c53f6d3bbde55796746b4b9a803fcc807fa77",
+    "trivy": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969"
+  },
+  "trivy_cache_manifest_sha256": "7067429dc0e7edbee5839295fcc67055b4f08a44bac52e0c7600c3349af4a9f5",
+  "common_hashes": {
+    "official_runner": "202cf2077f5db97e2e2854aee05daa3f015235212035cd0940eaaff4542c22bb",
+    "a4_runner": "81221118306edd877343c38dad907f0665138be112e3737d9a8d379f6ad60cdb",
+    "graphify_runtime": "03490ef40fc18b2c54481b09207f65a159aabd5aae5900e2bc2f893602e79c2c",
+    "public_api": "60fc8247588cbe8b2a27863ff2e18c5d1cf63083b6e169e316486403a9ff1049",
+    "requirements": "a81c4383432872d8585f168b6e3cde1d028000dd72e1b60443b7dd8c56bd657f",
+    "acceptance_runner": "dc5ffbe3419f25ef39acdfbdf714c688f91768690ea12a26959e36a5bfa9c71c",
+    "acceptance_contract": "dc15d89b594f512888f9e5fbf1986ec76e37eafeaf8236078839d8e25c8ddc47",
+    "quality_policy": "7e38a3c40c78267f1df973bb89c2d8f56a1f68d55dcaff23ff00a7d023e76a78",
+    "security_policy": "4b333a77e71880e9f46e0db2b1426a6e082e25dae29d449df15afb57b8788737"
+  },
+  "architectures": {
+    "monolith": {
+      "docker_compose": "6147af2fafebdc486d50d730bdff85a956c23915c894d98a358936310d8d7cc0",
+      "architecture_contract": "26ebec0e9bced9bb1336d7a9d1d1e34d5290b2cc3ae3bb7696bf37c2cfbb695b",
+      "builder_prompt": "68a3da849baac8b9cef10869d9b9358b61121ff36f6bb0478f3b10a201103692",
+      "refactor_prompt": "8e1b48f37182269cee3c3235f6ca6090704363380f053607c53864ef0b56ba5a"
+    },
+    "microservices": {
+      "docker_compose": "082ef287289114dd36b6cebae6e44ee8e3882a279ebfc4d640e66dea88e1c520",
+      "architecture_contract": "fd80305030561795e30be8eb2fb131a81461bcfe01ef52ed1f7e3f2afa317745",
+      "builder_prompt": "f338bba57c84cb0257915cd4af8e615ba3db8b5a826bc34b347f59e51fcf0e20",
+      "refactor_prompt": "6ca07aba10699865f6e1ba2037f1dc36aba090d3f655a4cfc5dae611e7ff11f3"
+    }
+  }
+}

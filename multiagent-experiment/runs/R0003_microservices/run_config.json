@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_id": "R0003_microservices",
+  "kind": "official",
+  "architecture": "microservices",
+  "started_at_utc": "2026-10-03T03:47:23.005824+00:00",
+  "protocol_name": "official_finance_architecture_experiment_v3",
+  "protocol_sha256": "da5cc29e102789ce66befe02372efa972c0dbf3c7076d040b384e65b732a6aba",
+  "environment_lock_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/protocol/environment_lock_v3.json",
+  "environment_lock_sha256": "bb99032ef5e621e19790b8427799d784bbb60600b08e463be4603729fe6b85e3",
+  "docker_context": "desktop-linux",
+  "model_requested": "claude-sonnet-5-5",
+  "expected_canonical_model": "claude-sonnet-5-5",
+  "graphify_image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+  "lizard_image_id": "sha256:9f6c2dfdc71bc073b36ada67979c53f6d3bbde55796746b4b9a803fcc807fa77",
+  "trivy_image_id": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969",
+  "trivy_cache_manifest_sha256": "b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32",
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_first_max_turns": 15,
+    "a1_fix_max_turns": 8,
+    "a3_refactor_max_turns": 8,
+    "a3_repair_max_turns": 5,
+    "a3_max_repair_attempts": 1,
+    "infra_preflight_max_attempts": 3,
+    "infra_preflight_timeout_seconds": 120,
+    "infra_stability_seconds": 8,
+    "infra_runtime_recovery_attempts": 2,
+    "docker_settle_seconds": 3,
+    "application_readiness_stable_checks": 3,
+    "application_readiness_poll_seconds": 2
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-before-each-agent-execution-attempt",
+    "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
+    "notes": "The orchestrator starts each Claude execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before Claude is called."
+  },
+  "infrastructure_policy": {
+    "preflight_before_claude": true,
+    "infra_retries_consume_claude_iterations": false,
+    "independent_infra_services": {
+      "monolith": [
+        "postgres",
+        "postgres-test"
+      ],
+      "microservices": [
+        "rabbitmq",
+        "user-postgres",
+        "trade-postgres"
+      ]
+    },
+    "capture_all_service_logs_and_health": true,
+    "application_readiness": "all key public routes reachable without gateway 502/503 for 3 consecutive polls",
+    "graphify_after_final_a1_attempt": false,
+    "classification": "independent dependency failure => INFRASTRUCTURE_ABORT; app/acceptance failure after healthy infrastructure => experimental agent outcome"
+  }
+}

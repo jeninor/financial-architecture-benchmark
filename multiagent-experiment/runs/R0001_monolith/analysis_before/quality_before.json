@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "agent": "A2",
+  "tool": {
+    "name": "lizard",
+    "version": "unknown"
+  },
+  "scope": {
+    "root": "/workspace",
+    "production_only": true
+  },
+  "summary": {
+    "physical_java_loc": 447,
+    "nonblank_java_loc": 361,
+    "java_files": 13,
+    "lizard_nloc": 361,
+    "functions": 15,
+    "cc_total": 28,
+    "cc_average": 1.866667,
+    "cc_max": 5,
+    "quality_findings": 0
+  },
+  "thresholds": {
+    "max_function_ccn": 10,
+    "max_function_nloc": 60,
+    "max_file_nloc": 300,
+    "max_parameters": 6
+  },
+  "top_complex_functions": [
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::createUser",
+      "long_name": "FinanceService::createUser( String username)",
+      "start_line": 26,
+      "end_line": 38,
+      "nloc": 13,
+      "ccn": 5,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::sell",
+      "long_name": "FinanceService::sell( UUID userId , String symbol , Long shares)",
+      "start_line": 58,
+      "end_line": 70,
+      "nloc": 13,
+      "ccn": 3,
+      "parameter_count": 3
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/QuoteService.java",
+      "name": "QuoteService::priceOf",
+      "long_name": "QuoteService::priceOf( String symbol)",
+      "start_line": 17,
+      "end_line": 23,
+      "nloc": 7,
+      "ccn": 3,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::validate",
+      "long_name": "FinanceService::validate( String symbol , Long shares)",
+      "start_line": 96,
+      "end_line": 101,
+      "nloc": 6,
+      "ccn": 3,
+      "parameter_count": 2
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::buy",
+      "long_name": "FinanceService::buy( UUID userId , String symbol , Long shares)",
+      "start_line": 41,
+      "end_line": 55,
+      "nloc": 15,
+      "ccn": 2,
+      "parameter_count": 3
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::lockUser",
+      "long_name": "FinanceService::lockUser( UUID userId)",
+      "start_line": 103,
+      "end_line": 109,
+      "nloc": 7,
+      "ccn": 2,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::history",
+      "long_name": "FinanceService::history( UUID userId)",
+      "start_line": 89,
+      "end_line": 94,
+      "nloc": 6,
+      "ccn": 2,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::portfolio",
+      "long_name": "FinanceService::portfolio( UUID userId)",
+      "start_line": 73,
+      "end_line": 86,
+      "nloc": 14,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "name": "FinanceService::FinanceService",
+      "long_name": "FinanceService::FinanceService( AppUserRepository users , HoldingRepository holdings , TradeRepository trades , QuoteService quotes)",
+      "start_line": 18,
+      "end_line": 24,
+      "nloc": 7,
+      "ccn": 1,
+      "parameter_count": 4
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "name": "FinancialMonolithApplication::main",
+      "long_name": "FinancialMonolithApplication::main( String [ ] args)",
+      "start_line": 9,
+      "end_line": 16,
+      "nloc": 6,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/ApiExceptionHandler.java",
+      "name": "ApiExceptionHandler::badRequest",
+      "long_name": "ApiExceptionHandler::badRequest( Exception e)",
+      "start_line": 18,
+      "end_line": 20,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/ApiExceptionHandler.java",
+      "name": "ApiExceptionHandler::notFound",
+      "long_name": "ApiExceptionHandler::notFound( Exception e)",
+      "start_line": 23,
+      "end_line": 25,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/ApiExceptionHandler.java",
+      "name": "ApiExceptionHandler::body",
+      "long_name": "ApiExceptionHandler::body( HttpStatus status , Exception e)",
+      "start_line": 27,
+      "end_line": 29,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 2
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/BadRequestException.java",
+      "name": "BadRequestException::BadRequestException",
+      "long_name": "BadRequestException::BadRequestException( String message)",
+      "start_line": 4,
+      "end_line": 6,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/NotFoundException.java",
+      "name": "NotFoundException::NotFoundException",
+      "long_name": "NotFoundException::NotFoundException( String message)",
+      "start_line": 4,
+      "end_line": 6,
+      "nloc": 3,
+      "ccn": 1,
+      "parameter_count": 1
+    }
+  ],
+  "files": [
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java",
+      "physical_loc": 17,
+      "nonblank_loc": 12,
+      "lizard_nloc": 12,
+      "functions": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/ApiExceptionHandler.java",
+      "physical_loc": 30,
+      "nonblank_loc": 25,
+      "lizard_nloc": 25,
+      "functions": 3
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/api/FinanceController.java",
+      "physical_loc": 75,
+      "nonblank_loc": 60,
+      "lizard_nloc": 60,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/AppUser.java",
+      "physical_loc": 33,
+      "nonblank_loc": 25,
+      "lizard_nloc": 25,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/AppUserRepository.java",
+      "physical_loc": 18,
+      "nonblank_loc": 14,
+      "lizard_nloc": 14,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/BadRequestException.java",
+      "physical_loc": 7,
+      "nonblank_loc": 6,
+      "lizard_nloc": 6,
+      "functions": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/FinanceService.java",
+      "physical_loc": 117,
+      "nonblank_loc": 104,
+      "lizard_nloc": 104,
+      "functions": 8
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/Holding.java",
+      "physical_loc": 35,
+      "nonblank_loc": 26,
+      "lizard_nloc": 26,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/HoldingRepository.java",
+      "physical_loc": 13,
+      "nonblank_loc": 9,
+      "lizard_nloc": 9,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/NotFoundException.java",
+      "physical_loc": 7,
+      "nonblank_loc": 6,
+      "lizard_nloc": 6,
+      "functions": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/QuoteService.java",
+      "physical_loc": 24,
+      "nonblank_loc": 20,
+      "lizard_nloc": 20,
+      "functions": 1
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/Trade.java",
+      "physical_loc": 61,
+      "nonblank_loc": 47,
+      "lizard_nloc": 47,
+      "functions": 0
+    },
+    {
+      "file": "financial-monolith/src/main/java/com/juanesteban/tcc/finance/domain/TradeRepository.java",
+      "physical_loc": 10,
+      "nonblank_loc": 7,
+      "lizard_nloc": 7,
+      "functions": 0
+    }
+  ],
+  "findings": []
+}

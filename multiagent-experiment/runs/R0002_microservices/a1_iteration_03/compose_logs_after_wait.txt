@@ -1,0 +1,161 @@
+finance-ms-market-service  | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-ms-market-service  | [INFO] Scanning for projects...
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] -----------------< com.juanesteban.tcc:market-service >-----------------
+finance-ms-market-service  | [INFO] Building market-service 0.0.1-SNAPSHOT
+finance-ms-market-service  | [INFO]   from pom.xml
+finance-ms-market-service  | [INFO] --------------------------------[ jar ]---------------------------------
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] >>> spring-boot:3.5.0:run (default-cli) > test-compile @ market-service >>>
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] --- resources:3.3.1:resources (default-resources) @ market-service ---
+finance-ms-market-service  | [INFO] Copying 1 resource from src/main/resources to target/classes
+finance-ms-market-service  | [INFO] Copying 0 resource from src/main/resources to target/classes
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] --- compiler:3.14.0:compile (default-compile) @ market-service ---
+finance-ms-market-service  | [INFO] Nothing to compile - all classes are up to date.
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] --- resources:3.3.1:testResources (default-testResources) @ market-service ---
+finance-ms-market-service  | [INFO] skip non existing resourceDirectory /workspace/src/test/resources
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ market-service ---
+finance-ms-market-service  | [INFO] No sources to compile
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] <<< spring-boot:3.5.0:run (default-cli) < test-compile @ market-service <<<
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] 
+finance-ms-market-service  | [INFO] --- spring-boot:3.5.0:run (default-cli) @ market-service ---
+finance-ms-market-service  | [INFO] Attaching agents: []
+finance-ms-market-service  | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-ms-market-service  | 
+finance-ms-market-service  |   .   ____          _            __ _ _
+finance-ms-market-service  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+finance-ms-market-service  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+finance-ms-market-service  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+finance-ms-market-service  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+finance-ms-market-service  |  =========|_|==============|___/=/_/_/_/
+finance-ms-market-service  | 
+finance-ms-market-service  |  :: Spring Boot ::                (v3.5.0)
+finance-ms-market-service  | 
+finance-ms-market-service  | 2026-10-03T02:47:07.157Z  INFO 59 --- [market-service] [           main] c.j.tcc.market.MarketServiceApplication  : Starting MarketServiceApplication using Java 21.0.7 with PID 59 (/workspace/target/classes started by root in /workspace)
+finance-ms-market-service  | 2026-10-03T02:47:07.167Z  INFO 59 --- [market-service] [           main] c.j.tcc.market.MarketServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+finance-ms-market-service  | 2026-10-03T02:47:08.383Z  INFO 59 --- [market-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4341179-385c-3fcb-8e1e-eeef6b8bd355
+finance-ms-market-service  | 2026-10-03T02:47:08.746Z  INFO 59 --- [market-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+finance-ms-market-service  | 2026-10-03T02:47:08.760Z  INFO 59 --- [market-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+finance-ms-market-service  | 2026-10-03T02:47:08.761Z  INFO 59 --- [market-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+finance-ms-market-service  | 2026-10-03T02:47:08.809Z  INFO 59 --- [market-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+finance-ms-market-service  | 2026-10-03T02:47:08.810Z  INFO 59 --- [market-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1589 ms
+finance-ms-market-service  | 2026-10-03T02:47:09.962Z  INFO 59 --- [market-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+finance-ms-market-service  | 2026-10-03T02:47:10.008Z  WARN 59 --- [market-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+finance-ms-market-service  | 2026-10-03T02:47:10.020Z  INFO 59 --- [market-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+finance-ms-market-service  | 2026-10-03T02:47:10.074Z  INFO 59 --- [market-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+finance-ms-discovery       | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-ms-discovery       | [INFO] Scanning for projects...
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] ----------------< com.juanesteban.tcc:discovery-server >----------------
+finance-ms-discovery       | [INFO] Building discovery-server 0.0.1-SNAPSHOT
+finance-ms-discovery       | [INFO]   from pom.xml
+finance-ms-discovery       | [INFO] --------------------------------[ jar ]---------------------------------
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] >>> spring-boot:3.5.0:run (default-cli) > test-compile @ discovery-server >>>
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] --- resources:3.3.1:resources (default-resources) @ discovery-server ---
+finance-ms-discovery       | [INFO] Copying 1 resource from src/main/resources to target/classes
+finance-ms-discovery       | [INFO] Copying 0 resource from src/main/resources to target/classes
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] --- compiler:3.14.0:compile (default-compile) @ discovery-server ---
+finance-ms-market-service  | 2026-10-03T02:47:10.102Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+finance-ms-market-service  | 2026-10-03T02:47:10.107Z  INFO 59 --- [market-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+finance-ms-market-service  | 2026-10-03T02:47:10.116Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+finance-ms-market-service  | 2026-10-03T02:47:10.117Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+finance-ms-market-service  | 2026-10-03T02:47:10.849Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+finance-ms-market-service  | 2026-10-03T02:47:10.851Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 2
+finance-ms-market-service  | 2026-10-03T02:47:10.854Z  INFO 59 --- [market-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 60
+finance-ms-market-service  | 2026-10-03T02:47:10.856Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790995630855 with initial instances count: 0
+finance-ms-market-service  | 2026-10-03T02:47:10.859Z  INFO 59 --- [market-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MARKET-SERVICE with eureka with status UP
+finance-ms-market-service  | 2026-10-03T02:47:10.860Z  INFO 59 --- [market-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790995630860, current=UP, previous=STARTING]
+finance-ms-market-service  | 2026-10-03T02:47:10.862Z  INFO 59 --- [market-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MARKET-SERVICE/ea541175426c:market-service:8082: registering service...
+finance-ms-market-service  | 2026-10-03T02:47:10.887Z  INFO 59 --- [market-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+finance-ms-market-service  | 2026-10-03T02:47:10.900Z  INFO 59 --- [market-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+finance-ms-market-service  | 2026-10-03T02:47:10.931Z  INFO 59 --- [market-service] [           main] c.j.tcc.market.MarketServiceApplication  : Started MarketServiceApplication in 4.739 seconds (process running for 5.422)
+finance-ms-market-service  | 2026-10-03T02:47:11.044Z  INFO 59 --- [market-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MARKET-SERVICE/ea541175426c:market-service:8082 - registration status: 204
+finance-ms-market-service  | 2026-10-03T02:47:12.857Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+finance-ms-market-service  | 2026-10-03T02:47:12.858Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+finance-ms-market-service  | 2026-10-03T02:47:12.912Z  INFO 59 --- [market-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+finance-ms-discovery       | [INFO] Nothing to compile - all classes are up to date.
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] --- resources:3.3.1:testResources (default-testResources) @ discovery-server ---
+finance-ms-discovery       | [INFO] skip non existing resourceDirectory /workspace/src/test/resources
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ discovery-server ---
+finance-ms-discovery       | [INFO] No sources to compile
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] <<< spring-boot:3.5.0:run (default-cli) < test-compile @ discovery-server <<<
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] 
+finance-ms-discovery       | [INFO] --- spring-boot:3.5.0:run (default-cli) @ discovery-server ---
+finance-ms-discovery       | [INFO] Attaching agents: []
+finance-ms-discovery       | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+finance-ms-discovery       | 
+finance-ms-discovery       |   .   ____          _            __ _ _
+finance-ms-discovery       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+finance-ms-discovery       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+finance-ms-discovery       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+finance-ms-discovery       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+finance-ms-discovery       |  =========|_|==============|___/=/_/_/_/
+finance-ms-discovery       | 
+finance-ms-discovery       |  :: Spring Boot ::                (v3.5.0)
+finance-ms-discovery       | 
+finance-ms-discovery       | 2026-10-03T02:46:40.085Z  INFO 59 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : Starting DiscoveryServerApplication using Java 21.0.7 with PID 59 (/workspace/target/classes started by root in /workspace)
+finance-ms-discovery       | 2026-10-03T02:46:40.087Z  INFO 59 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : No active profile set, falling back to 1 default profile: "default"
+finance-ms-discovery       | 2026-10-03T02:46:41.304Z  INFO 59 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=760fa6b5-e5a8-3a86-aa85-e5d9d39c61b6
+finance-ms-discovery       | 2026-10-03T02:46:41.621Z  INFO 59 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+finance-ms-discovery       | 2026-10-03T02:46:41.637Z  INFO 59 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+finance-ms-discovery       | 2026-10-03T02:46:41.637Z  INFO 59 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+finance-ms-discovery       | 2026-10-03T02:46:41.690Z  INFO 59 --- [discovery-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+finance-ms-discovery       | 2026-10-03T02:46:41.691Z  INFO 59 --- [discovery-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1554 ms
+finance-ms-discovery       | 2026-10-03T02:46:42.971Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:42.972Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:43.153Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:43.153Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:43.346Z  INFO 59 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+finance-ms-discovery       | 2026-10-03T02:46:44.103Z  WARN 59 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+finance-ms-discovery       | 2026-10-03T02:46:44.138Z  INFO 59 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+finance-ms-discovery       | 2026-10-03T02:46:44.169Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+finance-ms-discovery       | 2026-10-03T02:46:44.169Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+finance-ms-discovery       | 2026-10-03T02:46:44.172Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790995604171 with initial instances count: 0
+finance-ms-discovery       | 2026-10-03T02:46:44.224Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+finance-ms-discovery       | 2026-10-03T02:46:44.226Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+finance-ms-discovery       | 2026-10-03T02:46:44.384Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:44.384Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:44.385Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:44.385Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:44.442Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+finance-ms-discovery       | 2026-10-03T02:46:44.453Z  INFO 59 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+finance-ms-discovery       | 2026-10-03T02:46:44.453Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+finance-ms-discovery       | 2026-10-03T02:46:44.470Z  INFO 59 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+finance-ms-discovery       | 2026-10-03T02:46:44.538Z  INFO 59 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+finance-ms-discovery       | 2026-10-03T02:46:44.551Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+finance-ms-discovery       | 2026-10-03T02:46:44.551Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+finance-ms-discovery       | 2026-10-03T02:46:44.554Z  INFO 59 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+finance-ms-discovery       | 2026-10-03T02:46:44.559Z  INFO 59 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+finance-ms-discovery       | 2026-10-03T02:46:44.560Z  INFO 59 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+finance-ms-discovery       | 2026-10-03T02:46:44.576Z  INFO 59 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : Started DiscoveryServerApplication in 5.056 seconds (process running for 5.544)
+finance-ms-discovery       | 2026-10-03T02:47:10.715Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T02:47:10.715Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T02:47:10.716Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+finance-ms-discovery       | 2026-10-03T02:47:11.038Z  INFO 59 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/ea541175426c:market-service:8082 with status UP (replication=false)
+finance-ms-discovery       | 2026-10-03T02:47:11.711Z  INFO 59 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/ea541175426c:market-service:8082 with status UP (replication=true)

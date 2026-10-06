@@ -1,0 +1,127 @@
+{
+  "rabbitmq": {
+    "service": "rabbitmq",
+    "container_id": "6cf392c46a68da117f340bb07d4d8ae44ccab871742c46ca400e7489f289de2a",
+    "container_name": "finance-ms-rabbitmq",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-03T03:56:15.246407917Z",
+        "end": "2026-10-03T03:56:16.186626058Z",
+        "exit_code": 0,
+        "output": "Ping succeeded\n"
+      }
+    ]
+  },
+  "trade-postgres": {
+    "service": "trade-postgres",
+    "container_id": "349cc38e4d72b46b3a9d0fbb1a17d273451b2ad9ed6bd0ba42c60c6d5ddbb5b7",
+    "container_name": "finance-ms-trade-postgres",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-03T03:56:10.048686787Z",
+        "end": "2026-10-03T03:56:10.216707866Z",
+        "exit_code": 1,
+        "output": "/var/run/postgresql:5432 - rejecting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:15.217409782Z",
+        "end": "2026-10-03T03:56:15.333151738Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:20.334402984Z",
+        "end": "2026-10-03T03:56:20.413655716Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:25.414586429Z",
+        "end": "2026-10-03T03:56:25.554620771Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  },
+  "discovery-server": {
+    "service": "discovery-server",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  },
+  "user-postgres": {
+    "service": "user-postgres",
+    "container_id": "3f97f8dadca00d2791424c056449d49278d7c298b0b8ff580ead07b468e2d82c",
+    "container_name": "finance-ms-user-postgres",
+    "status": "running",
+    "running": true,
+    "exit_code": 0,
+    "error": "",
+    "health": "healthy",
+    "health_log": [
+      {
+        "start": "2026-10-03T03:56:09.484372833Z",
+        "end": "2026-10-03T03:56:09.550299342Z",
+        "exit_code": 1,
+        "output": "/var/run/postgresql:5432 - rejecting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:14.55238354Z",
+        "end": "2026-10-03T03:56:14.66020229Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:19.662480658Z",
+        "end": "2026-10-03T03:56:19.752444001Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      },
+      {
+        "start": "2026-10-03T03:56:24.754569374Z",
+        "end": "2026-10-03T03:56:24.863135175Z",
+        "exit_code": 0,
+        "output": "/var/run/postgresql:5432 - accepting connections\n"
+      }
+    ]
+  },
+  "user-service": {
+    "service": "user-service",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  },
+  "market-service": {
+    "service": "market-service",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  },
+  "trade-service": {
+    "service": "trade-service",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  },
+  "api-gateway": {
+    "service": "api-gateway",
+    "container_id": null,
+    "status": "missing",
+    "health": null,
+    "exit_code": null
+  }
+}

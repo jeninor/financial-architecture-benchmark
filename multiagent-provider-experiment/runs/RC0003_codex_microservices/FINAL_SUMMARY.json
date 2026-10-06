@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "run_id": "RC0003_codex_microservices",
+  "kind": "official",
+  "architecture": "microservices",
+  "provider": "codex",
+  "provider_cli_version": "codex-cli 0.160.0",
+  "model_requested": "gpt-6-sol",
+  "model_verification": "explicit_cli_argument",
+  "provider_policy": {
+    "workspace_write": "bwrap_workspace_rw_plus_native_workspace_write",
+    "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+    "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+    "shell_network": "forbidden_and_trace_audited",
+    "docker": "filesystem_isolated_and_trace_audited",
+    "web_browser": "forbidden",
+    "mcp": "forbidden",
+    "subagents": "forbidden"
+  },
+  "started_at_utc": "2026-10-04T05:46:36.205272+00:00",
+  "protocol_name": "official_finance_architecture_provider_experiment_v1_2",
+  "protocol_sha256": "4c1e63998f96494edac71f4d657a56c0106f957b9c11c1df233e45b9cd4de936",
+  "environment_lock_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/environment_lock_provider_v1_2.json",
+  "environment_lock_sha256": "95163c8a19e194be2a9f4599f204d3ee2454aaf5fdfa81c4b4c505333d77c6fc",
+  "docker_context": "desktop-linux",
+  "graphify_image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+  "lizard_image_id": "sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13",
+  "trivy_image_id": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969",
+  "trivy_cache_manifest_sha256": "b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32",
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_initial_timeout_seconds": 2400,
+    "a1_repair_timeout_seconds": 1200,
+    "a3_refactor_timeout_seconds": 1200,
+    "a3_repair_timeout_seconds": 900,
+    "a3_max_repair_attempts": 1,
+    "infra_preflight_max_attempts": 3,
+    "infra_preflight_timeout_seconds": 120,
+    "infra_stability_seconds": 8,
+    "infra_runtime_recovery_attempts": 2,
+    "docker_settle_seconds": 3,
+    "application_readiness_stable_checks": 3,
+    "application_readiness_poll_seconds": 2
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-before-each-provider-execution-attempt",
+    "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
+    "notes": "The orchestrator starts each provider execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before the coding provider is called."
+  },
+  "infrastructure_policy": {
+    "preflight_before_provider": true,
+    "infra_retries_consume_provider_iterations": false,
+    "independent_infra_services": {
+      "monolith": [
+        "postgres",
+        "postgres-test"
+      ],
+      "microservices": [
+        "rabbitmq",
+        "user-postgres",
+        "trade-postgres"
+      ]
+    },
+    "capture_all_service_logs_and_health": true,
+    "application_readiness": "all key public routes reachable without gateway 502/503 for 3 consecutive polls",
+    "graphify_after_final_a1_attempt": false,
+    "classification": "independent dependency failure => INFRASTRUCTURE_ABORT; provider policy/runtime/model failure => invalid or aborted provider execution; app/acceptance failure after healthy infrastructure => experimental agent outcome"
+  },
+  "monetary_cost": {
+    "available": false,
+    "usd": null
+  },
+  "finished_at_utc": "2026-10-04T05:55:46.042908+00:00",
+  "success": true,
+  "termination_reason": "SUCCESS",
+  "experimental_status": "VALID_SUCCESS",
+  "primary_analysis_eligible": true,
+  "elapsed_seconds": 549.838,
+  "a1": {
+    "success": true,
+    "iterations_used": 1,
+    "provider_metrics": {
+      "invocations": 1,
+      "elapsed_seconds": 258.082,
+      "tool_calls": 23,
+      "failed_tool_calls": 5,
+      "policy_violation_invocations": 0,
+      "reported_cost_usd": null,
+      "native_usage_by_invocation": [
+        {
+          "input_tokens": 424547,
+          "cached_input_tokens": 397184,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9301,
+          "reasoning_output_tokens": 2189
+        }
+      ]
+    },
+    "artifacts": [
+      {
+        "path": "api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar",
+        "bytes": 50761128,
+        "sha256": "20ca588721f04531da0a6ace24cee9f4668679fca81361c6cac179555f199aeb"
+      },
+      {
+        "path": "discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar",
+        "bytes": 58184441,
+        "sha256": "8ec4d290ffea614d1606e2595a91cc4ed13ec02313e21ef105778b108c4a542e"
+      },
+      {
+        "path": "market-service/target/market-service-0.0.1-SNAPSHOT.jar",
+        "bytes": 46850159,
+        "sha256": "fd3279488c14bb6268c713e8418299ce84968b1eb592dbaa0a316bf1cc7eae60"
+      },
+      {
+        "path": "trade-service/target/trade-service-0.0.1-SNAPSHOT.jar",
+        "bytes": 83631069,
+        "sha256": "32a418bf67990225e472cd55ba5e361eda46356c70ff856ec923e19bd6588d0c"
+      },
+      {
+        "path": "user-service/target/user-service-0.0.1-SNAPSHOT.jar",
+        "bytes": 83632301,
+        "sha256": "e5d32503d91508363e55bfb60f6c4aecf674c16312f490915d17bb6f3adf5a7b"
+      }
+    ]
+  },
+  "analysis_before": {
+    "quality": {
+      "physical_java_loc": 530,
+      "nonblank_java_loc": 448,
+      "java_files": 16,
+      "lizard_nloc": 447,
+      "functions": 21,
+      "cc_total": 40,
+      "cc_average": 1.904762,
+      "cc_max": 8,
+      "quality_findings": 0
+    },
+    "security": {
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "findings": {
+      "total_findings": 0,
+      "by_agent": {
+        "A2": 0,
+        "A4": 0
+      },
+      "by_severity": {},
+      "by_type": {}
+    }
+  },
+  "a3": {
+    "success": true,
+    "termination_reason": "SKIPPED_NO_FINDINGS",
+    "provider_metrics": {
+      "invocations": 0,
+      "elapsed_seconds": 0,
+      "tool_calls": 0,
+      "failed_tool_calls": 0,
+      "policy_violation_invocations": 0,
+      "reported_cost_usd": null,
+      "native_usage_by_invocation": []
+    }
+  },
+  "before_after": null
+}

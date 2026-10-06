@@ -1,0 +1,10 @@
+{
+  "removed": [
+    "rc0003-codex-microservices_finance_ms_rabbitmq_data",
+    "rc0003-codex-microservices_finance_ms_trade_data",
+    "rc0003-codex-microservices_finance_ms_user_data"
+  ],
+  "preserved": [
+    "rc0003-codex-microservices_finance_ms_maven_cache"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-10-04T05:10:08.528896+00:00",
+  "agents": [
+    "A2",
+    "A4"
+  ],
+  "summary": {
+    "total_findings": 1,
+    "by_agent": {
+      "A2": 1,
+      "A4": 0
+    },
+    "by_severity": {
+      "HIGH": 1
+    },
+    "by_type": {
+      "QUALITY_HIGH_CCN": 1
+    }
+  },
+  "quality_summary": {
+    "physical_java_loc": 616,
+    "nonblank_java_loc": 515,
+    "java_files": 15,
+    "lizard_nloc": 515,
+    "functions": 29,
+    "cc_total": 54,
+    "cc_average": 1.862069,
+    "cc_max": 12,
+    "quality_findings": 1
+  },
+  "security_summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "symbol": "TradeController::execute( String type , TradeRequest req)",
+      "start_line": 81,
+      "metric": "ccn",
+      "value": 12,
+      "threshold": 10
+    }
+  ]
+}

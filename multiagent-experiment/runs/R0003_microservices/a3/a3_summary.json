@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "termination_reason": "SKIPPED_NO_FINDINGS",
+  "claude_calls": 0,
+  "reported_cost_usd_final_session": 0.0
+}

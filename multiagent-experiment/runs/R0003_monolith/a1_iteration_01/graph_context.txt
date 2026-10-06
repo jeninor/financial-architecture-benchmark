@@ -1,0 +1,40 @@
+Graph: /graphify-out/graph.json (84 nodes) | Traversal: BFS depth=2 | Start: ['.existsByUsername()', '.findByUserIdOrderByCreatedAtAsc()', 'FinancialMonolithApplication', 'org.springframework.transaction.annotation.Transactional', 'AppUser', 'org.springframework.boot.autoconfigure.SpringBootApplication', 'com.juanesteban.tcc:financial-monolith', '.createUser()', 'ExceptionHandler', 'FinanceService', 'FinanceController', '.notFound()', 'org.springframework.http.ResponseEntity', '.findByUserIdAndSymbol()', 'org.springframework.data.jpa.repository.JpaRepository', '.main()', 'org.springframework.web.server.ResponseStatusException', 'persistence', '.price()', 'org.springframework.http.converter.HttpMessageNotReadableException', 'Repositories', 'Table', '.trades()', 'org.springframework.stereotype.Service', 'UserRepository', 'uuid'] | Context: parameter_type (heuristic) | 31 nodes found
+
+[i] Complete answer over budget: all 31 nodes and 5 edges shown (~1395 tokens vs the requested ~1200-token budget). Edges are never dropped once every node fits, so this is already the full answer — raising --budget further will not shrink it. Narrow with context_filter=['call'] or use get_node for a specific symbol to reduce size instead.
+
+NODE .existsByUsername() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L18 community=]
+NODE .findByUserIdOrderByCreatedAtAsc() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L32 community=]
+NODE FinancialMonolithApplication [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java loc=L6 community=]
+NODE org.springframework.transaction.annotation.Transactional [src= loc= community=]
+NODE AppUser [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Entities.java loc=L13 community=]
+NODE org.springframework.boot.autoconfigure.SpringBootApplication [src= loc= community=]
+NODE com.juanesteban.tcc:financial-monolith [src=financial-monolith/pom.xml loc=L1 community=]
+NODE .createUser() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java loc=L54 community=]
+NODE ExceptionHandler [src= loc= community=]
+NODE FinanceService [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java loc=L14 community=]
+NODE FinanceController [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java loc=L13 community=]
+NODE .notFound() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java loc=L38 community=]
+NODE org.springframework.http.ResponseEntity [src= loc= community=]
+NODE .findByUserIdAndSymbol() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L26 community=]
+NODE org.springframework.data.jpa.repository.JpaRepository [src= loc= community=]
+NODE .main() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinancialMonolithApplication.java loc=L9 community=]
+NODE org.springframework.web.server.ResponseStatusException [src= loc= community=]
+NODE persistence [src= loc= community=]
+NODE .price() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java loc=L42 community=]
+NODE org.springframework.http.converter.HttpMessageNotReadableException [src= loc= community=]
+NODE Repositories [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L12 community=]
+NODE Table [src= loc= community=]
+NODE .trades() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java loc=L65 community=]
+NODE org.springframework.stereotype.Service [src= loc= community=]
+NODE UserRepository [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L17 community=]
+NODE uuid [src= loc= community=]
+NODE .FinanceService() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java loc=L28 community=]
+NODE .FinanceController() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java loc=L25 community=]
+NODE .status() [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java loc=L83 community=]
+NODE HoldingRepository [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L25 community=]
+NODE TradeRepository [src=financial-monolith/src/main/java/com/juanesteban/tcc/finance/Repositories.java loc=L31 community=]
+EDGE .FinanceController() --references [EXTRACTED context=parameter_type]--> FinanceService at=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java:L25
+EDGE .FinanceService() --references [EXTRACTED context=parameter_type]--> UserRepository at=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java:L28
+EDGE .status() --references [EXTRACTED context=parameter_type]--> org.springframework.web.server.ResponseStatusException at=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceController.java:L83
+EDGE .FinanceService() --references [EXTRACTED context=parameter_type]--> HoldingRepository at=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java:L28
+EDGE .FinanceService() --references [EXTRACTED context=parameter_type]--> TradeRepository at=financial-monolith/src/main/java/com/juanesteban/tcc/finance/FinanceService.java:L28

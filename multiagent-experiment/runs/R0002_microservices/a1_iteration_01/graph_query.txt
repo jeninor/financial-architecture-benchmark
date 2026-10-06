@@ -1,0 +1,192 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this BUILD_OR_START_FAILURE failure. Include service startup dependencies, gateway routing, Eureka/Feign relationships and service-owned persistence where relevant.
+n/plugins/maven-shade-plugin/3.5.0/maven-shade-plugin-3.5.0.jar (147 kB at 862 kB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.jar
+finance-ms-discovery       | Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar (72 kB at 425 kB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar
+finance-ms-discovery       | Progress (2): 122 kB | 7.7/328 kB
+Progress (2): 122 kB | 16/328 kB 
+Progress (2): 122 kB | 24/328 kB
+Progress (3): 122 kB | 24/328 kB | 3.2/52 kB
+                                            
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar (122 kB at 659 kB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar
+finance-ms-discovery       | Progress (2): 24/328 kB | 20/52 kB
+Progress (2): 40/328 kB | 20/52 kB
+Progress (2): 57/328 kB | 20/52 kB
+Progress (2): 73/328 kB | 20/52 kB
+Progress (2): 90/328 kB | 20/52 kB
+Progress (2): 106/328 kB | 20/52 kB
+Progress (2): 122/328 kB | 20/52 kB
+Progress (2): 139/328 kB | 20/52 kB
+Progress (2): 155/328 kB | 20/52 kB
+Progress (2): 172/328 kB | 20/52 kB
+Progress (2): 188/328 kB | 20/52 kB
+Progress (2): 204/328 kB | 20/52 kB
+Progress (2): 204/328 kB | 36/52 kB
+Progress (2): 204/328 kB | 52 kB   
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar (52 kB at 265 kB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar
+finance-ms-discovery       | Progress (1): 221/328 kB
+Progress (1): 237/328 kB
+Progress (1): 246/328 kB
+Progress (1): 262/328 kB
+Progress (1): 279/328 kB
+Progress (1): 295/328 kB
+Progress (1): 311/328 kB
+Progress (1): 328/328 kB
+Progress (1): 328 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar (328 kB at 1.5 MB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.jar
+finance-ms-discovery       | Progress (1): 7.7/43 kB
+Progress (1): 8.2/43 kB
+Progress (1): 25/43 kB 
+Progress (1): 41/43 kB
+Progress (1): 43 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/3.2.1/maven-dependency-tree-3.2.1.jar (43 kB at 201 kB/s)
+finance-ms-discovery       | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar
+finance-ms-discovery       | Progress (1): 3.2/146 kB
+Progress (1): 11/146 kB 
+Progress (1): 28/146 kB
+Progress (1): 44/146 kB
+Progress (2): 44/146 kB | 3.2/136 kB
+Progress (2): 61/146 kB | 3.2/136 kB
+Progress (2): 61/146 kB | 20/136 kB 
+Progress (2): 77/146 kB | 20/136 kB
+Progress (2): 77/146 kB | 36/136 kB
+Progress (2): 93/146 kB | 36/136 kB
+Progress (2): 110/146 kB | 36/136 kB
+Progress (2): 110/146 kB | 52/136 kB
+Progress (2): 126/146 kB | 52/136 kB
+Progress (2): 142/146 kB | 52/136 kB
+Progress (2): 146 kB | 52/136 kB    
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar (146 kB at 648 kB/s)
+finance-ms-discovery       | Progress (1): 61/136 kB
+Progress (1): 77/136 kB
+Progress (1): 93/136 kB
+Progress (1): 110/136 kB
+Progress (1): 126/136 kB
+Progress (1): 136 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar (136 kB at 595 kB/s)
+finance-ms-discovery       | Progress (1): 7.7/484 kB
+Progress (1): 16/484 kB 
+Progress (1): 32/484 kB
+Progress (1): 49/484 kB
+Progress (1): 65/484 kB
+Progress (1): 81/484 kB
+Progress (1): 98/484 kB
+Progress (1): 114/484 kB
+Progress (1): 131/484 kB
+Progress (1): 147/484 kB
+Progress (1): 163/484 kB
+Progress (2): 163/484 kB | 3.2/752 kB
+Progress (3): 163/484 kB | 3.2/752 kB | 7.7/233 kB
+Progress (3): 163/484 kB | 3.2/752 kB | 16/233 kB 
+Progress (3): 180/484 kB | 3.2/752 kB | 16/233 kB
+Progress (3): 180/484 kB | 3.2/752 kB | 24/233 kB
+Progress (3): 180/484 kB | 20/752 kB | 24/233 kB 
+Progress (3): 180/484 kB | 28/752 kB | 24/233 kB
+Progress (3): 180/484 kB | 28/752 kB | 40/233 kB
+Progress (3): 180/484 kB | 36/752 kB | 40/233 kB
+Progress (3): 180/484 kB | 36/752 kB | 57/233 kB
+Progress (3): 180/484 kB | 36/752 kB | 73/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 73/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 90/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 106/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 122/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 139/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 155/233 kB
+Progress (3): 196/484 kB | 36/752 kB | 172/233 kB
+Progress (3): 196/484 kB | 52/752 kB | 172/233 kB
+Progress (3): 196/484 kB | 52/752 kB | 188/233 kB
+Progress (3): 208/484 kB | 52/752 kB | 188/233 kB
+Progress (3): 208/484 kB | 52/752 kB | 204/233 kB
+Progress (3): 208/484 kB | 69/752 kB | 204/233 kB
+Progress (3): 208/484 kB | 85/752 kB | 204/233 kB
+Progress (3): 208/484 kB | 85/752 kB | 217/233 kB
+Progress (3): 224/484 kB | 85/752 kB | 217/233 kB
+Progress (3): 224/484 kB | 93/752 kB | 217/233 kB
+Progress (3): 224/484 kB | 93/752 kB | 233/233 kB
+Progress (3): 224/484 kB | 93/752 kB | 233 kB    
+Progress (3): 224/484 kB | 110/752 kB | 233 kB
+Progress (3): 233/484 kB | 110/752 kB | 233 kB
+Progress (3): 233/484 kB | 126/752 kB | 233 kB
+Progress (3): 233/484 kB | 131/752 kB | 233 kB
+Progress (3): 233/484 kB | 147/752 kB | 233 kB
+Progress (3): 249/484 kB | 147/752 kB | 233 kB
+Progress (3): 249/484 kB | 164/752 kB | 233 kB
+Progress (3): 249/484 kB | 180/752 kB | 233 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.8.0/jdependency-2.8.0.jar (233 kB at 937 kB/s)
+finance-ms-discovery       | Progress (2): 249/484 kB | 197/752 kB
+Progress (2): 249/484 kB | 213/752 kB
+Progress (2): 249/484 kB | 229/752 kB
+Progress (2): 265/484 kB | 229/752 kB
+Progress (2): 265/484 kB | 238/752 kB
+Progress (2): 282/484 kB | 238/752 kB
+Progress (2): 298/484 kB | 238/752 kB
+Progress (2): 314/484 kB | 238/752 kB
+Progress (2): 314/484 kB | 254/752 kB
+Progress (2): 314/484 kB | 270/752 kB
+Progress (2): 331/484 kB | 270/752 kB
+Progress (2): 347/484 kB | 270/752 kB
+Progress (2): 364/484 kB | 270/752 kB
+Progress (2): 380/484 kB | 270/752 kB
+Progress (2): 396/484 kB | 270/752 kB
+Progress (2): 413/484 kB | 270/752 kB
+Progress (2): 429/484 kB | 270/752 kB
+Progress (2): 429/484 kB | 287/752 kB
+Progress (2): 446/484 kB | 287/752 kB
+Progress (2): 446/484 kB | 303/752 kB
+Progress (2): 462/484 kB | 303/752 kB
+Progress (2): 478/484 kB | 303/752 kB
+Progress (2): 484 kB | 303/752 kB    
+Progress (2): 484 kB | 319/752 kB
+Progress (2): 484 kB | 336/752 kB
+Progress (2): 484 kB | 344/752 kB
+Progress (2): 484 kB | 360/752 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar (484 kB at 1.9 MB/s)
+finance-ms-discovery       | Progress (1): 377/752 kB
+Progress (1): 393/752 kB
+Progress (1): 410/752 kB
+Progress (1): 426/752 kB
+Progress (1): 442/752 kB
+Progress (1): 459/752 kB
+Progress (1): 475/752 kB
+Progress (1): 492/752 kB
+Progress (1): 508/752 kB
+Progress (1): 524/752 kB
+Progress (1): 541/752 kB
+Progress (1): 557/752 kB
+Progress (1): 573/752 kB
+Progress (1): 590/752 kB
+Progress (1): 606/752 kB
+Progress (1): 623/752 kB
+Progress (1): 639/752 kB
+Progress (1): 655/752 kB
+Progress (1): 672/752 kB
+Progress (1): 684/752 kB
+Progress (1): 700/752 kB
+Progress (1): 716/752 kB
+Progress (1): 733/752 kB
+Progress (1): 749/752 kB
+Progress (1): 752 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar (752 kB at 2.7 MB/s)
+finance-ms-discovery       | [INFO] Attaching agents: []
+finance-ms-discovery       | Picked up JAVA_TOOL_OPTIONS: -Duser.timezone=UTC
+
+NAME                        IMAGE                            COMMAND                  SERVICE            CREATED              STATUS                     PORTS
+finance-ms-api-gateway      maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   api-gateway        42 seconds ago       Created                    
+finance-ms-discovery        maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   discovery-server   About a minute ago   Up 34 seconds              0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+finance-ms-market-service   maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   market-service     56 seconds ago       Up 22 seconds              0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+finance-ms-rabbitmq         rabbitmq:3-management-alpine     "docker-entrypoint.s…"   rabbitmq           About a minute ago   Exited (1) 4 seconds ago   
+finance-ms-trade-postgres   postgres:16-alpine               "docker-entrypoint.s…"   trade-postgres     About a minute ago   Up 35 seconds (healthy)    5432/tcp
+finance-ms-trade-service    maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   trade-service      46 seconds ago       Created                    
+finance-ms-user-postgres    postgres:16-alpine               "docker-entrypoint.s…"   user-postgres      About a minute ago   Up 34 seconds (healthy)    5432/tcp
+finance-ms-user-service     maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   user-service       50 seconds ago       Created                    

@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "run_id": "RH0002_claude_microservices",
+  "kind": "official",
+  "architecture": "microservices",
+  "provider": "claude",
+  "provider_cli_version": "2.1.286 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "model_verification": "trace_result_canonical_model",
+  "provider_policy": {
+    "workspace_write": "bwrap_workspace_rw_plus_native_allowlist",
+    "outside_workspace_read": "blocked_by_bwrap_and_smoke_verified",
+    "outside_workspace_write": "blocked_by_bwrap_and_smoke_verified",
+    "shell_network": "forbidden_and_trace_audited",
+    "docker": "filesystem_isolated_and_trace_audited",
+    "web_browser": "forbidden_by_native_allowlist_and_trace_audited",
+    "mcp": "forbidden_by_native_allowlist_and_trace_audited",
+    "subagents": "forbidden_by_native_allowlist_and_trace_audited"
+  },
+  "started_at_utc": "2026-10-04T04:16:42.477794+00:00",
+  "protocol_name": "official_finance_architecture_provider_experiment_v1_1",
+  "protocol_sha256": "816c134f974d70317332e9a5ade8549b85dc219b16e6afa1cee9fe60d2b1079f",
+  "environment_lock_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/protocol/environment_lock_provider_v1_1.json",
+  "environment_lock_sha256": "a51e12e240000ec16d8e2a7749ca014f1148670262d831b0fafef673d08909ec",
+  "docker_context": "desktop-linux",
+  "graphify_image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+  "lizard_image_id": "sha256:ba8006c27f69c228229ab711c9d41dfc7c8c042ea6bf105fa7ad1fd8d7e6ea13",
+  "trivy_image_id": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969",
+  "trivy_cache_manifest_sha256": "b4c1773db5996b2413bcee35a9e550b57aae346e43c1f0fd0a0c291c6c79fb32",
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_initial_timeout_seconds": 2400,
+    "a1_repair_timeout_seconds": 1200,
+    "a3_refactor_timeout_seconds": 1200,
+    "a3_repair_timeout_seconds": 900,
+    "a3_max_repair_attempts": 1,
+    "infra_preflight_max_attempts": 3,
+    "infra_preflight_timeout_seconds": 120,
+    "infra_stability_seconds": 8,
+    "infra_runtime_recovery_attempts": 2,
+    "docker_settle_seconds": 3,
+    "application_readiness_stable_checks": 3,
+    "application_readiness_poll_seconds": 2
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-before-each-provider-execution-attempt",
+    "maven_cache": "preserve-existing-named-maven-cache-within-run-project",
+    "notes": "The orchestrator starts each provider execution attempt from fresh database/broker volumes, preserves the run-scoped Maven cache, and verifies infrastructure before the coding provider is called."
+  },
+  "infrastructure_policy": {
+    "preflight_before_provider": true,
+    "infra_retries_consume_provider_iterations": false,
+    "independent_infra_services": {
+      "monolith": [
+        "postgres",
+        "postgres-test"
+      ],
+      "microservices": [
+        "rabbitmq",
+        "user-postgres",
+        "trade-postgres"
+      ]
+    },
+    "capture_all_service_logs_and_health": true,
+    "application_readiness": "all key public routes reachable without gateway 502/503 for 3 consecutive polls",
+    "graphify_after_final_a1_attempt": false,
+    "classification": "independent dependency failure => INFRASTRUCTURE_ABORT; provider policy/runtime/model failure => invalid or aborted provider execution; app/acceptance failure after healthy infrastructure => experimental agent outcome"
+  },
+  "monetary_cost": {
+    "available": false,
+    "usd": null
+  }
+}

@@ -1,0 +1,117 @@
+finance-monolith-postgres  | The files belonging to this database system will be owned by user "postgres".
+finance-monolith-postgres  | This user must also own the server process.
+finance-monolith-postgres  | 
+finance-monolith-postgres  | The database cluster will be initialized with locale "en_US.utf8".
+finance-monolith-postgres  | The default database encoding has accordingly been set to "UTF8".
+finance-monolith-postgres  | The default text search configuration will be set to "english".
+finance-monolith-postgres  | 
+finance-monolith-postgres  | Data page checksums are disabled.
+finance-monolith-postgres  | 
+finance-monolith-postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-monolith-postgres  | creating subdirectories ... ok
+finance-monolith-postgres  | selecting dynamic shared memory implementation ... posix
+finance-monolith-postgres  | selecting default max_connections ... 100
+finance-monolith-postgres  | selecting default shared_buffers ... 128MB
+finance-monolith-postgres  | selecting default time zone ... UTC
+finance-monolith-postgres  | creating configuration files ... ok
+finance-monolith-postgres  | running bootstrap script ... ok
+finance-monolith-postgres  | sh: locale: not found
+finance-monolith-postgres  | 2026-10-03 03:34:46.666 UTC [35] WARNING:  no usable system locales were found
+finance-monolith-postgres  | performing post-bootstrap initialization ... ok
+finance-monolith-postgres  | syncing data to disk ... ok
+finance-monolith-postgres  | 
+finance-monolith-postgres  | 
+finance-monolith-postgres  | Success. You can now start the database server using:
+finance-monolith-postgres  | 
+finance-monolith-postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-monolith-postgres  | 
+finance-monolith-postgres  | initdb: warning: enabling "trust" authentication for local connections
+finance-monolith-postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-monolith-postgres  | waiting for server to start....2026-10-03 03:34:48.865 UTC [41] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres  | 2026-10-03 03:34:48.968 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres  | 2026-10-03 03:34:49.302 UTC [44] LOG:  database system was shut down at 2026-10-03 03:34:47 UTC
+finance-monolith-postgres  | 2026-10-03 03:34:49.414 UTC [41] LOG:  database system is ready to accept connections
+finance-monolith-postgres  |  done
+finance-monolith-postgres  | server started
+finance-monolith-postgres  | CREATE DATABASE
+finance-monolith-postgres  | 
+finance-monolith-postgres  | 
+finance-monolith-postgres  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-monolith-postgres  | 
+finance-monolith-postgres  | waiting for server to shut down....2026-10-03 03:34:49.851 UTC [41] LOG:  received fast shutdown request
+finance-monolith-postgres  | 2026-10-03 03:34:49.956 UTC [41] LOG:  aborting any active transactions
+finance-monolith-postgres  | 2026-10-03 03:34:49.967 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+finance-monolith-postgres  | 2026-10-03 03:34:49.971 UTC [42] LOG:  shutting down
+finance-monolith-postgres  | 2026-10-03 03:34:50.056 UTC [42] LOG:  checkpoint starting: shutdown immediate
+finance-monolith-postgres  | 2026-10-03 03:34:50.779 UTC [42] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.077 s, sync=0.421 s, total=0.809 s; sync files=301, longest=0.251 s, average=0.002 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D58, redo lsn=0/1925D58
+finance-monolith-postgres  | 2026-10-03 03:34:50.787 UTC [41] LOG:  database system is shut down
+finance-monolith-postgres  |  done
+finance-monolith-postgres  | server stopped
+finance-monolith-postgres  | 
+finance-monolith-postgres  | PostgreSQL init process complete; ready for start up.
+finance-monolith-postgres  | 
+finance-monolith-postgres  | 2026-10-03 03:34:51.052 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres  | 2026-10-03 03:34:51.052 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-monolith-postgres  | 2026-10-03 03:34:51.052 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-monolith-postgres  | 2026-10-03 03:34:51.251 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres  | 2026-10-03 03:34:51.547 UTC [63] LOG:  database system was shut down at 2026-10-03 03:34:50 UTC
+finance-monolith-postgres  | 2026-10-03 03:34:51.655 UTC [1] LOG:  database system is ready to accept connections
+finance-monolith-postgres-test  | The files belonging to this database system will be owned by user "postgres".
+finance-monolith-postgres-test  | This user must also own the server process.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | The database cluster will be initialized with locale "en_US.utf8".
+finance-monolith-postgres-test  | The default database encoding has accordingly been set to "UTF8".
+finance-monolith-postgres-test  | The default text search configuration will be set to "english".
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | Data page checksums are disabled.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+finance-monolith-postgres-test  | creating subdirectories ... ok
+finance-monolith-postgres-test  | selecting dynamic shared memory implementation ... posix
+finance-monolith-postgres-test  | selecting default max_connections ... 100
+finance-monolith-postgres-test  | selecting default shared_buffers ... 128MB
+finance-monolith-postgres-test  | selecting default time zone ... UTC
+finance-monolith-postgres-test  | creating configuration files ... ok
+finance-monolith-postgres-test  | running bootstrap script ... ok
+finance-monolith-postgres-test  | sh: locale: not found
+finance-monolith-postgres-test  | 2026-10-03 03:34:46.189 UTC [35] WARNING:  no usable system locales were found
+finance-monolith-postgres-test  | performing post-bootstrap initialization ... ok
+finance-monolith-postgres-test  | initdb: warning: enabling "trust" authentication for local connections
+finance-monolith-postgres-test  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+finance-monolith-postgres-test  | syncing data to disk ... ok
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | Success. You can now start the database server using:
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | waiting for server to start....2026-10-03 03:34:48.795 UTC [41] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres-test  | 2026-10-03 03:34:48.904 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres-test  | 2026-10-03 03:34:49.232 UTC [44] LOG:  database system was shut down at 2026-10-03 03:34:46 UTC
+finance-monolith-postgres-test  | 2026-10-03 03:34:49.362 UTC [41] LOG:  database system is ready to accept connections
+finance-monolith-postgres-test  |  done
+finance-monolith-postgres-test  | server started
+finance-monolith-postgres-test  | CREATE DATABASE
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | waiting for server to shut down....2026-10-03 03:34:49.822 UTC [41] LOG:  received fast shutdown request
+finance-monolith-postgres-test  | 2026-10-03 03:34:49.939 UTC [41] LOG:  aborting any active transactions
+finance-monolith-postgres-test  | 2026-10-03 03:34:49.953 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+finance-monolith-postgres-test  | 2026-10-03 03:34:49.954 UTC [42] LOG:  shutting down
+finance-monolith-postgres-test  | 2026-10-03 03:34:50.040 UTC [42] LOG:  checkpoint starting: shutdown immediate
+finance-monolith-postgres-test  | 2026-10-03 03:34:50.722 UTC [60] FATAL:  the database system is shutting down
+finance-monolith-postgres-test  | 2026-10-03 03:34:50.816 UTC [42] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.077 s, sync=0.457 s, total=0.863 s; sync files=301, longest=0.251 s, average=0.002 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D68, redo lsn=0/1925D68
+finance-monolith-postgres-test  | 2026-10-03 03:34:50.825 UTC [41] LOG:  database system is shut down
+finance-monolith-postgres-test  |  done
+finance-monolith-postgres-test  | server stopped
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | PostgreSQL init process complete; ready for start up.
+finance-monolith-postgres-test  | 
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.012 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.012 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.012 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.201 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.487 UTC [64] LOG:  database system was shut down at 2026-10-03 03:34:50 UTC
+finance-monolith-postgres-test  | 2026-10-03 03:34:51.605 UTC [1] LOG:  database system is ready to accept connections

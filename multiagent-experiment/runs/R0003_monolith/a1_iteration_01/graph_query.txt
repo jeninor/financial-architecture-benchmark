@@ -1,0 +1,96 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this STARTUP_TIMEOUT failure.
+.Final
+finance-monolith-app            | 2026-10-03T03:28:45.165Z  INFO 96 --- [financial-monolith] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+finance-monolith-app            | 2026-10-03T03:28:45.485Z  INFO 96 --- [financial-monolith] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+finance-monolith-app            | 2026-10-03T03:28:45.522Z  INFO 96 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+finance-monolith-app            | 2026-10-03T03:28:45.735Z  INFO 96 --- [financial-monolith] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b091a92
+finance-monolith-app            | 2026-10-03T03:28:45.738Z  INFO 96 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+finance-monolith-app            | 2026-10-03T03:28:45.821Z  INFO 96 --- [financial-monolith] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+finance-monolith-app            | 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+finance-monolith-app            | 	Database driver: undefined/unknown
+finance-monolith-app            | 	Database version: 16.15
+finance-monolith-app            | 	Autocommit mode: undefined/unknown
+finance-monolith-app            | 	Isolation level: undefined/unknown
+finance-monolith-app            | 	Minimum pool size: undefined/unknown
+finance-monolith-app            | 	Maximum pool size: undefined/unknown
+finance-monolith-app            | 2026-10-03T03:28:46.965Z  INFO 96 --- [financial-monolith] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table app_users (
+finance-monolith-app            |         id uuid not null,
+finance-monolith-app            |         cash numeric(19,2) not null,
+finance-monolith-app            |         username varchar(255) not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table holdings (
+finance-monolith-app            |         id uuid not null,
+finance-monolith-app            |         shares bigint not null,
+finance-monolith-app            |         symbol varchar(255) not null,
+finance-monolith-app            |         user_id uuid not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     create table trades (
+finance-monolith-app            |         id uuid not null,
+finance-monolith-app            |         created_at timestamp(6) with time zone not null,
+finance-monolith-app            |         price numeric(19,2) not null,
+finance-monolith-app            |         shares bigint not null,
+finance-monolith-app            |         symbol varchar(255) not null,
+finance-monolith-app            |         total numeric(19,2) not null,
+finance-monolith-app            |         type varchar(255) not null,
+finance-monolith-app            |         user_id uuid not null,
+finance-monolith-app            |         primary key (id)
+finance-monolith-app            |     )
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists app_users 
+finance-monolith-app            |        drop constraint if exists UKspsnwr241e9k9c8p5xl4k45ih
+finance-monolith-app            | 2026-10-03T03:28:47.409Z  WARN 96 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+finance-monolith-app            | 2026-10-03T03:28:47.409Z  WARN 96 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukspsnwr241e9k9c8p5xl4k45ih" of relation "app_users" does not exist, skipping
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists app_users 
+finance-monolith-app            |        add constraint UKspsnwr241e9k9c8p5xl4k45ih unique (username)
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists holdings 
+finance-monolith-app            |        drop constraint if exists UKtr7d4gfjhnc43gcfkhq0kjrxx
+finance-monolith-app            | 2026-10-03T03:28:47.524Z  WARN 96 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+finance-monolith-app            | 2026-10-03T03:28:47.524Z  WARN 96 --- [financial-monolith] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uktr7d4gfjhnc43gcfkhq0kjrxx" of relation "holdings" does not exist, skipping
+finance-monolith-app            | Hibernate: 
+finance-monolith-app            |     alter table if exists holdings 
+finance-monolith-app            |        add constraint UKtr7d4gfjhnc43gcfkhq0kjrxx unique (user_id, symbol)
+finance-monolith-app            | 2026-10-03T03:28:47.619Z  INFO 96 --- [financial-monolith] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+finance-monolith-app            | 2026-10-03T03:28:47.647Z  WARN 96 --- [financial-monolith] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'financeController' defined in file [/workspace/target/classes/com/juanesteban/tcc/finance/FinanceController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'financeService' defined in file [/workspace/target/classes/com/juanesteban/tcc/finance/FinanceService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.juanesteban.tcc.finance.Repositories$UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+finance-monolith-app            | 2026-10-03T03:28:47.647Z  INFO 96 --- [financial-monolith] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+finance-monolith-app            | 2026-10-03T03:28:47.651Z  INFO 96 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+finance-monolith-app            | 2026-10-03T03:28:47.667Z  INFO 96 --- [financial-monolith] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+finance-monolith-app            | 2026-10-03T03:28:47.671Z  INFO 96 --- [financial-monolith] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+finance-monolith-app            | 2026-10-03T03:28:47.692Z  INFO 96 --- [financial-monolith] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+finance-monolith-app            | 
+finance-monolith-app            | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+finance-monolith-app            | 2026-10-03T03:28:47.723Z ERROR 96 --- [financial-monolith] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+finance-monolith-app            | 
+finance-monolith-app            | ***************************
+finance-monolith-app            | APPLICATION FAILED TO START
+finance-monolith-app            | ***************************
+finance-monolith-app            | 
+finance-monolith-app            | Description:
+finance-monolith-app            | 
+finance-monolith-app            | Parameter 0 of constructor in com.juanesteban.tcc.finance.FinanceService required a bean of type 'com.juanesteban.tcc.finance.Repositories$UserRepository' that could not be found.
+finance-monolith-app            | 
+finance-monolith-app            | 
+finance-monolith-app            | Action:
+finance-monolith-app            | 
+finance-monolith-app            | Consider defining a bean of type 'com.juanesteban.tcc.finance.Repositories$UserRepository' in your configuration.
+finance-monolith-app            | 
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [INFO] BUILD FAILURE
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [INFO] Total time:  25.178 s
+finance-monolith-app            | [INFO] Finished at: 2026-10-03T03:28:47Z
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.0:run (default-cli) on project financial-monolith: Process terminated with exit code: 1 -> [Help 1]
+finance-monolith-app            | [ERROR] 
+finance-monolith-app            | [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+finance-monolith-app            | [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+finance-monolith-app            | [ERROR] 
+finance-monolith-app            | [ERROR] For more information about the errors and possible solutions, please read the following articles:
+finance-monolith-app            | [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

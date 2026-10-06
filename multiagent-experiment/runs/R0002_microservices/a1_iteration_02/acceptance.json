@@ -1,0 +1,130 @@
+{
+  "run_id": "R0002_microservices_a1_02",
+  "base_url": "http://localhost:8080",
+  "total": 12,
+  "passed": 2,
+  "failed": 10,
+  "pass_rate": 0.16666666666666666,
+  "tests": [
+    {
+      "id": "T01",
+      "name": "valid quote",
+      "passed": true,
+      "elapsed_ms": 39.19,
+      "message": "PASS",
+      "http_statuses": [
+        200
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "invalid symbol",
+      "passed": true,
+      "elapsed_ms": 26.739,
+      "message": "PASS",
+      "http_statuses": [
+        400
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "create user with initial cash",
+      "passed": false,
+      "elapsed_ms": 68.701,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.668+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"84861d11-4\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "duplicate username",
+      "passed": false,
+      "elapsed_ms": 8.379,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.691+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"4db50352-5\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "valid buy",
+      "passed": false,
+      "elapsed_ms": 10.768,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.702+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"99c0a638-6\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "insufficient cash",
+      "passed": false,
+      "elapsed_ms": 6.792,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.709+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"fb621469-7\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "zero shares rejected",
+      "passed": false,
+      "elapsed_ms": 7.267,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.716+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"46c444e0-8\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "portfolio calculation",
+      "passed": false,
+      "elapsed_ms": 5.442,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.722+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"1cba1244-9\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "valid sell",
+      "passed": false,
+      "elapsed_ms": 5.483,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.727+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"23f58fd3-10\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "oversell leaves state unchanged",
+      "passed": false,
+      "elapsed_ms": 6.016,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.733+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"ff9e444c-11\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "trade history",
+      "passed": false,
+      "elapsed_ms": 5.758,
+      "message": "expected HTTP [201], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.739+00:00\",\"path\":\"/api/users\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"709fe9a1-12\"}",
+      "http_statuses": [
+        503
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "unknown user",
+      "passed": false,
+      "elapsed_ms": 6.734,
+      "message": "expected HTTP [404], got 503; body={\"timestamp\":\"2026-10-03T02:44:55.745+00:00\",\"path\":\"/api/users/00000000-0000-0000-0000-000000000001/portfolio\",\"status\":503,\"error\":\"Service Unavailable\",\"requestId\":\"ff34a52a-13\"}",
+      "http_statuses": [
+        503
+      ]
+    }
+  ]
+}

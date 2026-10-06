@@ -1,0 +1,52 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this BUILD_OR_START_FAILURE failure. Include service startup dependencies, gateway routing, Eureka/Feign relationships and service-owned persistence where relevant.
+-ms-discovery       | 2026-10-03T02:46:41.304Z  INFO 59 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=760fa6b5-e5a8-3a86-aa85-e5d9d39c61b6
+finance-ms-discovery       | 2026-10-03T02:46:41.621Z  INFO 59 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+finance-ms-discovery       | 2026-10-03T02:46:41.637Z  INFO 59 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+finance-ms-discovery       | 2026-10-03T02:46:41.637Z  INFO 59 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+finance-ms-discovery       | 2026-10-03T02:46:41.690Z  INFO 59 --- [discovery-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+finance-ms-discovery       | 2026-10-03T02:46:41.691Z  INFO 59 --- [discovery-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1554 ms
+finance-ms-discovery       | 2026-10-03T02:46:42.971Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:42.972Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:43.153Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:43.153Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:43.346Z  INFO 59 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+finance-ms-discovery       | 2026-10-03T02:46:44.103Z  WARN 59 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+finance-ms-discovery       | 2026-10-03T02:46:44.138Z  INFO 59 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+finance-ms-discovery       | 2026-10-03T02:46:44.169Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+finance-ms-discovery       | 2026-10-03T02:46:44.169Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+finance-ms-discovery       | 2026-10-03T02:46:44.172Z  INFO 59 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790995604171 with initial instances count: 0
+finance-ms-discovery       | 2026-10-03T02:46:44.224Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+finance-ms-discovery       | 2026-10-03T02:46:44.226Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+finance-ms-discovery       | 2026-10-03T02:46:44.384Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:44.384Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+finance-ms-discovery       | 2026-10-03T02:46:44.385Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:44.385Z  INFO 59 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+finance-ms-discovery       | 2026-10-03T02:46:44.442Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+finance-ms-discovery       | 2026-10-03T02:46:44.453Z  INFO 59 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+finance-ms-discovery       | 2026-10-03T02:46:44.453Z  INFO 59 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+finance-ms-discovery       | 2026-10-03T02:46:44.470Z  INFO 59 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+finance-ms-discovery       | 2026-10-03T02:46:44.538Z  INFO 59 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+finance-ms-discovery       | 2026-10-03T02:46:44.550Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+finance-ms-discovery       | 2026-10-03T02:46:44.551Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+finance-ms-discovery       | 2026-10-03T02:46:44.551Z  INFO 59 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+finance-ms-discovery       | 2026-10-03T02:46:44.554Z  INFO 59 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+finance-ms-discovery       | 2026-10-03T02:46:44.559Z  INFO 59 --- [discovery-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+finance-ms-discovery       | 2026-10-03T02:46:44.560Z  INFO 59 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+finance-ms-discovery       | 2026-10-03T02:46:44.576Z  INFO 59 --- [discovery-server] [           main] c.j.t.d.DiscoveryServerApplication       : Started DiscoveryServerApplication in 5.056 seconds (process running for 5.544)
+finance-ms-discovery       | 2026-10-03T02:47:10.715Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T02:47:10.715Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+finance-ms-discovery       | 2026-10-03T02:47:10.716Z  INFO 59 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+finance-ms-discovery       | 2026-10-03T02:47:11.038Z  INFO 59 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/ea541175426c:market-service:8082 with status UP (replication=false)
+finance-ms-discovery       | 2026-10-03T02:47:11.711Z  INFO 59 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MARKET-SERVICE/ea541175426c:market-service:8082 with status UP (replication=true)
+
+NAME                        IMAGE                            COMMAND                  SERVICE            CREATED              STATUS                      PORTS
+finance-ms-api-gateway      maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   api-gateway        About a minute ago   Created                     
+finance-ms-discovery        maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   discovery-server   About a minute ago   Up 54 seconds               0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+finance-ms-market-service   maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   market-service     About a minute ago   Up 45 seconds               0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+finance-ms-rabbitmq         rabbitmq:3-management-alpine     "docker-entrypoint.s…"   rabbitmq           About a minute ago   Up 54 seconds (healthy)     0.0.0.0:5672->5672/tcp, [::]:5672->5672/tcp, 0.0.0.0:15672->15672/tcp, [::]:15672->15672/tcp
+finance-ms-trade-postgres   postgres:16-alpine               "docker-entrypoint.s…"   trade-postgres     About a minute ago   Up 54 seconds (healthy)     5432/tcp
+finance-ms-trade-service    maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   trade-service      About a minute ago   Created                     
+finance-ms-user-postgres    postgres:16-alpine               "docker-entrypoint.s…"   user-postgres      About a minute ago   Up 54 seconds (unhealthy)   5432/tcp
+finance-ms-user-service     maven:3.9.9-eclipse-temurin-21   "/usr/local/bin/mvn-…"   user-service       About a minute ago   Created                     

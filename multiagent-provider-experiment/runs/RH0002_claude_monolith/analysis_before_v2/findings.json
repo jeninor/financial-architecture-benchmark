@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-10-04T04:15:39.068918+00:00",
+  "agents": [
+    "A2",
+    "A4"
+  ],
+  "summary": {
+    "total_findings": 0,
+    "by_agent": {
+      "A2": 0,
+      "A4": 0
+    },
+    "by_severity": {},
+    "by_type": {}
+  },
+  "quality_summary": {
+    "physical_java_loc": 324,
+    "nonblank_java_loc": 284,
+    "java_files": 5,
+    "lizard_nloc": 284,
+    "functions": 9,
+    "cc_total": 26,
+    "cc_average": 2.888889,
+    "cc_max": 10,
+    "quality_findings": 0
+  },
+  "security_summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": []
+}

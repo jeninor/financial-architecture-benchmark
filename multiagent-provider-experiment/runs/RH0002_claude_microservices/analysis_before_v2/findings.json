@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-10-04T04:22:21.045573+00:00",
+  "agents": [
+    "A2",
+    "A4"
+  ],
+  "summary": {
+    "total_findings": 2,
+    "by_agent": {
+      "A2": 2,
+      "A4": 0
+    },
+    "by_severity": {
+      "HIGH": 2
+    },
+    "by_type": {
+      "QUALITY_HIGH_CCN": 2
+    }
+  },
+  "quality_summary": {
+    "physical_java_loc": 599,
+    "nonblank_java_loc": 515,
+    "java_files": 16,
+    "lizard_nloc": 513,
+    "functions": 26,
+    "cc_total": 70,
+    "cc_average": 2.692308,
+    "cc_max": 13,
+    "quality_findings": 2
+  },
+  "security_summary": {
+    "vulnerabilities": 0,
+    "secrets": 0,
+    "misconfigurations": 0,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "trade-service/src/main/java/com/juanesteban/tcc/trade/TradeController.java",
+      "symbol": "TradeController::trade( String type , TradeRequest r)",
+      "start_line": 65,
+      "metric": "ccn",
+      "value": 11,
+      "threshold": 10
+    },
+    {
+      "agent": "A2",
+      "category": "quality",
+      "type": "QUALITY_HIGH_CCN",
+      "severity": "HIGH",
+      "file": "user-service/src/main/java/com/juanesteban/tcc/user/UserController.java",
+      "symbol": "UserController::apply( @ PathVariable String id , @ RequestBody Apply req)",
+      "start_line": 80,
+      "metric": "ccn",
+      "value": 13,
+      "threshold": 10
+    }
+  ]
+}

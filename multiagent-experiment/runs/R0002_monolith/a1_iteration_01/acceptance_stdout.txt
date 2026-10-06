@@ -1,0 +1,21 @@
+========================================================================================
+BLACK-BOX ACCEPTANCE SUITE
+========================================================================================
+Base URL : http://localhost:8080
+Run ID   : R0002_monolith_a1_01
+
+T01  PASS  valid quote                             29.450 ms  HTTP=[200]
+T02  PASS  invalid symbol                          15.633 ms  HTTP=[400]
+T03  PASS  create user with initial cash          372.410 ms  HTTP=[201, 200]
+T04  PASS  duplicate username                      47.151 ms  HTTP=[201, 400]
+T05  PASS  valid buy                               89.320 ms  HTTP=[201, 201, 200]
+T06  PASS  insufficient cash                       36.951 ms  HTTP=[201, 400, 200]
+T07  PASS  zero shares rejected                    62.205 ms  HTTP=[201, 400]
+T08  PASS  portfolio calculation                   78.964 ms  HTTP=[201, 201, 201, 200]
+T09  PASS  valid sell                              73.627 ms  HTTP=[201, 201, 201, 200]
+T10  PASS  oversell leaves state unchanged         66.683 ms  HTTP=[201, 201, 200, 400, 200]
+T11  PASS  trade history                           99.289 ms  HTTP=[201, 201, 201, 200]
+T12  PASS  unknown user                             5.542 ms  HTTP=[404]
+
+RESULT: 12/12 passed
+JSON   : /home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/runs/R0002_monolith/a1_iteration_01/acceptance.json

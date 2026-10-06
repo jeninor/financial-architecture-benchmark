@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-10-03T01:28:19.497064+00:00",
+  "cache_root": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/tool-cache/trivy",
+  "files": [
+    {
+      "path": "db/trivy.db",
+      "bytes": 1480597504,
+      "sha256": "c4607be32b728f4bf90501199693f0fcbc9b3908deb40c26286c0b8425a847ac"
+    },
+    {
+      "path": "java-db/trivy-java.db",
+      "bytes": 1542025216,
+      "sha256": "a76dcf1e8c4dc08030e0a5d5b0f7232022b6bdf797310cc0002f92bfb5d60252"
+    }
+  ]
+}

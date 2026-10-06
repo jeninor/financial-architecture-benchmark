@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run_id": "R0001_monolith",
+  "kind": "official",
+  "architecture": "monolith",
+  "started_at_utc": "2026-10-03T01:40:59.074427+00:00",
+  "protocol_name": "official_finance_architecture_experiment_v1",
+  "protocol_sha256": "9c217c3cb8fe69e7e255033f76537ee221fe7e3cae23c3ee4dfd36920e639981",
+  "environment_lock_path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/protocol/environment_lock_v1.json",
+  "environment_lock_sha256": "2cd6b2c70aa9221354defdc9b3d5132818a47858c88a00a84a1749af44936ee6",
+  "docker_context": "desktop-linux",
+  "model_requested": "claude-sonnet-5-5",
+  "expected_canonical_model": "claude-sonnet-5-5",
+  "graphify_image_id": "sha256:9084069c58697b12cfe48262ac5753db909fd398599b468be97389a882757689",
+  "lizard_image_id": "sha256:c7d8050f66c62cf6dc45bb2a7eb312e4fa1437c62bb702131c80d65a63357396",
+  "trivy_image_id": "sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969",
+  "trivy_cache_manifest_sha256": "53bdfa385bc7e0e0bc74473ece424366479f11897444a44f93e5bd4ea61d43c1",
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_first_max_turns": 15,
+    "a1_fix_max_turns": 8,
+    "a3_refactor_max_turns": 8,
+    "a3_repair_max_turns": 5,
+    "a3_max_repair_attempts": 1
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-per-run",
+    "maven_cache": "preserve-existing-named-maven-cache",
+    "notes": "The orchestrator removes run/project data volumes but preserves named Maven cache volumes mounted at /root/.m2."
+  },
+  "aborted_at_utc": "2026-10-03T01:44:19.449380+00:00",
+  "error_type": "RuntimeError",
+  "error": "A4 failed:\n===== A4 SOURCE: SECRET + MISCONFIG =====\n===== A4 JAR VULN: financial-monolith/target/financial-monolith-0.0.1-SNAPSHOT.jar =====\nTraceback (most recent call last):\n  File \"/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/scripts/run_a4_artifact_offline_v2.py\", line 431, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/scripts/run_a4_artifact_offline_v2.py\", line 378, in main\n    raw, elapsed, cmd = trivy_jar_scan(\n                        ^^^^^^^^^^^^^^^\n  File \"/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-experiment/scripts/run_a4_artifact_offline_v2.py\", line 144, in trivy_jar_scan\n    raise RuntimeError(\nRuntimeError: Trivy JAR scan failed for financial-monolith/target/financial-monolith-0.0.1-SNAPSHOT.jar:\n\n2026-10-03T01:44:17Z\tFATAL\tFatal error\trun error: init error: DB error: database error: --skip-db-update cannot be specified on the first run\n\n"
+}

@@ -1,0 +1,139 @@
+{
+  "run_id": "RH0002_claude_microservices_a3_01",
+  "base_url": "http://localhost:8080",
+  "total": 12,
+  "passed": 6,
+  "failed": 6,
+  "pass_rate": 0.5,
+  "tests": [
+    {
+      "id": "T01",
+      "name": "valid quote",
+      "passed": true,
+      "elapsed_ms": 33.497,
+      "message": "PASS",
+      "http_statuses": [
+        200
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "invalid symbol",
+      "passed": true,
+      "elapsed_ms": 8.424,
+      "message": "PASS",
+      "http_statuses": [
+        400
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "create user with initial cash",
+      "passed": true,
+      "elapsed_ms": 197.616,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        200
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "duplicate username",
+      "passed": true,
+      "elapsed_ms": 81.515,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "valid buy",
+      "passed": false,
+      "elapsed_ms": 80.366,
+      "message": "expected HTTP [201], got 500; body={\"timestamp\":\"2026-10-04T04:25:43.809+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "insufficient cash",
+      "passed": false,
+      "elapsed_ms": 46.509,
+      "message": "expected HTTP [400], got 500; body={\"timestamp\":\"2026-10-04T04:25:43.855+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "zero shares rejected",
+      "passed": true,
+      "elapsed_ms": 36.384,
+      "message": "PASS",
+      "http_statuses": [
+        201,
+        400
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "portfolio calculation",
+      "passed": false,
+      "elapsed_ms": 47.993,
+      "message": "expected HTTP [201], got 500; body={\"timestamp\":\"2026-10-04T04:25:43.940+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "valid sell",
+      "passed": false,
+      "elapsed_ms": 48.88,
+      "message": "expected HTTP [201], got 500; body={\"timestamp\":\"2026-10-04T04:25:43.989+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "oversell leaves state unchanged",
+      "passed": false,
+      "elapsed_ms": 385.651,
+      "message": "expected HTTP [201], got 500; body={\"timestamp\":\"2026-10-04T04:25:44.375+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "trade history",
+      "passed": false,
+      "elapsed_ms": 60.685,
+      "message": "expected HTTP [201], got 500; body={\"timestamp\":\"2026-10-04T04:25:44.435+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/trades/buy\"}",
+      "http_statuses": [
+        201,
+        500
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "unknown user",
+      "passed": true,
+      "elapsed_ms": 14.171,
+      "message": "PASS",
+      "http_statuses": [
+        404
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a0ffdc-bc25-73c2-b917-7a80e1b11763",
+  "CreatedAt": "2026-10-03T03:44:11.301248791Z",
+  "ArtifactName": "/workspace",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "financial-monolith/pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.juanesteban.tcc:financial-monolith:0.0.1-SNAPSHOT::b62547cd",
+          "Name": "com.juanesteban.tcc:financial-monolith",
+          "Identifier": {
+            "PURL": "pkg:maven/com.juanesteban.tcc/financial-monolith@0.0.1-SNAPSHOT",
+            "UID": "1145e8ae5c5514d3"
+          },
+          "Version": "0.0.1-SNAPSHOT",
+          "Relationship": "root",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.postgresql:postgresql::e82e7e92",
+          "Name": "org.postgresql:postgresql",
+          "Identifier": {
+            "PURL": "pkg:maven/org.postgresql/postgresql",
+            "UID": "b48c59a8357f3ad3"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 47,
+              "EndLine": 51
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator::5699c829",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+            "UID": "8f36a478a1b0233a"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 60,
+              "EndLine": 63
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-data-jpa::9cff7be8",
+          "Name": "org.springframework.boot:spring-boot-starter-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa",
+            "UID": "30660ad0fb1966a7"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 41,
+              "EndLine": 44
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-validation::a52361cd",
+          "Name": "org.springframework.boot:spring-boot-starter-validation",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-validation",
+            "UID": "17d294aac76471d5"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 54,
+              "EndLine": 57
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-web::f5655826",
+          "Name": "org.springframework.boot:spring-boot-starter-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-web",
+            "UID": "344cb1d01eb1fef6"
+          },
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 35,
+              "EndLine": 38
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    }
+  ]
+}

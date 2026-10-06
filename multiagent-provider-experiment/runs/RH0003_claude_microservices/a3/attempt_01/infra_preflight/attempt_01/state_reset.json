@@ -1,0 +1,10 @@
+{
+  "removed": [
+    "rh0003-claude-microservices-a3_finance_ms_rabbitmq_data",
+    "rh0003-claude-microservices-a3_finance_ms_trade_data",
+    "rh0003-claude-microservices-a3_finance_ms_user_data"
+  ],
+  "preserved": [
+    "rh0003-claude-microservices-a3_finance_ms_maven_cache"
+  ]
+}

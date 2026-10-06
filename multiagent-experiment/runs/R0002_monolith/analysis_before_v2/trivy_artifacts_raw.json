@@ -1,0 +1,12 @@
+[
+  {
+    "SchemaVersion": 2,
+    "Trivy": {
+      "Version": "0.74.0"
+    },
+    "ReportID": "01a0ffa1-1914-7791-acfa-24ca66b85fab",
+    "CreatedAt": "2026-10-03T02:39:02.932502272Z",
+    "ArtifactName": "/workspace/financial-monolith/target/financial-monolith-0.0.1-SNAPSHOT.jar",
+    "ArtifactType": "filesystem"
+  }
+]

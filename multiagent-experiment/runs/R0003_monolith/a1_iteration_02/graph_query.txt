@@ -1,0 +1,64 @@
+Locate the source files, configuration, symbols and structural relationships most relevant to this STARTUP_TIMEOUT failure.
+h-postgres-test  | 2026-10-03 03:34:51.605 UTC [1] LOG:  database system is ready to accept connections
+finance-monolith-postgres-test  | 2026-10-03 03:39:51.517 UTC [62] LOG:  checkpoint starting: time
+finance-monolith-postgres-test  | 2026-10-03 03:39:56.530 UTC [62] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.296 s, sync=0.493 s, total=5.014 s; sync files=12, longest=0.456 s, average=0.042 s; distance=261 kB, estimate=261 kB; lsn=0/19671D8, redo lsn=0/19671A0
+finance-monolith-app            | Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.Optional com.juanesteban.tcc.finance.UserRepository.findForUpdate(java.util.UUID)
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:97) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:67) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:49) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:174) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:254) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116) ~[spring-data-commons-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	... 58 common frames omitted
+finance-monolith-app            | Caused by: java.lang.IllegalArgumentException: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'AppUser'
+finance-monolith-app            | 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:143) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:886) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:796) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:143) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+finance-monolith-app            | 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+finance-monolith-app            | 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.2.7.jar:6.2.7]
+finance-monolith-app            | 	at jdk.proxy2/jdk.proxy2.$Proxy137.createQuery(Unknown Source) ~[na:na]
+finance-monolith-app            | 	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:91) ~[spring-data-jpa-3.5.0.jar:3.5.0]
+finance-monolith-app            | 	... 64 common frames omitted
+finance-monolith-app            | Caused by: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'AppUser'
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.resolveRootEntity(SemanticQueryBuilder.java:2129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:2059) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:277) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.grammars.hql.HqlParser$RootEntityContext.accept(HqlParser.java:2814) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitEntityWithJoins(SemanticQueryBuilder.java:2029) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitFromClause(SemanticQueryBuilder.java:2016) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuery(SemanticQueryBuilder.java:1248) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:1040) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:277) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.grammars.hql.HqlParser$QuerySpecExpressionContext.accept(HqlParser.java:2134) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:1025) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:277) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.grammars.hql.HqlParser$SimpleQueryGroupContext.accept(HqlParser.java:2005) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectStatement(SemanticQueryBuilder.java:492) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitStatement(SemanticQueryBuilder.java:451) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.SemanticQueryBuilder.buildSemanticModel(SemanticQueryBuilder.java:324) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.hql.internal.StandardHqlTranslator.translate(StandardHqlTranslator.java:71) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.createHqlInterpretation(QueryInterpretationCacheStandardImpl.java:145) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.resolveHqlInterpretation(QueryInterpretationCacheStandardImpl.java:132) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.query.spi.QueryEngine.interpretHql(QueryEngine.java:54) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.AbstractSharedSessionContract.interpretHql(AbstractSharedSessionContract.java:832) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:878) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+finance-monolith-app            | 	... 71 common frames omitted
+finance-monolith-app            | 
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [INFO] BUILD FAILURE
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [INFO] Total time:  9.671 s
+finance-monolith-app            | [INFO] Finished at: 2026-10-03T03:35:43Z
+finance-monolith-app            | [INFO] ------------------------------------------------------------------------
+finance-monolith-app            | [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.0:run (default-cli) on project financial-monolith: Process terminated with exit code: 1 -> [Help 1]
+finance-monolith-app            | [ERROR] 
+finance-monolith-app            | [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+finance-monolith-app            | [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+finance-monolith-app            | [ERROR] 
+finance-monolith-app            | [ERROR] For more information about the errors and possible solutions, please read the following articles:
+finance-monolith-app            | [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

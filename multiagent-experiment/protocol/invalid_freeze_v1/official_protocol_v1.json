@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "protocol_name": "official_finance_architecture_experiment_v1",
+  "run_kind": "official",
+  "provider": "claude-code",
+  "model_requested": "claude-sonnet-5-5",
+  "expected_canonical_model": "claude-sonnet-5-5",
+  "graphify": {
+    "image": "graphify-mcp:0.9.73",
+    "budget": 1200,
+    "mode": "orchestrator-side-retrieval-after-failure"
+  },
+  "quality": {
+    "image": "multiagent-lizard:1.24.0",
+    "policy": "multiagent-experiment/policies/quality_policy.json"
+  },
+  "security": {
+    "image": "aquasec/trivy:0.74.0",
+    "policy": "multiagent-experiment/policies/security_policy_v2.json",
+    "cache": "multiagent-experiment/tool-cache/trivy",
+    "cache_manifest": "multiagent-experiment/tool-cache/TRIVY_CACHE_MANIFEST.json",
+    "offline_only": true
+  },
+  "limits": {
+    "startup_timeout_seconds": 360,
+    "a1_max_iterations": 3,
+    "a1_first_max_turns": 15,
+    "a1_fix_max_turns": 8,
+    "a3_refactor_max_turns": 8,
+    "a3_repair_max_turns": 5,
+    "a3_max_repair_attempts": 1
+  },
+  "acceptance": {
+    "required_passed": 12,
+    "required_total": 12
+  },
+  "cache_policy": {
+    "database_state": "clean-per-run",
+    "maven_cache": "preserve-existing-named-maven-cache",
+    "notes": "The orchestrator removes run/project data volumes but preserves named Maven cache volumes mounted at /root/.m2."
+  },
+  "expected_claude_code_version_prefix": "2.1.286",
+  "environment_lock": "multiagent-experiment/protocol/environment_lock_v1.json"
+}
