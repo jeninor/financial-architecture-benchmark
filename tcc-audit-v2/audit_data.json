@@ -1,0 +1,570 @@
+{
+  "schema_version": 2,
+  "git": {
+    "head": "ec22476c0396b5bdd0f283d13afb36d374b0c83e",
+    "branch": "main",
+    "status_porcelain": "?? scripts/\n?? tcc-audit/"
+  },
+  "audit_script": {
+    "path": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/scripts/audit_tcc_results_v2.py",
+    "sha256": "8658af16b1f3dedd6569576df4cf16da45a19be832a6dc876c9b36dd929ff370"
+  },
+  "stage1": {
+    "monolith": {
+      "physical_java_loc": 1274,
+      "java_files": 26,
+      "nloc": 904,
+      "functions": 18,
+      "cc_total": 29,
+      "cc_average": 1.61,
+      "cc_max": 5,
+      "acceptance": "12/12"
+    },
+    "microservices": {
+      "physical_java_loc": 2206,
+      "java_files": 47,
+      "nloc": 1520,
+      "functions": 35,
+      "cc_total": 50,
+      "cc_average": 1.43,
+      "cc_max": 5,
+      "acceptance": "12/12"
+    },
+    "source": "legacy-chatpt/experiment/results/master-results.md"
+  },
+  "stage2": {
+    "R0003_monolith": {
+      "run_id": "R0003_monolith",
+      "architecture": "monolith",
+      "elapsed_seconds": 1064.16,
+      "a1_iterations": 3,
+      "physical_java_loc": 362,
+      "nloc": 315,
+      "java_files": 9,
+      "functions": 10,
+      "cc_total": 26,
+      "cc_average": 2.6,
+      "cc_max": 9,
+      "quality_findings": 0,
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "R0003_microservices": {
+      "run_id": "R0003_microservices",
+      "architecture": "microservices",
+      "elapsed_seconds": 1227.966,
+      "a1_iterations": 3,
+      "physical_java_loc": 577,
+      "nloc": 474,
+      "java_files": 14,
+      "functions": 24,
+      "cc_total": 48,
+      "cc_average": 2.0,
+      "cc_max": 10,
+      "quality_findings": 0,
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    }
+  },
+  "stage3": {
+    "RH0003_claude_monolith": {
+      "run_id": "RH0003_claude_monolith",
+      "provider": "claude",
+      "architecture": "monolith",
+      "elapsed_seconds": 159.716,
+      "provider_a1_seconds": 42.223,
+      "a1_iterations": 1,
+      "tool_calls": 4,
+      "failed_tool_calls": 0,
+      "physical_java_loc": 384,
+      "nloc": 311,
+      "java_files": 8,
+      "functions": 9,
+      "cc_total": 26,
+      "cc_average": 2.888889,
+      "cc_max": 9,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RH0003_claude_microservices": {
+      "run_id": "RH0003_claude_microservices",
+      "provider": "claude",
+      "architecture": "microservices",
+      "elapsed_seconds": 860.847,
+      "provider_a1_seconds": 71.214,
+      "a1_iterations": 1,
+      "tool_calls": 7,
+      "failed_tool_calls": 0,
+      "physical_java_loc": 631,
+      "nloc": 526,
+      "java_files": 15,
+      "functions": 33,
+      "cc_total": 58,
+      "cc_average": 1.757576,
+      "cc_max": 7,
+      "initial_findings": 1,
+      "final_findings": 0,
+      "a3": "SUCCESS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RC0003_codex_monolith": {
+      "run_id": "RC0003_codex_monolith",
+      "provider": "codex",
+      "architecture": "monolith",
+      "elapsed_seconds": 308.624,
+      "provider_a1_seconds": 183.197,
+      "a1_iterations": 1,
+      "tool_calls": 15,
+      "failed_tool_calls": 3,
+      "physical_java_loc": 410,
+      "nloc": 341,
+      "java_files": 10,
+      "functions": 11,
+      "cc_total": 19,
+      "cc_average": 1.727273,
+      "cc_max": 4,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RC0003_codex_microservices": {
+      "run_id": "RC0003_codex_microservices",
+      "provider": "codex",
+      "architecture": "microservices",
+      "elapsed_seconds": 549.838,
+      "provider_a1_seconds": 258.082,
+      "a1_iterations": 1,
+      "tool_calls": 23,
+      "failed_tool_calls": 5,
+      "physical_java_loc": 530,
+      "nloc": 447,
+      "java_files": 16,
+      "functions": 21,
+      "cc_total": 40,
+      "cc_average": 1.904762,
+      "cc_max": 8,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    }
+  },
+  "antigravity": {
+    "RA0003_antigravity_monolith": {
+      "run_id": "RA0003_antigravity_monolith",
+      "architecture": "monolith",
+      "experimental_status": "INVALID_PROVIDER_POLICY",
+      "primary_analysis_eligible": false,
+      "failure_stage": "A1",
+      "a1_iterations": 1,
+      "a1_elapsed_seconds": 343.487,
+      "provider_elapsed_seconds": 312.507,
+      "tool_calls": 30,
+      "policy_violation_invocations": 1
+    },
+    "RA0003_antigravity_microservices": {
+      "run_id": "RA0003_antigravity_microservices",
+      "architecture": "microservices",
+      "experimental_status": "ABORTED_PROVIDER_RUNTIME",
+      "primary_analysis_eligible": false,
+      "failure_stage": "A1",
+      "a1_iterations": 2,
+      "a1_elapsed_seconds": 851.747,
+      "provider_elapsed_seconds": 638.291,
+      "tool_calls": 44,
+      "policy_violation_invocations": 0
+    },
+    "adjudication": {
+      "schema_version": 1,
+      "pair": "RA0003",
+      "provider": "antigravity",
+      "protocol": "official_finance_architecture_provider_experiment_v1_2",
+      "primary_analysis_eligible": false,
+      "status": "NON_PRIMARY_PROVIDER_POLICY_AND_RUNTIME_FAILURE",
+      "runs": {
+        "RA0003_antigravity_monolith": {
+          "experimental_status": "INVALID_PROVIDER_POLICY",
+          "termination_reason": "PROVIDER_POLICY_VIOLATION",
+          "failure_stage": "A1",
+          "classification": "genuine_provider_policy_violation",
+          "evidence": {
+            "command": "docker --version",
+            "note": "The command was actually issued by the provider. This is not the historical docker-compose.yml false positive. Docker daemon access remained isolated."
+          }
+        },
+        "RA0003_antigravity_microservices": {
+          "experimental_status": "ABORTED_PROVIDER_RUNTIME",
+          "termination_reason": "PROVIDER_RUNTIME_ABORT",
+          "failure_stage": "A1",
+          "classification": "external_provider_quota_exhaustion",
+          "evidence": {
+            "iteration_1_acceptance": "7/12",
+            "iteration_2": "repair invocation began and modified workspace files",
+            "provider_error": "RESOURCE_EXHAUSTED",
+            "http_status": 429,
+            "retryable": true,
+            "message": "Individual quota reached"
+          }
+        }
+      },
+      "harness_defect_observed": false,
+      "disposition": "Preserve both runs as operational evidence. Exclude both from primary outcome metrics. Do not resume or overwrite RA0003. Any future Antigravity execution must use a new run identifier and be reported separately."
+    }
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith functions vs Lizard CSV",
+      "detail": "confirmado: 18 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_total vs Lizard CSV",
+      "detail": "confirmado: 29.0 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_average vs Lizard CSV",
+      "detail": "confirmado: 1.6111111111111112 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_max vs Lizard CSV",
+      "detail": "confirmado: 5.0 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices functions vs Lizard CSV",
+      "detail": "confirmado: 35 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_total vs Lizard CSV",
+      "detail": "confirmado: 50.0 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_average vs Lizard CSV",
+      "detail": "confirmado: 1.4285714285714286 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_max vs Lizard CSV",
+      "detail": "confirmado: 5.0 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith Java files vs baseline",
+      "detail": "26 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith LOC vs baseline",
+      "detail": "1274 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices Java files vs baseline",
+      "detail": "47 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices LOC vs baseline",
+      "detail": "2206 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith acceptance independente",
+      "detail": "12/12 confirmado em legacy-chatpt/experiment/results/monolith-test-results.txt"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices acceptance independente",
+      "detail": "12/12 confirmado em legacy-chatpt/experiment/results/microservices-e2e-test-results.txt"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 problemas documentados",
+      "detail": "3 problemas confirmados em legacy-chatpt/experiment/metrics/development-errors.md"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith protocolo",
+      "detail": "official_finance_architecture_experiment_v3"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith success",
+      "detail": "true"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith iterações A1",
+      "detail": "3 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith findings",
+      "detail": "0 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith acceptance final",
+      "detail": "12/12 em multiagent-experiment/runs/R0003_monolith/a1_iteration_03/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices protocolo",
+      "detail": "official_finance_architecture_experiment_v3"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices success",
+      "detail": "true"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices iterações A1",
+      "detail": "3 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices findings",
+      "detail": "0 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices acceptance final",
+      "detail": "12/12 em multiagent-experiment/runs/R0003_microservices/a1_iteration_03/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RH0003_claude_monolith/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RH0003_claude_microservices/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RC0003_codex_monolith/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RC0003_codex_microservices/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "v1.2 protocol SHA comum",
+      "detail": "SHA único: 4c1e63998f96494edac71f4d657a56c0106f957b9c11c1df233e45b9cd4de936"
+    },
+    {
+      "status": "PASS",
+      "name": "v1.2 environment lock SHA comum",
+      "detail": "SHA único: 95163c8a19e194be2a9f4599f204d3ee2454aaf5fdfa81c4b4c505333d77c6fc"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro A3 attempt 1",
+      "detail": "7/12 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro A3 attempt 2",
+      "detail": "12/12 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro CC max A3",
+      "detail": "12 -> 7 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro findings A3",
+      "detail": "1 -> 0 confirmado"
+    },
+    {
+      "status": "WARN",
+      "name": "Claude Micro A3 segunda invocação sem alteração",
+      "detail": "não foi encontrada evidência textual inequívoca; não afirmar no TCC sem revisar o trace"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Mono status",
+      "detail": "INVALID_PROVIDER_POLICY confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Mono elegibilidade",
+      "detail": "primary_analysis_eligible=false"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Mono policy violation",
+      "detail": "1 invocação de violação confirmada"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Mono docker --version",
+      "detail": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_monolith/FINAL_SUMMARY.json:          \"policy_violations\": [             \"forbidden provider Docker command: docker --version\"           ],           \"final_response\": \"\",           \"native_usage\": {             \"input_tokens\": 144263,          "
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro status",
+      "detail": "ABORTED_PROVIDER_RUNTIME confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro elegibilidade",
+      "detail": "primary_analysis_eligible=false"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro iterações A1",
+      "detail": "2 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro sem policy violation",
+      "detail": "0 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro acceptance iter1",
+      "detail": "7/12 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Antigravity Micro quota/runtime evidence",
+      "detail": "/home/alunos/Documentos/Juan/usp/financial-architecture-benchmark/multiagent-provider-experiment/runs/RA0003_antigravity_microservices/a1_iteration_01/acceptance_failure_evidence/compose_logs_all.txt: B | 396/920 kB Progress (2): 3.0/9.0 MB | 412/920 kB Progress (2): 3.0/9.0 MB | 429/920 kB Progress (3): 3.0/9.0 MB | 429/920 kB | 0/1.5 MB Progress (3): 3.0/9.0 MB | 429/920 kB | 0/1.5 MB Progress (3): "
+    },
+    {
+      "status": "PASS",
+      "name": "RA0003_pair adjudicação",
+      "detail": "presente: multiagent-provider-experiment/protocol/adjudications/RA0003_pair.json"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "git": {
+    "head": "ec22476c0396b5bdd0f283d13afb36d374b0c83e",
+    "branch": "main",
+    "status_porcelain": "?? scripts/"
+  },
+  "stage1": {
+    "monolith": {
+      "physical_java_loc": 1274,
+      "java_files": 26,
+      "nloc": 904,
+      "functions": 18,
+      "cc_total": 29,
+      "cc_average": 1.61,
+      "cc_max": 5,
+      "acceptance": "12"
+    },
+    "microservices": {
+      "physical_java_loc": 2206,
+      "java_files": 47,
+      "nloc": 1520,
+      "functions": 35,
+      "cc_total": 50,
+      "cc_average": 1.43,
+      "cc_max": 5,
+      "acceptance": "12"
+    },
+    "source": "legacy-chatpt/experiment/results/master-results.md"
+  },
+  "stage2": {
+    "R0003_monolith": {
+      "run_id": "R0003_monolith",
+      "architecture": "monolith",
+      "elapsed_seconds": 1064.16,
+      "a1_iterations": 3,
+      "physical_java_loc": 362,
+      "nloc": 315,
+      "java_files": 9,
+      "functions": 10,
+      "cc_total": 26,
+      "cc_average": 2.6,
+      "cc_max": 9,
+      "quality_findings": 0,
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "R0003_microservices": {
+      "run_id": "R0003_microservices",
+      "architecture": "microservices",
+      "elapsed_seconds": 1227.966,
+      "a1_iterations": 3,
+      "physical_java_loc": 577,
+      "nloc": 474,
+      "java_files": 14,
+      "functions": 24,
+      "cc_total": 48,
+      "cc_average": 2.0,
+      "cc_max": 10,
+      "quality_findings": 0,
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0
+    }
+  },
+  "stage3": {
+    "RH0003_claude_monolith": {
+      "run_id": "RH0003_claude_monolith",
+      "provider": "claude",
+      "architecture": "monolith",
+      "elapsed_seconds": 159.716,
+      "provider_a1_seconds": 42.223,
+      "a1_iterations": 1,
+      "tool_calls": 4,
+      "failed_tool_calls": 0,
+      "physical_java_loc": 384,
+      "nloc": 311,
+      "java_files": 8,
+      "functions": 9,
+      "cc_total": 26,
+      "cc_average": 2.888889,
+      "cc_max": 9,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RH0003_claude_microservices": {
+      "run_id": "RH0003_claude_microservices",
+      "provider": "claude",
+      "architecture": "microservices",
+      "elapsed_seconds": 860.847,
+      "provider_a1_seconds": 71.214,
+      "a1_iterations": 1,
+      "tool_calls": 7,
+      "failed_tool_calls": 0,
+      "physical_java_loc": 631,
+      "nloc": 526,
+      "java_files": 15,
+      "functions": 33,
+      "cc_total": 58,
+      "cc_average": 1.757576,
+      "cc_max": 7,
+      "initial_findings": 1,
+      "final_findings": 0,
+      "a3": "SUCCESS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RC0003_codex_monolith": {
+      "run_id": "RC0003_codex_monolith",
+      "provider": "codex",
+      "architecture": "monolith",
+      "elapsed_seconds": 308.624,
+      "provider_a1_seconds": 183.197,
+      "a1_iterations": 1,
+      "tool_calls": 15,
+      "failed_tool_calls": 3,
+      "physical_java_loc": 410,
+      "nloc": 341,
+      "java_files": 10,
+      "functions": 11,
+      "cc_total": 19,
+      "cc_average": 1.727273,
+      "cc_max": 4,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    },
+    "RC0003_codex_microservices": {
+      "run_id": "RC0003_codex_microservices",
+      "provider": "codex",
+      "architecture": "microservices",
+      "elapsed_seconds": 549.838,
+      "provider_a1_seconds": 258.082,
+      "a1_iterations": 1,
+      "tool_calls": 23,
+      "failed_tool_calls": 5,
+      "physical_java_loc": 530,
+      "nloc": 447,
+      "java_files": 16,
+      "functions": 21,
+      "cc_total": 40,
+      "cc_average": 1.904762,
+      "cc_max": 8,
+      "initial_findings": 0,
+      "final_findings": 0,
+      "a3": "SKIPPED_NO_FINDINGS",
+      "vulnerabilities": 0,
+      "secrets": 0,
+      "misconfigurations": 0,
+      "HIGH": 0,
+      "CRITICAL": 0,
+      "acceptance_a1": "12/12"
+    }
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith functions vs Lizard CSV",
+      "detail": "confirmado: 18 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_total vs Lizard CSV",
+      "detail": "confirmado: 29 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_average vs Lizard CSV",
+      "detail": "confirmado: 1.6111111111111112 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 monolith cc_max vs Lizard CSV",
+      "detail": "confirmado: 5 (legacy-chatpt/experiment/results/monolith-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices functions vs Lizard CSV",
+      "detail": "confirmado: 35 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_total vs Lizard CSV",
+      "detail": "confirmado: 50 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_average vs Lizard CSV",
+      "detail": "confirmado: 1.4285714285714286 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 microservices cc_max vs Lizard CSV",
+      "detail": "confirmado: 5 (legacy-chatpt/experiment/results/microservices-lizard.csv)"
+    },
+    {
+      "status": "PASS",
+      "name": "Etapa 1 problemas documentados",
+      "detail": "3 problemas confirmados em legacy-chatpt/experiment/metrics/development-errors.md"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith protocolo",
+      "detail": "official_finance_architecture_experiment_v3"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith success",
+      "detail": "true"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_monolith acceptance final",
+      "detail": "12/12 em multiagent-experiment/runs/R0003_monolith/a1_iteration_03/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices protocolo",
+      "detail": "official_finance_architecture_experiment_v3"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices success",
+      "detail": "true"
+    },
+    {
+      "status": "PASS",
+      "name": "R0003_microservices acceptance final",
+      "detail": "12/12 em multiagent-experiment/runs/R0003_microservices/a1_iteration_03/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RH0003_claude_monolith/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RH0003_claude_microservices/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RC0003_codex_monolith/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices protocolo",
+      "detail": "official_finance_architecture_provider_experiment_v1_2"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices status",
+      "detail": "VALID_SUCCESS"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices elegibilidade",
+      "detail": "primary_analysis_eligible=true"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices acceptance A1",
+      "detail": "12/12 em multiagent-provider-experiment/runs/RC0003_codex_microservices/a1_iteration_01/acceptance.json"
+    },
+    {
+      "status": "PASS",
+      "name": "v1.2 protocol SHA comum",
+      "detail": "SHA único: 4c1e63998f96494edac71f4d657a56c0106f957b9c11c1df233e45b9cd4de936"
+    },
+    {
+      "status": "PASS",
+      "name": "v1.2 environment lock SHA comum",
+      "detail": "SHA único: 95163c8a19e194be2a9f4599f204d3ee2454aaf5fdfa81c4b4c505333d77c6fc"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro A3 attempt 1",
+      "detail": "7/12 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro A3 attempt 2",
+      "detail": "12/12 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro CC max A3",
+      "detail": "12 -> 7 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "Claude Micro findings A3",
+      "detail": "1 -> 0 confirmado"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_monolith segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RH0003_claude_microservices segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_monolith segurança",
+      "detail": "todos os indicadores registrados = 0"
+    },
+    {
+      "status": "PASS",
+      "name": "RC0003_codex_microservices segurança",
+      "detail": "todos os indicadores registrados = 0"
+    }
+  ]
+}
